@@ -31,16 +31,30 @@ jobs:
           node-version: '20'
           cache: 'pnpm'
 
+      - name: Check if package.json exists
+        id: check_pkg
+        run: |
+          if [ -f package.json ]; then
+            echo "has_pkg=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_pkg=false" >> $GITHUB_OUTPUT
+            echo "::notice::No package.json yet — skipping install/lint/typecheck/build. This is expected on CI-only branches."
+          fi
+
       - name: Install dependencies
+        if: steps.check_pkg.outputs.has_pkg == 'true'
         run: pnpm install --frozen-lockfile
 
       - name: Lint
+        if: steps.check_pkg.outputs.has_pkg == 'true'
         run: pnpm lint
 
       - name: Typecheck
+        if: steps.check_pkg.outputs.has_pkg == 'true'
         run: pnpm typecheck
 
       - name: Build
+        if: steps.check_pkg.outputs.has_pkg == 'true'
         run: pnpm build
         env:
           # Ensure Next.js treats the workspace correctly
