@@ -33,6 +33,19 @@
     --ring: 212 100% 27%;
 
     --radius: 0.5rem;
+
+    /* Brand tokens */
+    --brand-primary: #00438A;
+    --brand-primary-hover: #003066;
+    --brand-secondary: #3550A0;
+    --brand-accent: #C4922A;
+    --brand-dark: #0A1628;
+    --brand-light: #F0F4F8;
+    --ink: #0E0C19;
+    --body-text: #3C3A47;
+    --text-muted: #8A889A;
+    --canvas: #F5F3EF;
+    --subtle-border: #E3E5EC;
   }
 
   * {
@@ -40,7 +53,8 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-ibm), var(--font-noto), "IBM Plex Sans", "Noto Sans SC", system-ui, sans-serif;
   }
 
   /* Chinese text uses Noto Sans SC */
@@ -49,4 +63,31 @@
   :lang(zh-Hans) {
     font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   }
+}
+
+@layer components {
+  /* Section spacing rhythm */
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--brand-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--subtle-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
 }
