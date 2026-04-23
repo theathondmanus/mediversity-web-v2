@@ -1,0 +1,64 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Cancel in-progress runs when a PR gets new commits
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Lint · Typecheck · Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check if package.json exists
+        id: check_pkg
+        run: |
+          if [ -f package.json ]; then
+            echo "has_pkg=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_pkg=false" >> $GITHUB_OUTPUT
+            echo "::notice::No package.json yet — skipping install/lint/typecheck/build. This is expected on CI-only branches."
+          fi
+
+      - name: Setup pnpm
+        if: steps.check_pkg.outputs.has_pkg == 'true'
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.4
+
+      - name: Setup Node.js 20 LTS
+        if: steps.check_pkg.outputs.has_pkg == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        if: steps.check_pkg.outputs.has_pkg == 'true'
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        if: steps.check_pkg.outputs.has_pkg == 'true'
+        run: pnpm lint
+
+      - name: Typecheck
+        if: steps.check_pkg.outputs.has_pkg == 'true'
+        run: pnpm typecheck
+
+      - name: Build
+        if: steps.check_pkg.outputs.has_pkg == 'true'
+        run: pnpm build
+        env:
+          # Ensure Next.js treats the workspace correctly
+          NEXT_TELEMETRY_DISABLED: '1'
