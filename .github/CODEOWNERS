@@ -1,0 +1,40 @@
+# CODEOWNERS - mediversity-web-v2
+
+# 默认：两人都需要 review
+* @theathonds
+
+# ============================
+# Manus 的领地（前端 / 视觉）
+# ============================
+/components/        @theathondmanus
+/styles/            @theathondmanus
+/public/            @theathondmanus
+/app/**/*.tsx       @theathondmanus
+/app/**/*.jsx       @theathondmanus
+/app/**/page.tsx    @theathondmanus
+/app/**/layout.tsx  @theathondmanus
+
+# ============================
+# Moss 的领地（后端 / 基础设施）
+# ============================
+/app/api/           @theathonds
+/src/lib/           @theathonds
+/src/server/        @theathonds
+/src/db/            @theathonds
+/prisma/            @theathonds
+/scripts/           @theathonds
+/.github/           @theathonds
+
+# ============================
+# 配置类 — 改动需要章逊本人 review
+# ============================
+/package.json       @theathonds
+/package-lock.json  @theathonds
+/pnpm-lock.yaml     @theathonds
+/yarn.lock          @theathonds
+/next.config.*      @theathonds
+/tsconfig.json      @theathonds
+/tailwind.config.*  @theathonds
+/.env*              @theathonds
+/CONTRIBUTING.md    @theathonds
+/CODEOWNERS         @theathonds
