@@ -21,16 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        # Reads `packageManager` field from package.json
-
-      - name: Setup Node.js 20 LTS
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'pnpm'
-
       - name: Check if package.json exists
         id: check_pkg
         run: |
@@ -40,6 +30,19 @@ jobs:
             echo "has_pkg=false" >> $GITHUB_OUTPUT
             echo "::notice::No package.json yet — skipping install/lint/typecheck/build. This is expected on CI-only branches."
           fi
+
+      - name: Setup pnpm
+        if: steps.check_pkg.outputs.has_pkg == 'true'
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.4
+
+      - name: Setup Node.js 20 LTS
+        if: steps.check_pkg.outputs.has_pkg == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
 
       - name: Install dependencies
         if: steps.check_pkg.outputs.has_pkg == 'true'
