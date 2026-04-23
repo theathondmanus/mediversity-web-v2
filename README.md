@@ -16,11 +16,38 @@ Mediversity Global 官网改版项目（`mediversityglobal.cn` / 可能也覆盖
 
 ## 快速开始
 
-_待 Manus 出第一版脚手架后填充_
-
 ```bash
-# TBD：框架、包管理器、启动命令将在首次技术栈确定后写入此处
+# 前置要求：Node.js 20 LTS，pnpm 9.x
+node -v   # v20.x.x
+pnpm -v   # 9.x.x
+
+# 克隆并安装
+git clone https://github.com/theathondmanus/mediversity-web-v2.git
+cd mediversity-web-v2
+pnpm install
+
+# 开发
+pnpm dev          # http://localhost:3000（中文）/ http://localhost:3000/en（英文）
+
+# 构建
+pnpm build        # output: standalone
+
+# 其他命令
+pnpm lint         # ESLint
+pnpm typecheck    # TypeScript 类型检查
+pnpm format       # Prettier 格式化
 ```
+
+## 技术栈
+
+| 项 | 值 |
+|---|---|
+| 框架 | Next.js 15 (App Router, `output: standalone`) |
+| 样式 | Tailwind CSS 3.4 |
+| UI 组件 | shadcn/ui + Radix Primitives |
+| i18n | next-intl (`zh-CN` 默认无前缀，`en` 带 `/en/` 前缀) |
+| 包管理 | pnpm 9.x |
+| Node | 20 LTS |
 
 ## 目录约定
 
