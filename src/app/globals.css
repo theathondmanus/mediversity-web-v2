@@ -54,7 +54,7 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: "IBM Plex Sans", "Noto Sans SC", system-ui, sans-serif;
+    font-family: var(--font-ibm), var(--font-noto), "IBM Plex Sans", "Noto Sans SC", system-ui, sans-serif;
   }
 
   /* Chinese text uses Noto Sans SC */

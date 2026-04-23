@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 import {
   ArrowRight, GraduationCap, Stethoscope, BookOpen,
@@ -18,14 +18,10 @@ const fadeInUp = {
   }),
 };
 
-const HERO_IMG =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-main-BsXNpmBbMh7ZCgcGCYZvu4.webp";
-const MED_ENGLISH_IMG =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/programs-medical-english-Lz8prNuFYKH4tDUtNQ4EHv.webp";
-const OBSERVERSHIP_IMG =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/programs-observership-jNseAJMWdiRkTLXketgeju.webp";
-const NAVIGATOR_IMG =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/programs-navigator-UXZP9vJwkNmeq3o6zGtPZw.webp";
+const HERO_IMG = "/images/home/hero-main.webp";
+const MED_ENGLISH_IMG = "/images/home/programs-medical-english.webp";
+const OBSERVERSHIP_IMG = "/images/home/programs-observership.webp";
+const NAVIGATOR_IMG = "/images/home/programs-navigator.webp";
 
 export default function HomePage() {
   const t = useTranslations("home");
@@ -348,7 +344,7 @@ export default function HomePage() {
             <motion.div variants={fadeInUp} custom={0} className="w-full md:w-1/2">
               <div className="overflow-hidden rounded-xl shadow-lg">
                 <img
-                  src="https://mediversityglobal.com/wp-content/uploads/2024/09/Health-Professionals-Team-1-1.png"
+                  src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=800&q=80"
                   alt="Medical English Training Case Study"
                   className="w-full h-[300px] md:h-[380px] object-cover"
                 />

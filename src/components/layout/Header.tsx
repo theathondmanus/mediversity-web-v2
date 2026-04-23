@@ -1,8 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import { Menu, X, ChevronDown, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -11,30 +10,31 @@ export default function Header() {
   const t = useTranslations();
   const locale = useLocale();
   const pathname = usePathname();
+  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   // Check if current path is home
-  const isHome = pathname === "/" || pathname === `/${locale}`;
+  const isHome = pathname === "/";
 
   const NAV_ITEMS = [
-    { label: t("nav.home"), href: "/" },
+    { label: t("nav.home"), href: "/" as const },
     {
       label: t("nav.programs"),
-      href: "/programs",
+      href: "/programs" as const,
       children: [
-        { label: t("programsDropdown.medicalEnglish"), href: "/programs/medical-english" },
-        { label: t("programsDropdown.clinicalObservership"), href: "/programs/clinical-observership" },
-        { label: t("programsDropdown.medicalHumanities"), href: "/programs/medical-humanities" },
-        { label: t("programsDropdown.medicalWriting"), href: "/programs/medical-writing" },
-        { label: t("programsDropdown.medicalNavigator"), href: "/programs/medical-navigator" },
+        { label: t("programsDropdown.medicalEnglish"), href: "/programs/medical-english" as const },
+        { label: t("programsDropdown.clinicalObservership"), href: "/programs/clinical-observership" as const },
+        { label: t("programsDropdown.medicalHumanities"), href: "/programs/medical-humanities" as const },
+        { label: t("programsDropdown.medicalWriting"), href: "/programs/medical-writing" as const },
+        { label: t("programsDropdown.medicalNavigator"), href: "/programs/medical-navigator" as const },
       ],
     },
-    { label: t("nav.caseStudies"), href: "/case-studies" },
-    { label: t("nav.news"), href: "/news" },
-    { label: t("nav.about"), href: "/about" },
-    { label: t("nav.contact"), href: "/contact" },
+    { label: t("nav.caseStudies"), href: "/case-studies" as const },
+    { label: t("nav.news"), href: "/news" as const },
+    { label: t("nav.about"), href: "/about" as const },
+    { label: t("nav.contact"), href: "/contact" as const },
   ];
 
   useEffect(() => {
@@ -52,8 +52,11 @@ export default function Header() {
   const textColor = scrolled || !isHome ? "text-[#0E0C19]" : "text-white";
   const logoColor = scrolled || !isHome ? "text-[#00438A]" : "text-white";
 
-  // Language switch URL
-  const switchLocaleHref = locale === "zh-CN" ? "/en" : "/";
+  const targetLocale = locale === "zh-CN" ? "en" : "zh-CN";
+
+  const handleSwitchLocale = () => {
+    router.replace(pathname, { locale: targetLocale });
+  };
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg}`}>
@@ -102,18 +105,17 @@ export default function Header() {
           ))}
 
           {/* Language Switcher */}
-          <Link
-            href={switchLocaleHref}
-            locale={locale === "zh-CN" ? "en" : "zh-CN"}
-            className={`ml-2 px-3 py-1.5 text-xs font-medium rounded-md border transition-all duration-200 flex items-center gap-1.5 no-underline ${
+          <button
+            onClick={handleSwitchLocale}
+            className={`ml-2 px-3 py-1.5 text-xs font-medium rounded-md border transition-all duration-200 flex items-center gap-1.5 cursor-pointer ${
               scrolled || !isHome
-                ? "border-[#E3E5EC] text-[#3C3A47] hover:bg-[#F0F2F6]"
-                : "border-white/30 text-white hover:bg-white/10"
+                ? "border-[#E3E5EC] text-[#3C3A47] hover:bg-[#F0F2F6] bg-transparent"
+                : "border-white/30 text-white hover:bg-white/10 bg-transparent"
             }`}
           >
             <Globe className="w-3.5 h-3.5" />
             {locale === "zh-CN" ? "EN" : "中文"}
-          </Link>
+          </button>
 
           <Link
             href="/contact"
@@ -124,18 +126,17 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2 lg:hidden">
-          <Link
-            href={switchLocaleHref}
-            locale={locale === "zh-CN" ? "en" : "zh-CN"}
-            className={`px-2.5 py-1.5 text-xs font-medium rounded-md border transition-all flex items-center gap-1 no-underline ${
+          <button
+            onClick={handleSwitchLocale}
+            className={`px-2.5 py-1.5 text-xs font-medium rounded-md border transition-all flex items-center gap-1 cursor-pointer ${
               scrolled || !isHome
-                ? "border-[#E3E5EC] text-[#3C3A47]"
-                : "border-white/30 text-white"
+                ? "border-[#E3E5EC] text-[#3C3A47] bg-transparent"
+                : "border-white/30 text-white bg-transparent"
             }`}
           >
             <Globe className="w-3.5 h-3.5" />
             {locale === "zh-CN" ? "EN" : "中文"}
-          </Link>
+          </button>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className={`p-2 rounded-md transition-colors ${textColor}`}

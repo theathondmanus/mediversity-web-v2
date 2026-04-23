@@ -68,9 +68,9 @@ const config: Config = {
         ring: "hsl(var(--ring))",
       },
       fontFamily: {
-        display: ["Playfair Display", "Georgia", "serif"],
-        sans: ["IBM Plex Sans", "system-ui", "sans-serif"],
-        zh: ["Noto Sans SC", "PingFang SC", "Microsoft YaHei", "sans-serif"],
+        display: ["var(--font-playfair)", "Playfair Display", "Georgia", "serif"],
+        sans: ["var(--font-ibm)", "IBM Plex Sans", "system-ui", "sans-serif"],
+        zh: ["var(--font-noto)", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
