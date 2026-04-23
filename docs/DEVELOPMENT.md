@@ -488,3 +488,75 @@ which node
 - **Manus**：通过 GitHub PR / Issue 评论
 - **Moss**：通过章逊的 Telegram
 
+
+---
+
+## 14. 部署路线图（2026-04-23 章逊决定）
+
+### 部署阶段
+
+**阶段 1：海外站（优先）**
+- 域名：`mediversityglobal.com`（GoDaddy 管理中，可随时取回）
+- 默认 locale：`en`
+- 目标用户：**英国 / 澳洲等英联邦国家**（主要市场，不是美国）
+- 服务器选型：**延后决定**（候选：AWS 伦敦 / Vultr 伦敦 / 腾讯云新加坡 + Cloudflare）
+- 启动时机：**等 Manus 做完 3-5 个核心页面后启动**
+
+**阶段 2：国内站**
+- 域名：`mediversityglobal.cn`（备案中）
+- 默认 locale：`zh-CN`
+- 目标用户：大陆
+- 服务器：阿里云 ECS `47.93.33.146`（已准备好基线）
+- 启动时机：`.cn` 备案通过 + 阶段 1 稳定后
+
+### 调试环境
+
+**章逊 Mac mini** 作为唯一调试机：
+- `~/Code/mediversity-web-v2/` clone 了 repo
+- Mac `http://localhost:3000` 或 Windows 同局域网 `http://192.168.1.165:3000`
+- 不额外买调试服务器（省 ~¥2000/年）
+
+### CDN 决策
+
+**Cloudflare 免费版**（无论 origin 服务器在哪）：
+- 300+ 全球节点，英国 / 澳洲 / 欧洲 / 北美都有
+- Next.js 静态页面 + 字体 + 图片缓存命中率 90%+
+- DDoS 防护 + 免费 SSL
+- DNS 托管也在 Cloudflare（GoDaddy 只保留域名所有权，NS 切到 Cloudflare）
+
+### 服务器选型 · 延后决定的原因
+
+做到阶段 1 启动时再定，根据届时信息选：
+- 用户量预估（日 PV 几百 vs 几千）
+- 预算偏好（账单可预测 vs 极致速度）
+- 未来是否需要 AWS 生态服务（RDS、Lambda、SES 等）
+
+候选对比已在 Moss 笔记里（未来启动阶段 1 时重新翻出来决策）。
+
+### 双站代码架构（未来改造）
+
+当前 `src/i18n/routing.ts` 里 `defaultLocale: "zh-CN"` 是硬编码。
+
+未来双站要做**同一份代码 + 不同 build**：
+- 引入 `NEXT_PUBLIC_DEFAULT_LOCALE` 环境变量
+- `routing.ts` 从 env 读取
+- CI 针对 `.com` 和 `.cn` 分别 build 两次
+- 部署到各自服务器
+
+这个改造在阶段 1 启动前做。Moss 领地，不 block 现在的开发。
+
+### 双站内容策略
+
+技术上两种 locale 的内容**完全一致**（同一份 `messages/zh-CN.json` + `messages/en.json`）。
+
+如果未来章逊决定：
+- `.com` 和 `.cn` 要有不同案例 / 不同课程 / 不同营销语言
+- 需要再讨论数据层拆分（推荐**不要**，除非真有业务必要）
+
+### SEO 配置（未来上线前必做）
+
+- 每个页面的 `generateMetadata` 按 locale 出 SEO tag
+- `<link rel="alternate" hreflang="zh-CN" href="https://mediversityglobal.cn/path">` 等
+- 每个站各自 `robots.txt` 和 `sitemap.xml`
+- Google Search Console（.com）+ 百度站长（.cn）提交
+
