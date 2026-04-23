@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "title": "Mediversity Global — International Medical Education & Healthcare Services",
+    "description": "Bridging UK-China medical education with professional training, clinical observership, and healthcare navigation services"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "programs": "Programs",
+    "medicalEducation": "Medical Education",
+    "medicalNavigator": "Medical Navigator",
+    "news": "News",
+    "caseStudies": "Case Studies",
+    "contact": "Contact",
+    "team": "Our Team",
+    "freeTrial": "Free Trial"
+  },
+  "home": {
+    "heroTitle": "Bridging UK-China Medical Education",
+    "heroSubtitle": "Medical English Training · Clinical Observership · International Healthcare Navigation",
+    "heroCta": "Explore Programs",
+    "heroCtaSecondary": "Contact Us",
+    "statsStudents": "Students",
+    "statsCountries": "Partner Countries",
+    "statsCourses": "Professional Courses",
+    "statsSatisfaction": "Satisfaction"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "backToHome": "Back to Home",
+    "loading": "Loading...",
+    "comingSoon": "Coming Soon"
+  },
+  "footer": {
+    "description": "Mediversity Global is dedicated to bridging UK-China medical education, providing high-quality training and services for healthcare professionals.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contactInfo": "Contact",
+    "copyright": "© {year} Mediversity Global. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "icp": "沪ICP备2025138775号-1"
+  }
+}

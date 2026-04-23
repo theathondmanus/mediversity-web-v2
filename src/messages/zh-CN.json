@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "title": "Mediversity Global — 国际医学教育与医疗服务",
+    "description": "连接中英医疗教育，提供专业医学英语培训、临床观摩、医疗导航等服务"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "programs": "课程体系",
+    "medicalEducation": "医学教育",
+    "medicalNavigator": "医疗导航",
+    "news": "新闻动态",
+    "caseStudies": "成功案例",
+    "contact": "联系我们",
+    "team": "我们的团队",
+    "freeTrial": "免费试听"
+  },
+  "home": {
+    "heroTitle": "连接中英医疗教育",
+    "heroSubtitle": "专业医学英语培训 · 临床观摩项目 · 国际医疗导航",
+    "heroCta": "探索课程",
+    "heroCtaSecondary": "联系我们",
+    "statsStudents": "学员",
+    "statsCountries": "合作国家",
+    "statsCourses": "专业课程",
+    "statsSatisfaction": "满意度"
+  },
+  "common": {
+    "learnMore": "了解更多",
+    "contactUs": "联系我们",
+    "readMore": "阅读更多",
+    "viewAll": "查看全部",
+    "backToHome": "返回首页",
+    "loading": "加载中...",
+    "comingSoon": "即将推出"
+  },
+  "footer": {
+    "description": "Mediversity Global 致力于连接中英医疗教育，为医疗专业人士提供高质量的培训和服务。",
+    "quickLinks": "快速链接",
+    "services": "服务项目",
+    "contactInfo": "联系信息",
+    "copyright": "© {year} Mediversity Global. 保留所有权利。",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "icp": "沪ICP备2025138775号-1"
+  }
+}
