@@ -1,136 +1,366 @@
 {
-  "metadata": {
-    "title": "Mediversity Global — International Medical Education & Healthcare Services",
-    "description": "Bridging UK-China medical education with professional training, clinical observership, and healthcare navigation services"
-  },
   "nav": {
-    "home": "Home",
-    "about": "About",
-    "programs": "Programs",
-    "medicalEducation": "Medical Education",
+    "programmes": "Programmes",
     "medicalNavigator": "Medical Navigator",
-    "news": "News",
-    "caseStudies": "Case Studies",
+    "insights": "Insights",
+    "about": "About",
     "contact": "Contact",
-    "team": "Our Team",
-    "freeTrial": "Free Trial",
-    "getInTouch": "Get in Touch"
-  },
-  "programsDropdown": {
-    "medicalEnglish": "Medical English & OET",
-    "clinicalObservership": "Clinical Observership",
-    "medicalHumanities": "Medical Humanities",
-    "medicalWriting": "Medical Writing & Research",
-    "medicalNavigator": "Medical Navigator"
+    "viewAllProgrammes": "View all programmes",
+    "pillars": {
+      "medicalEnglish": "Medical English & Communication",
+      "medicalEnglishDesc": "From foundations to clinical practice, comprehensive medical English training",
+      "research": "Medical Research & Academic Development",
+      "researchDesc": "Research methodology, academic writing and publication",
+      "observership": "Clinical Observership & International Exposure",
+      "observershipDesc": "UK clinical observership, visiting scholar and academic exchange",
+      "humanities": "Professional Development & Medical Humanities",
+      "humanitiesDesc": "Medical humanities, leadership and cross-cultural communication"
+    }
   },
   "home": {
-    "heroBadge": "British Council Certified",
-    "heroTitle1": "Advancing Healthcare",
-    "heroTitle2": "through",
-    "heroTitleHighlight": "Education",
-    "heroTitle3": "Connection & Innovation",
-    "heroDescription": "Seeking a trusted partner to help you navigate the complexities of international healthcare? Mediversity Global empowers healthcare professionals worldwide.",
-    "heroExplore": "Explore Programs",
-    "heroSchedule": "Schedule a Meeting",
-    "eduLabel": "Medical Education",
-    "eduTitle": "Comprehensive Medical Education Programs",
-    "eduDescription": "Mediversity Global provides comprehensive medical education programs that bridge language, culture, and clinical experience. We help healthcare professionals grow with global competence and confidence.",
-    "learnMore": "Learn More",
-    "medEnglishTitle": "Medical English Training",
-    "medEnglishDesc": "Our Medical English training enhances healthcare professionals' real-world communication skills through practice-based learning, fostering confidence and fluency in global medical settings.",
-    "medEnglishF1": "Preparatory General English",
-    "medEnglishF2": "Medical English for Doctors & Nurses",
-    "medEnglishF3": "OET Preparation",
-    "medEnglishF4": "Workplace Medical English",
-    "medEnglishF5": "Pre-Departure Medical English",
-    "observershipTitle": "Clinical Observership",
-    "observershipDesc": "Through our collaborations with leading UK healthcare institutions, these programs provide invaluable exposure to advanced medical practices, foster interdisciplinary teamwork, and offer unique insights into innovative patient care approaches.",
-    "observershipF1": "Clinical Observer Program (12 Weeks)",
-    "observershipF2": "Short-Term Overseas Visit (5–10 Days)",
-    "observershipF3": "Advanced Visiting Scholar (6–12 Months)",
-    "humanitiesTitle": "Medical Humanities",
-    "humanitiesDesc": "We offer medical humanities courses designed to emphasise empathy, ethical decision-making, and a deep understanding of the patient experience.",
-    "writingTitle": "Medical Writing & Publishing",
-    "writingDesc": "This intensive bootcamp equips healthcare professionals with the essential skills needed to navigate the complexities of international medical publishing.",
-    "oetTitle": "OET Preparation",
-    "oetDesc": "Through targeted language training, realistic exam simulations, and personalized feedback, we help learners build the confidence, accuracy, and strategy needed to achieve their best results.",
-    "researchTitle": "Medical Research Essentials",
-    "researchDesc": "Covering research methodology, ethics, data analysis, and academic communication, this course empowers learners to confidently initiate their own research projects.",
-    "navLabel": "Medical Navigator",
-    "navTitle": "Your Journey to Wellness, Seamlessly Guided",
-    "navDescription": "A high-end cross-border medical service platform for overseas Chinese, international students, expatriates, and international patients. We directly connect with China's Grade-A tertiary hospitals, integrate top-tier medical experts, and offer end-to-end medical services with international operational standards.",
-    "navExplore": "Explore Medical Navigator",
-    "preventiveCare": "Preventive Care",
-    "preventiveCareDesc": "Systematic preventive health services including standardized or customized check-ups at top-tier hospitals, advanced screenings such as MRI and PET-CT, and long-term health record management.",
-    "criticalCare": "Critical Care",
-    "criticalCareDesc": "Cross-border medical support for major illnesses through rapid surgery arrangements, expedited medical pathways, and treatment by the most experienced medical teams.",
-    "fastTrack": "Fast-Track Diagnosis & Specialist Services",
-    "fastTrackDesc": "Addressing long overseas wait times with specialist consultations, minor and day surgeries, rapid procedures, early detection, and stem cell therapies.",
-    "tcm": "TCM & Rehabilitation",
-    "tcmDesc": "Integrating traditional Chinese medicine with modern rehabilitation through acupuncture, massage, physical therapy, and wellness-oriented travel experiences.",
-    "speed": "Speed",
-    "speedDesc": "Direct access to Grade-A tertiary hospitals, reducing waiting times.",
-    "professionalism": "Professionalism",
-    "professionalismDesc": "Full support for visas, compliance, and cross-border procedures.",
-    "costEffectiveness": "Cost-Effectiveness",
-    "costEffectivenessDesc": "Internationally recognized care at competitive prices.",
-    "bilingualSupport": "Bilingual Support",
-    "bilingualSupportDesc": "Full bilingual patient assistance from booking to recovery.",
-    "storyLabel": "Success Story",
-    "storyTitle": "Empowering a Leading Hospital with Medical English Training",
-    "storyDescription": "Through a tailored 12-session Medical English program, we helped Jiangxi Maternal and Child Health Hospital enhance its staff's confidence and precision in international communication — strengthening its global service standards and cross-border collaboration capabilities.",
-    "storyStat1": "Gains in fluency & accuracy",
-    "storyStat2": "Improved confidence",
-    "storyStat3": "Final avg. score (from 39.4)",
-    "storyCta": "See the Impact",
-    "feedbackLabel": "Participant Feedback",
-    "feedbackTitle": "What Our Participants Say",
-    "testimonial1Quote": "I used to worry about making mistakes. Now I can communicate in English clearly and confidently — the personalised feedback from the instructor made a huge difference to my progress.",
-    "testimonial1Name": "Mr. Li",
-    "testimonial1Role": "Specialist in Reproductive Medicine",
-    "testimonial2Quote": "The role-play activities were challenging at first, but I noticed improvement every week. My communication now feels far more natural and assured.",
-    "testimonial2Name": "Mr. Ai",
-    "testimonial2Role": "Anaesthesiologist",
-    "testimonial3Quote": "I can finally explain cases in clear, patient-friendly English. This has transformed my daily clinical practice.",
-    "testimonial3Name": "Mrs. Peng",
-    "testimonial3Role": "Obstetrician",
-    "testimonial4Quote": "The sessions taught me not only the language, but also how to communicate with empathy and cultural awareness.",
-    "testimonial4Name": "Mrs. Deng",
-    "testimonial4Role": "NICU Nurse",
-    "testimonialProgram": "Medical English Training",
-    "trustBar": "Trusted by Leading Healthcare Institutions",
-    "trustOrg1": "Oxford University Hospitals",
-    "trustOrg2": "Renji Hospital",
-    "trustOrg3": "Peking Union Medical College Hospital",
-    "trustOrg4": "British Council",
-    "trustOrg5": "Jiangxi Maternal & Child Health Hospital"
+    "hero": {
+      "badge": "International Healthcare Professional Development Platform",
+      "title": "Empowering Healthcare Professionals for Global Growth",
+      "subtitle": "From medical English to clinical observership, from academic research to professional development — Mediversity Global provides comprehensive pathways for international professional growth.",
+      "cta1": "Explore Programmes",
+      "cta2": "Book a Consultation"
+    },
+    "businessLines": {
+      "title": "Two Core Business Lines",
+      "subtitle": "Professional training and medical navigation — dual tracks supporting your international development",
+      "programmes": {
+        "title": "Programmes",
+        "desc": "Covering Medical English, Research, Observership and Humanities — systematically enhancing international competitiveness"
+      },
+      "navigator": {
+        "title": "Medical Navigator",
+        "desc": "One-stop international medical career planning and implementation service, with full support from consultation to execution"
+      }
+    },
+    "pillars": {
+      "title": "Four Training Pillars",
+      "subtitle": "Covering all core needs for healthcare professionals' international development",
+      "medicalEnglish": {
+        "title": "Medical English & Communication",
+        "desc": "From foundations to clinical practice, a systematic medical English training system"
+      },
+      "research": {
+        "title": "Medical Research & Academic Development",
+        "desc": "Research methodology, academic writing and international publication"
+      },
+      "observership": {
+        "title": "Clinical Observership & International Exposure",
+        "desc": "Clinical observership at top UK hospitals and visiting scholar programmes"
+      },
+      "humanities": {
+        "title": "Professional Development & Medical Humanities",
+        "desc": "Medical humanities, leadership and cross-cultural competency"
+      },
+      "explore": "Learn more"
+    },
+    "meSubcategories": {
+      "badge": "Core Pillar",
+      "title": "Medical English & Communication",
+      "subtitle": "Four directions covering all medical English learning needs, from foundations to advanced",
+      "foundations": {
+        "title": "English Foundations",
+        "subtitle": "Building solid medical English fundamentals"
+      },
+      "oet": {
+        "title": "OET & International Licensing",
+        "subtitle": "Exam and registration preparation"
+      },
+      "clinical": {
+        "title": "Clinical Medical English",
+        "subtitle": "Clinical communication skills"
+      },
+      "globalMobility": {
+        "title": "Global Mobility & Pre-Departure",
+        "subtitle": "Comprehensive pre-departure preparation"
+      },
+      "coursesLabel": "courses"
+    },
+    "testimonials": {
+      "title": "What Our Students Say",
+      "subtitle": "Hear from healthcare professionals who have transformed their careers"
+    },
+    "trust": {
+      "title": "Recognised by Leading Institutions"
+    },
+    "cta": {
+      "title": "Start Your International Development Journey",
+      "subtitle": "Whatever stage of your career, we have the right programme for you",
+      "btn1": "Browse All Programmes",
+      "btn2": "Contact Us"
+    }
+  },
+  "testimonials": {
+    "role1": "Jiangxi Provincial Maternal and Child Health Hospital · Attending Physician",
+    "content1": "Mediversity Global's medical English programme helped me confidently present at international academic conferences. My colleagues have all noticed the improvement.",
+    "role2": "Peking Union Medical College Hospital · Resident",
+    "content2": "The OET preparation course was very systematic, and the tutors had an excellent grasp of exam focus areas. I passed OET on my first attempt and secured my UK work visa.",
+    "role3": "Shanghai Ruijin Hospital · Associate Chief Physician",
+    "content3": "The clinical observership programme gave me first-hand experience of the UK NHS working model, which greatly inspired my department management back home.",
+    "role4": "The First Affiliated Hospital of Zhejiang University · Attending Physician",
+    "content4": "The academic writing course helped me master core SCI paper writing techniques. I've successfully published two papers this year.",
+    "role5": "The First Affiliated Hospital of Sun Yat-sen University · Chief Physician",
+    "content5": "The visiting scholar programme opened doors to international collaboration. I now maintain close academic exchanges with UK colleagues."
+  },
+  "programmesHub": {
+    "title": "Programmes",
+    "subtitle": "Four pillars covering all core needs for healthcare professionals' international development",
+    "activeCourses": "active courses",
+    "explore": "Explore",
+    "pillars": {
+      "medicalEnglish": {
+        "title": "Medical English & Communication",
+        "desc": "From foundations to clinical practice, systematically enhancing medical English proficiency for international careers"
+      },
+      "research": {
+        "title": "Medical Research & Academic Development",
+        "desc": "Research methodology, academic writing and international publication to boost academic competitiveness"
+      },
+      "observership": {
+        "title": "Clinical Observership & International Exposure",
+        "desc": "Clinical observership at top UK hospitals, visiting scholar and academic exchange programmes"
+      },
+      "humanities": {
+        "title": "Professional Development & Medical Humanities",
+        "desc": "Medical humanities, leadership and cross-cultural communication competency"
+      }
+    }
+  },
+  "programmes": {
+    "medicalEnglish": {
+      "title": "Medical English & Communication",
+      "description": "From foundations to clinical practice, systematically enhancing medical English proficiency. Covering four directions: foundations, OET, clinical English and pre-departure preparation.",
+      "subcategories": {
+        "foundations": {
+          "title": "English Foundations",
+          "desc": "Building solid medical English fundamentals for advanced learning"
+        },
+        "oet": {
+          "title": "OET & International Licensing",
+          "desc": "Systematic preparation for OET and international medical licensing exams"
+        },
+        "clinical": {
+          "title": "Clinical Medical English",
+          "desc": "Practical English communication training for clinical scenarios"
+        },
+        "global-mobility": {
+          "title": "Global Mobility & Pre-Departure",
+          "desc": "Comprehensive English and cultural preparation before going abroad"
+        }
+      },
+      "courses": {
+        "preparatoryMedicalEnglish": "Preparatory Medical English Programme",
+        "clinicalCommunicationFoundations": "Clinical Communication Foundations",
+        "generalEnglishHealthcare": "General English for Healthcare Professionals",
+        "oetPreparation": "OET Preparation",
+        "oetIntensiveBootcamp": "OET Intensive Bootcamp",
+        "platCommunication": "PLAB Communication Support",
+        "healthcareInterview": "Healthcare Interview Preparation",
+        "workplaceMedicalEnglish": "Workplace Medical English",
+        "medicalEnglishDoctors": "Medical English for Doctors",
+        "medicalEnglishNurses": "Medical English for Nurses",
+        "clinicalConsultationEnglish": "Clinical Consultation English",
+        "wardHandoverCommunication": "Ward & Handover Communication",
+        "preDepartureMedicalEnglish": "Pre-Departure Medical English",
+        "ukHealthcareOrientation": "UK Healthcare System Orientation",
+        "culturalCommunication": "Cultural Communication in Healthcare",
+        "internationalWorkplaceReadiness": "International Workplace Readiness"
+      }
+    },
+    "researchAcademic": {
+      "title": "Medical Research & Academic Development",
+      "description": "Research methodology, academic writing and international publication, supporting academic career development and international competitiveness.",
+      "subcategories": {
+        "research-training": {
+          "title": "Medical Research Training",
+          "desc": "Systematic learning of research methods and evidence-based medicine"
+        },
+        "academic-writing": {
+          "title": "Academic Writing & Publication",
+          "desc": "Mastering SCI paper writing and international publication techniques"
+        },
+        "academic-communication": {
+          "title": "Professional Academic Communication",
+          "desc": "Enhancing academic presentation and conference communication skills"
+        }
+      },
+      "courses": {
+        "medicalResearchEssentials": "Medical Research Essentials",
+        "researchMethodology": "Research Methodology",
+        "evidenceBasedMedicine": "Evidence-based Medicine",
+        "medicalWritingBootcamp": "Medical Writing & Publication Bootcamp",
+        "sciWritingSupport": "SCI Writing Support",
+        "academicPresentationSkills": "Academic Presentation Skills",
+        "conferencePresentationSkills": "Conference Presentation Skills",
+        "academicEnglishHealthcare": "Academic English for Healthcare Professionals",
+        "researchCommunication": "Research Communication"
+      }
+    },
+    "observership": {
+      "title": "Clinical Observership & International Exposure",
+      "description": "Clinical observership at top UK hospitals, visiting scholar and academic exchange programmes, providing global clinical perspectives and international collaboration opportunities.",
+      "subcategories": {
+        "clinical-observer": {
+          "title": "Clinical Observer Programmes",
+          "desc": "Short-term and specialty-based clinical observership"
+        },
+        "advanced-clinical": {
+          "title": "Advanced Clinical Exposure",
+          "desc": "In-depth consultant shadowing and department immersion"
+        },
+        "visiting-scholar": {
+          "title": "Academic & Visiting Scholar Pathways",
+          "desc": "Academic visits and international exchange"
+        }
+      },
+      "courses": {
+        "shortTermObservership": "Short-term Observership",
+        "specialtyBasedObservership": "Specialty-based Observership",
+        "hospitalAttachment": "Hospital Attachment",
+        "advancedClinicalObserver": "Advanced Clinical Observer Programme",
+        "consultantShadowing": "Consultant Shadowing",
+        "departmentImmersion": "Department Immersion",
+        "visitingScholarProgramme": "Visiting Scholar Programme",
+        "researchAttachment": "Research Attachment",
+        "internationalAcademicExchange": "International Academic Exchange"
+      }
+    },
+    "humanities": {
+      "title": "Professional Development & Medical Humanities",
+      "description": "Medical humanities, leadership and cross-cultural communication, developing well-rounded international healthcare professionals.",
+      "subcategories": {
+        "medical-humanities": {
+          "title": "Medical Humanities",
+          "desc": "Cultivating empathy and narrative medicine literacy"
+        },
+        "leadership": {
+          "title": "Leadership & Professional Skills",
+          "desc": "Healthcare leadership and cross-cultural management"
+        }
+      },
+      "courses": {
+        "medicalHumanitiesProfessionals": "Medical Humanities for Healthcare Professionals",
+        "empathyPatientCommunication": "Empathy & Patient Communication",
+        "narrativeMedicine": "Narrative Medicine",
+        "healthcareLeadership": "Healthcare Leadership",
+        "crossCulturalCommunication": "Cross-cultural Communication",
+        "reflectivePractice": "Reflective Practice"
+      }
+    }
+  },
+  "medicalNavigator": {
+    "title": "Medical Navigator",
+    "subtitle": "One-stop international medical career planning and implementation service, with full support from consultation to execution",
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive international development support for healthcare professionals",
+      "consultation": {
+        "title": "Career Planning",
+        "desc": "One-to-one in-depth consultation, customising your international development pathway"
+      },
+      "documentation": {
+        "title": "Documentation Support",
+        "desc": "Assistance with application materials, reference letters and personal statements"
+      },
+      "matching": {
+        "title": "Institution Matching",
+        "desc": "Precise matching with UK healthcare institutions and academic partners"
+      },
+      "support": {
+        "title": "End-to-End Support",
+        "desc": "Full-process guidance from application to arrival"
+      }
+    },
+    "cta": {
+      "title": "Start Your International Journey",
+      "subtitle": "Book a free consultation to discover the right pathway for you",
+      "button": "Book a Consultation"
+    }
+  },
+  "insights": {
+    "title": "Insights",
+    "subtitle": "Latest updates, industry analysis and learning resources in medical education",
+    "empty": {
+      "title": "Content Coming Soon",
+      "desc": "We are preparing high-quality industry insight articles. Stay tuned."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Mediversity Global — International Healthcare Professional Development Platform",
+    "mission": {
+      "title": "Our Mission",
+      "content": "Mediversity Global is dedicated to providing high-quality international development opportunities for Chinese healthcare professionals. We connect top medical education resources between China and the UK, helping healthcare practitioners enhance their international competitiveness and achieve their career goals through systematic training programmes and one-to-one career navigation services."
+    },
+    "values": {
+      "title": "Core Values",
+      "excellence": {
+        "title": "Excellence",
+        "desc": "Pursuing continuous improvement in teaching quality and service standards"
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "desc": "Connecting medical education resources between China and the UK"
+      },
+      "international": {
+        "title": "International",
+        "desc": "Developing healthcare professionals with a global perspective"
+      },
+      "empathy": {
+        "title": "Empathy",
+        "desc": "Student-centred approach with personalised support"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Whatever your questions or needs, we are here to help",
+    "info": {
+      "title": "Contact Information",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "hours": "Working Hours"
+    },
+    "form": {
+      "title": "Send a Message",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send"
+    }
   },
   "common": {
-    "learnMore": "Learn More",
-    "contactUs": "Contact Us",
-    "readMore": "Read More",
-    "viewAll": "View All",
-    "backToHome": "Back to Home",
-    "loading": "Loading...",
-    "comingSoon": "Coming Soon"
+    "backToProgrammes": "Back to all programmes",
+    "activeCourses": "active courses",
+    "futureCourses": "planned courses",
+    "futureProgrammes": "Future Programmes",
+    "viewDetails": "View details"
   },
   "footer": {
-    "ctaTitle": "Ready to Advance Your Medical Career?",
-    "ctaSubtitle": "Explore our programs or get in touch with our team today.",
-    "explorePrograms": "Explore Programs",
-    "contactUs": "Contact Us",
-    "brandDescription": "A comprehensive healthcare solutions provider empowering healthcare professionals and advancing the industry through education, connection, technology, and innovation.",
-    "locations": "London · Shanghai · Vancouver · Melbourne",
-    "sectionPrograms": "Programs",
-    "sectionCompany": "Company",
-    "sectionSupport": "Support",
-    "aboutUs": "About Us",
-    "ourTeam": "Our Team",
-    "newsUpdates": "News & Updates",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service",
-    "copyright": "Mediversity Global. All rights reserved.",
-    "accredited": "British Council Accredited",
-    "icp": "沪ICP备2025138775号-1"
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Contact us to begin your international development journey",
+      "button": "Book a Consultation"
+    },
+    "description": "Mediversity Global — International Healthcare Professional Development Platform, empowering healthcare professionals for global growth.",
+    "programmes": "Programmes",
+    "company": "About",
+    "links": {
+      "medicalEnglish": "Medical English & Communication",
+      "research": "Medical Research & Academic Development",
+      "observership": "Clinical Observership & International Exposure",
+      "humanities": "Professional Development & Medical Humanities",
+      "about": "About Us",
+      "insights": "Insights",
+      "contact": "Contact Us",
+      "navigator": "Medical Navigator"
+    },
+    "icp": "沪ICP备XXXXXXXX号",
+    "copyright": "© 2026 Mediversity Global. All rights reserved."
   }
 }

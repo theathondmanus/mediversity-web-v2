@@ -1,136 +1,366 @@
 {
-  "metadata": {
-    "title": "Mediversity Global — 国际医学教育与医疗服务",
-    "description": "连接中英医疗教育，提供专业医学英语培训、临床观摩、医疗导航等服务"
-  },
   "nav": {
-    "home": "首页",
-    "about": "关于我们",
-    "programs": "课程项目",
-    "medicalEducation": "医学教育",
+    "programmes": "培训项目",
     "medicalNavigator": "医疗导航",
-    "news": "新闻动态",
-    "caseStudies": "成功案例",
+    "insights": "洞察",
+    "about": "关于我们",
     "contact": "联系我们",
-    "team": "我们的团队",
-    "freeTrial": "免费试听",
-    "getInTouch": "立即咨询"
-  },
-  "programsDropdown": {
-    "medicalEnglish": "医学英语与 OET",
-    "clinicalObservership": "临床观摩项目",
-    "medicalHumanities": "医学人文",
-    "medicalWriting": "医学写作与科研",
-    "medicalNavigator": "医疗导航"
+    "viewAllProgrammes": "查看全部项目",
+    "pillars": {
+      "medicalEnglish": "医学英语与沟通",
+      "medicalEnglishDesc": "从基础英语到临床实战，全方位提升医疗英语能力",
+      "research": "医学研究与学术发展",
+      "researchDesc": "科研方法、学术写作与论文发表",
+      "observership": "临床观摩与国际交流",
+      "observershipDesc": "英国临床观摩、访问学者与学术交流",
+      "humanities": "职业发展与医学人文",
+      "humanitiesDesc": "医学人文、领导力与跨文化沟通"
+    }
   },
   "home": {
-    "heroBadge": "英国文化协会认证",
-    "heroTitle1": "以教育推动医疗",
-    "heroTitle2": "通过",
-    "heroTitleHighlight": "教育",
-    "heroTitle3": "连接与创新",
-    "heroDescription": "正在寻找值得信赖的合作伙伴来帮助您应对国际医疗的复杂性？Mediversity Global 赋能全球医疗专业人士。",
-    "heroExplore": "探索课程",
-    "heroSchedule": "预约咨询",
-    "eduLabel": "医学教育",
-    "eduTitle": "全面的医学教育课程体系",
-    "eduDescription": "Mediversity Global 提供全面的医学教育课程，架起语言、文化和临床经验的桥梁。我们帮助医疗专业人士以全球视野和信心成长。",
-    "learnMore": "了解更多",
-    "medEnglishTitle": "医学英语培训",
-    "medEnglishDesc": "我们的医学英语培训通过实践教学提升医疗专业人士的真实沟通技能，培养在全球医疗环境中的自信和流利度。",
-    "medEnglishF1": "基础英语预备课程",
-    "medEnglishF2": "医生与护士医学英语",
-    "medEnglishF3": "OET 考试准备",
-    "medEnglishF4": "职场医学英语",
-    "medEnglishF5": "出国前医学英语",
-    "observershipTitle": "临床观摩项目",
-    "observershipDesc": "通过与英国领先医疗机构的合作，这些项目为医疗专业人士提供接触先进医疗实践、跨学科团队合作以及创新患者护理方法的宝贵机会。",
-    "observershipF1": "临床观摩项目（12 周）",
-    "observershipF2": "短期海外访问（5-10 天）",
-    "observershipF3": "高级访问学者（6-12 个月）",
-    "humanitiesTitle": "医学人文",
-    "humanitiesDesc": "我们提供的医学人文课程旨在强调同理心、伦理决策和对患者体验的深入理解。",
-    "writingTitle": "医学写作与发表",
-    "writingDesc": "这个密集训练营为医疗专业人士提供在国际医学出版领域所需的核心技能。",
-    "oetTitle": "OET 考试准备",
-    "oetDesc": "通过针对性语言训练、仿真考试模拟和个性化反馈，帮助学员建立信心、提高准确性，掌握应试策略。",
-    "researchTitle": "医学研究基础",
-    "researchDesc": "涵盖研究方法论、伦理、数据分析和学术交流，赋能学员自信地启动自己的研究项目。",
-    "navLabel": "医疗导航",
-    "navTitle": "您的健康之旅，全程无忧引导",
-    "navDescription": "面向海外华人、留学生、外籍人士和国际患者的高端跨境医疗服务平台。我们直接对接中国三甲医院，整合顶级医疗专家资源，以国际化运营标准提供端到端医疗服务。",
-    "navExplore": "探索医疗导航",
-    "preventiveCare": "预防保健",
-    "preventiveCareDesc": "系统化的预防健康服务，包括顶级医院的标准化或定制体检、MRI 和 PET-CT 等高级筛查，以及长期健康档案管理。",
-    "criticalCare": "重症医疗",
-    "criticalCareDesc": "针对重大疾病的跨境医疗支持，通过快速手术安排、加速医疗通道和最有经验的医疗团队治疗。",
-    "fastTrack": "快速诊断与专科服务",
-    "fastTrackDesc": "解决海外漫长等待时间的问题，提供专科会诊、小型和日间手术、快速检查、早期检测和干细胞治疗。",
-    "tcm": "中医与康复",
-    "tcmDesc": "将传统中医与现代康复相结合，提供针灸、推拿、物理治疗和以健康为导向的旅行体验。",
-    "speed": "高效快捷",
-    "speedDesc": "直接对接三甲医院，缩短等待时间。",
-    "professionalism": "专业保障",
-    "professionalismDesc": "签证、合规和跨境手续的全面支持。",
-    "costEffectiveness": "性价比高",
-    "costEffectivenessDesc": "以有竞争力的价格获得国际认可的医疗服务。",
-    "bilingualSupport": "双语服务",
-    "bilingualSupportDesc": "从预约到康复的全程双语患者协助。",
-    "storyLabel": "成功案例",
-    "storyTitle": "助力领先医院提升医学英语能力",
-    "storyDescription": "通过量身定制的 12 节医学英语课程，我们帮助江西省妇幼保健院提升了员工在国际交流中的信心和精准度——加强了其全球服务标准和跨境合作能力。",
-    "storyStat1": "流利度与准确度提升",
-    "storyStat2": "自信心提升",
-    "storyStat3": "最终平均分（初始 39.4）",
-    "storyCta": "查看详情",
-    "feedbackLabel": "学员反馈",
-    "feedbackTitle": "听听我们的学员怎么说",
-    "testimonial1Quote": "我以前总是担心犯错。现在我可以用英语清晰自信地交流——导师的个性化反馈对我的进步起到了巨大的作用。",
-    "testimonial1Name": "李先生",
-    "testimonial1Role": "生殖医学专家",
-    "testimonial2Quote": "角色扮演活动一开始很有挑战性，但我每周都能注意到进步。我的交流现在感觉更加自然和自信。",
-    "testimonial2Name": "艾先生",
-    "testimonial2Role": "麻醉科医生",
-    "testimonial3Quote": "我终于可以用清晰、患者友好的英语解释病例了。这改变了我的日常临床实践。",
-    "testimonial3Name": "彭女士",
-    "testimonial3Role": "产科医生",
-    "testimonial4Quote": "课程不仅教会了我语言，还教会了我如何以同理心和文化意识进行沟通。",
-    "testimonial4Name": "邓女士",
-    "testimonial4Role": "新生儿重症监护室护士",
-    "testimonialProgram": "医学英语培训",
-    "trustBar": "受到领先医疗机构的信赖",
-    "trustOrg1": "牛津大学医院",
-    "trustOrg2": "仁济医院",
-    "trustOrg3": "北京协和医院",
-    "trustOrg4": "英国文化协会",
-    "trustOrg5": "江西省妇幼保健院"
+    "hero": {
+      "badge": "国际医疗专业人士发展平台",
+      "title": "助力医疗专业人士国际化成长",
+      "subtitle": "从医学英语到临床观摩，从学术研究到职业发展，Mediversity Global 为您提供全方位的国际化专业发展路径。",
+      "cta1": "探索培训项目",
+      "cta2": "预约咨询"
+    },
+    "businessLines": {
+      "title": "两大核心业务",
+      "subtitle": "专业培训与医疗导航，双轨并行助力您的国际化发展",
+      "programmes": {
+        "title": "培训项目",
+        "desc": "涵盖医学英语、学术研究、临床观摩与医学人文四大板块，系统化提升国际竞争力"
+      },
+      "navigator": {
+        "title": "国际医疗导航",
+        "desc": "一站式国际医疗职业发展规划与落地服务，从咨询到实施全程陪伴"
+      }
+    },
+    "pillars": {
+      "title": "四大培训板块",
+      "subtitle": "覆盖医疗专业人士国际化发展的全部核心需求",
+      "medicalEnglish": {
+        "title": "医学英语与沟通",
+        "desc": "从基础提升到临床实战，系统化医学英语培训体系"
+      },
+      "research": {
+        "title": "医学研究与学术发展",
+        "desc": "科研方法论、学术写作与国际论文发表"
+      },
+      "observership": {
+        "title": "临床观摩与国际交流",
+        "desc": "英国顶级医院临床观摩与访问学者项目"
+      },
+      "humanities": {
+        "title": "职业发展与医学人文",
+        "desc": "医学人文素养、领导力与跨文化能力提升"
+      },
+      "explore": "了解更多"
+    },
+    "meSubcategories": {
+      "badge": "核心板块",
+      "title": "医学英语与沟通",
+      "subtitle": "从基础到进阶，四大方向全面覆盖医疗英语学习需求",
+      "foundations": {
+        "title": "英语基础提升",
+        "subtitle": "夯实医学英语基本功"
+      },
+      "oet": {
+        "title": "OET与国际执照",
+        "subtitle": "考试与注册准备"
+      },
+      "clinical": {
+        "title": "临床医学英语",
+        "subtitle": "临床实战沟通能力"
+      },
+      "globalMobility": {
+        "title": "国际化与出国准备",
+        "subtitle": "出国前全方位准备"
+      },
+      "coursesLabel": "门课程"
+    },
+    "testimonials": {
+      "title": "学员反馈",
+      "subtitle": "听听他们怎么说"
+    },
+    "trust": {
+      "title": "合作与认可机构"
+    },
+    "cta": {
+      "title": "开启您的国际化发展之路",
+      "subtitle": "无论您处于职业发展的哪个阶段，我们都能为您提供适合的培训方案",
+      "btn1": "浏览全部项目",
+      "btn2": "联系我们"
+    }
+  },
+  "testimonials": {
+    "role1": "江西省妇幼保健院 · 主治医师",
+    "content1": "Mediversity Global 的医学英语课程帮助我在国际学术会议上自信地进行英文报告，同事们都注意到了我的进步。",
+    "role2": "北京协和医院 · 住院医师",
+    "content2": "OET 备考课程非常系统，老师对考试重点的把握很准确。我一次通过了 OET，顺利拿到了英国工作签证。",
+    "role3": "上海瑞金医院 · 副主任医师",
+    "content3": "临床观摩项目让我亲身体验了英国 NHS 的工作模式，对我回国后的科室管理有很大启发。",
+    "role4": "浙江大学医学院附属第一医院 · 主治医师",
+    "content4": "学术写作课程帮助我掌握了 SCI 论文写作的核心技巧，今年已经成功发表了两篇论文。",
+    "role5": "广州中山大学附属第一医院 · 主任医师",
+    "content5": "访问学者项目为我打开了国际合作的大门，现在和英国同行保持着密切的学术交流。"
+  },
+  "programmesHub": {
+    "title": "培训项目",
+    "subtitle": "四大板块覆盖医疗专业人士国际化发展的全部核心需求",
+    "activeCourses": "门在线课程",
+    "explore": "了解更多",
+    "pillars": {
+      "medicalEnglish": {
+        "title": "医学英语与沟通",
+        "desc": "从基础英语到临床实战，系统化提升医疗英语能力，助力国际职业发展"
+      },
+      "research": {
+        "title": "医学研究与学术发展",
+        "desc": "科研方法论、学术写作与国际论文发表，提升学术竞争力"
+      },
+      "observership": {
+        "title": "临床观摩与国际交流",
+        "desc": "英国顶级医院临床观摩、访问学者与学术交流项目"
+      },
+      "humanities": {
+        "title": "职业发展与医学人文",
+        "desc": "医学人文素养、领导力与跨文化沟通能力提升"
+      }
+    }
+  },
+  "programmes": {
+    "medicalEnglish": {
+      "title": "医学英语与沟通",
+      "description": "从基础英语到临床实战，系统化提升医疗英语能力。涵盖基础提升、OET考试、临床英语和出国准备四大方向。",
+      "subcategories": {
+        "foundations": {
+          "title": "英语基础提升",
+          "desc": "夯实医学英语基本功，为进阶学习打下坚实基础"
+        },
+        "oet": {
+          "title": "OET与国际执照",
+          "desc": "系统备考OET及国际医疗执照考试"
+        },
+        "clinical": {
+          "title": "临床医学英语",
+          "desc": "临床场景实战英语沟通能力训练"
+        },
+        "global-mobility": {
+          "title": "国际化与出国准备",
+          "desc": "出国前全方位英语与文化准备"
+        }
+      },
+      "courses": {
+        "preparatoryMedicalEnglish": "医学英语预备课程",
+        "clinicalCommunicationFoundations": "临床沟通基础",
+        "generalEnglishHealthcare": "医疗从业者通用英语",
+        "oetPreparation": "OET备考课程",
+        "oetIntensiveBootcamp": "OET强化集训营",
+        "platCommunication": "PLAB沟通支持",
+        "healthcareInterview": "医疗面试准备",
+        "workplaceMedicalEnglish": "职场医学英语",
+        "medicalEnglishDoctors": "医生医学英语",
+        "medicalEnglishNurses": "护士医学英语",
+        "clinicalConsultationEnglish": "临床问诊英语",
+        "wardHandoverCommunication": "病房交接沟通",
+        "preDepartureMedicalEnglish": "出国前医学英语",
+        "ukHealthcareOrientation": "英国医疗体系入门",
+        "culturalCommunication": "医疗跨文化沟通",
+        "internationalWorkplaceReadiness": "国际职场准备"
+      }
+    },
+    "researchAcademic": {
+      "title": "医学研究与学术发展",
+      "description": "科研方法论、学术写作与国际论文发表，助力学术职业发展与国际竞争力提升。",
+      "subcategories": {
+        "research-training": {
+          "title": "医学研究培训",
+          "desc": "系统学习科研方法与循证医学"
+        },
+        "academic-writing": {
+          "title": "学术写作与发表",
+          "desc": "掌握SCI论文写作与国际发表技巧"
+        },
+        "academic-communication": {
+          "title": "学术沟通",
+          "desc": "提升学术报告与国际会议沟通能力"
+        }
+      },
+      "courses": {
+        "medicalResearchEssentials": "医学研究基础",
+        "researchMethodology": "研究方法论",
+        "evidenceBasedMedicine": "循证医学",
+        "medicalWritingBootcamp": "医学写作与发表集训营",
+        "sciWritingSupport": "SCI写作支持",
+        "academicPresentationSkills": "学术报告技巧",
+        "conferencePresentationSkills": "学术会议报告技巧",
+        "academicEnglishHealthcare": "医疗学术英语",
+        "researchCommunication": "科研沟通"
+      }
+    },
+    "observership": {
+      "title": "临床观摩与国际交流",
+      "description": "英国顶级医院临床观摩、访问学者与学术交流项目，提供全球临床视野与国际合作机会。",
+      "subcategories": {
+        "clinical-observer": {
+          "title": "临床观摩项目",
+          "desc": "短期与专科临床观摩"
+        },
+        "advanced-clinical": {
+          "title": "高级临床实践",
+          "desc": "深度临床跟随与科室沉浸"
+        },
+        "visiting-scholar": {
+          "title": "访问学者通道",
+          "desc": "学术访问与国际交流"
+        }
+      },
+      "courses": {
+        "shortTermObservership": "短期临床观摩",
+        "specialtyBasedObservership": "专科观摩",
+        "hospitalAttachment": "医院挂职",
+        "advancedClinicalObserver": "高级临床观摩",
+        "consultantShadowing": "顾问医师跟随",
+        "departmentImmersion": "科室沉浸",
+        "visitingScholarProgramme": "访问学者项目",
+        "researchAttachment": "科研挂职",
+        "internationalAcademicExchange": "国际学术交流"
+      }
+    },
+    "humanities": {
+      "title": "职业发展与医学人文",
+      "description": "医学人文素养、领导力与跨文化沟通能力提升，打造全面发展的国际化医疗人才。",
+      "subcategories": {
+        "medical-humanities": {
+          "title": "医学人文",
+          "desc": "培养共情能力与叙事医学素养"
+        },
+        "leadership": {
+          "title": "领导力与职业技能",
+          "desc": "医疗领导力与跨文化管理"
+        }
+      },
+      "courses": {
+        "medicalHumanitiesProfessionals": "医疗专业人士医学人文",
+        "empathyPatientCommunication": "共情与患者沟通",
+        "narrativeMedicine": "叙事医学",
+        "healthcareLeadership": "医疗领导力",
+        "crossCulturalCommunication": "跨文化沟通",
+        "reflectivePractice": "反思性实践"
+      }
+    }
+  },
+  "medicalNavigator": {
+    "title": "国际医疗导航",
+    "subtitle": "一站式国际医疗职业发展规划与落地服务，从咨询到实施全程陪伴",
+    "services": {
+      "title": "服务内容",
+      "subtitle": "为医疗专业人士提供全方位国际化发展支持",
+      "consultation": {
+        "title": "职业规划咨询",
+        "desc": "一对一深度咨询，定制个人国际化发展路径"
+      },
+      "documentation": {
+        "title": "材料准备",
+        "desc": "协助准备申请材料、推荐信与个人陈述"
+      },
+      "matching": {
+        "title": "机构匹配",
+        "desc": "精准匹配英国医疗机构与学术合作伙伴"
+      },
+      "support": {
+        "title": "全程支持",
+        "desc": "从申请到落地的全流程陪伴与指导"
+      }
+    },
+    "cta": {
+      "title": "开始您的国际化之旅",
+      "subtitle": "预约免费咨询，了解适合您的发展路径",
+      "button": "预约咨询"
+    }
+  },
+  "insights": {
+    "title": "洞察与资讯",
+    "subtitle": "医疗教育领域的最新动态、行业分析与学习资源",
+    "empty": {
+      "title": "内容即将上线",
+      "desc": "我们正在准备高质量的行业洞察文章，敬请期待。"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "Mediversity Global — 国际医疗专业人士发展平台",
+    "mission": {
+      "title": "我们的使命",
+      "content": "Mediversity Global 致力于为中国医疗专业人士提供高质量的国际化发展机会。我们连接中英两国顶级医疗教育资源，通过系统化的培训项目和一对一的职业导航服务，帮助医疗从业者提升国际竞争力，实现职业发展目标。"
+    },
+    "values": {
+      "title": "核心价值观",
+      "excellence": {
+        "title": "卓越",
+        "desc": "追求教学质量与服务品质的持续提升"
+      },
+      "collaboration": {
+        "title": "协作",
+        "desc": "连接中英医疗教育资源，促进国际合作"
+      },
+      "international": {
+        "title": "国际化",
+        "desc": "培养具有全球视野的医疗专业人才"
+      },
+      "empathy": {
+        "title": "共情",
+        "desc": "以学员需求为中心，提供个性化支持"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "无论您有任何问题或需求，我们随时为您提供帮助",
+    "info": {
+      "title": "联系方式",
+      "phone": "电话",
+      "email": "邮箱",
+      "address": "地址",
+      "hours": "工作时间"
+    },
+    "form": {
+      "title": "发送消息",
+      "name": "姓名",
+      "email": "邮箱",
+      "message": "留言内容",
+      "submit": "发送"
+    }
   },
   "common": {
-    "learnMore": "了解更多",
-    "contactUs": "联系我们",
-    "readMore": "阅读更多",
-    "viewAll": "查看全部",
-    "backToHome": "返回首页",
-    "loading": "加载中...",
-    "comingSoon": "即将推出"
+    "backToProgrammes": "返回全部项目",
+    "activeCourses": "门在线课程",
+    "futureCourses": "门规划中课程",
+    "futureProgrammes": "规划中的课程",
+    "viewDetails": "查看详情"
   },
   "footer": {
-    "ctaTitle": "准备好提升您的医学职业生涯了吗？",
-    "ctaSubtitle": "探索我们的课程或立即与我们的团队联系。",
-    "explorePrograms": "探索课程",
-    "contactUs": "联系我们",
-    "brandDescription": "一家综合性医疗健康解决方案提供商，通过教育、连接、技术和创新赋能医疗专业人士，推动行业发展。",
-    "locations": "伦敦 · 上海 · 温哥华 · 墨尔本",
-    "sectionPrograms": "课程项目",
-    "sectionCompany": "关于公司",
-    "sectionSupport": "支持",
-    "aboutUs": "关于我们",
-    "ourTeam": "我们的团队",
-    "newsUpdates": "新闻动态",
-    "privacyPolicy": "隐私政策",
-    "termsOfService": "服务条款",
-    "copyright": "Mediversity Global 版权所有",
-    "accredited": "英国文化协会认证",
-    "icp": "沪ICP备2025138775号-1"
+    "cta": {
+      "title": "准备好开始了吗？",
+      "subtitle": "联系我们，开启您的国际化发展之路",
+      "button": "预约咨询"
+    },
+    "description": "Mediversity Global — 国际医疗专业人士发展平台，助力医疗从业者国际化成长。",
+    "programmes": "培训项目",
+    "company": "关于",
+    "links": {
+      "medicalEnglish": "医学英语与沟通",
+      "research": "医学研究与学术发展",
+      "observership": "临床观摩与国际交流",
+      "humanities": "职业发展与医学人文",
+      "about": "关于我们",
+      "insights": "洞察与资讯",
+      "contact": "联系我们",
+      "navigator": "国际医疗导航"
+    },
+    "icp": "沪ICP备XXXXXXXX号",
+    "copyright": "© 2026 Mediversity Global. All rights reserved."
   }
 }
