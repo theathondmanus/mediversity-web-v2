@@ -1,0 +1,40 @@
+"use client";
+
+import { BookOpen, Heart, Users } from "lucide-react";
+import PillarLandingPage, { type SubCategory } from "@/components/programmes/PillarLandingPage";
+
+const subcategories: SubCategory[] = [
+  {
+    id: "medical-humanities",
+    icon: Heart,
+    titleKey: "medicalHumanities",
+    descKey: "medicalHumanitiesDesc",
+    courses: [
+      { titleKey: "medicalHumanitiesProfessionals", status: "active" },
+      { titleKey: "empathyPatientCommunication", status: "future" },
+      { titleKey: "narrativeMedicine", status: "future" },
+    ],
+  },
+  {
+    id: "leadership",
+    icon: Users,
+    titleKey: "leadership",
+    descKey: "leadershipDesc",
+    courses: [
+      { titleKey: "healthcareLeadership", status: "future" },
+      { titleKey: "crossCulturalCommunication", status: "future" },
+      { titleKey: "reflectivePractice", status: "future" },
+    ],
+  },
+];
+
+export default function HumanitiesPage() {
+  return (
+    <PillarLandingPage
+      pillarKey="humanities"
+      icon={BookOpen}
+      color="bg-amber-50 text-amber-700"
+      subcategories={subcategories}
+    />
+  );
+}
