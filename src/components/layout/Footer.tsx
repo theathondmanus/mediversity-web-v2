@@ -78,10 +78,10 @@ export default function Footer() {
                 enquiries@mediversityglobal.com
               </a>
               <a
-                href="tel:+447737398331"
+                href="tel:+447345169054"
                 className="text-gray-400 hover:text-white transition-colors no-underline block"
               >
-                +44 (0)7737 398 331
+                +44 (0)7345 169 054
               </a>
             </div>
           </div>
