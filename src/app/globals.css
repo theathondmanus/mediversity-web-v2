@@ -55,6 +55,9 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: var(--font-ibm), var(--font-noto), "IBM Plex Sans", "Noto Sans SC", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--body-text);
   }
 
   /* Chinese text uses Noto Sans SC */
@@ -63,12 +66,32 @@
   :lang(zh-Hans) {
     font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   }
+
+  /* Typography hierarchy */
+  h1, h2, h3, h4 {
+    color: var(--ink);
+    line-height: 1.15;
+  }
 }
 
 @layer components {
-  /* Section spacing rhythm */
+  /* Section spacing rhythm — varied for editorial feel */
   .section-padding {
     @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .section-padding-sm {
+    @apply py-12 md:py-16;
+  }
+
+  /* Editorial prose styling */
+  .prose-editorial {
+    @apply text-base md:text-lg leading-relaxed;
+    color: var(--body-text);
+  }
+
+  .prose-editorial p + p {
+    margin-top: 1.5em;
   }
 }
 
@@ -90,4 +113,10 @@ html {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-muted);
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(0, 67, 138, 0.15);
+  color: var(--ink);
 }
