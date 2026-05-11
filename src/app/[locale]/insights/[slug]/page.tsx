@@ -1,16 +1,14 @@
-"use client";
-
 import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 
 interface InsightDetailPageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
-export default function InsightDetailPage({ params }: InsightDetailPageProps) {
-  const t = useTranslations("insightDetail");
-  const { slug } = params;
+export default async function InsightDetailPage({ params }: InsightDetailPageProps) {
+  const { slug } = await params;
+  const t = await getTranslations("insightDetail");
 
   return (
     <>
@@ -24,7 +22,7 @@ export default function InsightDetailPage({ params }: InsightDetailPageProps) {
             <ArrowLeft className="w-4 h-4" /> {t("backToInsights")}
           </Link>
           <h1 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
-            {t("placeholder.title")}
+            {slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-white/60 text-sm">
             <span className="inline-flex items-center gap-1">
