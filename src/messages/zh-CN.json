@@ -334,6 +334,18 @@
       "submit": "发送"
     }
   },
+  "insightDetail": {
+    "backToInsights": "返回全部文章",
+    "placeholder": {
+      "title": "文章标题",
+      "author": "Mediversity Global",
+      "date": "2026-01-01",
+      "readTime": "5 分钟阅读",
+      "body": "文章内容即将上线，敬请期待。此页面将支持 MDX 格式的富文本内容。"
+    },
+    "related": "相关文章",
+    "relatedEmpty": "暂无相关文章"
+  },
   "common": {
     "backToProgrammes": "返回全部项目",
     "activeCourses": "门在线课程",
@@ -360,7 +372,7 @@
       "contact": "联系我们",
       "navigator": "国际医疗导航"
     },
-    "icp": "沪ICP备XXXXXXXX号",
+    "icp": "沪ICP备2025138775号-2",
     "copyright": "© 2026 Mediversity Global. All rights reserved."
   }
 }
