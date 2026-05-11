@@ -299,12 +299,11 @@
     }
   },
   "insights": {
-    "title": "Insights",
-    "subtitle": "Latest updates, industry analysis and learning resources in medical education",
-    "empty": {
-      "title": "Content Coming Soon",
-      "desc": "We are preparing high-quality industry insight articles. Stay tuned."
-    }
+    "eyebrow": "Updates",
+    "title": "Mediversity Insights",
+    "subtitle": "Team news, partnership announcements, and industry perspectives — every step of connecting global healthcare.",
+    "moreTitle": "More articles",
+    "readMore": "Read more"
   },
   "about": {
     "title": "About Us",
@@ -352,16 +351,17 @@
     }
   },
   "insightDetail": {
-    "backToInsights": "Back to all articles",
+    "backToInsights": "Back to Insights",
+    "related": "Related articles",
+    "relatedEmpty": "No related articles yet.",
+    "sourceLabel": "Original source:",
     "placeholder": {
-      "title": "Article Title",
-      "author": "Mediversity Global",
-      "date": "2026-01-01",
+      "title": "Article placeholder",
+      "author": "Mediversity Team",
+      "date": "2026-05-11",
       "readTime": "5 min read",
-      "body": "Article content coming soon. This page will support rich text content in MDX format."
-    },
-    "related": "Related Articles",
-    "relatedEmpty": "No related articles yet"
+      "body": "Original content available on Mediversity site."
+    }
   },
   "common": {
     "backToProgrammes": "Back to all programmes",

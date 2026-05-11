@@ -299,12 +299,11 @@
     }
   },
   "insights": {
-    "title": "洞察与资讯",
-    "subtitle": "医疗教育领域的最新动态、行业分析与学习资源",
-    "empty": {
-      "title": "内容即将上线",
-      "desc": "我们正在准备高质量的行业洞察文章，敬请期待。"
-    }
+    "eyebrow": "动态",
+    "title": "Mediversity 最新动态",
+    "subtitle": "团队动态、合作公告、行业洞察——记录我们与全球医疗资源连接的每一步。",
+    "moreTitle": "更多文章",
+    "readMore": "阅读全文"
   },
   "about": {
     "title": "关于我们",
@@ -352,16 +351,17 @@
     }
   },
   "insightDetail": {
-    "backToInsights": "返回全部文章",
-    "placeholder": {
-      "title": "文章标题",
-      "author": "Mediversity Global",
-      "date": "2026-01-01",
-      "readTime": "5 分钟阅读",
-      "body": "文章内容即将上线，敬请期待。此页面将支持 MDX 格式的富文本内容。"
-    },
+    "backToInsights": "返回动态列表",
     "related": "相关文章",
-    "relatedEmpty": "暂无相关文章"
+    "relatedEmpty": "暂无相关文章。",
+    "sourceLabel": "原文来源：",
+    "placeholder": {
+      "title": "文章标题占位",
+      "author": "Mediversity 团队",
+      "date": "2026-05-11",
+      "readTime": "5 分钟阅读",
+      "body": "本文内容来源于 Mediversity 官方动态，请点击下方链接查看原文。"
+    }
   },
   "common": {
     "backToProgrammes": "返回全部项目",
