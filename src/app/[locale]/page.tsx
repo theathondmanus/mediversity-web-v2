@@ -3,9 +3,10 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   ArrowRight, GraduationCap, Microscope, Stethoscope, BookOpen,
-  Globe, BookOpenCheck, Plane, Award, ShieldCheck, Quote,
+  BookOpenCheck, Plane, Award, ShieldCheck, Quote,
 } from "lucide-react";
 import TestimonialsCarousel from "@/components/home/TestimonialsCarousel";
 
@@ -22,13 +23,13 @@ const fadeInSlow = {
   transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
 };
 
-/* ── image URLs ─────────────────────────────────── */
+/* ── image paths (self-hosted in public/images/home/) ── */
 const IMG = {
-  hero: "https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-editorial-kBRq638mmb3yCNcD6ZG2iJ.webp",
-  programmes: "https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/programmes-editorial-eEz6mRBpbXi2sKyqk5ksre.webp",
-  navigator: "https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/navigator-editorial-SjsNqAUJ2aSBfj59yYkzRu.webp",
-  observership: "https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/observership-editorial-fLAAaVFy3NyTNPuupiJBrX.webp",
-  research: "https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/research-editorial-ViGib8o2oVC3jLQ9KHbZtp.webp",
+  hero: "/images/home/hero-editorial.webp",
+  programmes: "/images/home/programmes-editorial.webp",
+  navigator: "/images/home/navigator-editorial.webp",
+  observership: "/images/home/observership-editorial.webp",
+  research: "/images/home/research-editorial.webp",
 };
 
 /* ── pillar data ────────────────────────────────── */
@@ -47,13 +48,6 @@ const ME_SUBS = [
   { icon: Plane, key: "globalMobility", courses: 1, href: "/programmes/medical-english#global-mobility", desc: "globalMobilityDesc" },
 ];
 
-/* ── stats ──────────────────────────────────────── */
-const STATS = [
-  { value: "500+", labelKey: "stats.graduates" },
-  { value: "30+", labelKey: "stats.courses" },
-  { value: "15+", labelKey: "stats.partners" },
-  { value: "98%", labelKey: "stats.satisfaction" },
-];
 
 export default function HomePage() {
   const t = useTranslations("home");
@@ -65,10 +59,13 @@ export default function HomePage() {
           ═══════════════════════════════════════════ */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <Image
             src={IMG.hero}
             alt="Medical professionals in training"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628]/95 via-[#0A1628]/75 to-[#0A1628]/30" />
         </div>
@@ -106,23 +103,6 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
       </section>
 
-      {/* ═══════════════════════════════════════════
-          STATS BAR — compact, rhythmic break
-          ═══════════════════════════════════════════ */}
-      <section className="py-14 bg-white border-b border-[#E3E5EC]">
-        <div className="container">
-          <motion.div {...fadeIn} className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-4xl mx-auto">
-            {STATS.map((s) => (
-              <div key={s.labelKey} className="text-center">
-                <div className="font-display text-3xl md:text-4xl font-bold text-[#00438A] mb-1">
-                  {s.value}
-                </div>
-                <div className="text-sm text-[#8A889A]">{t(s.labelKey)}</div>
-              </div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
 
       {/* ═══════════════════════════════════════════
           BUSINESS LINE 1 — Programmes (editorial, image left)
@@ -132,11 +112,13 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Image */}
             <motion.div {...fadeIn} className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-[#00438A]/10">
-                <img
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-[#00438A]/10">
+                <Image
                   src={IMG.programmes}
                   alt="Medical English classroom"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
               {/* floating accent */}
@@ -194,11 +176,13 @@ export default function HomePage() {
 
             {/* Image (right on desktop) */}
             <motion.div {...fadeIn} className="relative order-1 lg:order-2">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-[#C4922A]/10">
-                <img
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-[#C4922A]/10">
+                <Image
                   src={IMG.navigator}
                   alt="Medical consultant mentoring"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#00438A]/10 rounded-2xl -z-10" />
@@ -238,11 +222,13 @@ export default function HomePage() {
                   <Link href={pillar.href as never} className="no-underline block group">
                     <div className="relative rounded-2xl overflow-hidden bg-white border border-[#E3E5EC] hover:border-transparent hover:shadow-xl transition-all duration-300">
                       {/* Image strip */}
-                      <div className="aspect-[16/7] overflow-hidden">
-                        <img
+                      <div className="relative aspect-[16/7] overflow-hidden">
+                        <Image
                           src={pillar.img}
                           alt={`${pillar.key} programme`}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          sizes="(max-width: 640px) 100vw, 50vw"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                       </div>
@@ -335,10 +321,12 @@ export default function HomePage() {
           ═══════════════════════════════════════════ */}
       <section className="relative py-32 md:py-44 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <Image
             src={IMG.observership}
             alt="Clinical observership in UK hospital"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-[#0A1628]/70" />
         </div>
