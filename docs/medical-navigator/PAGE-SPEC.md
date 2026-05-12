@@ -1,8 +1,17 @@
 # Medical Navigator — Page Specification v1
 
 > **Audience for this doc**: Manus (frontend/design owner)
-> **Status**: Spec frozen 2026-05-12. All content is sourced from the 7 reference documents under `./source-materials/`. Do not extrapolate beyond these sources.
+> **Status**: Spec frozen 2026-05-12. All open questions resolved by 章逊 same day (see §9). All content is sourced from the 7 reference documents under `./source-materials/`. Do not extrapolate beyond these sources.
 > **Owner of changes**: Moss (content + spec). Manus owns visual interpretation.
+
+## Locked decisions (章逊 2026-05-12)
+
+1. ✅ **Three-direction service structure** confirmed (Inbound + Outbound + In-place)
+2. ✅ **5 service packages** (not 3) — each direction has at least one concrete package
+3. ✅ **B-end `/medical-navigator/partners` sub-page** — build skeleton in this milestone
+4. ✅ **Phone + WhatsApp** rendered in CTA (numbers: phone = `+44 7345 169 054` confirmed; +86 and WhatsApp number pending from 章逊)
+5. ✅ **EN-first** for this page only — render EN by default, ZH via locale toggle
+6. ✅ **2-min readiness check** — render component skeleton + `<UnderConstruction>` for the questions; Moss to supply 8–10 questions later
 
 ---
 
