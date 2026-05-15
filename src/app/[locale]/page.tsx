@@ -293,41 +293,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══ FINAL CTA ═══ */}
-      <section className="section-padding bg-gradient-to-br from-[#0A1628] to-[#00438A] relative overflow-hidden">
-        {/* Decorative blobs */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#C4922A]/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full blur-3xl" />
-
-        <div className="container relative z-10 text-center">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <motion.h2 variants={fadeInUp} custom={0} className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
-              {t("cta.title")}
-            </motion.h2>
-            <motion.p variants={fadeInUp} custom={1} className="text-white/70 max-w-xl mx-auto mb-8 text-lg">
-              {t("cta.subtitle")}
-            </motion.p>
-            <motion.div variants={fadeInUp} custom={2} className="flex flex-wrap justify-center gap-4">
-              <Link
-                href="/programmes"
-                className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#C4922A] text-white font-medium rounded-md hover:bg-[#A87822] transition-colors no-underline shadow-lg shadow-[#C4922A]/25"
-              >
-                {t("cta.btn1")} <ArrowRight className="w-4 h-4" />
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-white/30 text-white font-medium rounded-md hover:bg-white/10 transition-colors no-underline"
-              >
-                {t("cta.btn2")}
-              </Link>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
+      {/* FINAL CTA section removed — duplicate of Footer CTA banner (Fix 4) */}
     </>
   );
 }
