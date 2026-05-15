@@ -88,13 +88,10 @@ export default function MedicalNavigatorPage() {
           <p className="eyebrow !text-[#C4922A]/80 mb-3">
             {t2(content.hero.eyebrow, locale)}
           </p>
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 whitespace-nowrap">
             {t2(content.hero.title, locale)}
           </h1>
-          <p className="text-xl md:text-2xl text-white/60 italic font-display max-w-2xl mb-6">
-            {t2(content.hero.subtitle, locale)}
-          </p>
-          <p className="text-white/70 text-lg max-w-2xl mb-10 leading-relaxed">
+          <p className="text-white/70 text-lg md:text-xl mb-10 leading-relaxed md:whitespace-nowrap">
             {t2(content.hero.lede, locale)}
           </p>
           <div className="flex flex-wrap gap-4">
