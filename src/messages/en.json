@@ -26,18 +26,24 @@
       "cta2": "Book a Consultation"
     },
     "businessLines": {
+      "eyebrow": "Core Business",
       "title": "Two Core Business Lines",
       "subtitle": "Professional training and medical navigation — dual tracks supporting your international development",
       "programmes": {
-        "title": "Programmes",
-        "desc": "Covering Medical English, Research, Observership and Humanities — systematically enhancing international competitiveness"
+        "eyebrow": "Programmes",
+        "title": "Medical English Education & Professional Training",
+        "desc": "Covering Medical English, Research, Observership and Humanities — systematically enhancing international competitiveness",
+        "cta": "Explore All Programmes"
       },
       "navigator": {
+        "eyebrow": "Medical Navigator",
         "title": "Medical Navigator",
-        "desc": "One-stop international medical career planning and implementation service, with full support from consultation to execution"
+        "desc": "One-stop international medical career planning and implementation service, with full support from consultation to execution",
+        "cta": "Learn About Navigator"
       }
     },
     "pillars": {
+      "eyebrow": "Training System",
       "title": "Four Training Pillars",
       "subtitle": "Covering all core needs for healthcare professionals' international development",
       "medicalEnglish": {
@@ -81,8 +87,15 @@
       "coursesLabel": "courses"
     },
     "testimonials": {
+      "eyebrow": "Student Voices",
       "title": "What Our Students Say",
       "subtitle": "Hear from healthcare professionals who have transformed their careers"
+    },
+    "story": {
+      "eyebrow": "Success Stories",
+      "title": "From Classroom to Clinic, Witnessing Real Growth",
+      "description": "Our students come from leading hospitals across China. Through systematic training programmes, they have achieved remarkable results in international academic exchange, clinical observership and career development.",
+      "cta": "View More Stories"
     },
     "trust": {
       "title": "Recognised by Leading Institutions"
@@ -104,7 +117,12 @@
     "role4": "The First Affiliated Hospital of Zhejiang University · Attending Physician",
     "content4": "The academic writing course helped me master core SCI paper writing techniques. I've successfully published two papers this year.",
     "role5": "The First Affiliated Hospital of Sun Yat-sen University · Chief Physician",
-    "content5": "The visiting scholar programme opened doors to international collaboration. I now maintain close academic exchanges with UK colleagues."
+    "content5": "The visiting scholar programme opened doors to international collaboration. I now maintain close academic exchanges with UK colleagues.",
+    "program1": "Medical English & Communication",
+    "program2": "OET & International Licensing",
+    "program3": "Clinical Observership & International Exposure",
+    "program4": "Medical Research & Academic Development",
+    "program5": "Visiting Scholar Pathway"
   },
   "programmesHub": {
     "title": "Programmes",
@@ -354,24 +372,18 @@
     "viewDetails": "View details"
   },
   "footer": {
-    "cta": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Contact us to begin your international development journey",
-      "button": "Book a Consultation"
-    },
-    "description": "Mediversity Global — International Healthcare Professional Development Platform, empowering healthcare professionals for global growth.",
-    "programmes": "Programmes",
-    "company": "About",
-    "links": {
-      "medicalEnglish": "Medical English & Communication",
-      "research": "Medical Research & Academic Development",
-      "observership": "Clinical Observership & International Exposure",
-      "humanities": "Professional Development & Medical Humanities",
-      "about": "About Us",
-      "insights": "Insights",
-      "contact": "Contact Us",
-      "navigator": "Medical Navigator"
-    },
+    "ctaTitle": "Ready to Get Started?",
+    "ctaSubtitle": "Contact us to begin your international development journey",
+    "explorePrograms": "Explore Programmes",
+    "contactUs": "Contact Us",
+    "brandDescription": "Mediversity Global — International Healthcare Professional Development Platform, empowering healthcare professionals for global growth.",
+    "locations": "Shanghai · London",
+    "sectionPrograms": "Programmes",
+    "sectionCompany": "About",
+    "sectionSupport": "Support",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "accredited": "UK Medical Education Provider",
     "icp": "沪ICP备2025138775号-2",
     "copyright": "© 2026 Mediversity Global. All rights reserved."
   }
