@@ -17,7 +17,7 @@ import {
   Plane,
   Building2,
 } from "lucide-react";
-import { HeroCurve } from "@/components/ui/hero-curve";
+import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
 import content from "../../../../content/pages/medical-navigator.json";
@@ -80,41 +80,41 @@ export default function MedicalNavigatorPage() {
       {/* ═══════════════════════════════════════════════════
           § 1  HERO
           ═══════════════════════════════════════════════════ */}
-      <section className="relative pt-32 pb-28 bg-gradient-to-br from-[#0A1628] via-[#1a2d4a] to-[#2a1a0a] overflow-hidden">
-        <div className="container relative z-10">
-          <FadeIn>
-            <p className="eyebrow !text-[#C4922A]/80 mb-3">
-              {t2(content.hero.eyebrow, locale)}
-            </p>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl">
-              {t2(content.hero.title, locale)}
-            </h1>
-            <p className="text-xl md:text-2xl text-white/60 italic font-display max-w-2xl mb-6">
-              {t2(content.hero.subtitle, locale)}
-            </p>
-            <p className="text-white/70 text-lg max-w-2xl mb-10 leading-relaxed">
-              {t2(content.hero.lede, locale)}
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#C4922A] text-white font-medium rounded-md hover:bg-[#A87822] transition-colors no-underline shadow-lg shadow-[#C4922A]/25"
-              >
-                <Plane className="w-4 h-4" />
-                {t2(content.hero.ctaInbound, locale)}
-              </a>
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-white/30 text-white font-medium rounded-md hover:bg-white/10 transition-colors no-underline"
-              >
-                <Compass className="w-4 h-4" />
-                {t2(content.hero.ctaOutbound, locale)}
-              </a>
-            </div>
-          </FadeIn>
-        </div>
-        <HeroCurve />
-      </section>
+      <HeroSection
+        image="https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-medical-navigator-EErEZuMVhWBzDh7mkGRBYE.webp"
+        imageAlt="International medical team reviewing global healthcare network"
+      >
+        <FadeIn>
+          <p className="eyebrow !text-[#C4922A]/80 mb-3">
+            {t2(content.hero.eyebrow, locale)}
+          </p>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl">
+            {t2(content.hero.title, locale)}
+          </h1>
+          <p className="text-xl md:text-2xl text-white/60 italic font-display max-w-2xl mb-6">
+            {t2(content.hero.subtitle, locale)}
+          </p>
+          <p className="text-white/70 text-lg max-w-2xl mb-10 leading-relaxed">
+            {t2(content.hero.lede, locale)}
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#C4922A] text-white font-medium rounded-md hover:bg-[#A87822] transition-colors no-underline shadow-lg shadow-[#C4922A]/25"
+            >
+              <Plane className="w-4 h-4" />
+              {t2(content.hero.ctaInbound, locale)}
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-white/30 text-white font-medium rounded-md hover:bg-white/10 transition-colors no-underline"
+            >
+              <Compass className="w-4 h-4" />
+              {t2(content.hero.ctaOutbound, locale)}
+            </a>
+          </div>
+        </FadeIn>
+      </HeroSection>
 
       {/* ── Sticky TOC (desktop only) ── */}
       <nav className="hidden lg:block fixed right-6 top-1/2 -translate-y-1/2 z-40">

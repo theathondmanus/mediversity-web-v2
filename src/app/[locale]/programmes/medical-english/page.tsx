@@ -62,6 +62,8 @@ export default function MedicalEnglishPage() {
       icon={GraduationCap}
       color="bg-blue-50 text-[#00438A]"
       subcategories={subcategories}
+      heroImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-pillar-medical-english-cYnZS7wLf48eSiskm3iz9R.webp"
+      heroImageAlt="Medical English learning environment with international video conference"
     />
   );
 }
