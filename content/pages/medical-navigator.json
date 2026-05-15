@@ -1,0 +1,295 @@
+{
+  "_meta": {
+    "description": "Medical Navigator v2 page content — Issue #25",
+    "note": "EN translations are placeholders; pending owner review"
+  },
+  "hero": {
+    "eyebrow": {
+      "zh-CN": "Medical Navigator · 跨境医疗导航",
+      "en": "Medical Navigator · Cross-Border Healthcare Navigation"
+    },
+    "title": {
+      "zh-CN": "跨境医疗，从「想清楚」开始",
+      "en": "Cross-Border Healthcare Starts with Clarity"
+    },
+    "subtitle": {
+      "zh-CN": "我们不看病，不卖医疗项目，只帮你把健康这件事想清楚。",
+      "en": "We don't treat patients or sell medical packages — we help you think through your healthcare decisions."
+    },
+    "lede": {
+      "zh-CN": "跨境医疗市场充斥着信息不对称与服务断层。我们以独立第三方视角，为您提供判断先行、需求导向的医疗导航服务。",
+      "en": "The cross-border healthcare market is rife with information asymmetry and service gaps. We provide judgement-first, needs-driven medical navigation from an independent third-party perspective."
+    },
+    "ctaInbound": {
+      "zh-CN": "来华就医咨询",
+      "en": "Inbound Healthcare Enquiry"
+    },
+    "ctaOutbound": {
+      "zh-CN": "海外落地咨询",
+      "en": "Outbound Healthcare Enquiry"
+    }
+  },
+  "directions": {
+    "title": {
+      "zh-CN": "中外双向导航",
+      "en": "Dual-Direction Navigation"
+    },
+    "subtitle": {
+      "zh-CN": "无论是来华就医还是海外落地，我们都能为您提供专业的医疗导航服务",
+      "en": "Whether seeking healthcare in China or settling abroad, we provide professional medical navigation"
+    },
+    "inbound": {
+      "title": {
+        "zh-CN": "来华就医导航通道",
+        "en": "Inbound Healthcare Navigation"
+      },
+      "desc": {
+        "zh-CN": "面向海外华人及国际患者，提供来华就医的全流程导航服务。",
+        "en": "Full-process navigation for overseas Chinese and international patients seeking healthcare in China."
+      },
+      "scenarios": {
+        "zh-CN": ["定制体检与健康管理", "专科手术与重大疾病诊疗", "中医康养与术后康复"],
+        "en": ["Customised health check-ups", "Specialist surgery & major disease treatment", "TCM wellness & post-operative recovery"]
+      },
+      "cta": {
+        "zh-CN": "了解来华就医服务",
+        "en": "Learn about inbound services"
+      }
+    },
+    "outbound": {
+      "title": {
+        "zh-CN": "海外落地医疗导航",
+        "en": "Outbound Healthcare Navigation"
+      },
+      "desc": {
+        "zh-CN": "面向出国人群，提供海外医疗体系对接与落地服务。",
+        "en": "Healthcare system integration and settlement services for those moving abroad."
+      },
+      "scenarios": {
+        "zh-CN": ["初筛与全科/专科对接", "急症处理与转诊协调", "重症海外就医与二次诊疗意见"],
+        "en": ["Initial screening & GP/specialist referral", "Emergency handling & transfer coordination", "Serious illness overseas treatment & second opinions"]
+      },
+      "cta": {
+        "zh-CN": "了解海外落地服务",
+        "en": "Learn about outbound services"
+      }
+    }
+  },
+  "services": {
+    "title": {
+      "zh-CN": "核心服务板块",
+      "en": "Core Service Areas"
+    },
+    "subtitle": {
+      "zh-CN": "四大板块覆盖跨境医疗的全部核心需求",
+      "en": "Four pillars covering all core cross-border healthcare needs"
+    },
+    "items": [
+      {
+        "key": "preventive",
+        "icon": "Shield",
+        "color": "#00438A",
+        "title": {
+          "zh-CN": "预防医疗",
+          "en": "Preventive Healthcare"
+        },
+        "tagline": {
+          "zh-CN": "健康管理，从筛查开始",
+          "en": "Health management starts with screening"
+        },
+        "items": {
+          "zh-CN": ["定制化体检方案设计", "海外体检报告解读与对接", "慢病管理与随访协调", "健康风险评估与预警"],
+          "en": ["Customised health check-up design", "Overseas report interpretation", "Chronic disease management & follow-up", "Health risk assessment & early warning"]
+        }
+      },
+      {
+        "key": "major",
+        "icon": "HeartPulse",
+        "color": "#1a2d4a",
+        "title": {
+          "zh-CN": "重大疾病诊疗",
+          "en": "Major Disease Treatment"
+        },
+        "tagline": {
+          "zh-CN": "重症不慌，路径先行",
+          "en": "Serious illness, clear pathway first"
+        },
+        "items": {
+          "zh-CN": ["二次诊疗意见协调", "跨境专科手术对接", "多学科会诊（MDT）安排", "术后康复与随访衔接"],
+          "en": ["Second opinion coordination", "Cross-border specialist surgery referral", "Multidisciplinary team (MDT) arrangement", "Post-operative recovery & follow-up"]
+        }
+      },
+      {
+        "key": "rapid",
+        "icon": "Zap",
+        "color": "#3550A0",
+        "title": {
+          "zh-CN": "快速检测与专科服务",
+          "en": "Rapid Testing & Specialist Services"
+        },
+        "tagline": {
+          "zh-CN": "高效对接，精准匹配",
+          "en": "Efficient connection, precise matching"
+        },
+        "items": {
+          "zh-CN": ["海外急症初筛与转诊", "专科门诊预约与陪诊", "检验检查绿色通道", "远程问诊与报告解读"],
+          "en": ["Overseas emergency screening & referral", "Specialist appointment & escort", "Fast-track testing", "Telemedicine & report interpretation"]
+        }
+      },
+      {
+        "key": "tcm",
+        "icon": "Leaf",
+        "color": "#8B6914",
+        "title": {
+          "zh-CN": "中医与康养",
+          "en": "TCM & Wellness"
+        },
+        "tagline": {
+          "zh-CN": "东方智慧，身心调养",
+          "en": "Eastern wisdom, holistic recovery"
+        },
+        "items": {
+          "zh-CN": ["中医名家门诊预约", "针灸推拿康复方案", "药膳食疗与养生指导", "术后中西医结合康复"],
+          "en": ["Renowned TCM practitioner appointments", "Acupuncture & massage rehabilitation", "Medicinal diet & wellness guidance", "Post-operative integrative recovery"]
+        }
+      }
+    ]
+  },
+  "process": {
+    "title": {
+      "zh-CN": "服务判断与衔接流程",
+      "en": "Service Assessment & Connection Process"
+    },
+    "subtitle": {
+      "zh-CN": "我们不替你做决定，但不让你在决定中独自承担风险",
+      "en": "We don't make decisions for you, but we ensure you don't bear the risk alone"
+    },
+    "steps": [
+      {
+        "title": { "zh-CN": "需求收集", "en": "Needs Assessment" },
+        "desc": { "zh-CN": "通过深度沟通了解您的健康状况、就医需求和个人偏好，建立完整的需求档案。", "en": "Through in-depth communication, we understand your health status, medical needs and personal preferences to build a complete profile." },
+        "highlight": false
+      },
+      {
+        "title": { "zh-CN": "先判断，不立刻对接", "en": "Assess First, Don't Rush to Connect" },
+        "desc": { "zh-CN": "这是我们的核心差异。我们不会急于推荐医院或医生，而是先帮您判断：您的需求是否真的需要跨境医疗？哪种路径最适合您？", "en": "This is our core differentiator. We don't rush to recommend hospitals or doctors. Instead, we first help you assess: does your situation truly require cross-border healthcare? Which pathway suits you best?" },
+        "highlight": true
+      },
+      {
+        "title": { "zh-CN": "方案设计", "en": "Solution Design" },
+        "desc": { "zh-CN": "基于判断结果，为您量身定制医疗方案，包括机构选择、时间规划、费用预估和风险提示。", "en": "Based on the assessment, we design a tailored medical plan including institution selection, timeline, cost estimation and risk advisory." },
+        "highlight": false
+      },
+      {
+        "title": { "zh-CN": "资源对接", "en": "Resource Connection" },
+        "desc": { "zh-CN": "精准匹配合作医疗机构，协调预约、材料准备和跨境手续，确保无缝衔接。", "en": "Precisely match partner institutions, coordinate appointments, documentation and cross-border procedures for seamless connection." },
+        "highlight": false
+      },
+      {
+        "title": { "zh-CN": "全程陪伴", "en": "End-to-End Support" },
+        "desc": { "zh-CN": "从出发到就医到回国，全程提供翻译、陪诊、住宿协调等落地支持服务。", "en": "From departure to treatment to return, we provide translation, medical escort, accommodation coordination and on-ground support." },
+        "highlight": false
+      },
+      {
+        "title": { "zh-CN": "随访与衔接", "en": "Follow-Up & Continuity" },
+        "desc": { "zh-CN": "就医结束不是服务终点。我们协助您完成后续随访、报告解读和本地医疗衔接。", "en": "Treatment completion isn't the end of service. We assist with follow-up, report interpretation and local healthcare continuity." },
+        "highlight": false
+      }
+    ]
+  },
+  "cases": {
+    "title": {
+      "zh-CN": "客户案例",
+      "en": "Client Cases"
+    },
+    "subtitle": {
+      "zh-CN": "真实场景，真实选择",
+      "en": "Real scenarios, real decisions"
+    },
+    "items": [
+      {
+        "type": { "zh-CN": "海外急症转诊", "en": "Overseas Emergency Referral" },
+        "narrative": {
+          "zh-CN": "张女士旅居英国期间突发腹痛，当地 GP 建议等待数周排查。我们介入后快速判断情况紧急，协调上海仁济医院国际部，48 小时内完成回国手术安排。从判断到落地，全程陪伴。",
+          "en": "Ms Zhang experienced sudden abdominal pain while living in the UK. The local GP suggested waiting weeks for investigation. After our assessment, we determined the urgency, coordinated with Shanghai Renji Hospital International, and arranged return surgery within 48 hours."
+        },
+        "quote": {
+          "zh-CN": "如果不是他们帮我判断了紧急程度，我可能还在等 GP 的排期。",
+          "en": "Without their urgency assessment, I might still be waiting for the GP appointment."
+        },
+        "identity": { "zh-CN": "张女士 · 旅英华人", "en": "Ms Zhang · Chinese resident in the UK" }
+      },
+      {
+        "type": { "zh-CN": "来华定制体检", "en": "Customised Health Check-Up in China" },
+        "narrative": {
+          "zh-CN": "李先生长期在海外工作，希望利用回国假期做一次全面体检。我们根据他的家族病史和职业特点，定制了包含心血管、消化道和肿瘤标志物的深度筛查方案，对接瑞金医院国际医疗平台，三天完成全部检查。",
+          "en": "Mr Li, working overseas long-term, wanted a comprehensive check-up during his home visit. Based on his family history and occupation, we designed a deep screening plan covering cardiovascular, gastrointestinal and tumour markers, coordinated with Ruijin Hospital International, completing all tests in three days."
+        },
+        "quote": {
+          "zh-CN": "不是随便做个套餐，而是真的根据我的情况来设计的。",
+          "en": "It wasn't a generic package — it was truly designed around my situation."
+        },
+        "identity": { "zh-CN": "李先生 · 海外华人企业家", "en": "Mr Li · Overseas Chinese entrepreneur" }
+      },
+      {
+        "type": { "zh-CN": "中医康养方案", "en": "TCM Wellness Programme" },
+        "narrative": {
+          "zh-CN": "王女士术后长期疲劳，西医检查未见异常。我们建议她尝试中西医结合康复路径，对接广慈纪念医院中医科，制定了为期两周的针灸推拿加药膳调理方案。术后三个月，精力明显恢复。",
+          "en": "Ms Wang suffered persistent post-operative fatigue with normal Western medical results. We recommended an integrative recovery pathway, coordinating with Guangci Memorial Hospital's TCM department for a two-week acupuncture, massage and medicinal diet programme. Three months later, her energy had noticeably recovered."
+        },
+        "quote": {
+          "zh-CN": "他们没有一上来就推荐最贵的方案，而是先帮我想清楚我到底需要什么。",
+          "en": "They didn't push the most expensive option — they first helped me figure out what I actually needed."
+        },
+        "identity": { "zh-CN": "王女士 · 术后康复患者", "en": "Ms Wang · Post-operative recovery patient" }
+      }
+    ]
+  },
+  "partners": {
+    "title": {
+      "zh-CN": "合作医疗机构",
+      "en": "Partner Institutions"
+    },
+    "logos": [
+      { "name": "仁济医院国际部", "nameEn": "Renji Hospital International" },
+      { "name": "瑞金医院国际医疗平台", "nameEn": "Ruijin Hospital International" },
+      { "name": "广慈纪念医院", "nameEn": "Guangci Memorial Hospital" }
+    ]
+  },
+  "contact": {
+    "title": {
+      "zh-CN": "联系我们",
+      "en": "Get in Touch"
+    },
+    "subtitle": {
+      "zh-CN": "无论您是个人还是机构，我们都能为您提供专业的医疗导航咨询",
+      "en": "Whether you're an individual or institution, we provide professional medical navigation consultation"
+    },
+    "phone": "+44 (0)7345 169 054",
+    "phoneCN": "",
+    "email": "enquiries@mediversityglobal.com",
+    "whatsapp": "",
+    "ctaC": {
+      "zh-CN": "个人咨询",
+      "en": "Individual Enquiry"
+    },
+    "ctaB": {
+      "zh-CN": "机构合作",
+      "en": "Institutional Partnership"
+    }
+  },
+  "darkCta": {
+    "title": {
+      "zh-CN": "让我们帮您把健康这件事想清楚",
+      "en": "Let Us Help You Think Through Your Healthcare Decisions"
+    },
+    "cta1": {
+      "zh-CN": "预约咨询",
+      "en": "Book a Consultation"
+    },
+    "cta2": {
+      "zh-CN": "下载服务手册",
+      "en": "Download Service Guide"
+    }
+  }
+}
