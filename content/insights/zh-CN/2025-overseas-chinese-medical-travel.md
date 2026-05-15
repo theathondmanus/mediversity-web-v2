@@ -6,7 +6,7 @@ readTime: "5 分钟阅读"
 tags: ["行业洞察", "跨境医疗", "海外华人"]
 category: "行业洞察"
 excerpt: "近年来，\"回国就医\"热潮在海外华人社群中持续升温。背后的核心逻辑——中国跨境医疗凭借无可比拟的效率优势与成本优势，大幅超越英国、澳大利亚等国家的医疗体系。"
-cover: "https://mediversityglobal.cn/wp-content/uploads/2026/03/生成医疗旅行文章主图-1080x675.jpg"
+cover: "/images/insights/2025-overseas-chinese-medical-travel.jpg"
 source: "https://mediversityglobal.cn/2025数据解读海外华人为何选择中国跨境医疗/"
 ---
 

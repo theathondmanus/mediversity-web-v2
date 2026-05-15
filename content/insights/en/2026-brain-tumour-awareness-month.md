@@ -6,7 +6,7 @@ readTime: "4 min read"
 tags: ["Press Releases", "Medical Tourism", "Neurosurgery"]
 category: "Press Releases"
 excerpt: "This March, we stand with the UK and global communities to raise awareness for brain tumours—a condition that impacts millions of lives."
-cover: "https://mediversityglobal.com/wp-content/uploads/2026/03/Brain-Tumour-Awareness-Month-1080x675.png"
+cover: "/images/insights/2026-brain-tumour-awareness-month.jpg"
 source: "https://mediversityglobal.com/march-is-brain-tumour-awareness-month/"
 ---
 

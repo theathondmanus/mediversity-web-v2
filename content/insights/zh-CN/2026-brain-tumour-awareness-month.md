@@ -6,7 +6,7 @@ readTime: "4 分钟阅读"
 tags: ["新闻发布", "跨境医疗", "神经外科"]
 category: "新闻发布"
 excerpt: "今年三月，我们与英国及全球各界携手，共同提升脑肿瘤疾病认知——这一疾病正影响着全球数百万人的生命健康。"
-cover: "https://mediversityglobal.cn/wp-content/uploads/2026/03/Brain-Tumour-Awareness-Month-1-1080x675.png"
+cover: "/images/insights/2026-brain-tumour-awareness-month.jpg"
 source: "https://mediversityglobal.cn/2026英国脑肿瘤宣传月/"
 ---
 

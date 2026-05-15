@@ -6,7 +6,7 @@ readTime: "3 分钟阅读"
 tags: ["新闻发布", "跨境医疗", "合作伙伴"]
 category: "新闻发布"
 excerpt: "我们荣幸宣布，正式与上海交通大学医学院附属仁济医院达成全新战略合作。仁济医院是国内历史悠久、享誉盛名的三级甲等综合性医院，综合实力位居全国前列。"
-cover: "https://mediversityglobal.cn/wp-content/uploads/2026/03/X-1080x675.png"
+cover: "/images/insights/2025-renji-hospital-partnership.jpg"
 source: "https://mediversityglobal.cn/战略合作官宣上海交通大学医学院附属仁济医院/"
 ---
 

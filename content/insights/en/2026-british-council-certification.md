@@ -6,7 +6,7 @@ readTime: "3 min read"
 tags: ["Press Releases", "Medical Education", "Certification"]
 category: "Press Releases"
 excerpt: "On December 4, 2025, Mediversity Global was officially certified by the British Council through its prestigious UK Agent and Counsellor Training programme."
-cover: "https://mediversityglobal.com/wp-content/uploads/2026/02/微信图片_20251205140636_7357_395.jpg"
+cover: "/images/insights/2026-british-council-certification.jpg"
 source: "https://mediversityglobal.com/mediversity-global-achieves-british-council-certification/"
 ---
 

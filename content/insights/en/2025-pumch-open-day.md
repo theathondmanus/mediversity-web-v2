@@ -6,7 +6,7 @@ readTime: "4 min read"
 tags: ["Events & Activities", "Medical Tourism", "Partnerships"]
 category: "Events & Activities"
 excerpt: "On December 13, 2025, Mediversity Global's Beijing Office representatives joined PUMCH's \"Approach PUMCH – Open Day & Experience Day\" event alongside more than 30 representatives from embassies, insurance institutions, and partner enterprises."
-cover: "https://mediversityglobal.com/wp-content/uploads/2026/02/IMG_7065-2-1080x675.png"
+cover: "/images/insights/2025-pumch-open-day.jpg"
 source: "https://mediversityglobal.com/mediversity-invites-to-peking-union-medical-college-hospital-international-medical-service-event/"
 ---
 
