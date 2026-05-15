@@ -9,20 +9,18 @@ export default function Footer() {
 
   const FOOTER_LINKS: Record<string, { label: string; href: string }[]> = {
     [t("footer.sectionPrograms")]: [
-      { label: t("programsDropdown.medicalEnglish"), href: "/programs/medical-english" },
-      { label: t("programsDropdown.clinicalObservership"), href: "/programs/clinical-observership" },
-      { label: t("programsDropdown.medicalHumanities"), href: "/programs/medical-humanities" },
-      { label: t("programsDropdown.medicalWriting"), href: "/programs/medical-writing" },
-      { label: t("programsDropdown.medicalNavigator"), href: "/programs/medical-navigator" },
+      { label: t("nav.pillars.medicalEnglish"), href: "/programmes/medical-english" },
+      { label: t("nav.pillars.research"), href: "/programmes/research-academic" },
+      { label: t("nav.pillars.observership"), href: "/programmes/observership" },
+      { label: t("nav.pillars.humanities"), href: "/programmes/humanities" },
     ],
     [t("footer.sectionCompany")]: [
-      { label: t("footer.aboutUs"), href: "/about" },
-      { label: t("footer.ourTeam"), href: "/about#team" },
-      { label: t("footer.newsUpdates"), href: "/news" },
-      { label: t("nav.caseStudies"), href: "/case-studies" },
+      { label: t("nav.about"), href: "/about" },
+      { label: t("nav.insights"), href: "/insights" },
+      { label: t("nav.medicalNavigator"), href: "/medical-navigator" },
     ],
     [t("footer.sectionSupport")]: [
-      { label: t("footer.contactUs"), href: "/contact" },
+      { label: t("nav.contact"), href: "/contact" },
       { label: t("footer.privacyPolicy"), href: "/privacy" },
       { label: t("footer.termsOfService"), href: "/terms" },
     ],
@@ -41,7 +39,7 @@ export default function Footer() {
           </div>
           <div className="flex gap-3">
             <Link
-              href="/programs"
+              href="/programmes"
               className="px-6 py-3 bg-white text-[#00438A] font-semibold rounded-md hover:bg-blue-50 transition-colors no-underline text-sm"
             >
               {t("footer.explorePrograms")}

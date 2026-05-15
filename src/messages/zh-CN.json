@@ -26,18 +26,24 @@
       "cta2": "预约咨询"
     },
     "businessLines": {
+      "eyebrow": "核心业务",
       "title": "两大核心业务",
       "subtitle": "专业培训与医疗导航，双轨并行助力您的国际化发展",
       "programmes": {
-        "title": "培训项目",
-        "desc": "涵盖医学英语、学术研究、临床观摩与医学人文四大板块，系统化提升国际竞争力"
+        "eyebrow": "培训项目",
+        "title": "医学英语教育与专业培训",
+        "desc": "涵盖医学英语、学术研究、临床观摩与医学人文四大板块，系统化提升国际竞争力",
+        "cta": "探索全部培训项目"
       },
       "navigator": {
+        "eyebrow": "医疗导航",
         "title": "国际医疗导航",
-        "desc": "一站式国际医疗职业发展规划与落地服务，从咨询到实施全程陪伴"
+        "desc": "一站式国际医疗职业发展规划与落地服务，从咨询到实施全程陪伴",
+        "cta": "了解医疗导航服务"
       }
     },
     "pillars": {
+      "eyebrow": "培训体系",
       "title": "四大培训板块",
       "subtitle": "覆盖医疗专业人士国际化发展的全部核心需求",
       "medicalEnglish": {
@@ -81,8 +87,15 @@
       "coursesLabel": "门课程"
     },
     "testimonials": {
+      "eyebrow": "学员心声",
       "title": "学员反馈",
       "subtitle": "听听他们怎么说"
+    },
+    "story": {
+      "eyebrow": "成功案例",
+      "title": "从课堂到临床，见证真实成长",
+      "description": "我们的学员来自全国各大三甲医院，通过系统化的培训项目，在国际学术交流、临床观摩和职业发展等方面取得了显著成果。",
+      "cta": "查看更多案例"
     },
     "trust": {
       "title": "合作与认可机构"
@@ -104,7 +117,12 @@
     "role4": "浙江大学医学院附属第一医院 · 主治医师",
     "content4": "学术写作课程帮助我掌握了 SCI 论文写作的核心技巧，今年已经成功发表了两篇论文。",
     "role5": "广州中山大学附属第一医院 · 主任医师",
-    "content5": "访问学者项目为我打开了国际合作的大门，现在和英国同行保持着密切的学术交流。"
+    "content5": "访问学者项目为我打开了国际合作的大门，现在和英国同行保持着密切的学术交流。",
+    "program1": "医学英语与沟通",
+    "program2": "OET与国际执照",
+    "program3": "临床观摩与国际交流",
+    "program4": "医学研究与学术发展",
+    "program5": "访问学者通道"
   },
   "programmesHub": {
     "title": "培训项目",
@@ -354,24 +372,18 @@
     "viewDetails": "查看详情"
   },
   "footer": {
-    "cta": {
-      "title": "准备好开始了吗？",
-      "subtitle": "联系我们，开启您的国际化发展之路",
-      "button": "预约咨询"
-    },
-    "description": "Mediversity Global — 国际医疗专业人士发展平台，助力医疗从业者国际化成长。",
-    "programmes": "培训项目",
-    "company": "关于",
-    "links": {
-      "medicalEnglish": "医学英语与沟通",
-      "research": "医学研究与学术发展",
-      "observership": "临床观摩与国际交流",
-      "humanities": "职业发展与医学人文",
-      "about": "关于我们",
-      "insights": "洞察与资讯",
-      "contact": "联系我们",
-      "navigator": "国际医疗导航"
-    },
+    "ctaTitle": "准备好开始了吗？",
+    "ctaSubtitle": "联系我们，开启您的国际化发展之路",
+    "explorePrograms": "探索培训项目",
+    "contactUs": "联系我们",
+    "brandDescription": "Mediversity Global — 国际医疗专业人士发展平台，助力医疗从业者国际化成长。",
+    "locations": "上海 · 伦敦",
+    "sectionPrograms": "培训项目",
+    "sectionCompany": "关于",
+    "sectionSupport": "支持",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "accredited": "UK Medical Education Provider",
     "icp": "沪ICP备2025138775号-2",
     "copyright": "© 2026 Mediversity Global. All rights reserved."
   }
