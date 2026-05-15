@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { HeroCurve } from "@/components/ui/hero-curve";
 import TestimonialsCarousel from "@/components/home/TestimonialsCarousel";
+import FeaturedCourses from "@/components/home/FeaturedCourses";
 
 /* ═══ Animation variants (prototype-matched) ═══ */
 const fadeInUp = {
@@ -238,6 +239,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ═══ FEATURED COURSES — from registry ═══ */}
+      <FeaturedCourses />
 
       {/* ═══ SUCCESS STORY — editorial zigzag ═══ */}
       <section className="section-padding" style={{ backgroundColor: "#F5F3EF" }}>

@@ -43,6 +43,7 @@ export default function ResearchAcademicPage() {
   return (
     <PillarLandingPage
       pillarKey="researchAcademic"
+      categorySlug="research-academic"
       icon={Microscope}
       color="bg-purple-50 text-purple-700"
       subcategories={subcategories}

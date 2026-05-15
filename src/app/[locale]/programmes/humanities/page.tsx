@@ -32,6 +32,7 @@ export default function HumanitiesPage() {
   return (
     <PillarLandingPage
       pillarKey="humanities"
+      categorySlug="humanities"
       icon={BookOpen}
       color="bg-amber-50 text-amber-700"
       subcategories={subcategories}
