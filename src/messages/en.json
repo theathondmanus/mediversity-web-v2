@@ -64,7 +64,6 @@
       },
       "explore": "Learn more"
     },
-
     "testimonials": {
       "eyebrow": "Student Voices",
       "title": "What Our Students Say",
@@ -78,12 +77,6 @@
     },
     "trust": {
       "title": "Recognised by Leading Institutions"
-    },
-    "cta": {
-      "title": "Start Your International Development Journey",
-      "subtitle": "Whatever stage of your career, we have the right programme for you",
-      "btn1": "Browse All Programmes",
-      "btn2": "Contact Us"
     }
   },
   "testimonials": {
