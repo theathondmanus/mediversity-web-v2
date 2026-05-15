@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Award, Users, Globe, Heart } from "lucide-react";
-import { HeroCurve } from "@/components/ui/hero-curve";
+import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn, FadeInGroup } from "@/components/ui/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -19,17 +19,17 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-24 bg-gradient-to-br from-[#0A1628] to-[#00438A] overflow-hidden">
-        <div className="container relative z-10">
-          <FadeIn>
-            <p className="eyebrow !text-[#C4922A]">{t("title")}</p>
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
-              {t("subtitle")}
-            </h1>
-          </FadeIn>
-        </div>
-        <HeroCurve />
-      </section>
+      <HeroSection
+        image="https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-about-aHAtpcDuKQyfvFSnuA69jy.webp"
+        imageAlt="International conference room with panoramic city view"
+      >
+        <FadeIn>
+          <p className="eyebrow !text-[#C4922A]">{t("title")}</p>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            {t("subtitle")}
+          </h1>
+        </FadeIn>
+      </HeroSection>
 
       {/* Mission */}
       <section className="section-padding bg-white">

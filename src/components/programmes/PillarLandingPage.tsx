@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowLeft, type LucideIcon } from "lucide-react";
+import { HeroSection } from "@/components/ui/hero-section";
 import { Card, CardContent } from "@/components/ui/card";
 
 export interface CourseItem {
@@ -29,6 +30,10 @@ interface PillarLandingPageProps {
   icon: LucideIcon;
   color: string;
   subcategories: SubCategory[];
+  /** Optional hero background image URL */
+  heroImage?: string;
+  /** Alt text for the hero image */
+  heroImageAlt?: string;
 }
 
 const fadeInUp = {
@@ -44,6 +49,8 @@ export default function PillarLandingPage({
   icon: PillarIcon,
   color,
   subcategories,
+  heroImage,
+  heroImageAlt,
 }: PillarLandingPageProps) {
   const t = useTranslations(`programmes.${pillarKey}`);
   const tCommon = useTranslations("common");
@@ -58,41 +65,39 @@ export default function PillarLandingPage({
   return (
     <>
       {/* Hero */}
-      <section className="pt-28 pb-16 bg-gradient-to-br from-[#0A1628] to-[#00438A]">
-        <div className="container">
-          <Link
-            href="/programmes"
-            className="inline-flex items-center gap-1 text-white/60 text-sm mb-6 hover:text-white/80 no-underline"
+      <HeroSection image={heroImage} imageAlt={heroImageAlt}>
+        <Link
+          href="/programmes"
+          className="inline-flex items-center gap-1 text-white/60 text-sm mb-6 hover:text-white/80 no-underline"
+        >
+          <ArrowLeft className="w-4 h-4" /> {tCommon("backToProgrammes")}
+        </Link>
+        <div className="flex items-center gap-4 mb-4">
+          <div
+            className={`w-14 h-14 rounded-xl ${color} flex items-center justify-center`}
           >
-            <ArrowLeft className="w-4 h-4" /> {tCommon("backToProgrammes")}
-          </Link>
-          <div className="flex items-center gap-4 mb-4">
-            <div
-              className={`w-14 h-14 rounded-xl ${color} flex items-center justify-center`}
-            >
-              <PillarIcon className="w-7 h-7" />
-            </div>
-            <h1 className="font-display text-3xl md:text-4xl font-bold text-white">
-              {t("title")}
-            </h1>
+            <PillarIcon className="w-7 h-7" />
           </div>
-          <p className="text-white/70 max-w-2xl text-lg">{t("description")}</p>
-          <div className="flex gap-6 mt-8">
-            <div className="text-center">
-              <p className="text-2xl font-bold text-[#C4922A]">
-                {activeCourses.length}
-              </p>
-              <p className="text-xs text-white/60">{tCommon("activeCourses")}</p>
-            </div>
-            <div className="text-center">
-              <p className="text-2xl font-bold text-white/40">
-                {futureCourses.length}
-              </p>
-              <p className="text-xs text-white/60">{tCommon("futureCourses")}</p>
-            </div>
+          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            {t("title")}
+          </h1>
+        </div>
+        <p className="text-white/70 max-w-2xl text-xl leading-relaxed">{t("description")}</p>
+        <div className="flex gap-6 mt-8">
+          <div className="text-center">
+            <p className="text-2xl font-bold text-[#C4922A]">
+              {activeCourses.length}
+            </p>
+            <p className="text-xs text-white/60">{tCommon("activeCourses")}</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold text-white/40">
+              {futureCourses.length}
+            </p>
+            <p className="text-xs text-white/60">{tCommon("futureCourses")}</p>
           </div>
         </div>
-      </section>
+      </HeroSection>
 
       {/* Subcategories */}
       <section className="section-padding bg-white">

@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Clock, Users, CheckCircle, Quote } from "lucide-react";
-import { HeroCurve } from "@/components/ui/hero-curve";
+import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn } from "@/components/ui/fade-in";
 import type {
   ProgrammeData,
@@ -139,47 +139,47 @@ export default function ProgramDetailTemplate({ data }: ProgramDetailTemplatePro
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative pt-28 pb-24 md:pt-36 md:pb-32 bg-gradient-to-br from-[#0A1628] to-[#00438A] overflow-hidden">
-        <div className="container relative z-10">
-          <motion.div {...fadeInUp}>
-            <Link
-              href={`/programmes/${data.category}` as never}
-              className="inline-flex items-center gap-1.5 text-white/60 hover:text-white/90 text-sm mb-6 transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              {t("backToProgrammes")}
-            </Link>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl">
-              {data.hero.headline}
-            </h1>
-            <p className="text-lg md:text-xl text-white/80 max-w-2xl mb-8 leading-relaxed">
-              {data.hero.lede}
-            </p>
+      <HeroSection
+        image={data.hero.image}
+        imageAlt={data.hero.imageAlt}
+      >
+        <motion.div {...fadeInUp}>
+          <Link
+            href={`/programmes/${data.category}` as never}
+            className="inline-flex items-center gap-1.5 text-white/60 hover:text-white/90 text-sm mb-6 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            {t("backToProgrammes")}
+          </Link>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl">
+            {data.hero.headline}
+          </h1>
+          <p className="text-lg md:text-xl text-white/80 max-w-2xl mb-8 leading-relaxed">
+            {data.hero.lede}
+          </p>
 
-            {/* Meta badges */}
-            <div className="flex flex-wrap gap-4 mb-8">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm">
-                <Clock className="w-4 h-4" />
-                {data.duration}
-              </span>
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm">
-                <Users className="w-4 h-4" />
-                {data.audience.join(" · ")}
-              </span>
-            </div>
+          {/* Meta badges */}
+          <div className="flex flex-wrap gap-4 mb-8">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm">
+              <Clock className="w-4 h-4" />
+              {data.duration}
+            </span>
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm">
+              <Users className="w-4 h-4" />
+              {data.audience.join(" · ")}
+            </span>
+          </div>
 
-            <Link
-              href={data.hero.ctaHref as never}
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-white font-semibold text-lg transition-colors"
-              style={{ backgroundColor: "var(--brand-accent)" }}
-            >
-              {data.hero.ctaLabel}
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-          </motion.div>
-        </div>
-        <HeroCurve />
-      </section>
+          <Link
+            href={data.hero.ctaHref as never}
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-white font-semibold text-lg transition-colors"
+            style={{ backgroundColor: "var(--brand-accent)" }}
+          >
+            {data.hero.ctaLabel}
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+        </motion.div>
+      </HeroSection>
 
       {/* ── Dynamic sections ── */}
       {data.sections.map((section, i) => {

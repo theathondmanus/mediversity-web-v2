@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
-import { HeroCurve } from "@/components/ui/hero-curve";
+import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -19,19 +19,19 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-24 bg-gradient-to-br from-[#0A1628] to-[#00438A] overflow-hidden">
-        <div className="container relative z-10">
-          <FadeIn>
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
-              {t("title")}
-            </h1>
-            <p className="text-white/70 text-lg max-w-2xl">
-              {t("subtitle")}
-            </p>
-          </FadeIn>
-        </div>
-        <HeroCurve />
-      </section>
+      <HeroSection
+        image="https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-contact-YcHVLPaW5Pyg28SDovctox.webp"
+        imageAlt="Aerial view of illuminated bridges connecting across a river at twilight"
+      >
+        <FadeIn>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            {t("title")}
+          </h1>
+          <p className="text-white/70 text-xl max-w-2xl leading-relaxed">
+            {t("subtitle")}
+          </p>
+        </FadeIn>
+      </HeroSection>
 
       {/* Content */}
       <section className="section-padding bg-white">

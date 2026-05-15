@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowRight, GraduationCap, Microscope, Stethoscope, BookOpen } from "lucide-react";
+import { HeroSection } from "@/components/ui/hero-section";
 import { Card, CardContent } from "@/components/ui/card";
 
 const fadeInUp = {
@@ -25,18 +26,19 @@ export default function ProgrammesHubPage() {
 
   return (
     <>
-      <section className="pt-28 pb-16 bg-gradient-to-br from-[#0A1628] to-[#00438A]">
-        <div className="container">
-          <motion.div {...fadeInUp}>
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
-              {t("title")}
-            </h1>
-            <p className="text-white/70 text-lg max-w-2xl">
-              {t("subtitle")}
-            </p>
-          </motion.div>
-        </div>
-      </section>
+      <HeroSection
+        image="https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-programmes-hub-29hbiGA2UbTEUkNsrBqtuV.webp"
+        imageAlt="Grand medical university library with anatomical models and modern technology"
+      >
+        <motion.div {...fadeInUp}>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            {t("title")}
+          </h1>
+          <p className="text-white/70 text-xl max-w-2xl leading-relaxed">
+            {t("subtitle")}
+          </p>
+        </motion.div>
+      </HeroSection>
 
       <section className="section-padding bg-white">
         <div className="container">

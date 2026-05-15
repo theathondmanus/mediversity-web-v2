@@ -79,6 +79,10 @@ export interface ProgrammeData {
     lede: string;
     ctaLabel: string;
     ctaHref: string;
+    /** Optional hero background image URL */
+    image?: string;
+    /** Alt text for the hero image */
+    imageAlt?: string;
   };
   sections: ProgrammeSection[];
   testimonials: TestimonialItem[];

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import { ArrowLeft, Calendar, Clock, User, Tag, ExternalLink } from "lucide-react";
+import { HeroSection } from "@/components/ui/hero-section";
 import { getInsight, getAllInsightPaths, getAllInsightSummaries } from "@/lib/insights";
 import { renderMarkdown } from "@/lib/markdown";
 
@@ -40,8 +41,11 @@ export default async function InsightDetailPage({ params }: InsightDetailPagePro
   return (
     <>
       {/* Article Header */}
-      <section className="pt-28 pb-12 bg-gradient-to-br from-[#0A1628] to-[#00438A]">
-        <div className="container max-w-3xl">
+      <HeroSection
+        image={article.cover || undefined}
+        imageAlt={article.title}
+      >
+        <div className="max-w-3xl">
           <Link
             href="/insights"
             className="inline-flex items-center gap-1 text-white/60 text-sm mb-6 hover:text-white/80 no-underline"
@@ -55,7 +59,7 @@ export default async function InsightDetailPage({ params }: InsightDetailPagePro
             </span>
           )}
 
-          <h1 className="font-display text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
             {article.title}
           </h1>
 
@@ -75,7 +79,7 @@ export default async function InsightDetailPage({ params }: InsightDetailPagePro
             )}
           </div>
         </div>
-      </section>
+      </HeroSection>
 
       {/* Article Body */}
       <article className="section-padding bg-white">

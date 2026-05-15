@@ -1,7 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import { Newspaper, Calendar, Clock, ArrowRight } from "lucide-react";
-import { HeroCurve } from "@/components/ui/hero-curve";
+import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { getAllInsightSummaries } from "@/lib/insights";
 
@@ -17,19 +17,19 @@ export default async function InsightsPage({ params }: InsightsPageProps) {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-24 bg-gradient-to-br from-[#0A1628] to-[#00438A] overflow-hidden">
-        <div className="container relative z-10">
-          <FadeIn>
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
-              {t("title")}
-            </h1>
-            <p className="text-white/70 text-lg max-w-2xl">
-              {t("subtitle")}
-            </p>
-          </FadeIn>
-        </div>
-        <HeroCurve />
-      </section>
+      <HeroSection
+        image="https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-insights-6Lfr2kxiV665fTzZv3Fht5.webp"
+        imageAlt="Scholarly reading room with medical journals and city twilight view"
+      >
+        <FadeIn>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            {t("title")}
+          </h1>
+          <p className="text-white/70 text-xl max-w-2xl leading-relaxed">
+            {t("subtitle")}
+          </p>
+        </FadeIn>
+      </HeroSection>
 
       {/* Article list */}
       <section className="section-padding bg-white">
