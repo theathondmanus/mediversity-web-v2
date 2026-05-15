@@ -20,7 +20,7 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <HeroSection
-        image="https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-about-aHAtpcDuKQyfvFSnuA69jy.webp"
+        image="/images/hero/about.webp"
         imageAlt="International conference room with panoramic city view"
       >
         <FadeIn>

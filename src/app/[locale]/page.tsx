@@ -1,7 +1,7 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
@@ -10,6 +10,13 @@ import {
 import { HeroCurve } from "@/components/ui/hero-curve";
 import TestimonialsCarousel from "@/components/home/TestimonialsCarousel";
 import FeaturedCourses from "@/components/home/FeaturedCourses";
+import {
+  WaveDivider,
+  DotPattern,
+  CornerAccent,
+  FloatingShape,
+  StatBanner,
+} from "@/components/ui/section-decorations";
 
 /* ═══ Animation variants (prototype-matched) ═══ */
 const fadeInUp = {
@@ -19,6 +26,16 @@ const fadeInUp = {
     y: 0,
     transition: { delay: i * 0.1, duration: 0.5, ease: [0.22, 1, 0.36, 1] as const },
   }),
+};
+
+const fadeInLeft = {
+  hidden: { opacity: 0, x: -30 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const } },
+};
+
+const fadeInRight = {
+  hidden: { opacity: 0, x: 30 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const } },
 };
 
 /* ═══ Data ═══ */
@@ -31,8 +48,23 @@ const PILLARS = [
 
 const TRUST_ORGS = ["NHS", "University of Cambridge", "GMC", "BMA", "King's College London"];
 
+const STATS_ZH = [
+  { value: "10+", label: "年行业经验" },
+  { value: "1000+", label: "学员成功案例" },
+  { value: "50+", label: "合作医疗机构" },
+  { value: "95%", label: "学员满意度" },
+];
+
+const STATS_EN = [
+  { value: "10+", label: "Years of Experience" },
+  { value: "1000+", label: "Successful Students" },
+  { value: "50+", label: "Partner Institutions" },
+  { value: "95%", label: "Student Satisfaction" },
+];
+
 export default function HomePage() {
   const t = useTranslations("home");
+  const locale = useLocale();
 
   return (
     <>
@@ -49,6 +81,10 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628]/90 via-[#00438A]/70 to-transparent" />
         </div>
+
+        {/* Decorative floating shapes in hero */}
+        <FloatingShape className="top-20 right-[15%] hidden lg:block" shape="ring" color="#C4922A" size={160} opacity={0.06} />
+        <FloatingShape className="bottom-32 right-[8%] hidden lg:block" shape="cross" color="#FFFFFF" size={80} opacity={0.04} />
 
         <div className="container relative z-10 py-32 md:py-40">
           <motion.div
@@ -98,9 +134,32 @@ export default function HomePage() {
         <HeroCurve />
       </section>
 
+      {/* ═══ STAT BANNER — data density layer ═══ */}
+      <section className="relative py-12 md:py-16 bg-white overflow-hidden">
+        <DotPattern opacity={0.03} />
+        <div className="container relative z-10">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+          >
+            <motion.div variants={fadeInUp} custom={0}>
+              <StatBanner stats={locale === "zh-CN" ? STATS_ZH : STATS_EN} />
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Wave transition: white → white (subtle) */}
+      <WaveDivider fromColor="#FFFFFF" toColor="#FFFFFF" />
+
       {/* ═══ BUSINESS LINES — editorial asymmetric layout ═══ */}
-      <section className="section-padding bg-white">
-        <div className="container">
+      <section className="relative section-padding bg-white overflow-hidden">
+        {/* Corner accents for visual framing */}
+        <CornerAccent position="top-left" color="#00438A" size={100} />
+        <CornerAccent position="bottom-right" color="#C4922A" size={80} />
+
+        <div className="container relative z-10">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -118,25 +177,27 @@ export default function HomePage() {
             </motion.p>
           </motion.div>
 
-          {/* Medical English Education — editorial left-image */}
+          {/* Medical English Education — editorial left-image with stagger */}
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
             className="flex flex-col md:flex-row items-center gap-10 md:gap-16 mb-20"
           >
-            <motion.div variants={fadeInUp} custom={0} className="w-full md:w-1/2">
-              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+            <motion.div variants={fadeInLeft} className="w-full md:w-1/2">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg group">
                 <Image
                   src="/images/home/programmes-medical-english.webp"
                   alt="Medical English training session"
                   fill
-                  className="object-cover transition-transform duration-500 hover:scale-[1.02]"
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
+                {/* Subtle overlay gradient on hover */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#00438A]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </motion.div>
-            <motion.div variants={fadeInUp} custom={1} className="w-full md:w-1/2">
+            <motion.div variants={fadeInRight} className="w-full md:w-1/2">
               <p className="eyebrow">{t("businessLines.programmes.eyebrow")}</p>
               <h3 className="font-display text-2xl md:text-3xl font-semibold text-[#0E0C19] mb-4">
                 {t("businessLines.programmes.title")}
@@ -146,32 +207,33 @@ export default function HomePage() {
               </p>
               <Link
                 href="/programmes"
-                className="inline-flex items-center gap-2 text-[#00438A] font-semibold hover:text-[#003066] transition-colors no-underline group"
+                className="inline-flex items-center gap-2 text-[#00438A] font-semibold hover:text-[#003066] transition-colors no-underline group/link"
               >
-                {t("businessLines.programmes.cta")} <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                {t("businessLines.programmes.cta")} <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
               </Link>
             </motion.div>
           </motion.div>
 
-          {/* Medical Navigator — editorial right-image */}
+          {/* Medical Navigator — editorial right-image with stagger */}
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
             className="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16"
           >
-            <motion.div variants={fadeInUp} custom={0} className="w-full md:w-1/2">
-              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+            <motion.div variants={fadeInRight} className="w-full md:w-1/2">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg group">
                 <Image
                   src="/images/home/programmes-navigator.webp"
                   alt="Medical Navigator consultation"
                   fill
-                  className="object-cover transition-transform duration-500 hover:scale-[1.02]"
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#C4922A]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </motion.div>
-            <motion.div variants={fadeInUp} custom={1} className="w-full md:w-1/2">
+            <motion.div variants={fadeInLeft} className="w-full md:w-1/2">
               <p className="eyebrow">{t("businessLines.navigator.eyebrow")}</p>
               <h3 className="font-display text-2xl md:text-3xl font-semibold text-[#0E0C19] mb-4">
                 {t("businessLines.navigator.title")}
@@ -181,18 +243,25 @@ export default function HomePage() {
               </p>
               <Link
                 href="/medical-navigator"
-                className="inline-flex items-center gap-2 text-[#C4922A] font-semibold hover:text-[#A87822] transition-colors no-underline group"
+                className="inline-flex items-center gap-2 text-[#C4922A] font-semibold hover:text-[#A87822] transition-colors no-underline group/link"
               >
-                {t("businessLines.navigator.cta")} <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                {t("businessLines.navigator.cta")} <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
               </Link>
             </motion.div>
           </motion.div>
         </div>
       </section>
 
-      {/* ═══ 4 PILLAR CARDS — on warm canvas ═══ */}
-      <section className="section-padding" style={{ backgroundColor: "#F5F3EF" }}>
-        <div className="container">
+      {/* Wave transition: white → canvas */}
+      <WaveDivider fromColor="#FFFFFF" toColor="#F5F3EF" />
+
+      {/* ═══ 4 PILLAR CARDS — on warm canvas with dot pattern ═══ */}
+      <section className="relative section-padding overflow-hidden" style={{ backgroundColor: "#F5F3EF" }}>
+        <DotPattern opacity={0.03} />
+        <FloatingShape className="top-10 left-[5%] hidden md:block" shape="circle" color="#C4922A" size={100} opacity={0.03} />
+        <FloatingShape className="bottom-16 right-[8%] hidden md:block" shape="ring" color="#00438A" size={140} opacity={0.04} />
+
+        <div className="container relative z-10">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -218,7 +287,9 @@ export default function HomePage() {
                   custom={idx}
                 >
                   <Link href={pillar.href as never} className="no-underline block group">
-                    <div className="bg-white rounded-xl p-6 border border-[#E3E5EC] shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
+                    <div className="bg-white rounded-xl p-6 border border-[#E3E5EC] shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 h-full flex flex-col relative overflow-hidden">
+                      {/* Subtle accent bar at top */}
+                      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#00438A] to-[#00438A]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       <div className="w-12 h-12 rounded-lg bg-[#00438A]/10 flex items-center justify-center mb-4 group-hover:bg-[#00438A]/20 transition-colors">
                         <Icon className="w-6 h-6 text-[#00438A]" />
                       </div>
@@ -240,30 +311,40 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Wave transition: canvas → white */}
+      <WaveDivider fromColor="#F5F3EF" toColor="#FFFFFF" />
+
       {/* ═══ FEATURED COURSES — from registry ═══ */}
       <FeaturedCourses />
 
+      {/* Wave transition: white → canvas */}
+      <WaveDivider fromColor="#FFFFFF" toColor="#F5F3EF" />
+
       {/* ═══ SUCCESS STORY — editorial zigzag ═══ */}
-      <section className="section-padding" style={{ backgroundColor: "#F5F3EF" }}>
-        <div className="container">
+      <section className="relative section-padding overflow-hidden" style={{ backgroundColor: "#F5F3EF" }}>
+        <CornerAccent position="top-right" color="#C4922A" size={90} />
+        <DotPattern opacity={0.025} />
+
+        <div className="container relative z-10">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
             className="flex flex-col md:flex-row items-center gap-10 md:gap-16"
           >
-            <motion.div variants={fadeInUp} custom={0} className="w-full md:w-1/2">
-              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+            <motion.div variants={fadeInLeft} className="w-full md:w-1/2">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg group">
                 <Image
                   src="/images/home/programmes-observership.webp"
                   alt="Clinical observership programme"
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#00438A]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </motion.div>
-            <motion.div variants={fadeInUp} custom={1} className="w-full md:w-1/2">
+            <motion.div variants={fadeInRight} className="w-full md:w-1/2">
               <p className="eyebrow">{t("story.eyebrow")}</p>
               <h2 className="font-display text-2xl md:text-3xl font-semibold text-[#0E0C19] mb-4">
                 {t("story.title")}
@@ -273,9 +354,9 @@ export default function HomePage() {
               </p>
               <Link
                 href="/insights"
-                className="inline-flex items-center gap-2 text-[#00438A] font-semibold hover:text-[#003066] transition-colors no-underline group"
+                className="inline-flex items-center gap-2 text-[#00438A] font-semibold hover:text-[#003066] transition-colors no-underline group/link"
               >
-                {t("story.cta")} <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                {t("story.cta")} <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
               </Link>
             </motion.div>
           </motion.div>
@@ -285,9 +366,10 @@ export default function HomePage() {
       {/* ═══ TESTIMONIALS ═══ */}
       <TestimonialsCarousel />
 
-      {/* ═══ TRUST BAR ═══ */}
-      <section className="py-12 border-t border-[#E3E5EC]">
-        <div className="container">
+      {/* ═══ TRUST BAR — with subtle background texture ═══ */}
+      <section className="relative py-12 border-t border-[#E3E5EC] overflow-hidden">
+        <DotPattern opacity={0.02} />
+        <div className="container relative z-10">
           <p className="text-center text-sm text-[#8A889A] mb-8">{t("trust.title")}</p>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14 opacity-60">
             {TRUST_ORGS.map((name) => (

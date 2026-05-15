@@ -20,7 +20,7 @@ const data: ProgrammeData = {
     lede: "Boost your medical English skills and help you achieve success in the OET exam.",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-oet-preparation-QBUWoteSujNvauQjE2ay3Q.webp",
+    image: "/images/hero/oet-preparation.webp",
     imageAlt: "OET study desk with medical textbooks and world map showing UK, Australia, New Zealand, Ireland",
   },
 

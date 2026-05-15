@@ -36,6 +36,8 @@ export default function HumanitiesPage() {
       icon={BookOpen}
       color="bg-amber-50 text-amber-700"
       subcategories={subcategories}
+      heroImage="/images/hero/humanities.webp"
+      heroImageAlt="Academic seminar with international medical professionals discussing cross-cultural communication"
     />
   );
 }

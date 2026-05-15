@@ -12,7 +12,6 @@ import {
   Phone,
   Mail,
   MessageCircle,
-  ChevronRight,
   Compass,
   Plane,
   Building2,
@@ -20,6 +19,7 @@ import {
 import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
+import DualDirectionCards from "@/components/medical-navigator/DualDirectionCards";
 import content from "../../../../content/pages/medical-navigator.json";
 
 type Locale = "zh-CN" | "en";
@@ -81,7 +81,7 @@ export default function MedicalNavigatorPage() {
           § 1  HERO
           ═══════════════════════════════════════════════════ */}
       <HeroSection
-        image="https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-medical-navigator-EErEZuMVhWBzDh7mkGRBYE.webp"
+        image="/images/hero/medical-navigator.webp"
         imageAlt="International medical team reviewing global healthcare network"
       >
         <FadeIn>
@@ -134,80 +134,26 @@ export default function MedicalNavigatorPage() {
       </nav>
 
       {/* ═══════════════════════════════════════════════════
-          § 2  DUAL-DIRECTION OVERVIEW
+          § 2  DUAL-DIRECTION OVERVIEW (with creative effects)
           ═══════════════════════════════════════════════════ */}
       <section id="directions" className="section-padding bg-white scroll-mt-20">
         <div className="container">
-          <FadeIn className="text-center mb-14">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0A1628] mb-4">
-              {t2(content.directions.title, locale)}
-            </h2>
-            <p className="text-[#3C3A47] max-w-xl mx-auto">
-              {t2(content.directions.subtitle, locale)}
-            </p>
-          </FadeIn>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Inbound */}
-            <FadeIn index={0}>
-              <div className="group relative bg-gradient-to-br from-[#00438A]/5 to-[#00438A]/10 rounded-2xl p-8 md:p-10 border border-[#00438A]/10 hover:shadow-xl transition-shadow h-full flex flex-col">
-                <div className="w-14 h-14 rounded-xl bg-[#00438A]/10 flex items-center justify-center mb-6">
-                  <Plane className="w-7 h-7 text-[#00438A]" />
-                </div>
-                <h3 className="font-display text-xl md:text-2xl font-bold text-[#0A1628] mb-3">
-                  {t2(content.directions.inbound.title, locale)}
-                </h3>
-                <p className="text-[#3C3A47] mb-6 leading-relaxed">
-                  {t2(content.directions.inbound.desc, locale)}
-                </p>
-                <ul className="space-y-2 mb-8 flex-1">
-                  {t2arr(content.directions.inbound.scenarios, locale).map((s, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-[#3C3A47]">
-                      <ChevronRight className="w-4 h-4 text-[#00438A] shrink-0 mt-0.5" />
-                      {s}
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href="#services"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-[#00438A] hover:text-[#003066] no-underline mt-auto"
-                >
-                  {t2(content.directions.inbound.cta, locale)}
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-              </div>
-            </FadeIn>
-
-            {/* Outbound */}
-            <FadeIn index={1}>
-              <div className="group relative bg-gradient-to-br from-[#C4922A]/5 to-[#C4922A]/10 rounded-2xl p-8 md:p-10 border border-[#C4922A]/10 hover:shadow-xl transition-shadow h-full flex flex-col">
-                <div className="w-14 h-14 rounded-xl bg-[#C4922A]/10 flex items-center justify-center mb-6">
-                  <Compass className="w-7 h-7 text-[#C4922A]" />
-                </div>
-                <h3 className="font-display text-xl md:text-2xl font-bold text-[#0A1628] mb-3">
-                  {t2(content.directions.outbound.title, locale)}
-                </h3>
-                <p className="text-[#3C3A47] mb-6 leading-relaxed">
-                  {t2(content.directions.outbound.desc, locale)}
-                </p>
-                <ul className="space-y-2 mb-8 flex-1">
-                  {t2arr(content.directions.outbound.scenarios, locale).map((s, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-[#3C3A47]">
-                      <ChevronRight className="w-4 h-4 text-[#C4922A] shrink-0 mt-0.5" />
-                      {s}
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href="#services"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-[#C4922A] hover:text-[#A87822] no-underline mt-auto"
-                >
-                  {t2(content.directions.outbound.cta, locale)}
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-              </div>
-            </FadeIn>
-          </div>
+          <DualDirectionCards
+            sectionTitle={t2(content.directions.title, locale)}
+            sectionSubtitle={t2(content.directions.subtitle, locale)}
+            inbound={{
+              title: t2(content.directions.inbound.title, locale),
+              desc: t2(content.directions.inbound.desc, locale),
+              scenarios: t2arr(content.directions.inbound.scenarios, locale),
+              cta: t2(content.directions.inbound.cta, locale),
+            }}
+            outbound={{
+              title: t2(content.directions.outbound.title, locale),
+              desc: t2(content.directions.outbound.desc, locale),
+              scenarios: t2arr(content.directions.outbound.scenarios, locale),
+              cta: t2(content.directions.outbound.cta, locale),
+            }}
+          />
         </div>
       </section>
 
