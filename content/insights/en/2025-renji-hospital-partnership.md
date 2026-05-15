@@ -6,7 +6,7 @@ readTime: "3 min read"
 tags: ["Press Releases", "Medical Tourism", "Partnerships"]
 category: "Press Releases"
 excerpt: "We are delighted to announce a new strategic partnership with Renji Hospital, Affiliated to Shanghai Jiao Tong University School of Medicine — one of China's most prestigious, long‑established and top‑Tier A comprehensive hospitals."
-cover: "https://mediversityglobal.com/wp-content/uploads/2026/02/X-1080x675.png"
+cover: "/images/insights/2025-renji-hospital-partnership.jpg"
 source: "https://mediversityglobal.com/partnership-announcement-personalized-international-healthcare-with-renji-hospital/"
 ---
 

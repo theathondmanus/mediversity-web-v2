@@ -6,7 +6,7 @@ readTime: "4 分钟阅读"
 tags: ["活动与动态", "跨境医疗", "合作伙伴"]
 category: "活动与动态"
 excerpt: "2025 年 12 月 13 日，Mediversity Global 北京办公室代表受邀参加北京协和医院国际医疗部「走进协和——开放日暨体验日」活动，与来自多国驻华使领馆、商业健康保险机构、知名企事业单位的 30 余位代表齐聚一堂。"
-cover: "https://mediversityglobal.cn/wp-content/uploads/2026/03/IMG_7065-2-1080x675.png"
+cover: "/images/insights/2025-pumch-open-day.jpg"
 source: "https://mediversityglobal.cn/受邀走进协和医院国际部/"
 ---
 

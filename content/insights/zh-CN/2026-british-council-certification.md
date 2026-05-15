@@ -6,7 +6,7 @@ readTime: "3 分钟阅读"
 tags: ["新闻发布", "医学教育", "认证资质"]
 category: "新闻发布"
 excerpt: "2025 年 12 月 4 日，Mediversity Global 通过英国文化协会权威的 UK Agent and Counsellor Training 认证项目，正式获得官方认证。"
-cover: "https://mediversityglobal.com/wp-content/uploads/2026/02/微信图片_20251205140636_7357_395.jpg"
+cover: "/images/insights/2026-british-council-certification.jpg"
 source: "https://mediversityglobal.com/mediversity-global-achieves-british-council-certification/"
 ---
 

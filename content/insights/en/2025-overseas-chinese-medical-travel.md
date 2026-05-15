@@ -6,7 +6,7 @@ readTime: "5 min read"
 tags: ["Industry Insights", "Medical Tourism", "Cross-Border Healthcare"]
 category: "Industry Insights"
 excerpt: "The tide of \"returning to China for medical treatment\" is rising among overseas Chinese communities, and the data reveals the core logic behind this trend — unbeatable efficiency and cost advantages that outperform the UK and Australian healthcare systems."
-cover: "https://mediversityglobal.com/wp-content/uploads/2026/02/生成医疗旅行文章主图-1080x675.jpg"
+cover: "/images/insights/2025-overseas-chinese-medical-travel.jpg"
 source: "https://mediversityglobal.com/2025-data-speaks-why-overseas-chinese-choose-china-for-medical-travel/"
 ---
 
