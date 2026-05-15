@@ -30,7 +30,7 @@
       "title": "两大核心业务",
       "subtitle": "专业培训与医疗导航，双轨并行助力您的国际化发展",
       "programmes": {
-        "eyebrow": "培训项目",
+        "eyebrow": "医学英语教育",
         "title": "医学英语教育与专业培训",
         "desc": "涵盖医学英语、学术研究、临床观摩与医学人文四大板块，系统化提升国际竞争力",
         "cta": "探索全部培训项目"
@@ -64,28 +64,7 @@
       },
       "explore": "了解更多"
     },
-    "meSubcategories": {
-      "badge": "核心板块",
-      "title": "医学英语与沟通",
-      "subtitle": "从基础到进阶，四大方向全面覆盖医疗英语学习需求",
-      "foundations": {
-        "title": "英语基础提升",
-        "subtitle": "夯实医学英语基本功"
-      },
-      "oet": {
-        "title": "OET与国际执照",
-        "subtitle": "考试与注册准备"
-      },
-      "clinical": {
-        "title": "临床医学英语",
-        "subtitle": "临床实战沟通能力"
-      },
-      "globalMobility": {
-        "title": "国际化与出国准备",
-        "subtitle": "出国前全方位准备"
-      },
-      "coursesLabel": "门课程"
-    },
+
     "testimonials": {
       "eyebrow": "学员心声",
       "title": "学员反馈",

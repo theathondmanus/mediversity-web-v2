@@ -1,6 +1,6 @@
 export interface Testimonial {
   id: string;
-  name: string;
+  name: { en: string; "zh-CN": string };
   role: string;
   content: string;
   initials: string;
@@ -11,7 +11,7 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Dr. 王明",
+    name: { en: "Dr. Wang Ming", "zh-CN": "Dr. 王明" },
     role: "testimonials.role1",
     content: "testimonials.content1",
     initials: "WM",
@@ -20,7 +20,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "2",
-    name: "Dr. 李华",
+    name: { en: "Dr. Li Hua", "zh-CN": "Dr. 李华" },
     role: "testimonials.role2",
     content: "testimonials.content2",
     initials: "LH",
@@ -29,7 +29,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "3",
-    name: "Dr. 张伟",
+    name: { en: "Dr. Zhang Wei", "zh-CN": "Dr. 张伟" },
     role: "testimonials.role3",
     content: "testimonials.content3",
     initials: "ZW",
@@ -38,7 +38,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "4",
-    name: "Dr. 陈静",
+    name: { en: "Dr. Chen Jing", "zh-CN": "Dr. 陈静" },
     role: "testimonials.role4",
     content: "testimonials.content4",
     initials: "CJ",
@@ -47,7 +47,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "5",
-    name: "Dr. 刘洋",
+    name: { en: "Dr. Liu Yang", "zh-CN": "Dr. 刘洋" },
     role: "testimonials.role5",
     content: "testimonials.content5",
     initials: "LY",

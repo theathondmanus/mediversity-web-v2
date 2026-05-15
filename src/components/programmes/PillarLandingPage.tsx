@@ -92,12 +92,12 @@ export default function PillarLandingPage({ pillarKey, icon: PillarIcon, color, 
                   </div>
                   <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 pl-13">
                     {active.map((course) => (
-                      <Card key={course.titleKey} className="hover:shadow-md transition-shadow border">
-                        <CardContent className="p-5">
-                          <h3 className="font-semibold text-[#0A1628] text-sm mb-2">
+                      <Card key={course.titleKey} className="hover:shadow-md transition-shadow border h-full">
+                        <CardContent className="p-5 h-full flex flex-col">
+                          <h3 className="font-semibold text-[#0A1628] text-sm mb-2 flex-1">
                             {t(`courses.${course.titleKey}`)}
                           </h3>
-                          <span className="inline-flex items-center gap-1 text-xs font-medium text-[#00438A]">
+                          <span className="inline-flex items-center gap-1 text-xs font-medium text-[#00438A] mt-auto">
                             {tCommon("viewDetails")} <ArrowRight className="w-3 h-3" />
                           </span>
                         </CardContent>

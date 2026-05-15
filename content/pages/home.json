@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "image": "/images/home/hero-main.webp",
+    "badge": {
+      "zh-CN": "国际医疗专业人士发展平台",
+      "en": "International Healthcare Professional Development Platform"
+    },
+    "title": {
+      "zh-CN": "助力医疗专业人士国际化成长",
+      "en": "Empowering Healthcare Professionals for Global Growth"
+    },
+    "subtitle": {
+      "zh-CN": "从医学英语到临床观摩，从学术研究到职业发展，Mediversity Global 为您提供全方位的国际化专业发展路径。",
+      "en": "From medical English to clinical observership, from academic research to professional development — Mediversity Global provides comprehensive pathways for international professional growth."
+    }
+  },
+  "businessLines": {
+    "programmes": {
+      "image": "/images/home/programmes-medical-english.webp",
+      "title": {
+        "zh-CN": "医学英语教育与专业培训",
+        "en": "Medical English Education & Professional Training"
+      },
+      "desc": {
+        "zh-CN": "涵盖医学英语、学术研究、临床观摩与医学人文四大板块，系统化提升国际竞争力",
+        "en": "Covering Medical English, Research, Observership and Humanities — systematically enhancing international competitiveness"
+      }
+    },
+    "navigator": {
+      "image": "/images/home/programmes-navigator.webp",
+      "title": {
+        "zh-CN": "国际医疗导航",
+        "en": "Medical Navigator"
+      },
+      "desc": {
+        "zh-CN": "一站式国际医疗职业发展规划与落地服务，从咨询到实施全程陪伴",
+        "en": "One-stop international medical career planning and implementation service, with full support from consultation to execution"
+      }
+    }
+  },
+  "pillars": [
+    {
+      "key": "medicalEnglish",
+      "href": "/programmes/medical-english",
+      "title": { "zh-CN": "医学英语与沟通", "en": "Medical English & Communication" },
+      "desc": { "zh-CN": "从基础提升到临床实战，系统化医学英语培训体系", "en": "From foundations to clinical practice, a systematic medical English training system" }
+    },
+    {
+      "key": "research",
+      "href": "/programmes/research-academic",
+      "title": { "zh-CN": "医学研究与学术发展", "en": "Medical Research & Academic Development" },
+      "desc": { "zh-CN": "科研方法论、学术写作与国际论文发表", "en": "Research methodology, academic writing and international publication" }
+    },
+    {
+      "key": "observership",
+      "href": "/programmes/observership",
+      "title": { "zh-CN": "临床观摩与国际交流", "en": "Clinical Observership & International Exposure" },
+      "desc": { "zh-CN": "英国顶级医院临床观摩与访问学者项目", "en": "Clinical observership at top UK hospitals and visiting scholar programmes" }
+    },
+    {
+      "key": "humanities",
+      "href": "/programmes/humanities",
+      "title": { "zh-CN": "职业发展与医学人文", "en": "Professional Development & Medical Humanities" },
+      "desc": { "zh-CN": "医学人文素养、领导力与跨文化能力提升", "en": "Medical humanities, leadership and cross-cultural competency" }
+    }
+  ],
+  "story": {
+    "image": "/images/home/programmes-observership.webp",
+    "title": {
+      "zh-CN": "从课堂到临床，见证真实成长",
+      "en": "From Classroom to Clinic, Witnessing Real Growth"
+    },
+    "description": {
+      "zh-CN": "我们的学员来自全国各大三甲医院，通过系统化的培训项目，在国际学术交流、临床观摩和职业发展等方面取得了显著成果。",
+      "en": "Our students come from leading hospitals across China. Through systematic training programmes, they have achieved remarkable results in international academic exchange, clinical observership and career development."
+    }
+  },
+  "trustOrgs": ["NHS", "University of Cambridge", "GMC", "BMA", "King's College London"]
+}
