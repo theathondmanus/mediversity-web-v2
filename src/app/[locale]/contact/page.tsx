@@ -1,16 +1,10 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { HeroCurve } from "@/components/ui/hero-curve";
+import { FadeIn } from "@/components/ui/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 24 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.5 },
-};
 
 const CONTACT_INFO = [
   { icon: Phone, key: "phone", value: "+44 (0)7345 169 054" },
@@ -24,24 +18,27 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="pt-28 pb-16 bg-gradient-to-br from-[#0A1628] to-[#00438A]">
-        <div className="container">
-          <motion.div {...fadeInUp}>
+      {/* Hero */}
+      <section className="relative pt-32 pb-24 bg-gradient-to-br from-[#0A1628] to-[#00438A] overflow-hidden">
+        <div className="container relative z-10">
+          <FadeIn>
             <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
               {t("title")}
             </h1>
             <p className="text-white/70 text-lg max-w-2xl">
               {t("subtitle")}
             </p>
-          </motion.div>
+          </FadeIn>
         </div>
+        <HeroCurve />
       </section>
 
+      {/* Content */}
       <section className="section-padding bg-white">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {/* Contact Info */}
-            <motion.div {...fadeInUp}>
+            <FadeIn index={0}>
               <h2 className="font-display text-2xl font-bold text-[#0A1628] mb-6">
                 {t("info.title")}
               </h2>
@@ -63,10 +60,10 @@ export default function ContactPage() {
                   );
                 })}
               </div>
-            </motion.div>
+            </FadeIn>
 
             {/* Contact Form */}
-            <motion.div {...fadeInUp}>
+            <FadeIn index={1}>
               <Card className="border shadow-sm">
                 <CardContent className="p-6">
                   <h3 className="font-semibold text-[#0A1628] mb-4">
@@ -109,7 +106,7 @@ export default function ContactPage() {
                   </form>
                 </CardContent>
               </Card>
-            </motion.div>
+            </FadeIn>
           </div>
         </div>
       </section>

@@ -2,16 +2,10 @@
 
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import { Globe, MapPin, FileCheck, Users, ArrowRight } from "lucide-react";
+import { HeroCurve } from "@/components/ui/hero-curve";
+import { FadeIn } from "@/components/ui/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 24 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.5 },
-};
 
 const SERVICES = [
   { icon: MapPin, key: "consultation" },
@@ -25,9 +19,10 @@ export default function MedicalNavigatorPage() {
 
   return (
     <>
-      <section className="pt-28 pb-16 bg-gradient-to-br from-[#0A1628] via-[#1a2d4a] to-[#2a1a0a]">
-        <div className="container">
-          <motion.div {...fadeInUp}>
+      {/* Hero */}
+      <section className="relative pt-32 pb-24 bg-gradient-to-br from-[#0A1628] via-[#1a2d4a] to-[#2a1a0a] overflow-hidden">
+        <div className="container relative z-10">
+          <FadeIn>
             <div className="flex items-center gap-4 mb-4">
               <div className="w-14 h-14 rounded-xl bg-[#C4922A]/20 flex items-center justify-center">
                 <Globe className="w-7 h-7 text-[#C4922A]" />
@@ -39,26 +34,28 @@ export default function MedicalNavigatorPage() {
             <p className="text-white/70 text-lg max-w-2xl mt-4">
               {t("subtitle")}
             </p>
-          </motion.div>
+          </FadeIn>
         </div>
+        <HeroCurve />
       </section>
 
+      {/* Services */}
       <section className="section-padding bg-white">
         <div className="container">
-          <motion.div {...fadeInUp} className="text-center mb-12">
+          <FadeIn className="text-center mb-12">
             <h2 className="font-display text-3xl font-bold text-[#0A1628] mb-4">
               {t("services.title")}
             </h2>
             <p className="text-[#3C3A47] max-w-xl mx-auto">
               {t("services.subtitle")}
             </p>
-          </motion.div>
+          </FadeIn>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {SERVICES.map((service) => {
+            {SERVICES.map((service, idx) => {
               const Icon = service.icon;
               return (
-                <motion.div key={service.key} {...fadeInUp}>
+                <FadeIn key={service.key} index={idx}>
                   <Card className="h-full text-center hover:shadow-lg transition-shadow">
                     <CardContent className="p-6">
                       <div className="w-12 h-12 rounded-xl bg-[#C4922A]/10 flex items-center justify-center mx-auto mb-4">
@@ -72,17 +69,18 @@ export default function MedicalNavigatorPage() {
                       </p>
                     </CardContent>
                   </Card>
-                </motion.div>
+                </FadeIn>
               );
             })}
           </div>
         </div>
       </section>
 
-      <section className="section-padding bg-[#FAFBFC]">
+      {/* CTA */}
+      <section className="section-padding" style={{ backgroundColor: "#F5F3EF" }}>
         <div className="container text-center">
-          <motion.div {...fadeInUp}>
-            <h2 className="font-display text-2xl font-bold text-[#0A1628] mb-4">
+          <FadeIn>
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-[#0A1628] mb-4">
               {t("cta.title")}
             </h2>
             <p className="text-[#3C3A47] mb-8 max-w-lg mx-auto">
@@ -90,11 +88,11 @@ export default function MedicalNavigatorPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#C4922A] text-white font-medium rounded-lg hover:bg-[#B08324] transition-colors no-underline"
+              className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#C4922A] text-white font-medium rounded-md hover:bg-[#A87822] transition-colors no-underline shadow-lg shadow-[#C4922A]/25"
             >
               {t("cta.button")} <ArrowRight className="w-4 h-4" />
             </Link>
-          </motion.div>
+          </FadeIn>
         </div>
       </section>
     </>

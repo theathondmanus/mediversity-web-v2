@@ -30,7 +30,7 @@
       "title": "Two Core Business Lines",
       "subtitle": "Professional training and medical navigation — dual tracks supporting your international development",
       "programmes": {
-        "eyebrow": "Programmes",
+        "eyebrow": "Medical English Education",
         "title": "Medical English Education & Professional Training",
         "desc": "Covering Medical English, Research, Observership and Humanities — systematically enhancing international competitiveness",
         "cta": "Explore All Programmes"
@@ -64,28 +64,7 @@
       },
       "explore": "Learn more"
     },
-    "meSubcategories": {
-      "badge": "Core Pillar",
-      "title": "Medical English & Communication",
-      "subtitle": "Four directions covering all medical English learning needs, from foundations to advanced",
-      "foundations": {
-        "title": "English Foundations",
-        "subtitle": "Building solid medical English fundamentals"
-      },
-      "oet": {
-        "title": "OET & International Licensing",
-        "subtitle": "Exam and registration preparation"
-      },
-      "clinical": {
-        "title": "Clinical Medical English",
-        "subtitle": "Clinical communication skills"
-      },
-      "globalMobility": {
-        "title": "Global Mobility & Pre-Departure",
-        "subtitle": "Comprehensive pre-departure preparation"
-      },
-      "coursesLabel": "courses"
-    },
+
     "testimonials": {
       "eyebrow": "Student Voices",
       "title": "What Our Students Say",

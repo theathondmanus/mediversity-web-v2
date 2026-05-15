@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import Autoplay from "embla-carousel-autoplay";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
@@ -17,6 +17,7 @@ const fadeInUp = {
 
 export default function TestimonialsCarousel() {
   const t = useTranslations();
+  const locale = useLocale() as "zh-CN" | "en";
 
   return (
     <section className="section-padding" style={{ backgroundColor: "#F5F3EF" }}>
@@ -45,12 +46,12 @@ export default function TestimonialsCarousel() {
                 <CarouselItem key={item.id} className="pl-4 md:basis-1/2">
                   <div className="bg-white rounded-xl p-8 md:p-10 shadow-sm border border-[#E3E5EC] relative h-full flex flex-col">
                     {/* Big decorative quote mark */}
-                    <span className="absolute top-6 left-8 text-6xl font-bold text-[#C4922A]/20 leading-none font-display">
+                    <span className="absolute top-6 left-8 text-6xl font-bold text-[#C4922A]/20 leading-none font-display select-none" aria-hidden="true">
                       &ldquo;
                     </span>
 
-                    {/* Quote text */}
-                    <p className="text-[#3C3A47] leading-relaxed relative z-10 italic flex-1 mb-6 pt-4">
+                    {/* Quote text — pt-8 avoids overlap with decorative quote */}
+                    <p className="text-[#3C3A47] leading-relaxed relative z-10 italic flex-1 mb-6 pt-8">
                       {t(item.content)}
                     </p>
 
@@ -63,7 +64,7 @@ export default function TestimonialsCarousel() {
                         {item.initials}
                       </div>
                       <div>
-                        <p className="font-semibold text-[#0E0C19] text-sm">{item.name}</p>
+                        <p className="font-semibold text-[#0E0C19] text-sm">{item.name[locale]}</p>
                         <p className="text-xs text-[#8A889A]">{t(item.role)}</p>
                         {item.program && (
                           <p className="text-xs text-[#C4922A] mt-0.5">{t(item.program)}</p>

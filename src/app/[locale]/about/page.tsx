@@ -1,16 +1,10 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import { Award, Users, Globe, Heart } from "lucide-react";
+import { HeroCurve } from "@/components/ui/hero-curve";
+import { FadeIn, FadeInGroup } from "@/components/ui/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 24 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.5 },
-};
 
 const VALUES = [
   { icon: Award, key: "excellence" },
@@ -24,44 +18,48 @@ export default function AboutPage() {
 
   return (
     <>
-      <section className="pt-28 pb-16 bg-gradient-to-br from-[#0A1628] to-[#00438A]">
-        <div className="container">
-          <motion.div {...fadeInUp}>
+      {/* Hero */}
+      <section className="relative pt-32 pb-24 bg-gradient-to-br from-[#0A1628] to-[#00438A] overflow-hidden">
+        <div className="container relative z-10">
+          <FadeIn>
+            <p className="eyebrow !text-[#C4922A]">{t("title")}</p>
             <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
-              {t("title")}
-            </h1>
-            <p className="text-white/70 text-lg max-w-2xl">
               {t("subtitle")}
-            </p>
-          </motion.div>
+            </h1>
+          </FadeIn>
         </div>
+        <HeroCurve />
       </section>
 
+      {/* Mission */}
       <section className="section-padding bg-white">
         <div className="container max-w-3xl">
-          <motion.div {...fadeInUp}>
-            <h2 className="font-display text-2xl font-bold text-[#0A1628] mb-6">
-              {t("mission.title")}
-            </h2>
-            <p className="text-[#3C3A47] leading-relaxed mb-8">
+          <FadeInGroup>
+            <FadeIn index={0}>
+              <h2 className="font-display text-2xl md:text-3xl font-bold text-[#0A1628] mb-6">
+                {t("mission.title")}
+              </h2>
+            </FadeIn>
+            <FadeIn index={1} as="p" className="text-[#3C3A47] leading-relaxed text-lg">
               {t("mission.content")}
-            </p>
-          </motion.div>
+            </FadeIn>
+          </FadeInGroup>
         </div>
       </section>
 
-      <section className="section-padding bg-[#FAFBFC]">
+      {/* Values */}
+      <section className="section-padding" style={{ backgroundColor: "#F5F3EF" }}>
         <div className="container">
-          <motion.div {...fadeInUp} className="text-center mb-12">
-            <h2 className="font-display text-2xl font-bold text-[#0A1628]">
+          <FadeIn className="text-center mb-12">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-[#0A1628]">
               {t("values.title")}
             </h2>
-          </motion.div>
+          </FadeIn>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {VALUES.map((value) => {
+            {VALUES.map((value, idx) => {
               const Icon = value.icon;
               return (
-                <motion.div key={value.key} {...fadeInUp}>
+                <FadeIn key={value.key} index={idx}>
                   <Card className="h-full text-center border-0 shadow-sm">
                     <CardContent className="p-6">
                       <div className="w-12 h-12 rounded-xl bg-[#00438A]/10 flex items-center justify-center mx-auto mb-4">
@@ -75,7 +73,7 @@ export default function AboutPage() {
                       </p>
                     </CardContent>
                   </Card>
-                </motion.div>
+                </FadeIn>
               );
             })}
           </div>
