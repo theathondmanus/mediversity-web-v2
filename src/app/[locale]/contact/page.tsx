@@ -20,7 +20,7 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <HeroSection
-        image="https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-contact-YcHVLPaW5Pyg28SDovctox.webp"
+        image="/images/hero/contact.webp"
         imageAlt="Aerial view of illuminated bridges connecting across a river at twilight"
       >
         <FadeIn>

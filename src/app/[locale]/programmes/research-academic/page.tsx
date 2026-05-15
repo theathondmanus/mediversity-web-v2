@@ -47,7 +47,7 @@ export default function ResearchAcademicPage() {
       icon={Microscope}
       color="bg-purple-50 text-purple-700"
       subcategories={subcategories}
-      heroImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-pillar-research-7H6GdSZ2CWxJW7fW4gxju4.webp"
+      heroImage="/images/hero/research.webp"
       heroImageAlt="Research laboratory with microscopes and university campus at twilight"
     />
   );

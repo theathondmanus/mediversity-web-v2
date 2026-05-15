@@ -18,7 +18,7 @@ export default async function InsightsPage({ params }: InsightsPageProps) {
     <>
       {/* Hero */}
       <HeroSection
-        image="https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-insights-6Lfr2kxiV665fTzZv3Fht5.webp"
+        image="/images/hero/insights.webp"
         imageAlt="Scholarly reading room with medical journals and city twilight view"
       >
         <FadeIn>

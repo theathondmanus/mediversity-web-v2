@@ -47,6 +47,8 @@ export default function ObservershipPage() {
       icon={Stethoscope}
       color="bg-emerald-50 text-emerald-700"
       subcategories={subcategories}
+      heroImage="/images/hero/observership.webp"
+      heroImageAlt="Medical professionals observing surgery through glass in a modern hospital"
     />
   );
 }

@@ -27,7 +27,7 @@ export default function ProgrammesHubPage() {
   return (
     <>
       <HeroSection
-        image="https://d2xsxph8kpxj0f.cloudfront.net/310519663283240002/KBq5Lyhh4CaM5hQqeAng4Y/hero-programmes-hub-29hbiGA2UbTEUkNsrBqtuV.webp"
+        image="/images/hero/programmes.webp"
         imageAlt="Grand medical university library with anatomical models and modern technology"
       >
         <motion.div {...fadeInUp}>
