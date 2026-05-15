@@ -6,11 +6,11 @@ const data: ProgrammeData = {
   subcategory: "oet",
   title: "OET Preparation",
   shortDescription:
-    "Boost your medical English skills and achieve success in the OET exam — your gateway to a global healthcare career.",
+    "Boost your medical English skills and help you achieve success in the OET exam.",
   metaDescription:
     "OET Preparation with expert training, mock tests, online lessons, and personalised feedback to help healthcare professionals succeed.",
   duration: "3–12 months",
-  audience: ["Doctors", "Nurses", "Pharmacists", "Allied Health Professionals"],
+  audience: ["Doctors", "Nurses", "Healthcare Professionals"],
   featured: true,
   order: 10,
   status: "published",
@@ -23,11 +23,14 @@ const data: ProgrammeData = {
   },
 
   sections: [
+    /* ── What is OET ── */
     {
       type: "intro",
       title: "What is OET?",
       body: "The Occupational English Test (OET) is an internationally recognised English language test for healthcare professionals. It evaluates your ability to communicate effectively in a healthcare environment, with tasks and scenarios designed to mirror real-world situations you will encounter in your healthcare career. Achieving high marks in the OET is often required to work or study in English-speaking countries like the UK, Australia, New Zealand, and Ireland.",
     },
+
+    /* ── Why Choose Us ── */
     {
       type: "value-props",
       title: "Why Choose Us for Your OET Preparation?",
@@ -35,7 +38,7 @@ const data: ProgrammeData = {
         {
           title: "OET-Focused Curriculum",
           description:
-            "Our courses are specifically designed for healthcare professionals, focusing on the four key areas of the OET: Listening, Reading, Writing, and Speaking. Each section is aligned with real-life medical scenarios.",
+            "Our courses are specifically designed for healthcare professionals, focusing on the four key areas of the OET: Listening, Reading, Writing, and Speaking. Each section is aligned with real-life medical scenarios to ensure you're prepared for both the exam and practical use in your career.",
         },
         {
           title: "Expert Instructors",
@@ -74,6 +77,8 @@ const data: ProgrammeData = {
         },
       ],
     },
+
+    /* ── OET Online Learning Platform ── */
     {
       type: "delivery-format",
       title: "OET Online Learning Platform",
@@ -114,16 +119,18 @@ const data: ProgrammeData = {
       ctaLabel: "Discover Our Platform",
       ctaHref: "/contact",
     },
+
+    /* ── Online Instructor-Led Courses ── */
     {
       type: "delivery-format",
       title: "Online Instructor-Led Courses",
       subtitle:
-        "Structured lessons with real-time interaction and support from expert instructors to help you stay focused and motivated.",
+        "Structured lessons with real-time interaction and support from expert instructors, designed to help you stay focused and motivated.",
       features: [
         {
           title: "Comprehensive OET Preparation",
           description:
-            "Master all four OET components — Listening, Reading, Writing, and Speaking — through a well-rounded, targeted approach.",
+            "Master all four OET components – Listening, Reading, Writing, and Speaking – through a well-rounded, targeted approach to ensure thorough exam readiness.",
         },
         {
           title: "Live Sessions with Expert Instructors",
@@ -133,7 +140,7 @@ const data: ProgrammeData = {
         {
           title: "Interactive Learning Environment",
           description:
-            "Engage in live discussions, role-plays, and Q&A sessions that provide ample opportunities to practice your skills.",
+            "Engage in live discussions, role-plays, and Q&A sessions that provide ample opportunities to practice your skills in a supportive and interactive setting.",
         },
         {
           title: "Tailored Feedback",
@@ -146,19 +153,21 @@ const data: ProgrammeData = {
             "Each session is structured with specific learning objectives, keeping you focused and on track to achieve measurable results.",
         },
         {
-          title: "Realistic OET Simulations",
+          title: "Practice with Realistic OET Simulations",
           description:
-            "Prepare for the exam with mock tests and practice exercises that replicate the real OET environment.",
+            "Prepare for the exam with mock tests and practice exercises that replicate the real OET environment, building your confidence and exam readiness.",
         },
       ],
       ctaLabel: "Explore Instructor-Led Courses",
       ctaHref: "/contact",
     },
+
+    /* ── OET One-to-One Tutorial ── */
     {
       type: "delivery-format",
       title: "OET One-to-One Tutorial",
       subtitle:
-        "For personalised, focused support — tailored to meet your individual needs and accelerate your OET preparation.",
+        "For personalised, focused support, tailored to meet your individual needs, allowing you to concentrate on your specific weaknesses and accelerate your OET preparation.",
       features: [
         {
           title: "Personalised Learning",
@@ -168,7 +177,7 @@ const data: ProgrammeData = {
         {
           title: "Expert Tutors",
           description:
-            "Work closely with experienced English-speaking tutors who offer specialised knowledge and guidance to help you excel.",
+            "Work closely with experienced English-speaking tutors who offer specialised knowledge and guidance to help you excel in the OET.",
         },
         {
           title: "Focused Support",
@@ -183,7 +192,7 @@ const data: ProgrammeData = {
         {
           title: "Flexible Scheduling",
           description:
-            "Learn at your convenience with scheduling options that fit your lifestyle and commitments.",
+            "Learn at your convenience with scheduling options that fit your lifestyle and commitments, ensuring a stress-free learning experience.",
         },
       ],
       ctaLabel: "Learn More",

@@ -36,7 +36,7 @@ export const registry: ProgrammeRegistryEntry[] = [
     category: "medical-english",
     subcategory: "oet",
     title: "OET 备考课程", // display title is locale-dependent; this is the zh-CN default
-    shortDescription: "系统提升医学英语能力，助力成功通过 OET 考试。",
+    shortDescription: "提升您的医学英语能力，助力成功通过 OET 考试。",
     featured: true,
     order: 10,
     status: "published",

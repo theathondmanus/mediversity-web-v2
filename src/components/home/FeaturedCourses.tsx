@@ -23,11 +23,11 @@ const TITLES: Record<string, Record<string, { title: string; desc: string }>> = 
   "oet-preparation": {
     "zh-CN": {
       title: "OET 备考课程",
-      desc: "系统提升医学英语能力，助力成功通过 OET 考试，开启国际化执业新征程。",
+      desc: "提升您的医学英语能力，助力成功通过 OET 考试。",
     },
     en: {
       title: "OET Preparation",
-      desc: "Boost your medical English skills and achieve success in the OET exam — your gateway to a global healthcare career.",
+      desc: "Boost your medical English skills and help you achieve success in the OET exam.",
     },
   },
 };
