@@ -4,6 +4,25 @@
 
 ---
 
+## 0. 协作分工（owner @theathondmanus 5/15 18:31 拍板）
+
+**Moss 加内容 / Manus 配图**。严格分工：
+
+| 工作类型 | 负责人 |
+|---|---|
+| 文本内容（mdx / ts 数据 / frontmatter）| **Moss** |
+| 站点架构 / 部署 / 维护 | **Moss** |
+| **所有视觉资产**（hero 图 / 卡片 cover / 装饰图等）| **Manus** |
+| 视觉调性 / 模板设计 | Manus |
+
+**Moss 加新课时不要自己生图、不要自己挑图**：
+- frontmatter 里的图片字段（`hero.image` / `cover` 等）**留空**或填 `TODO`
+- 在 PR 描述里 `@theathondmanus` 列出需要配图的字段清单
+- Manus 收到后单独 commit 图片到 `public/images/` 对应路径
+- 物业链路允许暂时无图（用渐变 fallback），等 Manus 补完再优化
+
+---
+
 ## 1. 目录结构总览
 
 ```
@@ -176,6 +195,7 @@ gh pr create --base main --title "feat: OET Intensive Bootcamp" --body "Closes #
 | registry.ts 中央注册 | 单一入口管理所有课程元数据，hub 页和首页统一读取 |
 | `slug` 字段可选 | 未创建详情页的课程卡片不可点击，渐进式上线 |
 | `featured` 标记 | 首页精选区块自动从 registry 读取，无需手动维护首页代码 |
+| **配图归 Manus，Moss 不碰** | Moss 专注内容/架构/部署；Manus 视觉判断更专业。新课 PR 里图片字段留空或 TODO，PR 描述 @theathondmanus 请求补图 |
 
 ## 6. 未来扩展
 
