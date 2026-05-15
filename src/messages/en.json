@@ -250,33 +250,7 @@
     }
   },
   "medicalNavigator": {
-    "title": "Medical Navigator",
-    "subtitle": "One-stop international medical career planning and implementation service, with full support from consultation to execution",
-    "services": {
-      "title": "Our Services",
-      "subtitle": "Comprehensive international development support for healthcare professionals",
-      "consultation": {
-        "title": "Career Planning",
-        "desc": "One-to-one in-depth consultation, customising your international development pathway"
-      },
-      "documentation": {
-        "title": "Documentation Support",
-        "desc": "Assistance with application materials, reference letters and personal statements"
-      },
-      "matching": {
-        "title": "Institution Matching",
-        "desc": "Precise matching with UK healthcare institutions and academic partners"
-      },
-      "support": {
-        "title": "End-to-End Support",
-        "desc": "Full-process guidance from application to arrival"
-      }
-    },
-    "cta": {
-      "title": "Start Your International Journey",
-      "subtitle": "Book a free consultation to discover the right pathway for you",
-      "button": "Book a Consultation"
-    }
+    "_note": "Page content is in content/pages/medical-navigator.json. Only nav-level keys remain here."
   },
   "insights": {
     "title": "Insights",

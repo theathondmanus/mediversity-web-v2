@@ -250,33 +250,7 @@
     }
   },
   "medicalNavigator": {
-    "title": "国际医疗导航",
-    "subtitle": "一站式国际医疗职业发展规划与落地服务，从咨询到实施全程陪伴",
-    "services": {
-      "title": "服务内容",
-      "subtitle": "为医疗专业人士提供全方位国际化发展支持",
-      "consultation": {
-        "title": "职业规划咨询",
-        "desc": "一对一深度咨询，定制个人国际化发展路径"
-      },
-      "documentation": {
-        "title": "材料准备",
-        "desc": "协助准备申请材料、推荐信与个人陈述"
-      },
-      "matching": {
-        "title": "机构匹配",
-        "desc": "精准匹配英国医疗机构与学术合作伙伴"
-      },
-      "support": {
-        "title": "全程支持",
-        "desc": "从申请到落地的全流程陪伴与指导"
-      }
-    },
-    "cta": {
-      "title": "开始您的国际化之旅",
-      "subtitle": "预约免费咨询，了解适合您的发展路径",
-      "button": "预约咨询"
-    }
+    "_note": "Page content is in content/pages/medical-navigator.json. Only nav-level keys remain here."
   },
   "insights": {
     "title": "洞察与资讯",
