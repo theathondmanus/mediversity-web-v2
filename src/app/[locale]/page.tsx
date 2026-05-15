@@ -66,7 +66,7 @@ export default function HomePage() {
             <motion.h1
               variants={fadeInUp}
               custom={1}
-              className="font-display text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white leading-[1.15] mb-6"
+              className="font-display text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white leading-[1.15] mb-6 md:whitespace-nowrap"
             >
               {t("hero.title")}
             </motion.h1>
