@@ -30,7 +30,7 @@
       "title": "Two Core Business Lines",
       "subtitle": "Professional training and medical navigation — dual tracks supporting your international development",
       "programmes": {
-        "eyebrow": "Programmes",
+        "eyebrow": "Medical English Education",
         "title": "Medical English Education & Professional Training",
         "desc": "Covering Medical English, Research, Observership and Humanities — systematically enhancing international competitiveness",
         "cta": "Explore All Programmes"
@@ -101,13 +101,18 @@
       "title": "Recognised by Leading Institutions"
     },
     "cta": {
-      "title": "Start Your International Development Journey",
-      "subtitle": "Whatever stage of your career, we have the right programme for you",
+      "title": "Ready to Begin?",
+      "subtitle": "Contact us to start your international development journey",
       "btn1": "Browse All Programmes",
       "btn2": "Contact Us"
     }
   },
   "testimonials": {
+    "name1": "Dr. Wang Ming",
+    "name2": "Dr. Li Hua",
+    "name3": "Dr. Zhang Wei",
+    "name4": "Dr. Chen Jing",
+    "name5": "Dr. Liu Yang",
     "role1": "Jiangxi Provincial Maternal and Child Health Hospital · Attending Physician",
     "content1": "Mediversity Global's medical English programme helped me confidently present at international academic conferences. My colleagues have all noticed the improvement.",
     "role2": "Peking Union Medical College Hospital · Resident",

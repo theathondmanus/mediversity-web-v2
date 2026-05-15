@@ -63,7 +63,7 @@ export default function TestimonialsCarousel() {
                         {item.initials}
                       </div>
                       <div>
-                        <p className="font-semibold text-[#0E0C19] text-sm">{item.name}</p>
+                        <p className="font-semibold text-[#0E0C19] text-sm">{t(item.nameKey)}</p>
                         <p className="text-xs text-[#8A889A]">{t(item.role)}</p>
                         {item.program && (
                           <p className="text-xs text-[#C4922A] mt-0.5">{t(item.program)}</p>

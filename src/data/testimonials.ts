@@ -1,6 +1,6 @@
 export interface Testimonial {
   id: string;
-  name: string;
+  nameKey: string;
   role: string;
   content: string;
   initials: string;
@@ -11,7 +11,7 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Dr. 王明",
+    nameKey: "testimonials.name1",
     role: "testimonials.role1",
     content: "testimonials.content1",
     initials: "WM",
@@ -20,7 +20,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "2",
-    name: "Dr. 李华",
+    nameKey: "testimonials.name2",
     role: "testimonials.role2",
     content: "testimonials.content2",
     initials: "LH",
@@ -29,7 +29,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "3",
-    name: "Dr. 张伟",
+    nameKey: "testimonials.name3",
     role: "testimonials.role3",
     content: "testimonials.content3",
     initials: "ZW",
@@ -38,7 +38,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "4",
-    name: "Dr. 陈静",
+    nameKey: "testimonials.name4",
     role: "testimonials.role4",
     content: "testimonials.content4",
     initials: "CJ",
@@ -47,7 +47,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "5",
-    name: "Dr. 刘洋",
+    nameKey: "testimonials.name5",
     role: "testimonials.role5",
     content: "testimonials.content5",
     initials: "LY",

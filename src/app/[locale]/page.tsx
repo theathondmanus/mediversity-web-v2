@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import {
   ArrowRight, GraduationCap, Microscope, Stethoscope, BookOpen,
-  BookOpenCheck, Plane, Award, ShieldCheck,
 } from "lucide-react";
 import { HeroCurve } from "@/components/ui/hero-curve";
 import TestimonialsCarousel from "@/components/home/TestimonialsCarousel";
@@ -27,13 +26,6 @@ const PILLARS = [
   { icon: Microscope, key: "research", href: "/programmes/research-academic" },
   { icon: Stethoscope, key: "observership", href: "/programmes/observership" },
   { icon: BookOpen, key: "humanities", href: "/programmes/humanities" },
-] as const;
-
-const ME_SUBCATEGORIES = [
-  { icon: BookOpenCheck, key: "foundations", courses: 3, href: "/programmes/medical-english#foundations" },
-  { icon: Award, key: "oet", courses: 1, href: "/programmes/medical-english#oet" },
-  { icon: ShieldCheck, key: "clinical", courses: 3, href: "/programmes/medical-english#clinical" },
-  { icon: Plane, key: "globalMobility", courses: 1, href: "/programmes/medical-english#global-mobility" },
 ] as const;
 
 const TRUST_ORGS = ["NHS", "University of Cambridge", "GMC", "BMA", "King's College London"];
@@ -125,7 +117,7 @@ export default function HomePage() {
             </motion.p>
           </motion.div>
 
-          {/* Medical English & Communication — editorial left-image */}
+          {/* Medical English Education — editorial left-image */}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -223,8 +215,9 @@ export default function HomePage() {
                   viewport={{ once: true }}
                   variants={fadeInUp}
                   custom={idx}
+                  className="h-full"
                 >
-                  <Link href={pillar.href as never} className="no-underline block group">
+                  <Link href={pillar.href as never} className="no-underline block group h-full">
                     <div className="bg-white rounded-xl p-6 border border-[#E3E5EC] shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 h-full">
                       <div className="w-12 h-12 rounded-lg bg-[#00438A]/10 flex items-center justify-center mb-4 group-hover:bg-[#00438A]/20 transition-colors">
                         <Icon className="w-6 h-6 text-[#00438A]" />
@@ -237,61 +230,6 @@ export default function HomePage() {
                       </p>
                       <span className="text-xs font-medium text-[#00438A] flex items-center gap-1 group-hover:gap-2 transition-all">
                         {t("pillars.explore")} <ArrowRight className="w-3 h-3" />
-                      </span>
-                    </div>
-                  </Link>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* ═══ MEDICAL ENGLISH SUBCATEGORIES ═══ */}
-      <section className="section-padding bg-white">
-        <div className="container">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            className="text-center mb-14"
-          >
-            <motion.span variants={fadeInUp} custom={0} className="inline-block px-3 py-1 bg-[#00438A]/10 text-[#00438A] text-xs font-semibold rounded-full mb-4">
-              {t("meSubcategories.badge")}
-            </motion.span>
-            <motion.h2 variants={fadeInUp} custom={1} className="font-display text-3xl md:text-4xl font-bold text-[#0E0C19] mb-4">
-              {t("meSubcategories.title")}
-            </motion.h2>
-            <motion.p variants={fadeInUp} custom={2} className="text-[#3C3A47] max-w-2xl mx-auto">
-              {t("meSubcategories.subtitle")}
-            </motion.p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {ME_SUBCATEGORIES.map((sub, idx) => {
-              const Icon = sub.icon;
-              return (
-                <motion.div
-                  key={sub.key}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                  variants={fadeInUp}
-                  custom={idx}
-                >
-                  <Link href={sub.href as never} className="no-underline block group">
-                    <div className="bg-white rounded-xl p-6 border border-[#E3E5EC] hover:border-[#00438A]/20 hover:shadow-md transition-all text-center h-full">
-                      <div className="w-14 h-14 rounded-xl bg-[#00438A]/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-[#00438A]/20 transition-colors">
-                        <Icon className="w-7 h-7 text-[#00438A]" />
-                      </div>
-                      <h4 className="font-semibold text-[#0E0C19] text-sm mb-1">
-                        {t(`meSubcategories.${sub.key}.title`)}
-                      </h4>
-                      <p className="text-xs text-[#8A889A] mb-3">
-                        {t(`meSubcategories.${sub.key}.subtitle`)}
-                      </p>
-                      <span className="text-xs font-medium text-[#C4922A] flex items-center justify-center gap-1">
-                        {sub.courses} {t("meSubcategories.coursesLabel")} <ArrowRight className="w-3 h-3" />
                       </span>
                     </div>
                   </Link>
@@ -356,7 +294,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══ FINAL CTA ═══ */}
+      {/* ═══ FINAL CTA — "Ready to begin?" (single CTA, per owner mandate) ═══ */}
       <section className="section-padding bg-gradient-to-br from-[#0A1628] to-[#00438A] relative overflow-hidden">
         {/* Decorative blobs */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#C4922A]/10 rounded-full blur-3xl" />
