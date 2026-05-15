@@ -43,6 +43,7 @@ export default function ObservershipPage() {
   return (
     <PillarLandingPage
       pillarKey="observership"
+      categorySlug="observership"
       icon={Stethoscope}
       color="bg-emerald-50 text-emerald-700"
       subcategories={subcategories}

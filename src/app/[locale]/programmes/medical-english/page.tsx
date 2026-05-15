@@ -21,7 +21,7 @@ const subcategories: SubCategory[] = [
     titleKey: "oet",
     descKey: "oetDesc",
     courses: [
-      { titleKey: "oetPreparation", status: "active" },
+      { titleKey: "oetPreparation", status: "active", slug: "oet-preparation" },
       { titleKey: "oetIntensiveBootcamp", status: "future" },
       { titleKey: "platCommunication", status: "future" },
       { titleKey: "healthcareInterview", status: "future" },
@@ -58,6 +58,7 @@ export default function MedicalEnglishPage() {
   return (
     <PillarLandingPage
       pillarKey="medicalEnglish"
+      categorySlug="medical-english"
       icon={GraduationCap}
       color="bg-blue-50 text-[#00438A]"
       subcategories={subcategories}
