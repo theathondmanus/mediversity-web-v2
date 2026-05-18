@@ -1,11 +1,22 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Award, Users, Globe, Heart } from "lucide-react";
+import {
+  Award,
+  Users,
+  Globe,
+  Heart,
+  Stethoscope,
+  Building2,
+  GraduationCap,
+  Plane,
+  Handshake,
+} from "lucide-react";
 import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn, FadeInGroup } from "@/components/ui/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
 
+/* ── Value icons ── */
 const VALUES = [
   { icon: Award, key: "excellence" },
   { icon: Users, key: "collaboration" },
@@ -13,12 +24,28 @@ const VALUES = [
   { icon: Heart, key: "empathy" },
 ];
 
+/* ── Who We Serve icons (by item.key) ── */
+const SERVE_ICONS: Record<string, typeof Stethoscope> = {
+  professionals: Stethoscope,
+  institutions: Building2,
+  schools: GraduationCap,
+  patients: Plane,
+  partners: Handshake,
+};
+
+interface ServeItem {
+  key: string;
+  title: string;
+  desc: string;
+}
+
 export default function AboutPage() {
   const t = useTranslations("about");
+  const serveItems = t.raw("whoWeServe.items") as ServeItem[];
 
   return (
     <>
-      {/* Hero */}
+      {/* ═══ Hero ═══ */}
       <HeroSection
         image="/images/hero/about.webp"
         imageAlt="International conference room with panoramic city view"
@@ -31,24 +58,84 @@ export default function AboutPage() {
         </FadeIn>
       </HeroSection>
 
-      {/* Mission */}
+      {/* ═══ Story — 3 paragraphs (editorial layout) ═══ */}
       <section className="section-padding bg-white">
         <div className="container max-w-3xl">
           <FadeInGroup>
             <FadeIn index={0}>
-              <h2 className="font-display text-2xl md:text-3xl font-bold text-[#0A1628] mb-6">
-                {t("mission.title")}
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0A1628] mb-8">
+                {t("story.title")}
               </h2>
             </FadeIn>
-            <FadeIn index={1} as="p" className="text-[#3C3A47] leading-relaxed text-lg">
-              {t("mission.content")}
+            <FadeIn
+              index={1}
+              as="p"
+              className="text-[#3C3A47] leading-relaxed text-lg mb-6"
+            >
+              {t("story.paragraph1")}
+            </FadeIn>
+            <FadeIn
+              index={2}
+              as="p"
+              className="text-[#3C3A47] leading-relaxed text-lg mb-6"
+            >
+              {t("story.paragraph2")}
+            </FadeIn>
+            <FadeIn
+              index={3}
+              as="p"
+              className="text-[#3C3A47] leading-relaxed text-lg"
+            >
+              {t("story.paragraph3")}
             </FadeIn>
           </FadeInGroup>
         </div>
       </section>
 
-      {/* Values */}
-      <section className="section-padding" style={{ backgroundColor: "#F5F3EF" }}>
+      {/* ═══ Who We Serve ═══ */}
+      <section
+        className="section-padding"
+        style={{ backgroundColor: "#F5F3EF" }}
+      >
+        <div className="container">
+          <FadeIn className="text-center mb-12 max-w-3xl mx-auto">
+            <p className="eyebrow">{t("whoWeServe.eyebrow")}</p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0A1628] mb-6">
+              {t("whoWeServe.title")}
+            </h2>
+            <p className="text-[#3C3A47] leading-relaxed text-base md:text-lg">
+              {t("whoWeServe.intro")}
+            </p>
+          </FadeIn>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-6 max-w-6xl mx-auto">
+            {serveItems.map((item, idx) => {
+              const Icon = SERVE_ICONS[item.key] || Stethoscope;
+              return (
+                <FadeIn key={item.key} index={idx}>
+                  <Card className="h-full border-0 shadow-sm">
+                    <CardContent className="p-6">
+                      <div className="w-12 h-12 rounded-xl bg-[#00438A]/10 flex items-center justify-center mb-4">
+                        <Icon className="w-6 h-6 text-[#00438A]" />
+                      </div>
+                      <h3 className="font-semibold text-[#0A1628] mb-2 text-base">
+                        {item.title}
+                      </h3>
+                      {item.desc && (
+                        <p className="text-sm text-[#3C3A47] leading-relaxed">
+                          {item.desc}
+                        </p>
+                      )}
+                    </CardContent>
+                  </Card>
+                </FadeIn>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ Values ═══ */}
+      <section className="section-padding bg-white">
         <div className="container">
           <FadeIn className="text-center mb-12">
             <h2 className="font-display text-2xl md:text-3xl font-bold text-[#0A1628]">
