@@ -256,10 +256,44 @@
   },
   "about": {
     "title": "About Us",
-    "subtitle": "Mediversity Global — International Healthcare Professional Development Platform",
-    "mission": {
-      "title": "Our Mission",
-      "content": "Mediversity Global is dedicated to providing high-quality international development opportunities for Chinese healthcare professionals. We connect top medical education resources between China and the UK, helping healthcare practitioners enhance their international competitiveness and achieve their career goals through systematic training programmes and one-to-one career navigation services."
+    "subtitle": "Mediversity Global — A global platform connecting medical education and cross-border healthcare services",
+    "story": {
+      "title": "Who We Are",
+      "paragraph1": "Mediversity Global is dedicated to connecting healthcare professionals, international medical education, and high-quality global healthcare resources. With two core divisions — International Medical Education and Cross-border Medical Navigation — we promote international medical exchange, professional development, and cross-border healthcare collaboration.",
+      "paragraph2": "Through a practice-led medical education approach and a professionally structured global healthcare network, we support healthcare professionals and institutions in systematically enhancing their international medical communication skills, global clinical perspective, and cross-cultural collaboration capabilities, enabling sustained professional growth within global healthcare environments.",
+      "paragraph3": "At the same time, we provide end-to-end cross-border healthcare service support, spanning from medical decision-making to real-world care delivery. This includes connecting healthcare needs with appropriate global medical resources and ensuring effective execution across the full care pathway, while enabling more efficient, safer, and more reliable international healthcare connectivity and collaboration."
+    },
+    "whoWeServe": {
+      "eyebrow": "Who We Serve",
+      "title": "Who We Serve",
+      "intro": "Mediversity Global serves a diverse range of stakeholders within the global healthcare ecosystem, including healthcare professionals, healthcare institutions, and individuals requiring cross-border medical support. We provide tailored support across different user groups: enabling healthcare professionals to enhance their international communication skills and career development, supporting institutions in strengthening global capability and cross-cultural collaboration, and assisting patients and families in accessing reliable cross-border healthcare pathways and resources.",
+      "items": [
+        {
+          "key": "professionals",
+          "title": "Healthcare Professionals",
+          "desc": "Doctors, nurses and other medical practitioners"
+        },
+        {
+          "key": "institutions",
+          "title": "Healthcare Institutions",
+          "desc": "Hospitals, medical centres and training organisations"
+        },
+        {
+          "key": "schools",
+          "title": "Medical Schools & Educational Institutions",
+          "desc": ""
+        },
+        {
+          "key": "patients",
+          "title": "Cross-border Patients & Families",
+          "desc": "Individuals and families seeking cross-border healthcare"
+        },
+        {
+          "key": "partners",
+          "title": "International Partners",
+          "desc": "International medical partners and collaborating organisations"
+        }
+      ]
     },
     "values": {
       "title": "Core Values",
