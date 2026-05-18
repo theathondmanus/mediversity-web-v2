@@ -148,10 +148,7 @@
       ]
     },
     "humanities": {
-      "courses": {
-        "medicalHumanitiesGeneralPractice": "医学人文与全科素养",
-        "medicalHumanitiesCommunicationSkills": "医学人文与沟通技能"
-      }
+      "courses": {}
     }
   },
   "programmes": {
@@ -272,7 +269,9 @@
         "narrativeMedicine": "叙事医学",
         "healthcareLeadership": "医疗领导力",
         "crossCulturalCommunication": "跨文化沟通",
-        "reflectivePractice": "反思性实践"
+        "reflectivePractice": "反思性实践",
+        "medicalHumanitiesGeneralPractice": "医学人文与全科素养",
+        "medicalHumanitiesCommunicationSkills": "医学人文与沟通技能"
       }
     }
   },
