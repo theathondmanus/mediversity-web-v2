@@ -6,7 +6,7 @@ readTime: "8 分钟阅读"
 tags: ["案例研究", "医学英语", "妇幼医院", "临床沟通"]
 category: "案例研究"
 excerpt: "随着医院国际化服务拓展，妇幼专科医院如何在 12 周内系统性提升医护团队的临床英语沟通能力？平均测评分数从 39.4 提升至 72.5，84% 的能力提升。"
-cover: "TODO:manus-asset"
+cover: "/images/insights/maternity-hospital-english.jpg"
 ---
 
 ## 客户背景
