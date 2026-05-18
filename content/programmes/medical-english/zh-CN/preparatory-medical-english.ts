@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "12 课时基础英语课程，专为医疗从业者设计，为其进阶医疗英语培训奠定基础",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/preparatory-medical-english.webp",
-    imageAlt: "预备通用英语课程 - 课程封面",
+    image: "/images/hero/medical-english.webp",
+    imageAlt: "医学英语与沟通能力培训",
   },
 
   sections: [

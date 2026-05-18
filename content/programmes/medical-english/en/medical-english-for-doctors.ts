@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "Language and Communication Skills Programme for Healthcare Professionals",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/medical-english-for-doctors.webp",
-    imageAlt: "Medical English for Doctors - Course hero",
+    image: "/images/hero/medical-english.webp",
+    imageAlt: "Medical English & Clinical Communication training",
   },
 
   sections: [

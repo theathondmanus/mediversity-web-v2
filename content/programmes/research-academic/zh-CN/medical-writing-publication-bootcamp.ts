@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "系统掌握国际医学出版全流程",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/medical-writing-publication-bootcamp.webp",
-    imageAlt: "医学写作与发表强化训练营 - 课程封面",
+    image: "/images/hero/research.webp",
+    imageAlt: "医学研究与学术发展",
   },
 
   sections: [

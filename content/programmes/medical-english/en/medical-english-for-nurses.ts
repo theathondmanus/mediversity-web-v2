@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "An advanced, practice-oriented 50-lesson programme tailored for healthcare professionals",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/medical-english-for-nurses.webp",
-    imageAlt: "Medical English for Nurses - Course hero",
+    image: "/images/hero/medical-english.webp",
+    imageAlt: "Medical English & Clinical Communication training",
   },
 
   sections: [

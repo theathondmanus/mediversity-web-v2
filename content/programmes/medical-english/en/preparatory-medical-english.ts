@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "A 12-lesson foundation programme for healthcare professionals preparing for advanced medical English training",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/preparatory-medical-english.webp",
-    imageAlt: "Preparatory Medical English Programme - Course hero",
+    image: "/images/hero/medical-english.webp",
+    imageAlt: "Medical English & Clinical Communication training",
   },
 
   sections: [

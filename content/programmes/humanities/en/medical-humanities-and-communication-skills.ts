@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "Empathy-driven care — core skills for healthcare professionals",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/medical-humanities-and-communication-skills.webp",
-    imageAlt: "Medical Humanities and Communication Skills - Course hero",
+    image: "/images/hero/humanities.webp",
+    imageAlt: "Medical humanities and professional development",
   },
 
   sections: [

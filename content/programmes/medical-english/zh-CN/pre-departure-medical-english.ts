@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "为期 12 周的语言强化课程，专为即将赴海外进行临床实习的医疗专业人员设计",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/pre-departure-medical-english.webp",
-    imageAlt: "行前医学英语培训 - 课程封面",
+    image: "/images/hero/medical-english.webp",
+    imageAlt: "医学英语与沟通能力培训",
   },
 
   sections: [

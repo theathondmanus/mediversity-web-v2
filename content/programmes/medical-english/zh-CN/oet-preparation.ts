@@ -20,8 +20,8 @@ const data: ProgrammeData = {
     lede: "提升您的医学英语能力，助力成功通过 OET 考试。",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/oet-preparation.webp",
-    imageAlt: "OET study desk with medical textbooks and world map showing UK, Australia, New Zealand, Ireland",
+    image: "/images/hero/medical-english.webp",
+    imageAlt: "医学英语与沟通能力培训",
   },
 
   sections: [

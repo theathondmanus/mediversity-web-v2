@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "提升共情照护：赋能医疗从业者的核心技能",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/medical-humanities-and-communication-skills.webp",
-    imageAlt: "医学人文与沟通技能 - 课程封面",
+    image: "/images/hero/humanities.webp",
+    imageAlt: "医学人文与职业发展",
   },
 
   sections: [
