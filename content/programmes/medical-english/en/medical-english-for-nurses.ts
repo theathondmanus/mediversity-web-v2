@@ -9,7 +9,7 @@ const data: ProgrammeData = {
   metaDescription: "Medical English for Nurses - An advanced, practice-oriented 50-lesson programme tailored for healthcare professionals",
   duration: "50 lessons",
   audience: ["Nurses", "Nursing Professionals"],
-  featured: false,
+  featured: true,
   order: 30,
   status: "published",
 

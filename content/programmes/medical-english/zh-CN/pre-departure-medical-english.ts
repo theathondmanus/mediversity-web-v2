@@ -9,7 +9,7 @@ const data: ProgrammeData = {
   metaDescription: "行前医学英语培训 - 为期 12 周的语言强化课程，专为即将赴海外进行临床实习的医疗专业人员设计",
   duration: "12 周",
   audience: ["即将出国医疗人士", "海外深造学员"],
-  featured: false,
+  featured: true,
   order: 40,
   status: "published",
 

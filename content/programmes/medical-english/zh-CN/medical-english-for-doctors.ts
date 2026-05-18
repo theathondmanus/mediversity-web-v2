@@ -9,7 +9,7 @@ const data: ProgrammeData = {
   metaDescription: "医生英语 - 医疗专业人员语言沟通能力提升课程",
   duration: "12 周",
   audience: ["医生", "医疗专业人士"],
-  featured: false,
+  featured: true,
   order: 20,
   status: "published",
 

@@ -9,7 +9,7 @@ const data: ProgrammeData = {
   metaDescription: "Pre-Departure Medical English - A 12-week intensive language programme for healthcare professionals preparing for overseas clinical placement",
   duration: "12 weeks",
   audience: ["Pre-departure Healthcare Professionals", "Overseas Bound Learners"],
-  featured: false,
+  featured: true,
   order: 40,
   status: "published",
 
