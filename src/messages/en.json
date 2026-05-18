@@ -146,6 +146,12 @@
           "desc": "We ensure consistency and excellence in learning outcomes through a structured, professional, and scalable teaching framework, delivering a high-quality and reliable learning experience across all programmes."
         }
       ]
+    },
+    "humanities": {
+      "courses": {
+        "medicalHumanitiesGeneralPractice": "Medical Humanities & General Practice Literacy",
+        "medicalHumanitiesCommunicationSkills": "Medical Humanities & Communication Skills"
+      }
     }
   },
   "programmes": {

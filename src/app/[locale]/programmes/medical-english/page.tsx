@@ -10,7 +10,7 @@ const subcategories: SubCategory[] = [
     titleKey: "foundations",
     descKey: "foundationsDesc",
     courses: [
-      { titleKey: "preparatoryMedicalEnglish", status: "active" },
+      { titleKey: "preparatoryMedicalEnglish", status: "active", slug: "preparatory-medical-english" },
       { titleKey: "clinicalCommunicationFoundations", status: "future" },
       { titleKey: "generalEnglishHealthcare", status: "future" },
     ],
@@ -34,8 +34,8 @@ const subcategories: SubCategory[] = [
     descKey: "clinicalDesc",
     courses: [
       { titleKey: "workplaceMedicalEnglish", status: "active" },
-      { titleKey: "medicalEnglishDoctors", status: "active" },
-      { titleKey: "medicalEnglishNurses", status: "active" },
+      { titleKey: "medicalEnglishDoctors", status: "active", slug: "medical-english-for-doctors" },
+      { titleKey: "medicalEnglishNurses", status: "active", slug: "medical-english-for-nurses" },
       { titleKey: "clinicalConsultationEnglish", status: "future" },
       { titleKey: "wardHandoverCommunication", status: "future" },
     ],
@@ -46,7 +46,7 @@ const subcategories: SubCategory[] = [
     titleKey: "globalMobility",
     descKey: "globalMobilityDesc",
     courses: [
-      { titleKey: "preDepartureMedicalEnglish", status: "active" },
+      { titleKey: "preDepartureMedicalEnglish", status: "active", slug: "pre-departure-medical-english" },
       { titleKey: "ukHealthcareOrientation", status: "future" },
       { titleKey: "culturalCommunication", status: "future" },
       { titleKey: "internationalWorkplaceReadiness", status: "future" },

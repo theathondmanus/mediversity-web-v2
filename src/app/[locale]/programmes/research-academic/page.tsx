@@ -10,7 +10,7 @@ const subcategories: SubCategory[] = [
     titleKey: "researchTraining",
     descKey: "researchTrainingDesc",
     courses: [
-      { titleKey: "medicalResearchEssentials", status: "active" },
+      { titleKey: "medicalResearchEssentials", status: "active", slug: "medical-research-essentials" },
       { titleKey: "researchMethodology", status: "future" },
       { titleKey: "evidenceBasedMedicine", status: "future" },
     ],
@@ -21,7 +21,7 @@ const subcategories: SubCategory[] = [
     titleKey: "academicWriting",
     descKey: "academicWritingDesc",
     courses: [
-      { titleKey: "medicalWritingBootcamp", status: "active" },
+      { titleKey: "medicalWritingBootcamp", status: "active", slug: "medical-writing-publication-bootcamp" },
       { titleKey: "sciWritingSupport", status: "future" },
       { titleKey: "academicPresentationSkills", status: "future" },
     ],

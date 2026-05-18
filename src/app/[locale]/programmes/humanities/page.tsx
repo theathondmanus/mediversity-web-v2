@@ -10,7 +10,8 @@ const subcategories: SubCategory[] = [
     titleKey: "medicalHumanities",
     descKey: "medicalHumanitiesDesc",
     courses: [
-      { titleKey: "medicalHumanitiesProfessionals", status: "active" },
+      { titleKey: "medicalHumanitiesGeneralPractice", status: "active", slug: "medical-humanities-and-general-practice-literacy" },
+      { titleKey: "medicalHumanitiesCommunicationSkills", status: "active", slug: "medical-humanities-and-communication-skills" },
       { titleKey: "empathyPatientCommunication", status: "future" },
       { titleKey: "narrativeMedicine", status: "future" },
     ],

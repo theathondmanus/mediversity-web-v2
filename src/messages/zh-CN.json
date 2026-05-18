@@ -146,6 +146,12 @@
           "desc": "通过结构化、专业化且可复制的教学体系，确保课程交付的一致性与学习体验的高质量。"
         }
       ]
+    },
+    "humanities": {
+      "courses": {
+        "medicalHumanitiesGeneralPractice": "医学人文与全科素养",
+        "medicalHumanitiesCommunicationSkills": "医学人文与沟通技能"
+      }
     }
   },
   "programmes": {
