@@ -20,7 +20,18 @@ import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
 import DualDirectionCards from "@/components/medical-navigator/DualDirectionCards";
+import CaseShowcase, { type CaseStudy } from "@/components/medical-navigator/CaseShowcase";
 import content from "../../../../content/pages/medical-navigator.json";
+
+/* ── Map JSON case items to CaseStudy shape ── */
+const caseStudies: CaseStudy[] = content.cases.items.map((item, idx) => ({
+  id: `case-${idx}`,
+  type: item.type,
+  narrative: item.narrative,
+  quote: item.quote,
+  identity: item.identity,
+  featured: idx === 0,
+}));
 
 type Locale = "zh-CN" | "en";
 
@@ -303,49 +314,16 @@ export default function MedicalNavigatorPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════
-          § 5  CLIENT CASES (3 editorial cards)
+          § 5  CLIENT CASES — 1-main + carousel
           ═══════════════════════════════════════════════════ */}
       <section id="cases" className="section-padding scroll-mt-20" style={{ backgroundColor: "#F5F3EF" }}>
         <div className="container">
-          <FadeIn className="text-center mb-14">
-            <p className="eyebrow">{t2(content.cases.title, locale)}</p>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0A1628] mb-4">
-              {t2(content.cases.subtitle, locale)}
-            </h2>
-          </FadeIn>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {content.cases.items.map((caseItem, idx) => (
-              <FadeIn key={idx} index={idx}>
-                <div className="bg-white rounded-2xl p-8 shadow-sm border border-[#E3E5EC] h-full flex flex-col">
-                  {/* Case type badge */}
-                  <span className="inline-block text-xs font-medium text-[#00438A] bg-[#00438A]/10 px-3 py-1 rounded-full mb-4 self-start">
-                    {t2(caseItem.type, locale)}
-                  </span>
-
-                  {/* Narrative */}
-                  <p className="text-[#3C3A47] text-sm leading-relaxed mb-6 flex-1">
-                    {t2(caseItem.narrative, locale)}
-                  </p>
-
-                  {/* Quote */}
-                  <div className="border-l-3 border-[#C4922A] pl-4 mb-4">
-                    <span className="text-2xl text-[#C4922A]/40 font-display leading-none" aria-hidden="true">
-                      &ldquo;
-                    </span>
-                    <p className="text-[#0A1628] italic font-display text-sm leading-relaxed -mt-2">
-                      {t2(caseItem.quote, locale)}
-                    </p>
-                  </div>
-
-                  {/* Identity */}
-                  <p className="text-xs text-[#8A889A] mt-auto pt-2">
-                    — {t2(caseItem.identity, locale)}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
+          <CaseShowcase
+            sectionTitle={t2(content.cases.title, locale)}
+            sectionSubtitle={t2(content.cases.subtitle, locale)}
+            cases={caseStudies}
+            locale={locale}
+          />
         </div>
       </section>
 

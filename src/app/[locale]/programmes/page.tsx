@@ -3,22 +3,83 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { ArrowRight, GraduationCap, Microscope, Stethoscope, BookOpen } from "lucide-react";
+import {
+  ArrowRight,
+  GraduationCap,
+  Microscope,
+  Stethoscope,
+  BookOpen,
+} from "lucide-react";
 import { HeroSection } from "@/components/ui/hero-section";
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  WaveDivider,
+  DotPattern,
+  FloatingShape,
+  CornerAccent,
+} from "@/components/ui/section-decorations";
 
+/* ── Animation presets ── */
 const fadeInUp = {
-  initial: { opacity: 0, y: 24 },
+  initial: { opacity: 0, y: 28 },
   whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
+  viewport: { once: true, margin: "-60px" },
   transition: { duration: 0.5 },
 };
 
+const staggerContainer = {
+  initial: {},
+  whileInView: { transition: { staggerChildren: 0.12 } },
+  viewport: { once: true, margin: "-60px" },
+};
+
+const staggerItem = {
+  initial: { opacity: 0, y: 24 },
+  whileInView: { opacity: 1, y: 0, transition: { duration: 0.45 } },
+};
+
+/* ── Pillar data ── */
 const PILLARS = [
-  { icon: GraduationCap, color: "bg-blue-50 text-[#00438A]", key: "medicalEnglish", href: "/programmes/medical-english", activeCourses: 5 },
-  { icon: Microscope, color: "bg-purple-50 text-purple-700", key: "research", href: "/programmes/research-academic", activeCourses: 2 },
-  { icon: Stethoscope, color: "bg-emerald-50 text-emerald-700", key: "observership", href: "/programmes/observership", activeCourses: 3 },
-  { icon: BookOpen, color: "bg-amber-50 text-amber-700", key: "humanities", href: "/programmes/humanities", activeCourses: 1 },
+  {
+    icon: GraduationCap,
+    iconBg: "bg-blue-50",
+    iconColor: "text-[#00438A]",
+    accentColor: "#00438A",
+    key: "medicalEnglish",
+    href: "/programmes/medical-english",
+    activeCourses: 5,
+    futureCourses: 11,
+  },
+  {
+    icon: Microscope,
+    iconBg: "bg-purple-50",
+    iconColor: "text-purple-700",
+    accentColor: "#7e22ce",
+    key: "research",
+    href: "/programmes/research-academic",
+    activeCourses: 2,
+    futureCourses: 7,
+  },
+  {
+    icon: Stethoscope,
+    iconBg: "bg-emerald-50",
+    iconColor: "text-emerald-700",
+    accentColor: "#047857",
+    key: "observership",
+    href: "/programmes/observership",
+    activeCourses: 3,
+    futureCourses: 6,
+  },
+  {
+    icon: BookOpen,
+    iconBg: "bg-amber-50",
+    iconColor: "text-amber-700",
+    accentColor: "#b45309",
+    key: "humanities",
+    href: "/programmes/humanities",
+    activeCourses: 1,
+    futureCourses: 5,
+  },
 ];
 
 export default function ProgrammesHubPage() {
@@ -26,46 +87,124 @@ export default function ProgrammesHubPage() {
 
   return (
     <>
+      {/* ═══ Hero ═══ */}
       <HeroSection
         image="/images/hero/programmes.webp"
         imageAlt="Grand medical university library with anatomical models and modern technology"
       >
-        <motion.div {...fadeInUp}>
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            {t("title")}
-          </h1>
-          <p className="text-white/70 text-xl max-w-2xl leading-relaxed">
+        <motion.div {...fadeInUp} className="max-w-3xl">
+          <p className="eyebrow !text-[#C4922A] mb-4">{t("title")}</p>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             {t("subtitle")}
+          </h1>
+          <p className="text-white/70 text-lg md:text-xl leading-relaxed max-w-2xl">
+            从医学英语到临床观摩，从学术研究到职业发展，系统化的培训体系助力您的国际化成长。
           </p>
         </motion.div>
       </HeroSection>
 
-      <section className="section-padding bg-white">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      {/* ═══ Pillar Cards ═══ */}
+      <section className="section-padding bg-white relative overflow-hidden">
+        {/* Decorative elements */}
+        <DotPattern opacity={0.03} />
+        <FloatingShape
+          className="top-12 -right-8 hidden lg:block"
+          shape="ring"
+          color="#00438A"
+          size={160}
+          opacity={0.04}
+        />
+        <FloatingShape
+          className="-bottom-6 -left-10 hidden lg:block"
+          shape="cross"
+          color="#C4922A"
+          size={100}
+          opacity={0.04}
+        />
+
+        <div className="container relative z-10">
+          {/* Section header */}
+          <motion.div {...fadeInUp} className="text-center mb-14 max-w-2xl mx-auto">
+            <p className="eyebrow">四大培训板块</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0A1628] mb-4">
+              覆盖国际化发展全部核心需求
+            </h2>
+            <p className="text-[#3C3A47] leading-relaxed">
+              每个板块均由中英两国资深教育专家联合设计，从基础能力到高阶实践层层递进。
+            </p>
+          </motion.div>
+
+          {/* Cards grid */}
+          <motion.div
+            {...staggerContainer}
+            className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto"
+          >
             {PILLARS.map((pillar) => {
               const Icon = pillar.icon;
               return (
-                <motion.div key={pillar.key} {...fadeInUp}>
+                <motion.div key={pillar.key} variants={staggerItem}>
                   <Link href={pillar.href as never} className="no-underline block group">
-                    <Card className="h-full hover:shadow-lg transition-all border-2 border-transparent hover:border-[#00438A]/10">
-                      <CardContent className="p-8">
-                        <div className={`w-14 h-14 rounded-xl ${pillar.color} flex items-center justify-center mb-5`}>
-                          <Icon className="w-7 h-7" />
-                        </div>
-                        <h2 className="text-xl font-bold text-[#0A1628] mb-2 group-hover:text-[#00438A] transition-colors">
-                          {t(`pillars.${pillar.key}.title`)}
-                        </h2>
-                        <p className="text-sm text-[#3C3A47] leading-relaxed mb-4">
-                          {t(`pillars.${pillar.key}.desc`)}
-                        </p>
-                        <div className="flex items-center justify-between">
-                          <span className="text-xs text-[#8A889A]">
-                            {pillar.activeCourses} {t("activeCourses")}
-                          </span>
-                          <span className="text-sm font-medium text-[#00438A] flex items-center gap-1 group-hover:gap-2 transition-all">
-                            {t("explore")} <ArrowRight className="w-4 h-4" />
-                          </span>
+                    <Card className="h-full border-0 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+                      {/* Top accent bar */}
+                      <div
+                        className="absolute top-0 left-0 right-0 h-1 transition-all duration-300 group-hover:h-1.5"
+                        style={{ backgroundColor: pillar.accentColor }}
+                      />
+                      <CardContent className="p-8 md:p-10">
+                        <div className="flex items-start gap-5">
+                          {/* Icon with decorative background */}
+                          <div className="relative flex-shrink-0">
+                            <div
+                              className={`w-16 h-16 rounded-2xl ${pillar.iconBg} ${pillar.iconColor} flex items-center justify-center transition-transform duration-300 group-hover:scale-105`}
+                            >
+                              <Icon className="w-8 h-8" />
+                            </div>
+                            {/* Subtle ring behind icon */}
+                            <div
+                              className="absolute -inset-2 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                              style={{
+                                border: `1px solid ${pillar.accentColor}`,
+                                opacity: 0,
+                              }}
+                            />
+                          </div>
+
+                          {/* Text content */}
+                          <div className="flex-1 min-w-0">
+                            <h2 className="text-xl md:text-2xl font-bold text-[#0A1628] mb-2 group-hover:text-[#00438A] transition-colors">
+                              {t(`pillars.${pillar.key}.title`)}
+                            </h2>
+                            <p className="text-sm text-[#3C3A47] leading-relaxed mb-5">
+                              {t(`pillars.${pillar.key}.desc`)}
+                            </p>
+
+                            {/* Stats row */}
+                            <div className="flex items-center gap-6 mb-5">
+                              <div>
+                                <span className="text-2xl font-bold text-[#00438A]">
+                                  {pillar.activeCourses}
+                                </span>
+                                <span className="text-xs text-[#8A889A] ml-1.5">
+                                  门在线课程
+                                </span>
+                              </div>
+                              <div className="w-px h-6 bg-[#E3E5EC]" />
+                              <div>
+                                <span className="text-2xl font-bold text-[#C4922A]/60">
+                                  {pillar.futureCourses}
+                                </span>
+                                <span className="text-xs text-[#8A889A] ml-1.5">
+                                  门规划中
+                                </span>
+                              </div>
+                            </div>
+
+                            {/* CTA */}
+                            <span className="inline-flex items-center gap-1.5 text-sm font-medium text-[#00438A] group-hover:gap-2.5 transition-all duration-300">
+                              {t("explore")}
+                              <ArrowRight className="w-4 h-4" />
+                            </span>
+                          </div>
                         </div>
                       </CardContent>
                     </Card>
@@ -73,7 +212,41 @@ export default function ProgrammesHubPage() {
                 </motion.div>
               );
             })}
-          </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ═══ Wave transition ═══ */}
+      <WaveDivider fromColor="#FFFFFF" toColor="#F5F3EF" />
+
+      {/* ═══ Bottom CTA ═══ */}
+      <section className="section-padding bg-[#F5F3EF] relative overflow-hidden">
+        <CornerAccent position="top-right" color="#00438A" size={100} />
+        <CornerAccent position="bottom-left" color="#C4922A" size={80} />
+
+        <div className="container relative z-10">
+          <motion.div {...fadeInUp} className="text-center max-w-2xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0A1628] mb-4">
+              不确定从哪里开始？
+            </h2>
+            <p className="text-[#3C3A47] leading-relaxed mb-8">
+              我们的课程顾问可以根据您的职业背景和发展目标，为您推荐最适合的学习路径。
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#00438A] text-white rounded-lg font-medium hover:bg-[#003066] transition-colors no-underline"
+              >
+                预约免费咨询
+              </Link>
+              <Link
+                href="/medical-navigator"
+                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border-2 border-[#00438A] text-[#00438A] rounded-lg font-medium hover:bg-[#00438A]/5 transition-colors no-underline"
+              >
+                了解医疗导航
+              </Link>
+            </div>
+          </motion.div>
         </div>
       </section>
     </>

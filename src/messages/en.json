@@ -19,27 +19,27 @@
   },
   "home": {
     "hero": {
-      "badge": "International Healthcare Professional Development Platform",
-      "title": "Empowering Healthcare Professionals for Global Growth",
-      "subtitle": "From medical English to clinical observership, from academic research to professional development — Mediversity Global provides comprehensive pathways for international professional growth.",
+      "badge": "International Medical Education × Cross-border Medical Navigation",
+      "title": "A global platform connecting medical education and cross-border healthcare services",
+      "subtitle": "Mediversity Global is dedicated to connecting healthcare professionals, international medical education, and high-quality global healthcare resources — advancing international medical exchange, professional development, and cross-border healthcare collaboration.",
       "cta1": "Explore Programmes",
       "cta2": "Book a Consultation"
     },
     "businessLines": {
       "eyebrow": "Core Business",
       "title": "Two Core Business Lines",
-      "subtitle": "Professional training and medical navigation — dual tracks supporting your international development",
+      "subtitle": "International Medical Education and Cross-border Medical Navigation — dual tracks connecting global medical education and services",
       "programmes": {
-        "eyebrow": "Medical English Education",
-        "title": "Medical English Education & Professional Training",
-        "desc": "Covering Medical English, Research, Observership and Humanities — systematically enhancing international competitiveness",
-        "cta": "Explore All Programmes"
+        "eyebrow": "International Medical Education",
+        "title": "International Medical Education",
+        "desc": "A practice-led international medical education system across Medical English, Clinical Observership, Medical Research and Medical Humanities — systematically enhancing global capability, clinical perspective, and academic impact.",
+        "cta": "Explore International Medical Education"
       },
       "navigator": {
-        "eyebrow": "Medical Navigator",
-        "title": "Medical Navigator",
-        "desc": "One-stop international medical career planning and implementation service, with full support from consultation to execution",
-        "cta": "Learn About Navigator"
+        "eyebrow": "Cross-border Medical Navigation",
+        "title": "Cross-border Medical Navigation",
+        "desc": "Connecting high-quality healthcare resources across China and overseas, with end-to-end cross-border services spanning preventive care, major disease treatment, rapid specialist access, and traditional medicine and wellness support.",
+        "cta": "Explore Cross-border Medical Navigation"
       }
     },
     "pillars": {
