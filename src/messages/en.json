@@ -119,7 +119,34 @@
         "desc": "Medical humanities, leadership and cross-cultural communication competency"
       }
     },
-    "futureCoursesShort": "planned"
+    "futureCoursesShort": "planned",
+    "philosophy": {
+      "eyebrow": "Educational Philosophy",
+      "title": "Our Educational Philosophy & Standards",
+      "intro": "International medical education extends beyond the development of knowledge and language skills. It is a structured process of cultivating clinical communication, global medical perspective, and professional values.",
+      "items": [
+        {
+          "key": "learner-centred",
+          "title": "Learner-centred Approach",
+          "desc": "We place learners at the heart of the educational experience, with strong emphasis on interaction, engagement, and practical application. Learners are encouraged to actively participate, express themselves, and build professional confidence through real communication practice and feedback."
+        },
+        {
+          "key": "real-world",
+          "title": "Real-world Clinical Relevance",
+          "desc": "Our programmes are designed around authentic clinical environments and real-life medical cases. We prioritise practical application, ensuring that knowledge and skills are directly transferable to clinical practice."
+        },
+        {
+          "key": "international",
+          "title": "Integration of International Standards",
+          "desc": "We integrate international standards of medical communication, cross-cultural understanding, and global healthcare practice to develop communication skills aligned with the demands of international medical environments."
+        },
+        {
+          "key": "standardised",
+          "title": "High-quality, Standardised Delivery",
+          "desc": "We ensure consistency and excellence in learning outcomes through a structured, professional, and scalable teaching framework, delivering a high-quality and reliable learning experience across all programmes."
+        }
+      ]
+    }
   },
   "programmes": {
     "medicalEnglish": {

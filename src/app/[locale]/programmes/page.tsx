@@ -103,6 +103,46 @@ export default function ProgrammesHubPage() {
         </motion.div>
       </HeroSection>
 
+      {/* ═══ Philosophy — 4 core principles (added Issue #48 A1) ═══ */}
+      <section className="section-padding bg-white relative overflow-hidden">
+        <DotPattern opacity={0.02} />
+        <div className="container relative z-10">
+          <motion.div
+            {...fadeInUp}
+            className="text-center mb-12 max-w-3xl mx-auto"
+          >
+            <p className="eyebrow">{t("philosophy.eyebrow")}</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0A1628] mb-4">
+              {t("philosophy.title")}
+            </h2>
+            <p className="text-[#3C3A47] leading-relaxed">
+              {t("philosophy.intro")}
+            </p>
+          </motion.div>
+          <motion.div
+            {...staggerContainer}
+            className="grid sm:grid-cols-2 gap-5 lg:gap-6 max-w-5xl mx-auto"
+          >
+            {(t.raw("philosophy.items") as Array<{ key: string; title: string; desc: string }>).map(
+              (item) => (
+                <motion.div key={item.key} variants={staggerItem}>
+                  <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
+                    <CardContent className="p-6 md:p-7">
+                      <h3 className="font-display text-lg font-bold text-[#0A1628] mb-3">
+                        {item.title}
+                      </h3>
+                      <p className="text-sm text-[#3C3A47] leading-relaxed">
+                        {item.desc}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ),
+            )}
+          </motion.div>
+        </div>
+      </section>
+
       {/* ═══ Pillar Cards ═══ */}
       <section className="section-padding bg-white relative overflow-hidden">
         {/* Decorative elements */}
