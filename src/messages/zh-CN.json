@@ -308,7 +308,8 @@
       "body": "文章内容即将上线，敬请期待。此页面将支持 MDX 格式的富文本内容。"
     },
     "related": "相关文章",
-    "relatedEmpty": "暂无相关文章"
+    "relatedEmpty": "暂无相关文章",
+    "sourceLabel": "来源："
   },
   "common": {
     "backToProgrammes": "返回全部项目",

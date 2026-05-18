@@ -308,7 +308,8 @@
       "body": "Article content coming soon. This page will support rich text content in MDX format."
     },
     "related": "Related Articles",
-    "relatedEmpty": "No related articles yet"
+    "relatedEmpty": "No related articles yet",
+    "sourceLabel": "Source:"
   },
   "common": {
     "backToProgrammes": "Back to all programmes",
