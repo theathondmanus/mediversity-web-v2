@@ -148,10 +148,7 @@
       ]
     },
     "humanities": {
-      "courses": {
-        "medicalHumanitiesGeneralPractice": "Medical Humanities & General Practice Literacy",
-        "medicalHumanitiesCommunicationSkills": "Medical Humanities & Communication Skills"
-      }
+      "courses": {}
     }
   },
   "programmes": {
@@ -272,7 +269,9 @@
         "narrativeMedicine": "Narrative Medicine",
         "healthcareLeadership": "Healthcare Leadership",
         "crossCulturalCommunication": "Cross-cultural Communication",
-        "reflectivePractice": "Reflective Practice"
+        "reflectivePractice": "Reflective Practice",
+        "medicalHumanitiesGeneralPractice": "Medical Humanities & General Practice Literacy",
+        "medicalHumanitiesCommunicationSkills": "Medical Humanities & Communication Skills"
       }
     }
   },
