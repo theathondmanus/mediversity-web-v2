@@ -4,6 +4,13 @@ import * as React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Quote, MapPin, Calendar, ArrowRight } from "lucide-react";
 import { FadeIn } from "@/components/ui/fade-in";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 
 /* ── Types ── */
 export interface CaseStudy {
@@ -171,58 +178,65 @@ export default function CaseShowcase({
           </div>
         </FadeIn>
 
-        {/* ── Thumbnail Navigation Strip ── */}
+        {/* ── Thumbnail Navigation Strip (Carousel) ── */}
         <FadeIn>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {cases.map((c, idx) => (
-              <button
-                key={c.id}
-                type="button"
-                onClick={() => goTo(idx)}
-                className={`group relative text-left p-5 rounded-xl border transition-all duration-300 ${
-                  idx === activeIndex
-                    ? "bg-white border-[#00438A] shadow-md ring-1 ring-[#00438A]/20"
-                    : "bg-white/60 border-[#E3E5EC] hover:border-[#00438A]/40 hover:shadow-sm"
-                }`}
-              >
-                {/* Active indicator bar */}
-                <div
-                  className={`absolute top-0 left-0 right-0 h-1 rounded-t-xl transition-all duration-300 ${
-                    idx === activeIndex
-                      ? "bg-gradient-to-r from-[#00438A] to-[#C4922A]"
-                      : "bg-transparent"
-                  }`}
-                />
-
-                {/* Number + type */}
-                <div className="flex items-start gap-3">
-                  <span
-                    className={`text-2xl font-display font-bold shrink-0 transition-colors ${
-                      idx === activeIndex ? "text-[#00438A]" : "text-[#E3E5EC]"
-                    }`}
-                  >
-                    {String(idx + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <p
-                      className={`text-sm font-semibold mb-1 transition-colors ${
-                        idx === activeIndex ? "text-[#0A1628]" : "text-[#8A889A]"
+          <div className="px-12">
+            <Carousel opts={{ align: "start", loop: false }}>
+              <CarouselContent className="-ml-3">
+                {cases.map((c, idx) => (
+                  <CarouselItem key={c.id} className="pl-3 basis-full sm:basis-1/2 lg:basis-1/3">
+                    <button
+                      type="button"
+                      onClick={() => goTo(idx)}
+                      className={`group relative text-left p-5 rounded-xl border transition-all duration-300 w-full ${
+                        idx === activeIndex
+                          ? "bg-white border-[#00438A] shadow-md ring-1 ring-[#00438A]/20"
+                          : "bg-white/60 border-[#E3E5EC] hover:border-[#00438A]/40 hover:shadow-sm"
                       }`}
                     >
-                      {t2(c.type, locale)}
-                    </p>
-                    <p className="text-xs text-[#8A889A] line-clamp-2">
-                      {t2(c.identity, locale)}
-                    </p>
-                  </div>
-                </div>
+                      {/* Active indicator bar */}
+                      <div
+                        className={`absolute top-0 left-0 right-0 h-1 rounded-t-xl transition-all duration-300 ${
+                          idx === activeIndex
+                            ? "bg-gradient-to-r from-[#00438A] to-[#C4922A]"
+                            : "bg-transparent"
+                        }`}
+                      />
 
-                {/* Arrow indicator for active */}
-                {idx === activeIndex && (
-                  <ArrowRight className="absolute bottom-4 right-4 w-4 h-4 text-[#C4922A]" />
-                )}
-              </button>
-            ))}
+                      {/* Number + type */}
+                      <div className="flex items-start gap-3">
+                        <span
+                          className={`text-2xl font-display font-bold shrink-0 transition-colors ${
+                            idx === activeIndex ? "text-[#00438A]" : "text-[#E3E5EC]"
+                          }`}
+                        >
+                          {String(idx + 1).padStart(2, "0")}
+                        </span>
+                        <div>
+                          <p
+                            className={`text-sm font-semibold mb-1 transition-colors ${
+                              idx === activeIndex ? "text-[#0A1628]" : "text-[#8A889A]"
+                            }`}
+                          >
+                            {t2(c.type, locale)}
+                          </p>
+                          <p className="text-xs text-[#8A889A] line-clamp-2">
+                            {t2(c.identity, locale)}
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Arrow indicator for active */}
+                      {idx === activeIndex && (
+                        <ArrowRight className="absolute bottom-4 right-4 w-4 h-4 text-[#C4922A]" />
+                      )}
+                    </button>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </FadeIn>
       </div>
