@@ -9,7 +9,7 @@ const data: ProgrammeData = {
   metaDescription: "护理英语课程 - 一个为医疗专业人员量身定制的高级实践导向 50 节课程，旨在提升其语言能力和沟通技巧",
   duration: "50 节课",
   audience: ["护士", "护理专业人士"],
-  featured: false,
+  featured: true,
   order: 30,
   status: "published",
 

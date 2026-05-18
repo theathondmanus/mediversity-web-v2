@@ -9,7 +9,7 @@ const data: ProgrammeData = {
   metaDescription: "Medical English for Doctors - Language and Communication Skills Programme for Healthcare Professionals",
   duration: "12 weeks",
   audience: ["Doctors", "Medical Professionals"],
-  featured: false,
+  featured: true,
   order: 20,
   status: "published",
 
