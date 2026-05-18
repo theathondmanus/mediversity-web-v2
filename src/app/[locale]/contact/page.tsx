@@ -1,10 +1,10 @@
 "use client";
 
+import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn } from "@/components/ui/fade-in";
-import { Card, CardContent } from "@/components/ui/card";
 
 const CONTACT_INFO = [
   { icon: Phone, key: "phone", value: "+44 (0)7345 169 054" },
@@ -13,8 +13,32 @@ const CONTACT_INFO = [
   { icon: Clock, key: "hours", value: "Mon-Fri 9:00-18:00 (GMT)" },
 ];
 
+/* ── Tally form embed (auto-resize iframe) ── */
+const TALLY_FORM_ID = "xXRv6v";
+
 export default function ContactPage() {
   const t = useTranslations("contact");
+
+  // Load Tally embed script for dynamicHeight auto-resize
+  useEffect(() => {
+    const TALLY_SRC = "https://tally.so/widgets/embed.js";
+    const existing = document.querySelector(`script[src="${TALLY_SRC}"]`);
+
+    const loadEmbeds = () => {
+      // @ts-expect-error Tally global injected by their script
+      if (typeof window.Tally !== "undefined") window.Tally.loadEmbeds();
+    };
+
+    if (existing) {
+      loadEmbeds();
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = TALLY_SRC;
+    script.async = true;
+    script.onload = loadEmbeds;
+    document.body.appendChild(script);
+  }, []);
 
   return (
     <>
@@ -36,7 +60,7 @@ export default function ContactPage() {
       {/* Content */}
       <section className="section-padding bg-white">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {/* Contact Info */}
             <FadeIn index={0}>
               <h2 className="font-display text-2xl font-bold text-[#0A1628] mb-6">
@@ -62,50 +86,20 @@ export default function ContactPage() {
               </div>
             </FadeIn>
 
-            {/* Contact Form */}
+            {/* Tally Form Embed */}
             <FadeIn index={1}>
-              <Card className="border shadow-sm">
-                <CardContent className="p-6">
-                  <h3 className="font-semibold text-[#0A1628] mb-4">
-                    {t("form.title")}
-                  </h3>
-                  <form className="space-y-4">
-                    <div>
-                      <label className="block text-sm font-medium text-[#3C3A47] mb-1">
-                        {t("form.name")}
-                      </label>
-                      <input
-                        type="text"
-                        className="w-full px-4 py-2.5 border border-[#E3E5EC] rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#00438A]/20 focus:border-[#00438A]"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-[#3C3A47] mb-1">
-                        {t("form.email")}
-                      </label>
-                      <input
-                        type="email"
-                        className="w-full px-4 py-2.5 border border-[#E3E5EC] rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#00438A]/20 focus:border-[#00438A]"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-[#3C3A47] mb-1">
-                        {t("form.message")}
-                      </label>
-                      <textarea
-                        rows={4}
-                        className="w-full px-4 py-2.5 border border-[#E3E5EC] rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#00438A]/20 focus:border-[#00438A] resize-none"
-                      />
-                    </div>
-                    <button
-                      type="submit"
-                      className="w-full px-6 py-3 bg-[#00438A] text-white font-medium rounded-lg hover:bg-[#003066] transition-colors"
-                    >
-                      {t("form.submit")}
-                    </button>
-                  </form>
-                </CardContent>
-              </Card>
+              <h2 className="font-display text-2xl font-bold text-[#0A1628] mb-6">
+                {t("form.title")}
+              </h2>
+              <iframe
+                data-tally-src={`https://tally.so/embed/${TALLY_FORM_ID}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1`}
+                loading="lazy"
+                width="100%"
+                height="500"
+                frameBorder={0}
+                title={t("form.title")}
+                className="block w-full"
+              />
             </FadeIn>
           </div>
         </div>
