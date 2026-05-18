@@ -4,6 +4,14 @@ import { Link } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowRight, Star } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 import { getFeaturedProgrammes } from "../../../content/programmes/registry";
 
 const fadeInUp = {
@@ -60,47 +68,54 @@ export default function FeaturedCourses() {
           </motion.h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {featured.map((prog, idx) => {
-            const localeData = TITLES[prog.slug]?.[locale] ?? {
-              title: prog.title,
-              desc: prog.shortDescription,
-            };
+        <div className="max-w-5xl mx-auto px-12">
+          <Carousel
+            opts={{ align: "start", loop: true }}
+            plugins={[
+              Autoplay({ delay: 4000, stopOnInteraction: true, stopOnMouseEnter: true }),
+            ]}
+          >
+            <CarouselContent className="-ml-4">
+              {featured.map((prog) => {
+                const localeData = TITLES[prog.slug]?.[locale] ?? {
+                  title: prog.title,
+                  desc: prog.shortDescription,
+                };
 
-            return (
-              <motion.div
-                key={prog.slug}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={fadeInUp}
-                custom={idx}
-              >
-                <Link
-                  href={`/programmes/${prog.category}/${prog.slug}` as never}
-                  className="no-underline block group"
-                >
-                  <div className="bg-white rounded-xl p-6 border-2 border-[#E3E5EC] hover:border-[#00438A]/20 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
-                    <div className="flex items-center gap-2 mb-4">
-                      <Star className="w-4 h-4 text-[#C4922A]" />
-                      <span className="text-xs font-medium text-[#C4922A] uppercase tracking-wide">
-                        {locale === "zh-CN" ? "精选" : "Featured"}
-                      </span>
-                    </div>
-                    <h3 className="font-semibold text-lg text-[#0E0C19] mb-2 group-hover:text-[#00438A] transition-colors">
-                      {localeData.title}
-                    </h3>
-                    <p className="text-sm text-[#3C3A47] leading-relaxed mb-4 flex-1">
-                      {localeData.desc}
-                    </p>
-                    <span className="inline-flex items-center gap-1 text-sm font-medium text-[#00438A] group-hover:gap-2 transition-all">
-                      {t("pillars.explore")} <ArrowRight className="w-4 h-4" />
-                    </span>
-                  </div>
-                </Link>
-              </motion.div>
-            );
-          })}
+                return (
+                  <CarouselItem
+                    key={prog.slug}
+                    className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
+                  >
+                    <Link
+                      href={`/programmes/${prog.category}/${prog.slug}` as never}
+                      className="no-underline block group h-full"
+                    >
+                      <div className="bg-white rounded-xl p-6 border-2 border-[#E3E5EC] hover:border-[#00438A]/20 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
+                        <div className="flex items-center gap-2 mb-4">
+                          <Star className="w-4 h-4 text-[#C4922A]" />
+                          <span className="text-xs font-medium text-[#C4922A] uppercase tracking-wide">
+                            {locale === "zh-CN" ? "精选" : "Featured"}
+                          </span>
+                        </div>
+                        <h3 className="font-semibold text-lg text-[#0E0C19] mb-2 group-hover:text-[#00438A] transition-colors">
+                          {localeData.title}
+                        </h3>
+                        <p className="text-sm text-[#3C3A47] leading-relaxed mb-4 flex-1">
+                          {localeData.desc}
+                        </p>
+                        <span className="inline-flex items-center gap-1 text-sm font-medium text-[#00438A] group-hover:gap-2 transition-all">
+                          {t("pillars.explore")} <ArrowRight className="w-4 h-4" />
+                        </span>
+                      </div>
+                    </Link>
+                  </CarouselItem>
+                );
+              })}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </div>
     </section>
