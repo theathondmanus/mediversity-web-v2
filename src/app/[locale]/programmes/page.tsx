@@ -185,7 +185,7 @@ export default function ProgrammesHubPage() {
                                   {pillar.activeCourses}
                                 </span>
                                 <span className="text-xs text-[#8A889A] ml-1.5">
-                                  门在线课程
+                                  {t("activeCourses")}
                                 </span>
                               </div>
                               <div className="w-px h-6 bg-[#E3E5EC]" />
@@ -194,7 +194,7 @@ export default function ProgrammesHubPage() {
                                   {pillar.futureCourses}
                                 </span>
                                 <span className="text-xs text-[#8A889A] ml-1.5">
-                                  门规划中
+                                  {t("futureCoursesShort")}
                                 </span>
                               </div>
                             </div>

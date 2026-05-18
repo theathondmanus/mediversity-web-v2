@@ -99,7 +99,7 @@
   "programmesHub": {
     "title": "培训项目",
     "subtitle": "四大板块覆盖医疗专业人士国际化发展的全部核心需求",
-    "activeCourses": "门在线课程",
+    "activeCourses": "门在授课程",
     "explore": "了解更多",
     "pillars": {
       "medicalEnglish": {
@@ -118,7 +118,8 @@
         "title": "职业发展与医学人文",
         "desc": "医学人文素养、领导力与跨文化沟通能力提升"
       }
-    }
+    },
+    "futureCoursesShort": "门规划中"
   },
   "programmes": {
     "medicalEnglish": {
@@ -313,7 +314,7 @@
   },
   "common": {
     "backToProgrammes": "返回全部项目",
-    "activeCourses": "门在线课程",
+    "activeCourses": "门在授课程",
     "futureCourses": "门规划中课程",
     "futureProgrammes": "规划中的课程",
     "viewDetails": "查看详情"
