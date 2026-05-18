@@ -27,32 +27,34 @@
   },
   "directions": {
     "title": {
-      "zh-CN": "中外双向导航",
-      "en": "Dual-Direction Navigation"
+      "zh-CN": "双向医疗导航服务",
+      "en": "Dual-direction Medical Navigation Services"
     },
     "subtitle": {
-      "zh-CN": "无论是来华就医还是海外落地，我们都能为您提供专业的医疗导航服务",
-      "en": "Whether seeking healthcare in China or settling abroad, we provide professional medical navigation"
+      "zh-CN": "服务于全球用户与家庭，连接中国及海外优质医疗资源，覆盖来华就医与海外落地两个方向。",
+      "en": "Serving global users and families, connecting high-quality healthcare resources across China and overseas — covering both inbound and outbound healthcare journeys."
     },
     "inbound": {
       "title": {
-        "zh-CN": "来华就医导航通道",
-        "en": "Inbound Healthcare Navigation"
+        "zh-CN": "来华就医导航服务",
+        "en": "Inbound Medical Navigation Services"
       },
       "desc": {
-        "zh-CN": "面向海外华人及国际患者，提供来华就医的全流程导航服务。",
-        "en": "Full-process navigation for overseas Chinese and international patients seeking healthcare in China."
+        "zh-CN": "为海外用户提供来华就医的全流程支持，协助对接中国优质三甲医院及专科医疗资源，帮助患者更高效地获得适合自身需求的医疗服务。",
+        "en": "Comprehensive support for international patients seeking medical care in China, helping them access leading tertiary hospitals and specialist healthcare providers more efficiently."
       },
       "scenarios": {
         "zh-CN": [
-          "定制体检与健康管理",
-          "专科手术与重大疾病诊疗",
-          "中医康养与术后康复"
+          "个性化健康评估与高端体检",
+          "专科预约与手术绿色通道",
+          "中医康复与术后康养支持",
+          "翻译协调与全流程跟进"
         ],
         "en": [
-          "Customised health check-ups",
-          "Specialist surgery & major disease treatment",
-          "TCM wellness & post-operative recovery"
+          "Personalised health assessments & executive screening",
+          "Specialist appointments & fast-track treatment pathways",
+          "Traditional Chinese Medicine rehabilitation & recovery support",
+          "Interpretation, coordination & end-to-end follow-up"
         ]
       },
       "cta": {
@@ -62,23 +64,25 @@
     },
     "outbound": {
       "title": {
-        "zh-CN": "海外落地医疗导航",
-        "en": "Outbound Healthcare Navigation"
+        "zh-CN": "海外医疗导航服务",
+        "en": "Overseas Medical Navigation Services"
       },
       "desc": {
-        "zh-CN": "面向出国人群，提供海外医疗体系对接与落地服务。",
-        "en": "Healthcare system integration and settlement services for those moving abroad."
+        "zh-CN": "为有海外医疗需求的用户提供本地化医疗导航支持，协助其更加顺利地进入海外医疗体系，获得合适的医疗资源与服务。",
+        "en": "Supporting individuals seeking healthcare overseas by helping them navigate local healthcare systems more effectively and access appropriate medical resources."
       },
       "scenarios": {
         "zh-CN": [
-          "初筛与全科/专科对接",
-          "急症处理与转诊协调",
-          "重症海外就医与二次诊疗意见"
+          "初步健康咨询与案例评估",
+          "海外全科及专科资源对接",
+          "急症与复杂疾病转诊协助",
+          "医院预约及跨境沟通支持"
         ],
         "en": [
-          "Initial screening & GP/specialist referral",
-          "Emergency handling & transfer coordination",
-          "Serious illness overseas treatment & second opinions"
+          "Initial health consultations & case reviews",
+          "Access to general & specialist healthcare providers overseas",
+          "Support for urgent or complex medical conditions",
+          "Hospital appointments & cross-border communication support"
         ]
       },
       "cta": {
@@ -93,8 +97,8 @@
       "en": "Core Service Areas"
     },
     "subtitle": {
-      "zh-CN": "四大板块覆盖跨境医疗的全部核心需求",
-      "en": "Four pillars covering all core cross-border healthcare needs"
+      "zh-CN": "覆盖从预防到康养的全流程跨境健康服务，针对不同需求提供专业化的医疗路径规划。",
+      "en": "End-to-end cross-border healthcare across prevention, treatment, and wellness — with professional pathway planning for diverse needs."
     },
     "items": [
       {
@@ -106,21 +110,21 @@
           "en": "Preventive Healthcare"
         },
         "tagline": {
-          "zh-CN": "健康管理，从筛查开始",
-          "en": "Health management starts with screening"
+          "zh-CN": "系统化健康管理与疾病早期筛查",
+          "en": "Structured health management & early screening"
         },
         "items": {
           "zh-CN": [
-            "定制化体检方案设计",
-            "海外体检报告解读与对接",
-            "慢病管理与随访协调",
-            "健康风险评估与预警"
+            "高端健康体检与定制方案",
+            "MRI、PET-CT 等高级影像检查",
+            "长期健康档案管理与跟踪",
+            "海外报告解读与对接"
           ],
           "en": [
-            "Customised health check-up design",
-            "Overseas report interpretation",
-            "Chronic disease management & follow-up",
-            "Health risk assessment & early warning"
+            "Executive health screening & personalised programmes",
+            "Advanced diagnostic imaging (MRI, PET-CT)",
+            "Long-term health record management",
+            "Overseas report interpretation"
           ]
         }
       },
@@ -133,21 +137,21 @@
           "en": "Major Disease Treatment"
         },
         "tagline": {
-          "zh-CN": "重症不慌，路径先行",
-          "en": "Serious illness, clear pathway first"
+          "zh-CN": "跨境医疗路径规划与协调支持",
+          "en": "Cross-border pathway planning & coordination"
         },
         "items": {
           "zh-CN": [
-            "二次诊疗意见协调",
-            "跨境专科手术对接",
-            "多学科会诊（MDT）安排",
-            "术后康复与随访衔接"
+            "专科与手术快速预约",
+            "医疗文件与流程协助",
+            "多学科诊疗（MDT）资源协调",
+            "中医辅助康复与长期管理"
           ],
           "en": [
-            "Second opinion coordination",
-            "Cross-border specialist surgery referral",
+            "Fast-track specialist consultations & surgery",
+            "Medical documentation & care coordination",
             "Multidisciplinary team (MDT) arrangement",
-            "Post-operative recovery & follow-up"
+            "TCM rehabilitation & long-term management"
           ]
         }
       },
@@ -156,25 +160,25 @@
         "icon": "Zap",
         "color": "#3550A0",
         "title": {
-          "zh-CN": "快速检测与专科服务",
-          "en": "Rapid Testing & Specialist Services"
+          "zh-CN": "快速诊疗与专科服务",
+          "en": "Rapid Diagnostics & Specialist Services"
         },
         "tagline": {
-          "zh-CN": "高效对接，精准匹配",
-          "en": "Efficient connection, precise matching"
+          "zh-CN": "高效获得专科医疗服务，减少等待时间",
+          "en": "Efficient specialist access, reduced waiting times"
         },
         "items": {
           "zh-CN": [
-            "海外急症初筛与转诊",
-            "专科门诊预约与陪诊",
-            "检验检查绿色通道",
-            "远程问诊与报告解读"
+            "日间手术与专科检查",
+            "消化内镜、眼科等快速诊疗",
+            "疾病早筛与健康风险干预",
+            "重点专科优先协调服务"
           ],
           "en": [
-            "Overseas emergency screening & referral",
-            "Specialist appointment & escort",
-            "Fast-track testing",
-            "Telemedicine & report interpretation"
+            "Day procedures & specialist diagnostics",
+            "Endoscopy & ophthalmology rapid pathways",
+            "Early screening & preventive interventions",
+            "Priority coordination for selected specialties"
           ]
         }
       },
@@ -183,25 +187,25 @@
         "icon": "Leaf",
         "color": "#8B6914",
         "title": {
-          "zh-CN": "中医与康养",
-          "en": "TCM & Wellness"
+          "zh-CN": "中医与康养服务",
+          "en": "Traditional Medicine & Wellness Services"
         },
         "tagline": {
-          "zh-CN": "东方智慧，身心调养",
-          "en": "Eastern wisdom, holistic recovery"
+          "zh-CN": "中国传统医学与现代康养结合",
+          "en": "Traditional Chinese Medicine meets modern wellness"
         },
         "items": {
           "zh-CN": [
-            "中医名家门诊预约",
-            "针灸推拿康复方案",
-            "药膳食疗与养生指导",
-            "术后中西医结合康复"
+            "针灸、推拿、理疗等康复项目",
+            "中医调理与个性化康养方案",
+            "术后中西医结合康复",
+            "生活方式管理与长期健康支持"
           ],
           "en": [
-            "Renowned TCM practitioner appointments",
-            "Acupuncture & massage rehabilitation",
-            "Medicinal diet & wellness guidance",
-            "Post-operative integrative recovery"
+            "Acupuncture, massage & physiotherapy programmes",
+            "Personalised TCM wellness plans",
+            "Post-operative integrative recovery",
+            "Lifestyle management & long-term health support"
           ]
         }
       }
@@ -210,76 +214,76 @@
   "process": {
     "title": {
       "zh-CN": "服务判断与衔接流程",
-      "en": "Service Assessment & Connection Process"
+      "en": "Service Assessment & Care Coordination Pathway"
     },
     "subtitle": {
-      "zh-CN": "我们不替你做决定，但不让你在决定中独自承担风险",
-      "en": "We don't make decisions for you, but we ensure you don't bear the risk alone"
+      "zh-CN": "从联系我们的那一刻起，专属医疗服务顾问全程陪伴与协调，以专业判断、透明沟通与患者需求为核心。",
+      "en": "From the moment you contact us, a dedicated consultant supports you throughout — centred on professional assessment, transparent communication, and patient-focused coordination."
     },
     "steps": [
       {
         "title": {
-          "zh-CN": "需求收集",
-          "en": "Needs Assessment"
+          "zh-CN": "了解健康需求与就医计划",
+          "en": "Understanding Your Healthcare Needs"
         },
         "desc": {
-          "zh-CN": "通过深度沟通了解您的健康状况、就医需求和个人偏好，建立完整的需求档案。",
-          "en": "Through in-depth communication, we understand your health status, medical needs and personal preferences to build a complete profile."
+          "zh-CN": "首先了解您的基本情况、目标与关注点，包括是否已有目标医院或医生，以及当前面临的实际问题与困惑。",
+          "en": "We begin by understanding your healthcare concerns, treatment objectives, and overall medical needs."
         },
         "highlight": false
       },
       {
         "title": {
-          "zh-CN": "先判断，不立刻对接",
-          "en": "Assess First, Don't Rush to Connect"
+          "zh-CN": "专业评估与需求梳理",
+          "en": "Professional Case Review & Initial Assessment"
         },
         "desc": {
-          "zh-CN": "这是我们的核心差异。我们不会急于推荐医院或医生，而是先帮您判断：您的需求是否真的需要跨境医疗？哪种路径最适合您？",
-          "en": "This is our core differentiator. We don't rush to recommend hospitals or doctors. Instead, we first help you assess: does your situation truly require cross-border healthcare? Which pathway suits you best?"
+          "zh-CN": "对您的需求进行初步分析与路径评估，帮助梳理优先级、识别潜在风险，判断是否适合进入相关医疗服务流程（非医疗诊断）。我们强调'先判断、再匹配'，避免不必要的流程与资源浪费。",
+          "en": "Our team carries out an initial review to clarify priorities, identify potential concerns, and assess suitable healthcare pathways. This process is non-diagnostic. We believe in 'assessment before referral'."
         },
         "highlight": true
       },
       {
         "title": {
-          "zh-CN": "方案设计",
-          "en": "Solution Design"
+          "zh-CN": "医疗资源匹配与路径建议",
+          "en": "Medical Matching & Pathway Recommendation"
         },
         "desc": {
-          "zh-CN": "基于判断结果，为您量身定制医疗方案，包括机构选择、时间规划、费用预估和风险提示。",
-          "en": "Based on the assessment, we design a tailored medical plan including institution selection, timeline, cost estimation and risk advisory."
+          "zh-CN": "结合实际情况，匹配适合的医疗机构、专科资源及服务路径。如当前方案并非最优，我们也会提供替代建议与专业说明。",
+          "en": "We identify appropriate healthcare providers, specialist services, and treatment pathways based on your needs. Where alternatives are better, we say so."
         },
         "highlight": false
       },
       {
         "title": {
-          "zh-CN": "资源对接",
-          "en": "Resource Connection"
+          "zh-CN": "制定跨境医疗服务路径",
+          "en": "Cross-border Care Pathway Planning"
         },
         "desc": {
-          "zh-CN": "精准匹配合作医疗机构，协调预约、材料准备和跨境手续，确保无缝衔接。",
-          "en": "Precisely match partner institutions, coordinate appointments, documentation and cross-border procedures for seamless connection."
+          "zh-CN": "协助规划完整的医疗路径：医院与医生预约协调、跨境沟通支持、就医流程与时间安排、行程与落地衔接。",
+          "en": "We coordinate the wider healthcare journey: hospital appointments, specialist consultations, treatment scheduling, cross-border communication, and travel arrangements."
         },
         "highlight": false
       },
       {
         "title": {
-          "zh-CN": "全程陪伴",
-          "en": "End-to-End Support"
+          "zh-CN": "进入正规医疗体系接受诊疗",
+          "en": "Access to Accredited Healthcare Providers"
         },
         "desc": {
-          "zh-CN": "从出发到就医到回国，全程提供翻译、陪诊、住宿协调等落地支持服务。",
-          "en": "From departure to treatment to return, we provide translation, medical escort, accommodation coordination and on-ground support."
+          "zh-CN": "所有正式诊疗均由中国三甲医院或国际认证医疗机构提供。医疗费用公开透明，由患者直接向医院支付。",
+          "en": "All clinical consultations and treatments are carried out by accredited institutions, including leading tertiary hospitals in China and internationally recognised providers. Medical fees are paid directly to the institution."
         },
         "highlight": false
       },
       {
         "title": {
-          "zh-CN": "随访与衔接",
-          "en": "Follow-Up & Continuity"
+          "zh-CN": "诊后持续支持与健康管理",
+          "en": "Ongoing Follow-up & Continued Support"
         },
         "desc": {
-          "zh-CN": "就医结束不是服务终点。我们协助您完成后续随访、报告解读和本地医疗衔接。",
-          "en": "Treatment completion isn't the end of service. We assist with follow-up, report interpretation and local healthcare continuity."
+          "zh-CN": "诊疗结束后持续提供：检查报告与医疗信息协助解读、康复与健康管理建议、后续复诊与持续沟通支持。",
+          "en": "After treatment, we continue supporting you with medical report interpretation, recovery guidance, follow-up care, and longer-term health management."
         },
         "highlight": false
       }
