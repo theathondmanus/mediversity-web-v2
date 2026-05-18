@@ -101,7 +101,7 @@ export default function Header() {
           >
             <Link
               href="/programmes"
-              className={`px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 rounded-md no-underline flex items-center gap-1 ${textColor} hover:bg-white/10`}
+              className={`px-3 xl:px-4 py-2 text-xs xl:text-sm font-medium tracking-wide transition-colors duration-200 rounded-md no-underline flex items-center gap-1 ${textColor} hover:bg-white/10`}
             >
               {t("nav.programmes")}
               <ChevronDown className={`w-3.5 h-3.5 transition-transform ${megaOpen ? "rotate-180" : ""}`} />
@@ -156,7 +156,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className={`px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 rounded-md no-underline ${textColor} hover:bg-white/10`}
+              className={`px-3 xl:px-4 py-2 text-xs xl:text-sm font-medium tracking-wide transition-colors duration-200 rounded-md no-underline ${textColor} hover:bg-white/10`}
             >
               {item.label}
             </Link>

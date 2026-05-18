@@ -6,7 +6,7 @@ readTime: "8 min read"
 tags: ["Case Study", "Medical English", "Maternity Hospital", "Clinical Communication"]
 category: "Case Study"
 excerpt: "How a leading maternity and children's hospital in China systematically enhanced their medical team's clinical English communication in 12 weeks — average assessment scores rising from 39.4 to 72.5, an 84% improvement."
-cover: "TODO:manus-asset"
+cover: "/images/insights/maternity-hospital-english.jpg"
 ---
 
 ## Client
