@@ -48,7 +48,7 @@ export default function ObservershipPage() {
       color="bg-emerald-50 text-emerald-700"
       subcategories={subcategories}
       heroImage="/images/hero/observership.webp"
-      heroImageAlt="Medical professionals observing surgery through glass in a modern hospital"
+      heroImageAlt="Chinese medical visitor observing a senior surgeon performing a procedure in a modern operating room"
     />
   );
 }

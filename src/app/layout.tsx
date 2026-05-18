@@ -1,6 +1,11 @@
 import type { ReactNode } from "react";
+import type { Metadata } from "next";
 import { IBM_Plex_Sans, Noto_Sans_SC, Playfair_Display } from "next/font/google";
 import "./globals.css";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.mediversityglobal.cn"),
+};
 
 const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],

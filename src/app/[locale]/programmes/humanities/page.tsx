@@ -38,7 +38,7 @@ export default function HumanitiesPage() {
       color="bg-amber-50 text-amber-700"
       subcategories={subcategories}
       heroImage="/images/hero/humanities.webp"
-      heroImageAlt="Academic seminar with international medical professionals discussing cross-cultural communication"
+      heroImageAlt="Diverse medical professionals in an animated ethics and patient communication discussion at golden hour"
     />
   );
 }

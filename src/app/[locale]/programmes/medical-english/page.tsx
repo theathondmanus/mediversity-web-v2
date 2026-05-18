@@ -63,7 +63,7 @@ export default function MedicalEnglishPage() {
       color="bg-blue-50 text-[#00438A]"
       subcategories={subcategories}
       heroImage="/images/hero/medical-english.webp"
-      heroImageAlt="Medical English learning environment with international video conference"
+      heroImageAlt="Western instructor teaching medical terminology to Chinese doctors in white coats at a seminar table"
     />
   );
 }

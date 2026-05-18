@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 import {
   Award,
   Users,
@@ -13,18 +14,41 @@ import {
   Handshake,
 } from "lucide-react";
 import { HeroSection } from "@/components/ui/hero-section";
-import { FadeIn, FadeInGroup } from "@/components/ui/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  WaveDivider,
+  DotPattern,
+  CornerAccent,
+} from "@/components/ui/section-decorations";
+
+/* ── Animation presets ── */
+const fadeInUp = {
+  initial: { opacity: 0, y: 28 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, margin: "-60px" },
+  transition: { duration: 0.5 },
+};
+
+const staggerContainer = {
+  initial: {},
+  whileInView: { transition: { staggerChildren: 0.1 } },
+  viewport: { once: true, margin: "-60px" },
+};
+
+const staggerItem = {
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+};
 
 /* ── Value icons ── */
 const VALUES = [
-  { icon: Award, key: "excellence" },
-  { icon: Users, key: "collaboration" },
-  { icon: Globe, key: "international" },
-  { icon: Heart, key: "empathy" },
+  { icon: Award, key: "excellence", color: "#00438A" },
+  { icon: Users, key: "collaboration", color: "#047857" },
+  { icon: Globe, key: "international", color: "#7e22ce" },
+  { icon: Heart, key: "empathy", color: "#C4922A" },
 ];
 
-/* ── Who We Serve icons (by item.key) ── */
+/* ── Who We Serve icons ── */
 const SERVE_ICONS: Record<string, typeof Stethoscope> = {
   professionals: Stethoscope,
   institutions: Building2,
@@ -50,55 +74,72 @@ export default function AboutPage() {
         image="/images/hero/about.webp"
         imageAlt="International conference room with panoramic city view"
       >
-        <FadeIn>
-          <p className="eyebrow !text-[#C4922A]">{t("title")}</p>
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+        <motion.div {...fadeInUp} className="max-w-3xl">
+          <p className="eyebrow !text-[#C4922A] mb-4">{t("title")}</p>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             {t("subtitle")}
           </h1>
-        </FadeIn>
+        </motion.div>
       </HeroSection>
 
-      {/* ═══ Story — 3 paragraphs (editorial layout) ═══ */}
-      <section className="section-padding bg-white">
-        <div className="container max-w-3xl">
-          <FadeInGroup>
-            <FadeIn index={0}>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0A1628] mb-8">
+      {/* ═══ Story — Editorial 3-paragraph layout ═══ */}
+      <section className="section-padding bg-white relative overflow-hidden">
+        <DotPattern opacity={0.02} />
+        <div className="container relative z-10">
+          <div className="max-w-4xl mx-auto">
+            {/* Title with decorative accent */}
+            <motion.div {...fadeInUp} className="mb-12">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-12 h-1 bg-[#C4922A] rounded-full" />
+                <p className="text-sm font-medium text-[#C4922A] uppercase tracking-wider">
+                  Our Story
+                </p>
+              </div>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-[#0A1628] leading-tight">
                 {t("story.title")}
               </h2>
-            </FadeIn>
-            <FadeIn
-              index={1}
-              as="p"
-              className="text-[#3C3A47] leading-relaxed text-lg mb-6"
+            </motion.div>
+
+            {/* Paragraphs with left border accent and staggered entry */}
+            <motion.div
+              {...staggerContainer}
+              className="space-y-8"
             >
-              {t("story.paragraph1")}
-            </FadeIn>
-            <FadeIn
-              index={2}
-              as="p"
-              className="text-[#3C3A47] leading-relaxed text-lg mb-6"
-            >
-              {t("story.paragraph2")}
-            </FadeIn>
-            <FadeIn
-              index={3}
-              as="p"
-              className="text-[#3C3A47] leading-relaxed text-lg"
-            >
-              {t("story.paragraph3")}
-            </FadeIn>
-          </FadeInGroup>
+              <motion.div variants={staggerItem} className="relative pl-8 border-l-2 border-[#00438A]/20">
+                <div className="absolute left-[-5px] top-2 w-2 h-2 rounded-full bg-[#00438A]" />
+                <p className="text-[#3C3A47] leading-relaxed text-lg md:text-xl">
+                  {t("story.paragraph1")}
+                </p>
+              </motion.div>
+
+              <motion.div variants={staggerItem} className="relative pl-8 border-l-2 border-[#C4922A]/20">
+                <div className="absolute left-[-5px] top-2 w-2 h-2 rounded-full bg-[#C4922A]" />
+                <p className="text-[#3C3A47] leading-relaxed text-lg md:text-xl">
+                  {t("story.paragraph2")}
+                </p>
+              </motion.div>
+
+              <motion.div variants={staggerItem} className="relative pl-8 border-l-2 border-[#047857]/20">
+                <div className="absolute left-[-5px] top-2 w-2 h-2 rounded-full bg-[#047857]" />
+                <p className="text-[#3C3A47] leading-relaxed text-lg md:text-xl">
+                  {t("story.paragraph3")}
+                </p>
+              </motion.div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
+      {/* ═══ Wave transition ═══ */}
+      <WaveDivider fromColor="#FFFFFF" toColor="#F5F3EF" />
+
       {/* ═══ Who We Serve ═══ */}
-      <section
-        className="section-padding"
-        style={{ backgroundColor: "#F5F3EF" }}
-      >
-        <div className="container">
-          <FadeIn className="text-center mb-12 max-w-3xl mx-auto">
+      <section className="section-padding bg-[#F5F3EF] relative overflow-hidden">
+        <CornerAccent position="top-right" color="#00438A" size={120} />
+        <CornerAccent position="bottom-left" color="#C4922A" size={90} />
+
+        <div className="container relative z-10">
+          <motion.div {...fadeInUp} className="text-center mb-14 max-w-3xl mx-auto">
             <p className="eyebrow">{t("whoWeServe.eyebrow")}</p>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0A1628] mb-6">
               {t("whoWeServe.title")}
@@ -106,64 +147,88 @@ export default function AboutPage() {
             <p className="text-[#3C3A47] leading-relaxed text-base md:text-lg">
               {t("whoWeServe.intro")}
             </p>
-          </FadeIn>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-6 max-w-6xl mx-auto">
-            {serveItems.map((item, idx) => {
+          </motion.div>
+
+          {/* 5 cards in responsive grid */}
+          <motion.div
+            {...staggerContainer}
+            className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 max-w-6xl mx-auto"
+          >
+            {serveItems.map((item) => {
               const Icon = SERVE_ICONS[item.key] || Stethoscope;
               return (
-                <FadeIn key={item.key} index={idx}>
-                  <Card className="h-full border-0 shadow-sm">
-                    <CardContent className="p-6">
-                      <div className="w-12 h-12 rounded-xl bg-[#00438A]/10 flex items-center justify-center mb-4">
-                        <Icon className="w-6 h-6 text-[#00438A]" />
+                <motion.div key={item.key} variants={staggerItem}>
+                  <Card className="h-full border-0 shadow-sm hover:shadow-md transition-all duration-300 group relative overflow-hidden">
+                    {/* Top accent line */}
+                    <div className="absolute top-0 left-0 right-0 h-0.5 bg-[#00438A] opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <CardContent className="p-6 text-center">
+                      <div className="w-14 h-14 rounded-2xl bg-[#00438A]/8 flex items-center justify-center mx-auto mb-4 group-hover:bg-[#00438A]/12 transition-colors">
+                        <Icon className="w-7 h-7 text-[#00438A]" />
                       </div>
                       <h3 className="font-semibold text-[#0A1628] mb-2 text-base">
                         {item.title}
                       </h3>
                       {item.desc && (
-                        <p className="text-sm text-[#3C3A47] leading-relaxed">
+                        <p className="text-sm text-[#3C3A47]/80 leading-relaxed">
                           {item.desc}
                         </p>
                       )}
                     </CardContent>
                   </Card>
-                </FadeIn>
+                </motion.div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </section>
 
+      {/* ═══ Wave transition ═══ */}
+      <WaveDivider fromColor="#F5F3EF" toColor="#FFFFFF" />
+
       {/* ═══ Values ═══ */}
-      <section className="section-padding bg-white">
-        <div className="container">
-          <FadeIn className="text-center mb-12">
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-[#0A1628]">
+      <section className="section-padding bg-white relative overflow-hidden">
+        <DotPattern opacity={0.015} />
+        <div className="container relative z-10">
+          <motion.div {...fadeInUp} className="text-center mb-14">
+            <p className="eyebrow">Core Values</p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0A1628]">
               {t("values.title")}
             </h2>
-          </FadeIn>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {VALUES.map((value, idx) => {
+          </motion.div>
+
+          <motion.div
+            {...staggerContainer}
+            className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
+          >
+            {VALUES.map((value) => {
               const Icon = value.icon;
               return (
-                <FadeIn key={value.key} index={idx}>
-                  <Card className="h-full text-center border-0 shadow-sm">
-                    <CardContent className="p-6">
-                      <div className="w-12 h-12 rounded-xl bg-[#00438A]/10 flex items-center justify-center mx-auto mb-4">
-                        <Icon className="w-6 h-6 text-[#00438A]" />
+                <motion.div key={value.key} variants={staggerItem}>
+                  <Card className="h-full text-center border-0 shadow-sm hover:shadow-md transition-all duration-300 group relative overflow-hidden">
+                    {/* Top accent bar with unique color */}
+                    <div
+                      className="absolute top-0 left-0 right-0 h-1 transition-all duration-300 group-hover:h-1.5"
+                      style={{ backgroundColor: value.color }}
+                    />
+                    <CardContent className="p-7">
+                      <div
+                        className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-5 transition-transform duration-300 group-hover:scale-105"
+                        style={{ backgroundColor: `${value.color}10` }}
+                      >
+                        <Icon className="w-7 h-7" style={{ color: value.color }} />
                       </div>
-                      <h3 className="font-semibold text-[#0A1628] mb-2 text-sm">
+                      <h3 className="font-display font-bold text-[#0A1628] mb-2 text-lg">
                         {t(`values.${value.key}.title`)}
                       </h3>
-                      <p className="text-xs text-[#3C3A47]">
+                      <p className="text-sm text-[#3C3A47] leading-relaxed">
                         {t(`values.${value.key}.desc`)}
                       </p>
                     </CardContent>
                   </Card>
-                </FadeIn>
+                </motion.div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
