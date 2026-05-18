@@ -361,7 +361,12 @@
               "en": "Continued communication and progress tracking, long-term home rehabilitation guidance, and a sustainable ongoing health management routine — without requiring repeated international travel."
             }
           }
-        ]
+        ],
+        "image": "/images/cases/indonesia-tcm-rehab.jpg",
+        "imageAlt": {
+          "zh-CN": "印尼患者在康复诊所接受中医针灸治疗",
+          "en": "Indonesian patient receiving TCM acupuncture treatment at rehabilitation clinic"
+        }
       },
       {
         "type": {
