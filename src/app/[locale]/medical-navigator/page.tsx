@@ -24,12 +24,16 @@ import CaseShowcase, { type CaseStudy } from "@/components/medical-navigator/Cas
 import content from "../../../../content/pages/medical-navigator.json";
 
 /* ── Map JSON case items to CaseStudy shape ── */
-const caseStudies: CaseStudy[] = content.cases.items.map((item, idx) => ({
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const caseStudies: CaseStudy[] = content.cases.items.map((item: any, idx: number) => ({
   id: `case-${idx}`,
   type: item.type,
   narrative: item.narrative,
   quote: item.quote,
   identity: item.identity,
+  milestones: item.milestones,
+  location: item.location,
+  image: item.image,
   featured: idx === 0,
 }));
 

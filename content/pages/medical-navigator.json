@@ -301,6 +301,70 @@
     "items": [
       {
         "type": {
+          "zh-CN": "海外术后中医康复",
+          "en": "Overseas TCM Post-operative Recovery"
+        },
+        "location": {
+          "zh-CN": "东南亚 · 印尼",
+          "en": "Southeast Asia · Indonesia"
+        },
+        "identity": {
+          "zh-CN": "印尼患者 · 血栓术后康复",
+          "en": "Indonesian patient · Post-thrombectomy rehabilitation"
+        },
+        "narrative": {
+          "zh-CN": "一位来自东南亚的患者在接受血栓切除术后，仍存在肢体功能恢复缓慢及生活自理能力受限的问题。由于身体条件不适合长途跨境治疗，而当地优质中医康复资源相对有限，患者希望获得更加可持续、可执行的康复支持方案。我们以「先评估、再匹配」为核心，围绕本地化可行性、康复连续性与长期执行稳定性，为患者设计了基于本地合法执业中医专家的多阶段康复路径。",
+          "en": "A patient from Southeast Asia, following thrombectomy treatment, continued to experience slow functional recovery and limitations in daily independence. With long-distance travel deemed unsuitable and limited high-quality TCM rehabilitation resources locally, the patient sought a more sustainable and practical support pathway. Centred on 'assessment before referral', we designed a multi-stage rehabilitation pathway with locally licensed TCM specialists — prioritising local feasibility, continuity of care, and long-term sustainability."
+        },
+        "quote": {
+          "zh-CN": "频繁跨境奔波并不是答案——稳定、本地化、可持续的康复支持，才是患者真正需要的。",
+          "en": "Frequent international travel wasn't the answer — stable, local, sustainable rehabilitation support was what the patient truly needed."
+        },
+        "milestones": [
+          {
+            "date": {
+              "zh-CN": "第 1 阶段 · 联系与评估",
+              "en": "Stage 1 · Initial Contact & Assessment"
+            },
+            "event": {
+              "zh-CN": "了解患者既往血栓切除治疗、当前身体状态及长期恢复目标，判断频繁跨境治疗并非最优方案。",
+              "en": "Reviewed the patient's thrombectomy history, current condition, and long-term recovery goals; assessed that frequent cross-border treatment was not the optimal pathway."
+            }
+          },
+          {
+            "date": {
+              "zh-CN": "第 2 阶段 · 路径设计与对接",
+              "en": "Stage 2 · Pathway Design & Provider Matching"
+            },
+            "event": {
+              "zh-CN": "围绕本地化可行性、康复连续性与长期执行稳定性进行路径设计，对接当地具备合法执业资质且具有海外临床服务经验的中医康复专家。",
+              "en": "Designed a pathway centred on local feasibility, continuity of care, and long-term sustainability; matched the patient with locally licensed TCM rehabilitation specialists with international clinical experience."
+            }
+          },
+          {
+            "date": {
+              "zh-CN": "第 3 阶段 · 分阶段康复支持",
+              "en": "Stage 3 · Phased Rehabilitation Support"
+            },
+            "event": {
+              "zh-CN": "针灸、推拿及阶段性康复调理同步开展；建立阶段性恢复评估机制，根据反馈动态调整康复重点。",
+              "en": "Acupuncture, therapeutic massage and phased rehabilitation initiated; ongoing recovery assessments established with adaptive focus based on feedback."
+            }
+          },
+          {
+            "date": {
+              "zh-CN": "第 4 阶段 · 长期持续跟进",
+              "en": "Stage 4 · Ongoing Long-term Follow-up"
+            },
+            "event": {
+              "zh-CN": "持续沟通与进度跟踪、长期居家康复建议，建立更加稳定的后续健康管理节奏，无需频繁跨境奔波。",
+              "en": "Continued communication and progress tracking, long-term home rehabilitation guidance, and a sustainable ongoing health management routine — without requiring repeated international travel."
+            }
+          }
+        ]
+      },
+      {
+        "type": {
           "zh-CN": "海外急症转诊",
           "en": "Overseas Emergency Referral"
         },
