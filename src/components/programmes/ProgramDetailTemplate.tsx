@@ -23,13 +23,16 @@ const fadeInUp = {
 
 /* ── Section renderers ── */
 
-function IntroBlock({ section }: { section: IntroSection }) {
+function IntroBlock({ section, isAlt }: { section: IntroSection; isAlt?: boolean }) {
   return (
-    <section className="section-padding bg-white">
-      <div className="container max-w-3xl">
+    <section
+      className="section-padding"
+      style={{ backgroundColor: isAlt ? "var(--canvas)" : "white" }}
+    >
+      <div className="container max-w-4xl">
         <FadeIn>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{section.title}</h2>
-          <p className="text-lg leading-relaxed" style={{ color: "var(--body-text)" }}>
+          <p className="text-base md:text-lg leading-relaxed whitespace-pre-line" style={{ color: "var(--body-text)" }}>
             {section.body}
           </p>
         </FadeIn>
@@ -38,9 +41,12 @@ function IntroBlock({ section }: { section: IntroSection }) {
   );
 }
 
-function ValuePropsBlock({ section }: { section: ValuePropsSection }) {
+function ValuePropsBlock({ section, isAlt }: { section: ValuePropsSection; isAlt?: boolean }) {
   return (
-    <section className="section-padding" style={{ backgroundColor: "var(--canvas)" }}>
+    <section
+      className="section-padding"
+      style={{ backgroundColor: isAlt ? "var(--canvas)" : "white" }}
+    >
       <div className="container">
         <FadeIn>
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -181,13 +187,15 @@ export default function ProgramDetailTemplate({ data }: ProgramDetailTemplatePro
         </motion.div>
       </HeroSection>
 
-      {/* ── Dynamic sections ── */}
+      {/* ── Dynamic sections — alternating background for visual rhythm ── */}
       {data.sections.map((section, i) => {
+        // 偶数 index (0, 2, 4...) 白色；奇数米色。多个连续 section 不再撞色
+        const isAlt = i % 2 === 1;
         switch (section.type) {
           case "intro":
-            return <IntroBlock key={i} section={section} />;
+            return <IntroBlock key={i} section={section} isAlt={isAlt} />;
           case "value-props":
-            return <ValuePropsBlock key={i} section={section} />;
+            return <ValuePropsBlock key={i} section={section} isAlt={isAlt} />;
           case "delivery-format": {
             const idx = deliveryIndex++;
             return <DeliveryFormatBlock key={i} section={section} index={idx} />;
