@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "医疗专业人员语言沟通能力提升课程",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/medical-english-for-doctors.webp",
-    imageAlt: "医生英语 - 课程封面",
+    image: "/images/hero/medical-english.webp",
+    imageAlt: "医学英语与沟通能力培训",
   },
 
   sections: [

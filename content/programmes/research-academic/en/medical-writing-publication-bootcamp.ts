@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "Master the international medical publication pipeline",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/medical-writing-publication-bootcamp.webp",
-    imageAlt: "Medical Writing & Publication Bootcamp - Course hero",
+    image: "/images/hero/research.webp",
+    imageAlt: "Medical research and academic development",
   },
 
   sections: [

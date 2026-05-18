@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "用专业解读疾病，用对话传递关怀",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/medical-humanities-and-general-practice-literacy.webp",
-    imageAlt: "医学人文与全科医学素养 - 课程封面",
+    image: "/images/hero/humanities.webp",
+    imageAlt: "医学人文与职业发展",
   },
 
   sections: [

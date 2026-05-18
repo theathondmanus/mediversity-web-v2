@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "Reading disease with expertise, delivering care through dialogue",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/medical-humanities-and-general-practice-literacy.webp",
-    imageAlt: "Medical Humanities and General Practice Literacy - Course hero",
+    image: "/images/hero/humanities.webp",
+    imageAlt: "Medical humanities and professional development",
   },
 
   sections: [

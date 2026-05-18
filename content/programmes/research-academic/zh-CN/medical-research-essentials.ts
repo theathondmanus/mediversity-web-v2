@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "医疗从业者科研素养提升课程",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/medical-research-essentials.webp",
-    imageAlt: "医学研究核心技能 - 课程封面",
+    image: "/images/hero/research.webp",
+    imageAlt: "医学研究与学术发展",
   },
 
   sections: [

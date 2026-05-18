@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "A 12-week intensive language programme for healthcare professionals preparing for overseas clinical placement",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/pre-departure-medical-english.webp",
-    imageAlt: "Pre-Departure Medical English - Course hero",
+    image: "/images/hero/medical-english.webp",
+    imageAlt: "Medical English & Clinical Communication training",
   },
 
   sections: [

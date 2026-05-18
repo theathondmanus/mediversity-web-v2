@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "Research literacy programme for healthcare professionals",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/medical-research-essentials.webp",
-    imageAlt: "Medical Research Essentials - Course hero",
+    image: "/images/hero/research.webp",
+    imageAlt: "Medical research and academic development",
   },
 
   sections: [

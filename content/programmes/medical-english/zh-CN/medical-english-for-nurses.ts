@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "一个为医疗专业人员量身定制的高级实践导向 50 节课程，旨在提升其语言能力和沟通技巧",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/programmes/medical-english-for-nurses.webp",
-    imageAlt: "护理英语课程 - 课程封面",
+    image: "/images/hero/medical-english.webp",
+    imageAlt: "医学英语与沟通能力培训",
   },
 
   sections: [
