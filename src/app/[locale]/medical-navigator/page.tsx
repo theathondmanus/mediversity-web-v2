@@ -444,38 +444,7 @@ export default function MedicalNavigatorPage() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════
-          § 8  DARK CTA BAR
-          ═══════════════════════════════════════════════════ */}
-      <section className="bg-[#0A1628] py-16 md:py-20">
-        <div className="container text-center">
-          <FadeIn>
-            <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-8 max-w-2xl mx-auto">
-              {t2(content.darkCta.title, locale)}
-            </h2>
-            <div className="flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#C4922A] text-white font-medium rounded-md hover:bg-[#A87822] transition-colors no-underline shadow-lg shadow-[#C4922A]/25"
-              >
-                {t2(content.darkCta.cta1, locale)}
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-              {/* TODO: Link to actual service guide PDF when available */}
-              <button
-                type="button"
-                className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-white/30 text-white font-medium rounded-md hover:bg-white/10 transition-colors"
-                onClick={() => {
-                  // Placeholder — toast or download when PDF is ready
-                  alert(locale === "zh-CN" ? "服务手册即将上线" : "Service guide coming soon");
-                }}
-              >
-                {t2(content.darkCta.cta2, locale)}
-              </button>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
+
     </>
   );
 }
