@@ -105,7 +105,7 @@ export default function ProgrammesHubPage() {
       </HeroSection>
 
       {/* ═══ Philosophy — 4 core principles (Issue #72: pipeline infographic) ═══ */}
-      <section className="section-padding bg-white relative overflow-hidden">
+      <section className="pt-16 md:pt-20 pb-10 md:pb-14 bg-white relative overflow-hidden">
         <DotPattern opacity={0.02} />
         <div className="container relative z-10">
           <motion.div
@@ -224,7 +224,7 @@ export default function ProgrammesHubPage() {
       </section>
 
       {/* ═══ Pillar Cards ═══ */}
-      <section className="section-padding bg-white relative overflow-hidden">
+      <section className="py-10 md:py-14 bg-white relative overflow-hidden">
         {/* Decorative elements */}
         <DotPattern opacity={0.03} />
         <FloatingShape
@@ -340,7 +340,7 @@ export default function ProgrammesHubPage() {
       <WaveDivider fromColor="#FFFFFF" toColor="#F5F3EF" />
 
       {/* ═══ Bottom CTA ═══ */}
-      <section className="section-padding bg-[#F5F3EF] relative overflow-hidden">
+      <section className="py-10 md:py-14 bg-[#F5F3EF] relative overflow-hidden">
         <CornerAccent position="top-right" color="#00438A" size={100} />
         <CornerAccent position="bottom-left" color="#C4922A" size={80} />
 
