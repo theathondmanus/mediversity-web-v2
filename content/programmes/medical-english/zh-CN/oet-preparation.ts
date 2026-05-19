@@ -86,6 +86,114 @@ const data: ProgrammeData = {
       ],
     },
 
+    /* ── 学习目标（step list） ── */
+    {
+      type: "value-props",
+      title: "学习目标",
+      display: "list",
+      items: [
+        {
+          title: "掌握 OET 四大模块核心技能",
+          description: "系统学习听力、阅读、写作和口语，全面提升医学英语应试与实战能力。",
+        },
+        {
+          title: "熟悉真实医疗场景沟通模式",
+          description: "通过角色扮演和案例分析，掌握病史采集、交接班、患者教育等临床沟通技巧。",
+        },
+        {
+          title: "达到 OET B 级以上水平",
+          description: "通过系统训练和模考反馈，帮助学员达到英国 GMC/NMC 认可的 OET B 级标准。",
+        },
+        {
+          title: "建立跨文化沟通自信",
+          description: "培养在英语医疗环境中自如交流的能力，为海外执业做好充分准备。",
+        },
+      ],
+    },
+    /* ── 教学方式（timeline） ── */
+    {
+      type: "value-props",
+      title: "教学方式",
+      display: "timeline",
+      items: [
+        {
+          title: "入学评估",
+          description: "全面测评英语水平与薄弱环节，制定个性化学习计划。",
+        },
+        {
+          title: "系统课程",
+          description: "专家主讲直播课 + 录播回放，覆盖 OET 四大模块核心考点。",
+        },
+        {
+          title: "实战演练",
+          description: "角色扮演、模拟问诊、限时写作等沉浸式练习。",
+        },
+        {
+          title: "模考反馈",
+          description: "全真模拟考试 + 认证培训师一对一深度反馈。",
+        },
+        {
+          title: "冲刺备考",
+          description: "考前集中强化，查漏补缺，建立应试信心。",
+        },
+      ],
+    },
+    /* ── 课程大纲（table） ── */
+    {
+      type: "value-props",
+      title: "课程大纲",
+      display: "table",
+      items: [
+        {
+          title: "听力模块",
+          description: "医疗咨询录音理解、关键信息提取、笔记技巧训练",
+        },
+        {
+          title: "阅读模块",
+          description: "医学文献快速阅读、信息定位、专业词汇积累",
+        },
+        {
+          title: "写作模块",
+          description: "转介信/出院小结撰写、临床信函格式与语言规范",
+        },
+        {
+          title: "口语模块",
+          description: "角色扮演（病史采集、解释诊断、患者教育）、流利度与发音训练",
+        },
+        {
+          title: "综合模考",
+          description: "全真模拟考试环境、限时完成、即时评分与反馈",
+        },
+        {
+          title: "考前冲刺",
+          description: "高频考点回顾、应试策略、心理调适与时间管理",
+        },
+      ],
+    },
+    /* ── 课程亮点（accordion） ── */
+    {
+      type: "value-props",
+      title: "课程亮点",
+      display: "accordion",
+      items: [
+        {
+          title: "小班教学，充分互动",
+          description: "每班不超过 8 人，确保每位学员获得充足的练习机会和个性化指导。",
+        },
+        {
+          title: "真实临床场景模拟",
+          description: "所有教学材料和练习均基于真实医疗场景设计，学以致用。",
+        },
+        {
+          title: "灵活学习安排",
+          description: "支持直播课 + 录播回放 + 一对一辅导，适应不同工作节奏。",
+        },
+        {
+          title: "持续跟踪与支持",
+          description: "学习顾问全程跟踪进度，定期评估并调整学习计划。",
+        },
+      ],
+    },
     /* ── OET 在线学习平台 ── */
     {
       type: "delivery-format",

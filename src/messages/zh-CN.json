@@ -383,7 +383,10 @@
     "activeCourses": "门在授课程",
     "futureCourses": "门规划中课程",
     "futureProgrammes": "规划中的课程",
-    "viewDetails": "查看详情"
+    "viewDetails": "查看详情",
+    "testimonials": "学员评价",
+    "tableModule": "模块",
+    "tableContent": "内容"
   },
   "footer": {
     "ctaTitle": "准备好开始了吗？",

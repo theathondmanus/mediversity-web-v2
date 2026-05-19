@@ -352,6 +352,7 @@ function ValuePropsAccordion({ section, isAlt }: { section: ValuePropsSection; i
 
 /* ── Value Props: TABLE (structured data table for syllabus/curriculum) ── */
 function ValuePropsTable({ section, isAlt }: { section: ValuePropsSection; isAlt?: boolean }) {
+  const t = useTranslations("common");
   return (
     <section
       className="section-padding"
@@ -369,8 +370,8 @@ function ValuePropsTable({ section, isAlt }: { section: ValuePropsSection; isAlt
               <thead>
                 <tr style={{ backgroundColor: "var(--brand-primary)" }}>
                   <th className="px-6 py-4 text-left text-sm font-semibold text-white w-16">#</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-white">模块</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-white hidden md:table-cell">内容</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-white">{t("tableModule")}</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-white hidden md:table-cell">{t("tableContent")}</th>
                 </tr>
               </thead>
               <tbody>

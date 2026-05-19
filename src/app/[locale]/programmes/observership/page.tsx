@@ -10,7 +10,7 @@ const subcategories: SubCategory[] = [
     titleKey: "clinicalObserver",
     descKey: "clinicalObserverDesc",
     courses: [
-      { titleKey: "shortTermObservership", status: "active" },
+      { titleKey: "shortTermObservership", status: "future" },
       { titleKey: "specialtyBasedObservership", status: "future" },
       { titleKey: "hospitalAttachment", status: "future" },
     ],
@@ -21,7 +21,7 @@ const subcategories: SubCategory[] = [
     titleKey: "advancedClinical",
     descKey: "advancedClinicalDesc",
     courses: [
-      { titleKey: "advancedClinicalObserver", status: "active" },
+      { titleKey: "advancedClinicalObserver", status: "future" },
       { titleKey: "consultantShadowing", status: "future" },
       { titleKey: "departmentImmersion", status: "future" },
     ],
@@ -32,7 +32,7 @@ const subcategories: SubCategory[] = [
     titleKey: "visitingScholar",
     descKey: "visitingScholarDesc",
     courses: [
-      { titleKey: "visitingScholarProgramme", status: "active" },
+      { titleKey: "visitingScholarProgramme", status: "future" },
       { titleKey: "researchAttachment", status: "future" },
       { titleKey: "internationalAcademicExchange", status: "future" },
     ],

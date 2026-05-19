@@ -383,7 +383,10 @@
     "activeCourses": "active courses",
     "futureCourses": "planned courses",
     "futureProgrammes": "Future Programmes",
-    "viewDetails": "View details"
+    "viewDetails": "View details",
+    "testimonials": "Student Testimonials",
+    "tableModule": "Module",
+    "tableContent": "Content"
   },
   "footer": {
     "ctaTitle": "Ready to Get Started?",
