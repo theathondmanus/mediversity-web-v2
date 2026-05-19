@@ -354,7 +354,15 @@ Moss 触发双站并行 redeploy ↓                  AWS 直接拉 GitHub ↑
 
 ## 10. 历史架构决策记录
 
-### 2026-05-19
+### 2026-05-19（晚）
+- **OET 作为课程详情页基线模板**：5 种 display 模式（grid/list/timeline/accordion/**table**）都在 OET 上演示一次
+- **medical-english pillar 作为 Pillar 页基线模板**：另 3 个 pillar 按它做齐
+- **Accordion 设计原则**（章逊 19:21 拍板）：**仅留给 FAQ / 进阶问答**等"用户主动展开"的内容，**绝对不能用于"课程亮点"等"必须大大方方展示"的内容**
+- **PR review 教训**：PR 描述说"实装了 5 种 display 模式"≠ 实际在数据文件里用了。**review 时必须去 `content/programmes/<course>.ts` 数据里 grep `display:` 验证演示完整度**，不只看 PR description
+- **Action 慢 commit 教训**：含大图 commit (>5MB) 让 sync-to-gitee Action 跑 4 分钟（vs 纯文本 12s）。腾讯云 redeploy 必须**等 Action 完成**再触发，否则会拉到 stale Gitee。`.deployment/README.md` 待补
+- **图片扩展名 vs 真 MIME 不必紧张**：next/image 看真 MIME 不看扩展名。PR #92 的 `.webp` 实际是 PNG 仍能正常渲染，章逊巡视看到"图刷不出来"是首次访问 staging 的加载延迟，刷新就好
+
+### 2026-05-19（中午）
 - **GitHub Action 自动同步 GitHub → Gitee**（取代 Moss 手动双推）
 - **腾讯云 origin 改 Gitee**（GitHub 直拉间歇被 GFW 切断）
 - **课程统一图规则**（每个课程一张图，跨展示位复用，不跟全站 hero 撞）
