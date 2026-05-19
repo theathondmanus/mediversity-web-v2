@@ -67,6 +67,8 @@ export const registry: ProgrammeRegistryEntry[] = [
     featured: true,
     order: 10,
     status: "published",
+    cover: "/images/courses/oet-preparation.webp",
+    coverAlt: "OET 备考课程 - 学生在语言实验室练习",
   },
   {
     slug: "preparatory-medical-english",
@@ -77,6 +79,8 @@ export const registry: ProgrammeRegistryEntry[] = [
     featured: false,
     order: 5,
     status: "published",
+    cover: "/images/courses/preparatory-medical-english.webp",
+    coverAlt: "预备通用英语 - 医学生在图书馆学习",
   },
   {
     slug: "medical-english-for-doctors",
@@ -87,6 +91,8 @@ export const registry: ProgrammeRegistryEntry[] = [
     featured: true,
     order: 20,
     status: "published",
+    cover: "/images/courses/medical-english-for-doctors.webp",
+    coverAlt: "医生英语 - 中外医生协作讨论",
   },
   {
     slug: "medical-english-for-nurses",
@@ -97,6 +103,8 @@ export const registry: ProgrammeRegistryEntry[] = [
     featured: true,
     order: 30,
     status: "published",
+    cover: "/images/courses/medical-english-for-nurses.webp",
+    coverAlt: "护士英语 - 护士在模拟病房练习沟通",
   },
   {
     slug: "pre-departure-medical-english",
@@ -107,6 +115,8 @@ export const registry: ProgrammeRegistryEntry[] = [
     featured: true,
     order: 40,
     status: "published",
+    cover: "/images/courses/pre-departure-medical-english.webp",
+    coverAlt: "出国前医学英语 - 医疗人员在机场准备出发",
   },
   {
     slug: "medical-research-essentials",

@@ -41,18 +41,10 @@ function getIcon(iconName?: string) {
   return ICON_MAP[iconName] || CheckCircle;
 }
 
-/* ── Accent colors for numbered items ── */
-const ACCENT_COLORS = [
-  "var(--brand-primary)",
-  "var(--brand-accent)",
-  "#2563EB",
-  "#059669",
-  "#7C3AED",
-  "#DC2626",
-];
-
 /* ══════════════════════════════════════════════════════════════
-   SECTION RENDERERS
+   SECTION RENDERERS — strict brand palette only:
+   Primary: var(--brand-primary) = #00438A
+   Accent:  var(--brand-accent) = #C4922A
    ══════════════════════════════════════════════════════════════ */
 
 /* ── Intro: text-only or left-text-right-image ── */
@@ -106,7 +98,7 @@ function IntroBlock({ section, isAlt }: { section: IntroSection; isAlt?: boolean
   );
 }
 
-/* ── Value Props: GRID (default) ── */
+/* ── Value Props: GRID (honeycomb-inspired, brand colors only) ── */
 function ValuePropsGrid({ section, isAlt }: { section: ValuePropsSection; isAlt?: boolean }) {
   return (
     <section
@@ -122,19 +114,21 @@ function ValuePropsGrid({ section, isAlt }: { section: ValuePropsSection; isAlt?
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {section.items.map((item, i) => {
             const Icon = getIcon(item.icon);
+            const isPrimary = i % 2 === 0;
+            const accentColor = isPrimary ? "var(--brand-primary)" : "var(--brand-accent)";
             return (
               <FadeIn key={i} index={i}>
                 <div className="bg-white rounded-xl p-6 h-full border border-[var(--subtle-border)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
                   {/* Top accent line */}
                   <div
                     className="absolute top-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity"
-                    style={{ backgroundColor: ACCENT_COLORS[i % ACCENT_COLORS.length] }}
+                    style={{ backgroundColor: accentColor }}
                   />
                   <div
                     className="w-10 h-10 rounded-lg flex items-center justify-center mb-4"
-                    style={{ backgroundColor: `${ACCENT_COLORS[i % ACCENT_COLORS.length]}15` }}
+                    style={{ backgroundColor: `${isPrimary ? "#00438A" : "#C4922A"}15` }}
                   >
-                    <Icon className="w-5 h-5" style={{ color: ACCENT_COLORS[i % ACCENT_COLORS.length] }} />
+                    <Icon className="w-5 h-5" style={{ color: accentColor }} />
                   </div>
                   <h3 className="font-semibold text-lg mb-2" style={{ color: "var(--ink)" }}>
                     {item.title}
@@ -154,7 +148,7 @@ function ValuePropsGrid({ section, isAlt }: { section: ValuePropsSection; isAlt?
   );
 }
 
-/* ── Value Props: LIST (numbered vertical list with accent bar) ── */
+/* ── Value Props: LIST (step list with brand-colored progress indicators) ── */
 function ValuePropsList({ section, isAlt }: { section: ValuePropsSection; isAlt?: boolean }) {
   return (
     <section
@@ -167,23 +161,29 @@ function ValuePropsList({ section, isAlt }: { section: ValuePropsSection; isAlt?
             {section.title}
           </h2>
         </FadeIn>
-        <div className="space-y-6">
+        <div className="space-y-0">
           {section.items.map((item, i) => {
             const Icon = getIcon(item.icon);
+            const isLast = i === section.items.length - 1;
             return (
               <FadeIn key={i} index={i}>
                 <div className="flex gap-5 items-start group">
-                  {/* Number badge */}
-                  <div
-                    className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md"
-                    style={{ backgroundColor: ACCENT_COLORS[i % ACCENT_COLORS.length] }}
-                  >
-                    {i + 1}
+                  {/* Step indicator with connecting line */}
+                  <div className="flex flex-col items-center flex-shrink-0">
+                    <div
+                      className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md"
+                      style={{ backgroundColor: "var(--brand-primary)" }}
+                    >
+                      {i + 1}
+                    </div>
+                    {!isLast && (
+                      <div className="w-0.5 h-full min-h-[3rem] bg-[var(--brand-primary)]/20 mt-2" />
+                    )}
                   </div>
                   {/* Content */}
-                  <div className="flex-1 pb-6 border-b border-[var(--subtle-border)] last:border-0">
+                  <div className={`flex-1 ${isLast ? "pb-0" : "pb-8"}`}>
                     <div className="flex items-center gap-2 mb-1">
-                      <Icon className="w-4 h-4" style={{ color: ACCENT_COLORS[i % ACCENT_COLORS.length] }} />
+                      <Icon className="w-4 h-4" style={{ color: "var(--brand-accent)" }} />
                       <h3 className="font-semibold text-lg" style={{ color: "var(--ink)" }}>
                         {item.title}
                       </h3>
@@ -204,7 +204,7 @@ function ValuePropsList({ section, isAlt }: { section: ValuePropsSection; isAlt?
   );
 }
 
-/* ── Value Props: TIMELINE (horizontal step flow) ── */
+/* ── Value Props: TIMELINE (horizontal step flow, brand colors only) ── */
 function ValuePropsTimeline({ section, isAlt }: { section: ValuePropsSection; isAlt?: boolean }) {
   return (
     <section
@@ -230,7 +230,7 @@ function ValuePropsTimeline({ section, isAlt }: { section: ValuePropsSection; is
                   {/* Node */}
                   <div
                     className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
-                    style={{ backgroundColor: ACCENT_COLORS[i % ACCENT_COLORS.length] }}
+                    style={{ backgroundColor: i % 2 === 0 ? "var(--brand-primary)" : "var(--brand-accent)" }}
                   >
                     {i + 1}
                   </div>
@@ -260,7 +260,7 @@ function ValuePropsTimeline({ section, isAlt }: { section: ValuePropsSection; is
                   {/* Node */}
                   <div
                     className="absolute -left-8 top-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-xs shadow-md -translate-x-1/2"
-                    style={{ backgroundColor: ACCENT_COLORS[i % ACCENT_COLORS.length] }}
+                    style={{ backgroundColor: i % 2 === 0 ? "var(--brand-primary)" : "var(--brand-accent)" }}
                   >
                     {i + 1}
                   </div>
@@ -310,7 +310,7 @@ function ValuePropsAccordion({ section, isAlt }: { section: ValuePropsSection; i
                     <div className="flex items-center gap-4">
                       <span
                         className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-sm"
-                        style={{ backgroundColor: ACCENT_COLORS[i % ACCENT_COLORS.length] }}
+                        style={{ backgroundColor: "var(--brand-primary)" }}
                       >
                         {i + 1}
                       </span>
@@ -350,6 +350,70 @@ function ValuePropsAccordion({ section, isAlt }: { section: ValuePropsSection; i
   );
 }
 
+/* ── Value Props: TABLE (structured data table for syllabus/curriculum) ── */
+function ValuePropsTable({ section, isAlt }: { section: ValuePropsSection; isAlt?: boolean }) {
+  return (
+    <section
+      className="section-padding"
+      style={{ backgroundColor: isAlt ? "var(--canvas)" : "white" }}
+    >
+      <div className="container max-w-5xl">
+        <FadeIn>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12" style={{ color: "var(--ink)" }}>
+            {section.title}
+          </h2>
+        </FadeIn>
+        <FadeIn>
+          <div className="overflow-hidden rounded-xl border border-[var(--subtle-border)] shadow-sm">
+            <table className="w-full">
+              <thead>
+                <tr style={{ backgroundColor: "var(--brand-primary)" }}>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-white w-16">#</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-white">模块</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-white hidden md:table-cell">内容</th>
+                </tr>
+              </thead>
+              <tbody>
+                {section.items.map((item, i) => (
+                  <tr
+                    key={i}
+                    className="border-t border-[var(--subtle-border)] hover:bg-[var(--canvas)] transition-colors"
+                  >
+                    <td className="px-6 py-4">
+                      <span
+                        className="inline-flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold text-white"
+                        style={{ backgroundColor: "var(--brand-accent)" }}
+                      >
+                        {i + 1}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4">
+                      <p className="font-medium text-sm" style={{ color: "var(--ink)" }}>
+                        {item.title}
+                      </p>
+                      {/* Show description on mobile below title */}
+                      {item.description && (
+                        <p className="text-xs leading-relaxed mt-1 md:hidden" style={{ color: "var(--body-text)" }}>
+                          {item.description}
+                        </p>
+                      )}
+                    </td>
+                    <td className="px-6 py-4 hidden md:table-cell">
+                      <p className="text-sm leading-relaxed" style={{ color: "var(--body-text)" }}>
+                        {item.description || "—"}
+                      </p>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </FadeIn>
+      </div>
+    </section>
+  );
+}
+
 /* ── Value Props Router ── */
 function ValuePropsBlock({ section, isAlt }: { section: ValuePropsSection; isAlt?: boolean }) {
   const display = section.display || "grid";
@@ -360,12 +424,14 @@ function ValuePropsBlock({ section, isAlt }: { section: ValuePropsSection; isAlt
       return <ValuePropsTimeline section={section} isAlt={isAlt} />;
     case "accordion":
       return <ValuePropsAccordion section={section} isAlt={isAlt} />;
+    case "table":
+      return <ValuePropsTable section={section} isAlt={isAlt} />;
     default:
       return <ValuePropsGrid section={section} isAlt={isAlt} />;
   }
 }
 
-/* ── Delivery Format (enhanced) ── */
+/* ── Delivery Format (enhanced, brand colors only) ── */
 function DeliveryFormatBlock({
   section,
   index,
@@ -393,18 +459,20 @@ function DeliveryFormatBlock({
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {section.features.map((feat, i) => {
             const Icon = getIcon(feat.icon);
+            const isPrimary = i % 2 === 0;
+            const accentColor = isPrimary ? "var(--brand-primary)" : "var(--brand-accent)";
             return (
               <FadeIn key={i} index={i}>
                 <div className="bg-white rounded-xl p-6 h-full border border-[var(--subtle-border)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
                   <div
                     className="absolute top-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity"
-                    style={{ backgroundColor: ACCENT_COLORS[i % ACCENT_COLORS.length] }}
+                    style={{ backgroundColor: accentColor }}
                   />
                   <div
                     className="w-9 h-9 rounded-lg flex items-center justify-center mb-4"
-                    style={{ backgroundColor: `${ACCENT_COLORS[i % ACCENT_COLORS.length]}15` }}
+                    style={{ backgroundColor: `${isPrimary ? "#00438A" : "#C4922A"}15` }}
                   >
-                    <Icon className="w-4.5 h-4.5" style={{ color: ACCENT_COLORS[i % ACCENT_COLORS.length] }} />
+                    <Icon className="w-4.5 h-4.5" style={{ color: accentColor }} />
                   </div>
                   <h3 className="font-semibold text-lg mb-2" style={{ color: "var(--ink)" }}>
                     {feat.title}
@@ -535,7 +603,7 @@ export default function ProgramDetailTemplate({ data }: ProgramDetailTemplatePro
                     <div className="border-t border-[var(--subtle-border)] pt-4 flex items-center gap-3">
                       <div
                         className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm"
-                        style={{ backgroundColor: ACCENT_COLORS[i % ACCENT_COLORS.length] }}
+                        style={{ backgroundColor: i % 2 === 0 ? "var(--brand-primary)" : "var(--brand-accent)" }}
                       >
                         {testimonial.name.charAt(0)}
                       </div>
