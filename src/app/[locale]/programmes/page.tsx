@@ -126,18 +126,21 @@ export default function ProgrammesHubPage() {
             {...staggerContainer}
             className="max-w-6xl mx-auto"
           >
-            {/* Desktop: horizontal pipeline */}
+            {/* Desktop: horizontal pipeline (Issue #79: removed bar, added chevron connectors) */}
             <div className="hidden lg:block relative">
-              {/* Connecting line */}
-              <div className="absolute top-[52px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-[#00438A] via-[#3550A0] to-[#C4922A]" />
-
               <div className="grid grid-cols-4 gap-6">
                 {(t.raw("philosophy.items") as Array<{ key: string; title: string; desc: string }>).map(
                   (item, idx) => {
                     const icons = [GraduationCap, Stethoscope, BookOpen, Microscope];
                     const Icon = icons[idx] || GraduationCap;
                     return (
-                      <motion.div key={item.key} variants={staggerItem} className="text-center">
+                      <motion.div key={item.key} variants={staggerItem} className="text-center relative">
+                        {/* Chevron connector between nodes (not on last item) */}
+                        {idx < 3 && (
+                          <div className="absolute top-[52px] -right-[18px] z-30 text-[#00438A]/25">
+                            <ArrowRight className="w-5 h-5" />
+                          </div>
+                        )}
                         {/* Numbered circle node */}
                         <div className="relative mx-auto mb-6">
                           <div className="w-[104px] h-[104px] rounded-full bg-gradient-to-br from-[#00438A]/5 to-[#C4922A]/5 border-2 border-[#00438A]/15 flex items-center justify-center mx-auto relative z-10">
