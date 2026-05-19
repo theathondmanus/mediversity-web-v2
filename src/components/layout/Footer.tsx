@@ -58,9 +58,12 @@ export default function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="lg:col-span-1">
-            <span className="font-display text-xl font-bold tracking-tight text-white">
-              Mediversity<span className="font-light ml-1">Global</span>
-            </span>
+            <div className="flex items-center gap-2.5">
+              <img src="/brand/logo-128.png" alt="Mediversity Global" className="h-9 w-auto" />
+              <span className="font-display text-xl font-bold tracking-tight text-white">
+                Mediversity<span className="font-light ml-1">Global</span>
+              </span>
+            </div>
             <p className="mt-4 text-sm text-gray-400 leading-relaxed">
               {t("footer.brandDescription")}
             </p>
