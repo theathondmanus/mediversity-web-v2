@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "一个为医疗专业人员量身定制的高级实践导向 50 节课程，旨在提升其语言能力和沟通技巧",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/medical-english.webp",
-    imageAlt: "医学英语与沟通能力培训",
+    image: "/images/courses/medical-english-for-nurses.webp",
+    imageAlt: "护士英语课程",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "学习目标",
+      display: "list",
       items: [
         {
           title: "医学术语发展：全面掌握医学术语及其在临床中的应用",
@@ -57,6 +58,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "教学方法",
+      display: "timeline",
       items: [
         {
           title: "互动与协作学习",
@@ -91,6 +93,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "核心特色",
+      display: "grid",
       items: [
         {
           title: "全面且个性化的学习路径",
@@ -121,6 +124,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "课程内容",
+      display: "table",
       items: [
         {
           title: "基础知识",

@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "医疗从业者科研素养提升课程",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/research.webp",
-    imageAlt: "医学研究与学术发展",
+    image: "/images/courses/medical-research-essentials.webp",
+    imageAlt: "医学研究基础课程",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "学习目标",
+      display: "list",
       items: [
         {
           title: "医学研究全流程解析",
@@ -61,6 +62,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "教学方法",
+      display: "timeline",
       items: [
         {
           title: "国际师资团队",
@@ -87,6 +89,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "课程内容",
+      display: "table",
       items: [
         {
           title: "1. 医学研究导论：从理论到实践",

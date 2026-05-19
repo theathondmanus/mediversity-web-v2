@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "Language and Communication Skills Programme for Healthcare Professionals",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/medical-english.webp",
-    imageAlt: "Medical English & Clinical Communication training",
+    image: "/images/courses/medical-english-for-doctors.webp",
+    imageAlt: "Medical English for Doctors Course",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Learning Objectives",
+      display: "list",
       items: [
         {
           title: "掌握医学术语：熟练运用专业医学词汇，确保精准的医患沟通",
@@ -57,6 +58,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Teaching Methods",
+      display: "timeline",
       items: [
         {
           title: "互动教学与合作学习",
@@ -91,6 +93,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Key Features",
+      display: "grid",
       items: [
         {
           title: "全面定制化学习路径",
@@ -121,6 +124,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Curriculum",
+      display: "table",
       items: [
         {
           title: "基础知识",

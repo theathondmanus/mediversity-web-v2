@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "系统掌握国际医学出版全流程",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/research.webp",
-    imageAlt: "医学研究与学术发展",
+    image: "/images/courses/medical-writing-publication-bootcamp.webp",
+    imageAlt: "医学写作与发表强化训练营",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "学习目标",
+      display: "list",
       items: [
         {
           title: "系统掌握国际医学出版全流程（SCI/SSCI/Medline 标准），包括论文评审机制与行业规范",
@@ -57,6 +58,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "核心特色",
+      display: "grid",
       items: [
         {
           title: "系统性写作进阶框架",
@@ -87,6 +89,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "课程内容",
+      display: "table",
       items: [
         {
           title: "1. 中国医生国际发表困境解析",

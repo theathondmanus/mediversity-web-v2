@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "医疗专业人员语言沟通能力提升课程",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/medical-english.webp",
-    imageAlt: "医学英语与沟通能力培训",
+    image: "/images/courses/medical-english-for-doctors.webp",
+    imageAlt: "医生英语课程",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "学习目标",
+      display: "list",
       items: [
         {
           title: "掌握医学术语：熟练运用专业医学词汇，确保精准的医患沟通",
@@ -57,6 +58,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "教学方法",
+      display: "timeline",
       items: [
         {
           title: "互动教学与合作学习",
@@ -91,6 +93,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "核心特色",
+      display: "grid",
       items: [
         {
           title: "全面定制化学习路径",
@@ -121,6 +124,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "课程内容",
+      display: "table",
       items: [
         {
           title: "基础知识",

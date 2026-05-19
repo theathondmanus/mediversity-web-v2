@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "为期 12 周的语言强化课程，专为即将赴海外进行临床实习的医疗专业人员设计",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/medical-english.webp",
-    imageAlt: "医学英语与沟通能力培训",
+    image: "/images/courses/pre-departure-medical-english.webp",
+    imageAlt: "出国前医学英语课程",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "学习目标",
+      display: "list",
       items: [
         {
           title: "真实情境模拟",
@@ -49,6 +50,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "核心特色",
+      display: "grid",
       items: [
         {
           title: "教学策略可根据您的需求量身定制",
@@ -95,6 +97,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "课程内容",
+      display: "table",
       items: [
         {
           title: "1. 在不同医疗场景下自我介绍",

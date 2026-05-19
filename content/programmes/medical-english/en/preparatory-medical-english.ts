@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "A 12-lesson foundation programme for healthcare professionals preparing for advanced medical English training",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/medical-english.webp",
-    imageAlt: "Medical English & Clinical Communication training",
+    image: "/images/courses/preparatory-medical-english.webp",
+    imageAlt: "Preparatory Medical English Course",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Learning Objectives",
+      display: "list",
       items: [
         {
           title: "系统性学习语法应用自信",
@@ -53,6 +54,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Key Features",
+      display: "grid",
       items: [
         {
           title: "基础场景实战闭环",
@@ -79,6 +81,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Curriculum",
+      display: "table",
       items: [
         {
           title: "1. 身体与创伤",

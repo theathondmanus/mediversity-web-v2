@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "Master the international medical publication pipeline",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/research.webp",
-    imageAlt: "Medical research and academic development",
+    image: "/images/courses/medical-writing-publication-bootcamp.webp",
+    imageAlt: "Medical Writing & Publication Bootcamp",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Learning Objectives",
+      display: "list",
       items: [
         {
           title: "系统掌握国际医学出版全流程（SCI/SSCI/Medline 标准），包括论文评审机制与行业规范",
@@ -57,6 +58,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Key Features",
+      display: "grid",
       items: [
         {
           title: "系统性写作进阶框架",
@@ -87,6 +89,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Curriculum",
+      display: "table",
       items: [
         {
           title: "1. 中国医生国际发表困境解析",

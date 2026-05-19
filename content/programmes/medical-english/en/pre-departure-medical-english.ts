@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "A 12-week intensive language programme for healthcare professionals preparing for overseas clinical placement",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/medical-english.webp",
-    imageAlt: "Medical English & Clinical Communication training",
+    image: "/images/courses/pre-departure-medical-english.webp",
+    imageAlt: "Pre-departure Medical English Course",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Learning Objectives",
+      display: "list",
       items: [
         {
           title: "真实情境模拟",
@@ -49,6 +50,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Key Features",
+      display: "grid",
       items: [
         {
           title: "教学策略可根据您的需求量身定制",
@@ -95,6 +97,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Curriculum",
+      display: "table",
       items: [
         {
           title: "1. 在不同医疗场景下自我介绍",

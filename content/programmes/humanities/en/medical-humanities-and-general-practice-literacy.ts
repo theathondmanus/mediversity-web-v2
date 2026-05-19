@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "Reading disease with expertise, delivering care through dialogue",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/humanities.webp",
-    imageAlt: "Medical humanities and professional development",
+    image: "/images/courses/medical-humanities-and-general-practice-literacy.webp",
+    imageAlt: "Medical Humanities & General Practice Literacy Course",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Learning Objectives",
+      display: "list",
       items: [
         {
           title: "通过医学人文核心理念培养人文关怀",
@@ -61,6 +62,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Teaching Methods",
+      display: "timeline",
       items: [
         {
           title: "案例分析",
@@ -87,6 +89,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Curriculum",
+      display: "table",
       items: [
         {
           title: "1. 医学人文导论：医学不仅是科学，更是人文",

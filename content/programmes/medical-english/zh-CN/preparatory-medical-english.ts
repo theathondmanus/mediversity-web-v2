@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "12 课时基础英语课程，专为医疗从业者设计，为其进阶医疗英语培训奠定基础",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/medical-english.webp",
-    imageAlt: "医学英语与沟通能力培训",
+    image: "/images/courses/preparatory-medical-english.webp",
+    imageAlt: "预备通用英语课程",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "学习目标",
+      display: "list",
       items: [
         {
           title: "系统性学习语法应用自信",
@@ -53,6 +54,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "核心特色",
+      display: "grid",
       items: [
         {
           title: "基础场景实战闭环",
@@ -79,6 +81,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "课程内容",
+      display: "table",
       items: [
         {
           title: "1. 身体与创伤",
