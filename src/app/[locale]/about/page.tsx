@@ -185,7 +185,7 @@ export default function AboutPage() {
       {/* ═══ Wave transition ═══ */}
       <WaveDivider fromColor="#F5F3EF" toColor="#FFFFFF" />
 
-      {/* ═══ Values ═══ */}
+      {/* ═══ Values — Diamond Quadrant ═══ */}
       <section className="section-padding bg-white relative overflow-hidden">
         <DotPattern opacity={0.015} />
         <div className="container relative z-10">
@@ -196,39 +196,181 @@ export default function AboutPage() {
             </h2>
           </motion.div>
 
-          <motion.div
-            {...staggerContainer}
-            className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
-          >
-            {VALUES.map((value) => {
+          {/* Diamond quadrant — desktop */}
+          <div className="hidden md:block max-w-3xl mx-auto">
+            <div className="relative w-full" style={{ paddingBottom: "100%" }}>
+              {/* Center diamond outline */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8, rotate: 45 }}
+                  whileInView={{ opacity: 1, scale: 1, rotate: 45 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                  className="w-[55%] aspect-square border-2 border-[#E3E5EC] rounded-2xl"
+                />
+              </div>
+              {/* Center brand mark */}
+              <div className="absolute inset-0 flex items-center justify-center z-20">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4, duration: 0.5 }}
+                  className="w-16 h-16 rounded-full bg-white shadow-lg border border-[#E3E5EC] flex items-center justify-center"
+                >
+                  <img src="/brand/logo-128.png" alt="Mediversity" className="w-10 h-10 object-contain" />
+                </motion.div>
+              </div>
+
+              {/* Top — Excellence */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.15, duration: 0.5 }}
+                className="absolute top-[2%] left-1/2 -translate-x-1/2 w-56 text-center group"
+              >
+                <div
+                  className="w-14 h-14 rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm transition-transform group-hover:scale-110"
+                  style={{ backgroundColor: "#00438A10" }}
+                >
+                  <Award className="w-7 h-7 text-[#00438A]" />
+                </div>
+                <h3 className="font-display font-bold text-[#0A1628] text-base mb-1">
+                  {t("values.excellence.title")}
+                </h3>
+                <p className="text-xs text-[#3C3A47] leading-relaxed">
+                  {t("values.excellence.desc")}
+                </p>
+              </motion.div>
+
+              {/* Right — Collaboration */}
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.25, duration: 0.5 }}
+                className="absolute top-1/2 right-[2%] -translate-y-1/2 w-52 text-center group"
+              >
+                <div
+                  className="w-14 h-14 rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm transition-transform group-hover:scale-110"
+                  style={{ backgroundColor: "#04785710" }}
+                >
+                  <Users className="w-7 h-7 text-[#047857]" />
+                </div>
+                <h3 className="font-display font-bold text-[#0A1628] text-base mb-1">
+                  {t("values.collaboration.title")}
+                </h3>
+                <p className="text-xs text-[#3C3A47] leading-relaxed">
+                  {t("values.collaboration.desc")}
+                </p>
+              </motion.div>
+
+              {/* Bottom — International */}
+              <motion.div
+                initial={{ opacity: 0, y: -30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.35, duration: 0.5 }}
+                className="absolute bottom-[2%] left-1/2 -translate-x-1/2 w-56 text-center group"
+              >
+                <div
+                  className="w-14 h-14 rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm transition-transform group-hover:scale-110"
+                  style={{ backgroundColor: "#7e22ce10" }}
+                >
+                  <Globe className="w-7 h-7 text-[#7e22ce]" />
+                </div>
+                <h3 className="font-display font-bold text-[#0A1628] text-base mb-1">
+                  {t("values.international.title")}
+                </h3>
+                <p className="text-xs text-[#3C3A47] leading-relaxed">
+                  {t("values.international.desc")}
+                </p>
+              </motion.div>
+
+              {/* Left — Empathy */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.45, duration: 0.5 }}
+                className="absolute top-1/2 left-[2%] -translate-y-1/2 w-52 text-center group"
+              >
+                <div
+                  className="w-14 h-14 rounded-xl mx-auto mb-3 flex items-center justify-center shadow-sm transition-transform group-hover:scale-110"
+                  style={{ backgroundColor: "#C4922A10" }}
+                >
+                  <Heart className="w-7 h-7 text-[#C4922A]" />
+                </div>
+                <h3 className="font-display font-bold text-[#0A1628] text-base mb-1">
+                  {t("values.empathy.title")}
+                </h3>
+                <p className="text-xs text-[#3C3A47] leading-relaxed">
+                  {t("values.empathy.desc")}
+                </p>
+              </motion.div>
+
+              {/* Connecting lines — diagonal from center to corners */}
+              <svg className="absolute inset-0 w-full h-full pointer-events-none z-10" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+                <motion.line
+                  x1="50" y1="50" x2="50" y2="18"
+                  stroke="#00438A" strokeWidth="0.3" strokeDasharray="2 2" opacity="0.4"
+                  initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }}
+                  viewport={{ once: true }} transition={{ delay: 0.5, duration: 0.6 }}
+                />
+                <motion.line
+                  x1="50" y1="50" x2="82" y2="50"
+                  stroke="#047857" strokeWidth="0.3" strokeDasharray="2 2" opacity="0.4"
+                  initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }}
+                  viewport={{ once: true }} transition={{ delay: 0.6, duration: 0.6 }}
+                />
+                <motion.line
+                  x1="50" y1="50" x2="50" y2="82"
+                  stroke="#7e22ce" strokeWidth="0.3" strokeDasharray="2 2" opacity="0.4"
+                  initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }}
+                  viewport={{ once: true }} transition={{ delay: 0.7, duration: 0.6 }}
+                />
+                <motion.line
+                  x1="50" y1="50" x2="18" y2="50"
+                  stroke="#C4922A" strokeWidth="0.3" strokeDasharray="2 2" opacity="0.4"
+                  initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }}
+                  viewport={{ once: true }} transition={{ delay: 0.8, duration: 0.6 }}
+                />
+              </svg>
+            </div>
+          </div>
+
+          {/* Diamond quadrant — mobile (stacked cards with diamond accent) */}
+          <div className="md:hidden space-y-4">
+            {VALUES.map((value, idx) => {
               const Icon = value.icon;
               return (
-                <motion.div key={value.key} variants={staggerItem}>
-                  <Card className="h-full text-center border-0 shadow-sm hover:shadow-md transition-all duration-300 group relative overflow-hidden">
-                    {/* Top accent bar with unique color */}
-                    <div
-                      className="absolute top-0 left-0 right-0 h-1 transition-all duration-300 group-hover:h-1.5"
-                      style={{ backgroundColor: value.color }}
-                    />
-                    <CardContent className="p-7">
-                      <div
-                        className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-5 transition-transform duration-300 group-hover:scale-105"
-                        style={{ backgroundColor: `${value.color}10` }}
-                      >
-                        <Icon className="w-7 h-7" style={{ color: value.color }} />
-                      </div>
-                      <h3 className="font-display font-bold text-[#0A1628] mb-2 text-lg">
-                        {t(`values.${value.key}.title`)}
-                      </h3>
-                      <p className="text-sm text-[#3C3A47] leading-relaxed">
-                        {t(`values.${value.key}.desc`)}
-                      </p>
-                    </CardContent>
-                  </Card>
+                <motion.div
+                  key={value.key}
+                  initial={{ opacity: 0, x: idx % 2 === 0 ? -20 : 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.1, duration: 0.4 }}
+                  className="flex items-start gap-4 p-5 rounded-xl bg-[#FAFBFD] border border-[#E3E5EC]/60"
+                >
+                  <div
+                    className="w-12 h-12 rounded-lg flex items-center justify-center shrink-0 rotate-45"
+                    style={{ backgroundColor: `${value.color}10` }}
+                  >
+                    <Icon className="w-6 h-6 -rotate-45" style={{ color: value.color }} />
+                  </div>
+                  <div>
+                    <h3 className="font-display font-bold text-[#0A1628] text-base mb-1">
+                      {t(`values.${value.key}.title`)}
+                    </h3>
+                    <p className="text-sm text-[#3C3A47] leading-relaxed">
+                      {t(`values.${value.key}.desc`)}
+                    </p>
+                  </div>
                 </motion.div>
               );
             })}
-          </motion.div>
+          </div>
         </div>
       </section>
     </>
