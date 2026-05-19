@@ -33,7 +33,7 @@ const subcategories: SubCategory[] = [
     titleKey: "clinical",
     descKey: "clinicalDesc",
     courses: [
-      { titleKey: "workplaceMedicalEnglish", status: "active" },
+      { titleKey: "workplaceMedicalEnglish", status: "future" },
       { titleKey: "medicalEnglishDoctors", status: "active", slug: "medical-english-for-doctors", cover: "/images/courses/medical-english-for-doctors.webp", description: "医疗专业人员语言沟通能力提升课程" },
       { titleKey: "medicalEnglishNurses", status: "active", slug: "medical-english-for-nurses", cover: "/images/courses/medical-english-for-nurses.webp", description: "护士专属医学英语沟通能力提升课程" },
       { titleKey: "clinicalConsultationEnglish", status: "future" },

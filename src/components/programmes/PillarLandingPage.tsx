@@ -128,7 +128,9 @@ export default function PillarLandingPage({
       </HeroSection>
 
       {/* ═══ Subcategories ═══ */}
-      {subcategories.map((sub, idx) => {
+      {subcategories
+        .filter((sub) => sub.courses.some((c) => c.status === "active"))
+        .map((sub, idx) => {
         const Icon = sub.icon;
         const active = sub.courses.filter((c) => c.status === "active");
         const isEven = idx % 2 === 0;

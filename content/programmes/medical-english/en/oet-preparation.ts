@@ -86,6 +86,114 @@ const data: ProgrammeData = {
       ],
     },
 
+    /* ── Learning Objectives (step list) ── */
+    {
+      type: "value-props",
+      title: "Learning Objectives",
+      display: "list",
+      items: [
+        {
+          title: "Master all four OET modules",
+          description: "Systematically develop Listening, Reading, Writing, and Speaking skills for both exam success and real-world clinical communication.",
+        },
+        {
+          title: "Navigate authentic clinical communication",
+          description: "Through role-plays and case studies, master patient history-taking, handovers, and patient education communication patterns.",
+        },
+        {
+          title: "Achieve OET Grade B or above",
+          description: "With structured training and mock exam feedback, reach the OET B standard recognised by UK GMC/NMC for professional registration.",
+        },
+        {
+          title: "Build cross-cultural communication confidence",
+          description: "Develop the ability to communicate naturally in English-speaking healthcare environments, fully prepared for overseas practice.",
+        },
+      ],
+    },
+    /* ── Teaching Methodology (timeline) ── */
+    {
+      type: "value-props",
+      title: "Teaching Methodology",
+      display: "timeline",
+      items: [
+        {
+          title: "Entry Assessment",
+          description: "Comprehensive evaluation of English proficiency and weak areas to create a personalised study plan.",
+        },
+        {
+          title: "Structured Curriculum",
+          description: "Expert-led live classes + recorded replays covering all four OET module core exam points.",
+        },
+        {
+          title: "Practical Drills",
+          description: "Role-plays, simulated consultations, timed writing, and other immersive practice activities.",
+        },
+        {
+          title: "Mock Exam Feedback",
+          description: "Full simulation exams + one-on-one in-depth feedback from certified OET trainers.",
+        },
+        {
+          title: "Final Sprint",
+          description: "Pre-exam intensive review, gap analysis, and confidence building for test day.",
+        },
+      ],
+    },
+    /* ── Course Syllabus (table) ── */
+    {
+      type: "value-props",
+      title: "Course Syllabus",
+      display: "table",
+      items: [
+        {
+          title: "Listening Module",
+          description: "Medical consultation comprehension, key information extraction, note-taking techniques",
+        },
+        {
+          title: "Reading Module",
+          description: "Rapid medical literature reading, information location, professional vocabulary building",
+        },
+        {
+          title: "Writing Module",
+          description: "Referral letters and discharge summaries, clinical correspondence format and language conventions",
+        },
+        {
+          title: "Speaking Module",
+          description: "Role-plays (history-taking, explaining diagnoses, patient education), fluency and pronunciation training",
+        },
+        {
+          title: "Integrated Mock Exams",
+          description: "Full simulation exam environment, timed completion, immediate scoring and feedback",
+        },
+        {
+          title: "Pre-Exam Sprint",
+          description: "High-frequency topic review, exam strategies, psychological preparation and time management",
+        },
+      ],
+    },
+    /* ── Course Highlights (accordion) ── */
+    {
+      type: "value-props",
+      title: "Course Highlights",
+      display: "accordion",
+      items: [
+        {
+          title: "Small class sizes, maximum interaction",
+          description: "Classes of no more than 8 students ensure ample practice opportunities and personalised guidance for every learner.",
+        },
+        {
+          title: "Authentic clinical scenario simulation",
+          description: "All teaching materials and exercises are designed around real healthcare scenarios for practical application.",
+        },
+        {
+          title: "Flexible learning arrangements",
+          description: "Live classes + recorded replays + one-on-one tutoring to accommodate different work schedules.",
+        },
+        {
+          title: "Continuous tracking and support",
+          description: "Learning advisors track progress throughout, with regular assessments and study plan adjustments.",
+        },
+      ],
+    },
     /* ── OET Online Learning Platform ── */
     {
       type: "delivery-format",
