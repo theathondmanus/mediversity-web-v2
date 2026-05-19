@@ -170,11 +170,11 @@ const data: ProgrammeData = {
         },
       ],
     },
-    /* ── Course Highlights (accordion) ── */
+    /* ── Course Highlights (grid) ── */
     {
       type: "value-props",
       title: "Course Highlights",
-      display: "accordion",
+      display: "grid",
       items: [
         {
           title: "Small class sizes, maximum interaction",

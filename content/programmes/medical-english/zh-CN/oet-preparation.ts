@@ -170,11 +170,11 @@ const data: ProgrammeData = {
         },
       ],
     },
-    /* ── 课程亮点（accordion） ── */
+    /* ── 课程亮点（grid） ── */
     {
       type: "value-props",
       title: "课程亮点",
-      display: "accordion",
+      display: "grid",
       items: [
         {
           title: "小班教学，充分互动",

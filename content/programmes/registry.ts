@@ -127,6 +127,8 @@ export const registry: ProgrammeRegistryEntry[] = [
     featured: false,
     order: 10,
     status: "published",
+    cover: "/images/courses/medical-research-essentials.webp",
+    coverAlt: "医学研究基础 - 研究人员在实验室分析数据",
   },
   {
     slug: "medical-writing-publication-bootcamp",
@@ -137,6 +139,8 @@ export const registry: ProgrammeRegistryEntry[] = [
     featured: false,
     order: 20,
     status: "published",
+    cover: "/images/courses/medical-writing-publication-bootcamp.webp",
+    coverAlt: "医学写作与发表集训营 - 医生在书房撰写论文",
   },
   {
     slug: "medical-humanities-and-general-practice-literacy",
@@ -147,6 +151,8 @@ export const registry: ProgrammeRegistryEntry[] = [
     featured: false,
     order: 10,
     status: "published",
+    cover: "/images/courses/medical-humanities-and-general-practice-literacy.webp",
+    coverAlt: "医学人文与全科素养 - 医学生讨论伦理话题",
   },
   {
     slug: "medical-humanities-and-communication-skills",
@@ -157,6 +163,8 @@ export const registry: ProgrammeRegistryEntry[] = [
     featured: false,
     order: 20,
     status: "published",
+    cover: "/images/courses/medical-humanities-and-communication-skills.webp",
+    coverAlt: "医学人文与沟通技能 - 医生与患者沟通练习",
   },
 ];
 
