@@ -174,14 +174,21 @@ export default function PillarLandingPage({
                   </p>
                 </motion.div>
 
-                {/* Course cards */}
+                {/* Course cards — dynamic grid adapts to item count */}
                 {active.length > 0 && (
                   <motion.div
                     {...staggerContainer}
-                    className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 ml-0 md:ml-16"
+                    className={`grid gap-5 ml-0 md:ml-16 ${
+                      active.length === 1
+                        ? "grid-cols-1 max-w-2xl"
+                        : active.length === 2
+                          ? "grid-cols-1 sm:grid-cols-2 max-w-3xl"
+                          : "sm:grid-cols-2 lg:grid-cols-3"
+                    }`}
                   >
                     {active.map((course) => {
                       const isLinked = !!course.slug;
+                      const isSingle = active.length === 1;
                       const cardInner = (
                         <Card
                           className={`h-full border transition-all duration-300 relative overflow-hidden ${
@@ -192,12 +199,19 @@ export default function PillarLandingPage({
                         >
                           {/* Left accent bar on hover */}
                           {isLinked && (
-                            <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-[#00438A] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#00438A] to-[#C4922A] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           )}
-                          <CardContent className="p-6 h-full flex flex-col">
-                            <h3 className="font-semibold text-[#0A1628] text-base mb-3 flex-1 leading-snug">
+                          <CardContent className={`h-full flex flex-col ${isSingle ? "p-8 md:p-10" : "p-6"}`}>
+                            <h3 className={`font-semibold text-[#0A1628] mb-3 flex-1 leading-snug ${
+                              isSingle ? "text-lg md:text-xl" : "text-base"
+                            }`}>
                               {t(`courses.${course.titleKey}`)}
                             </h3>
+                            {isSingle && (
+                              <p className="text-sm text-[#3C3A47] leading-relaxed mb-4">
+                                {t(`subcategories.${sub.id}.desc`)}
+                              </p>
+                            )}
                             {isLinked ? (
                               <span className="inline-flex items-center gap-1.5 text-sm font-medium text-[#00438A] group-hover:gap-2.5 transition-all duration-300">
                                 {tCommon("viewDetails")}
