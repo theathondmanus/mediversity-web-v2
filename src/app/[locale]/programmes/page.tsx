@@ -1,7 +1,7 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -84,6 +84,7 @@ const PILLARS = [
 
 export default function ProgrammesHubPage() {
   const t = useTranslations("programmesHub");
+  const locale = useLocale();
 
   return (
     <>
@@ -103,13 +104,13 @@ export default function ProgrammesHubPage() {
         </motion.div>
       </HeroSection>
 
-      {/* ═══ Philosophy — 4 core principles (added Issue #48 A1) ═══ */}
+      {/* ═══ Philosophy — 4 core principles (Issue #72: pipeline infographic) ═══ */}
       <section className="section-padding bg-white relative overflow-hidden">
         <DotPattern opacity={0.02} />
         <div className="container relative z-10">
           <motion.div
             {...fadeInUp}
-            className="text-center mb-12 max-w-3xl mx-auto"
+            className="text-center mb-14 max-w-3xl mx-auto"
           >
             <p className="eyebrow">{t("philosophy.eyebrow")}</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0A1628] mb-4">
@@ -119,26 +120,102 @@ export default function ProgrammesHubPage() {
               {t("philosophy.intro")}
             </p>
           </motion.div>
+
+          {/* Pipeline / Flow Visualization */}
           <motion.div
             {...staggerContainer}
-            className="grid sm:grid-cols-2 gap-5 lg:gap-6 max-w-5xl mx-auto"
+            className="max-w-6xl mx-auto"
           >
-            {(t.raw("philosophy.items") as Array<{ key: string; title: string; desc: string }>).map(
-              (item) => (
-                <motion.div key={item.key} variants={staggerItem}>
-                  <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow">
-                    <CardContent className="p-6 md:p-7">
-                      <h3 className="font-display text-lg font-bold text-[#0A1628] mb-3">
-                        {item.title}
-                      </h3>
-                      <p className="text-sm text-[#3C3A47] leading-relaxed">
-                        {item.desc}
-                      </p>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              ),
-            )}
+            {/* Desktop: horizontal pipeline */}
+            <div className="hidden lg:block relative">
+              {/* Connecting line */}
+              <div className="absolute top-[52px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-[#00438A] via-[#3550A0] to-[#C4922A]" />
+
+              <div className="grid grid-cols-4 gap-6">
+                {(t.raw("philosophy.items") as Array<{ key: string; title: string; desc: string }>).map(
+                  (item, idx) => {
+                    const icons = [GraduationCap, Stethoscope, BookOpen, Microscope];
+                    const Icon = icons[idx] || GraduationCap;
+                    return (
+                      <motion.div key={item.key} variants={staggerItem} className="text-center">
+                        {/* Numbered circle node */}
+                        <div className="relative mx-auto mb-6">
+                          <div className="w-[104px] h-[104px] rounded-full bg-gradient-to-br from-[#00438A]/5 to-[#C4922A]/5 border-2 border-[#00438A]/15 flex items-center justify-center mx-auto relative z-10">
+                            <Icon className="w-10 h-10 text-[#00438A]" />
+                          </div>
+                          {/* Step number badge */}
+                          <span className="absolute -top-1 -right-1 w-7 h-7 rounded-full bg-[#C4922A] text-white text-xs font-bold flex items-center justify-center shadow-md z-20">
+                            {String(idx + 1).padStart(2, "0")}
+                          </span>
+                        </div>
+                        <h3 className="font-display text-base font-bold text-[#0A1628] mb-2">
+                          {item.title}
+                        </h3>
+                        <p className="text-sm text-[#3C3A47] leading-relaxed">
+                          {item.desc}
+                        </p>
+                      </motion.div>
+                    );
+                  },
+                )}
+              </div>
+
+              {/* Final destination arrow */}
+              <motion.div {...fadeInUp} className="text-center mt-10">
+                <div className="inline-flex items-center gap-3 bg-[#00438A]/5 border border-[#00438A]/15 rounded-full px-6 py-3">
+                  <ArrowRight className="w-5 h-5 text-[#C4922A]" />
+                  <span className="text-sm font-semibold text-[#00438A]">
+                    {locale === "zh-CN" ? "培养国际化医疗专业能力" : "Building Global Medical Competence"}
+                  </span>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Mobile/Tablet: vertical timeline */}
+            <div className="lg:hidden relative pl-8">
+              {/* Vertical line */}
+              <div className="absolute left-[18px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#00438A] via-[#3550A0] to-[#C4922A]" />
+
+              <div className="space-y-8">
+                {(t.raw("philosophy.items") as Array<{ key: string; title: string; desc: string }>).map(
+                  (item, idx) => {
+                    const icons = [GraduationCap, Stethoscope, BookOpen, Microscope];
+                    const Icon = icons[idx] || GraduationCap;
+                    return (
+                      <motion.div key={item.key} variants={staggerItem} className="relative">
+                        {/* Node on timeline */}
+                        <div className="absolute -left-8 top-0 w-9 h-9 rounded-full bg-white border-2 border-[#00438A] flex items-center justify-center shadow-sm">
+                          <span className="text-xs font-bold text-[#00438A]">{String(idx + 1).padStart(2, "0")}</span>
+                        </div>
+                        <div className="bg-white rounded-xl p-5 border border-[#E3E5EC] shadow-sm ml-4">
+                          <div className="flex items-center gap-3 mb-2">
+                            <Icon className="w-5 h-5 text-[#00438A] shrink-0" />
+                            <h3 className="font-display text-base font-bold text-[#0A1628]">
+                              {item.title}
+                            </h3>
+                          </div>
+                          <p className="text-sm text-[#3C3A47] leading-relaxed">
+                            {item.desc}
+                          </p>
+                        </div>
+                      </motion.div>
+                    );
+                  },
+                )}
+              </div>
+
+              {/* Final destination */}
+              <motion.div {...fadeInUp} className="relative mt-8">
+                <div className="absolute -left-8 top-0 w-9 h-9 rounded-full bg-[#C4922A] flex items-center justify-center shadow-sm">
+                  <ArrowRight className="w-4 h-4 text-white" />
+                </div>
+                <div className="ml-4 inline-flex items-center gap-2 bg-[#00438A]/5 border border-[#00438A]/15 rounded-full px-5 py-2.5">
+                  <span className="text-sm font-semibold text-[#00438A]">
+                    {locale === "zh-CN" ? "培养国际化医疗专业能力" : "Building Global Medical Competence"}
+                  </span>
+                </div>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </section>
