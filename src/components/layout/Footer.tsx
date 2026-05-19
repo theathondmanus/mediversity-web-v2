@@ -2,7 +2,7 @@
 
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { Globe, ArrowRight } from "lucide-react";
+import { Globe } from "lucide-react";
 
 export default function Footer() {
   const t = useTranslations();
@@ -28,31 +28,6 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#0E0C19] text-white">
-      {/* CTA Banner */}
-      <div className="bg-[#00438A]">
-        <div className="container py-12 md:py-16 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div>
-            <h3 className="text-2xl md:text-3xl font-semibold text-white mb-2 font-display">
-              {t("footer.ctaTitle")}
-            </h3>
-            <p className="text-blue-100 text-lg">{t("footer.ctaSubtitle")}</p>
-          </div>
-          <div className="flex gap-3">
-            <Link
-              href="/programmes"
-              className="px-6 py-3 bg-white text-[#00438A] font-semibold rounded-md hover:bg-blue-50 transition-colors no-underline text-sm"
-            >
-              {t("footer.explorePrograms")}
-            </Link>
-            <Link
-              href="/contact"
-              className="px-6 py-3 border-2 border-white text-white font-semibold rounded-md hover:bg-white/10 transition-colors no-underline text-sm flex items-center gap-2"
-            >
-              {t("footer.contactUs")} <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </div>
 
       {/* Footer Content */}
       <div className="container py-12 md:py-16">
