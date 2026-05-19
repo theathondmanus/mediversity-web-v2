@@ -2,8 +2,13 @@
 
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Clock, Users, CheckCircle, Quote } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import {
+  ArrowLeft, ArrowRight, Clock, Users, CheckCircle, Quote,
+  ChevronDown, Target, Lightbulb, BookOpen, Zap, Star,
+} from "lucide-react";
+import Image from "next/image";
 import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn } from "@/components/ui/fade-in";
 import type {
@@ -21,27 +26,39 @@ const fadeInUp = {
   transition: { duration: 0.5 },
 };
 
-/* ── Section renderers ── */
+/* ── Icon mapping for value-prop items ── */
+const ICON_MAP: Record<string, typeof Target> = {
+  target: Target,
+  lightbulb: Lightbulb,
+  book: BookOpen,
+  zap: Zap,
+  star: Star,
+  check: CheckCircle,
+};
 
-function IntroBlock({ section, isAlt }: { section: IntroSection; isAlt?: boolean }) {
-  return (
-    <section
-      className="section-padding"
-      style={{ backgroundColor: isAlt ? "var(--canvas)" : "white" }}
-    >
-      <div className="container max-w-4xl">
-        <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">{section.title}</h2>
-          <p className="text-base md:text-lg leading-relaxed whitespace-pre-line" style={{ color: "var(--body-text)" }}>
-            {section.body}
-          </p>
-        </FadeIn>
-      </div>
-    </section>
-  );
+function getIcon(iconName?: string) {
+  if (!iconName) return CheckCircle;
+  return ICON_MAP[iconName] || CheckCircle;
 }
 
-function ValuePropsBlock({ section, isAlt }: { section: ValuePropsSection; isAlt?: boolean }) {
+/* ── Accent colors for numbered items ── */
+const ACCENT_COLORS = [
+  "var(--brand-primary)",
+  "var(--brand-accent)",
+  "#2563EB",
+  "#059669",
+  "#7C3AED",
+  "#DC2626",
+];
+
+/* ══════════════════════════════════════════════════════════════
+   SECTION RENDERERS
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Intro: text-only or left-text-right-image ── */
+function IntroBlock({ section, isAlt }: { section: IntroSection; isAlt?: boolean }) {
+  const hasImage = !!section.image;
+
   return (
     <section
       className="section-padding"
@@ -49,32 +66,306 @@ function ValuePropsBlock({ section, isAlt }: { section: ValuePropsSection; isAlt
     >
       <div className="container">
         <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          {hasImage ? (
+            <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16 max-w-6xl mx-auto">
+              <div className="w-full md:w-1/2">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: "var(--ink)" }}>
+                  {section.title}
+                </h2>
+                <p className="text-base md:text-lg leading-relaxed whitespace-pre-line" style={{ color: "var(--body-text)" }}>
+                  {section.body}
+                </p>
+              </div>
+              <div className="w-full md:w-1/2">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                  <Image
+                    src={section.image!}
+                    alt={section.imageAlt || section.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: "var(--ink)" }}>
+                {section.title}
+              </h2>
+              <div className="relative pl-6 border-l-4 border-[var(--brand-primary)]/30">
+                <p className="text-base md:text-lg leading-relaxed whitespace-pre-line" style={{ color: "var(--body-text)" }}>
+                  {section.body}
+                </p>
+              </div>
+            </div>
+          )}
+        </FadeIn>
+      </div>
+    </section>
+  );
+}
+
+/* ── Value Props: GRID (default) ── */
+function ValuePropsGrid({ section, isAlt }: { section: ValuePropsSection; isAlt?: boolean }) {
+  return (
+    <section
+      className="section-padding"
+      style={{ backgroundColor: isAlt ? "var(--canvas)" : "white" }}
+    >
+      <div className="container">
+        <FadeIn>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: "var(--ink)" }}>
             {section.title}
           </h2>
         </FadeIn>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {section.items.map((item, i) => (
-            <FadeIn key={i} index={i}>
-              <div className="bg-white rounded-xl p-6 h-full border border-[var(--subtle-border)] hover:shadow-md transition-shadow">
-                <div className="w-10 h-10 rounded-lg bg-[var(--brand-primary)]/10 flex items-center justify-center mb-4">
-                  <CheckCircle className="w-5 h-5 text-[var(--brand-primary)]" />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {section.items.map((item, i) => {
+            const Icon = getIcon(item.icon);
+            return (
+              <FadeIn key={i} index={i}>
+                <div className="bg-white rounded-xl p-6 h-full border border-[var(--subtle-border)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+                  {/* Top accent line */}
+                  <div
+                    className="absolute top-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity"
+                    style={{ backgroundColor: ACCENT_COLORS[i % ACCENT_COLORS.length] }}
+                  />
+                  <div
+                    className="w-10 h-10 rounded-lg flex items-center justify-center mb-4"
+                    style={{ backgroundColor: `${ACCENT_COLORS[i % ACCENT_COLORS.length]}15` }}
+                  >
+                    <Icon className="w-5 h-5" style={{ color: ACCENT_COLORS[i % ACCENT_COLORS.length] }} />
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2" style={{ color: "var(--ink)" }}>
+                    {item.title}
+                  </h3>
+                  {item.description && (
+                    <p className="text-sm leading-relaxed" style={{ color: "var(--body-text)" }}>
+                      {item.description}
+                    </p>
+                  )}
                 </div>
-                <h3 className="font-semibold text-lg mb-2" style={{ color: "var(--ink)" }}>
-                  {item.title}
-                </h3>
-                <p className="text-sm leading-relaxed" style={{ color: "var(--body-text)" }}>
-                  {item.description}
-                </p>
-              </div>
-            </FadeIn>
-          ))}
+              </FadeIn>
+            );
+          })}
         </div>
       </div>
     </section>
   );
 }
 
+/* ── Value Props: LIST (numbered vertical list with accent bar) ── */
+function ValuePropsList({ section, isAlt }: { section: ValuePropsSection; isAlt?: boolean }) {
+  return (
+    <section
+      className="section-padding"
+      style={{ backgroundColor: isAlt ? "var(--canvas)" : "white" }}
+    >
+      <div className="container max-w-4xl">
+        <FadeIn>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12" style={{ color: "var(--ink)" }}>
+            {section.title}
+          </h2>
+        </FadeIn>
+        <div className="space-y-6">
+          {section.items.map((item, i) => {
+            const Icon = getIcon(item.icon);
+            return (
+              <FadeIn key={i} index={i}>
+                <div className="flex gap-5 items-start group">
+                  {/* Number badge */}
+                  <div
+                    className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md"
+                    style={{ backgroundColor: ACCENT_COLORS[i % ACCENT_COLORS.length] }}
+                  >
+                    {i + 1}
+                  </div>
+                  {/* Content */}
+                  <div className="flex-1 pb-6 border-b border-[var(--subtle-border)] last:border-0">
+                    <div className="flex items-center gap-2 mb-1">
+                      <Icon className="w-4 h-4" style={{ color: ACCENT_COLORS[i % ACCENT_COLORS.length] }} />
+                      <h3 className="font-semibold text-lg" style={{ color: "var(--ink)" }}>
+                        {item.title}
+                      </h3>
+                    </div>
+                    {item.description && (
+                      <p className="text-sm leading-relaxed mt-1" style={{ color: "var(--body-text)" }}>
+                        {item.description}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </FadeIn>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Value Props: TIMELINE (horizontal step flow) ── */
+function ValuePropsTimeline({ section, isAlt }: { section: ValuePropsSection; isAlt?: boolean }) {
+  return (
+    <section
+      className="section-padding overflow-hidden"
+      style={{ backgroundColor: isAlt ? "var(--canvas)" : "white" }}
+    >
+      <div className="container">
+        <FadeIn>
+          <h2 className="text-3xl md:text-4xl font-bold mb-14 text-center" style={{ color: "var(--ink)" }}>
+            {section.title}
+          </h2>
+        </FadeIn>
+
+        {/* Desktop: horizontal timeline */}
+        <div className="hidden md:block relative">
+          {/* Connecting line */}
+          <div className="absolute top-6 left-0 right-0 h-0.5 bg-gradient-to-r from-[var(--brand-primary)] via-[var(--brand-accent)] to-[var(--brand-primary)]" />
+
+          <div className="grid" style={{ gridTemplateColumns: `repeat(${Math.min(section.items.length, 6)}, 1fr)` }}>
+            {section.items.map((item, i) => (
+              <FadeIn key={i} index={i}>
+                <div className="relative pt-14 px-3 text-center">
+                  {/* Node */}
+                  <div
+                    className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
+                    style={{ backgroundColor: ACCENT_COLORS[i % ACCENT_COLORS.length] }}
+                  >
+                    {i + 1}
+                  </div>
+                  <h3 className="font-semibold text-sm mb-2" style={{ color: "var(--ink)" }}>
+                    {item.title}
+                  </h3>
+                  {item.description && (
+                    <p className="text-xs leading-relaxed" style={{ color: "var(--body-text)" }}>
+                      {item.description}
+                    </p>
+                  )}
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+
+        {/* Mobile: vertical timeline */}
+        <div className="md:hidden relative pl-8">
+          {/* Vertical line */}
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[var(--brand-primary)] to-[var(--brand-accent)]" />
+
+          <div className="space-y-8">
+            {section.items.map((item, i) => (
+              <FadeIn key={i} index={i}>
+                <div className="relative">
+                  {/* Node */}
+                  <div
+                    className="absolute -left-8 top-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-xs shadow-md -translate-x-1/2"
+                    style={{ backgroundColor: ACCENT_COLORS[i % ACCENT_COLORS.length] }}
+                  >
+                    {i + 1}
+                  </div>
+                  <h3 className="font-semibold text-base mb-1" style={{ color: "var(--ink)" }}>
+                    {item.title}
+                  </h3>
+                  {item.description && (
+                    <p className="text-sm leading-relaxed" style={{ color: "var(--body-text)" }}>
+                      {item.description}
+                    </p>
+                  )}
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Value Props: ACCORDION (collapsible panels) ── */
+function ValuePropsAccordion({ section, isAlt }: { section: ValuePropsSection; isAlt?: boolean }) {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  return (
+    <section
+      className="section-padding"
+      style={{ backgroundColor: isAlt ? "var(--canvas)" : "white" }}
+    >
+      <div className="container max-w-4xl">
+        <FadeIn>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12" style={{ color: "var(--ink)" }}>
+            {section.title}
+          </h2>
+        </FadeIn>
+        <div className="space-y-3">
+          {section.items.map((item, i) => {
+            const isOpen = openIndex === i;
+            return (
+              <FadeIn key={i} index={i}>
+                <div className="bg-white rounded-xl border border-[var(--subtle-border)] overflow-hidden hover:shadow-sm transition-shadow">
+                  <button
+                    onClick={() => setOpenIndex(isOpen ? null : i)}
+                    className="w-full flex items-center justify-between p-5 text-left"
+                  >
+                    <div className="flex items-center gap-4">
+                      <span
+                        className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-sm"
+                        style={{ backgroundColor: ACCENT_COLORS[i % ACCENT_COLORS.length] }}
+                      >
+                        {i + 1}
+                      </span>
+                      <h3 className="font-semibold text-base" style={{ color: "var(--ink)" }}>
+                        {item.title}
+                      </h3>
+                    </div>
+                    <ChevronDown
+                      className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+                      style={{ color: "var(--body-text)" }}
+                    />
+                  </button>
+                  <AnimatePresence initial={false}>
+                    {isOpen && item.description && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                        className="overflow-hidden"
+                      >
+                        <div className="px-5 pb-5 pl-[4.5rem]">
+                          <p className="text-sm leading-relaxed" style={{ color: "var(--body-text)" }}>
+                            {item.description}
+                          </p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </FadeIn>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Value Props Router ── */
+function ValuePropsBlock({ section, isAlt }: { section: ValuePropsSection; isAlt?: boolean }) {
+  const display = section.display || "grid";
+  switch (display) {
+    case "list":
+      return <ValuePropsList section={section} isAlt={isAlt} />;
+    case "timeline":
+      return <ValuePropsTimeline section={section} isAlt={isAlt} />;
+    case "accordion":
+      return <ValuePropsAccordion section={section} isAlt={isAlt} />;
+    default:
+      return <ValuePropsGrid section={section} isAlt={isAlt} />;
+  }
+}
+
+/* ── Delivery Format (enhanced) ── */
 function DeliveryFormatBlock({
   section,
   index,
@@ -91,32 +382,47 @@ function DeliveryFormatBlock({
       <div className="container">
         <FadeIn>
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{section.title}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "var(--ink)" }}>
+              {section.title}
+            </h2>
             <p className="text-lg" style={{ color: "var(--body-text)" }}>
               {section.subtitle}
             </p>
           </div>
         </FadeIn>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {section.features.map((feat, i) => (
-            <FadeIn key={i} index={i}>
-              <div className="bg-white rounded-xl p-6 h-full border border-[var(--subtle-border)] hover:shadow-md transition-shadow">
-                <h3 className="font-semibold text-lg mb-2" style={{ color: "var(--ink)" }}>
-                  {feat.title}
-                </h3>
-                <p className="text-sm leading-relaxed" style={{ color: "var(--body-text)" }}>
-                  {feat.description}
-                </p>
-              </div>
-            </FadeIn>
-          ))}
+          {section.features.map((feat, i) => {
+            const Icon = getIcon(feat.icon);
+            return (
+              <FadeIn key={i} index={i}>
+                <div className="bg-white rounded-xl p-6 h-full border border-[var(--subtle-border)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+                  <div
+                    className="absolute top-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity"
+                    style={{ backgroundColor: ACCENT_COLORS[i % ACCENT_COLORS.length] }}
+                  />
+                  <div
+                    className="w-9 h-9 rounded-lg flex items-center justify-center mb-4"
+                    style={{ backgroundColor: `${ACCENT_COLORS[i % ACCENT_COLORS.length]}15` }}
+                  >
+                    <Icon className="w-4.5 h-4.5" style={{ color: ACCENT_COLORS[i % ACCENT_COLORS.length] }} />
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2" style={{ color: "var(--ink)" }}>
+                    {feat.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "var(--body-text)" }}>
+                    {feat.description}
+                  </p>
+                </div>
+              </FadeIn>
+            );
+          })}
         </div>
         {section.ctaLabel && (
           <FadeIn>
             <div className="text-center mt-10">
               <Link
                 href={section.ctaHref as never ?? "/contact"}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white font-medium transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white font-medium transition-colors hover:opacity-90"
                 style={{ backgroundColor: "var(--brand-primary)" }}
               >
                 {section.ctaLabel}
@@ -130,7 +436,9 @@ function DeliveryFormatBlock({
   );
 }
 
-/* ── Main template ── */
+/* ══════════════════════════════════════════════════════════════
+   MAIN TEMPLATE
+   ══════════════════════════════════════════════════════════════ */
 
 interface ProgramDetailTemplateProps {
   data: ProgrammeData;
@@ -166,11 +474,11 @@ export default function ProgramDetailTemplate({ data }: ProgramDetailTemplatePro
 
           {/* Meta badges */}
           <div className="flex flex-wrap gap-4 mb-8">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm backdrop-blur-sm">
               <Clock className="w-4 h-4" />
               {data.duration}
             </span>
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm backdrop-blur-sm">
               <Users className="w-4 h-4" />
               {data.audience.join(" · ")}
             </span>
@@ -178,7 +486,7 @@ export default function ProgramDetailTemplate({ data }: ProgramDetailTemplatePro
 
           <Link
             href={data.hero.ctaHref as never}
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-white font-semibold text-lg transition-colors"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-white font-semibold text-lg transition-all hover:scale-[1.02] hover:shadow-lg"
             style={{ backgroundColor: "var(--brand-accent)" }}
           >
             {data.hero.ctaLabel}
@@ -189,7 +497,6 @@ export default function ProgramDetailTemplate({ data }: ProgramDetailTemplatePro
 
       {/* ── Dynamic sections — alternating background for visual rhythm ── */}
       {data.sections.map((section, i) => {
-        // 偶数 index (0, 2, 4...) 白色；奇数米色。多个连续 section 不再撞色
         const isAlt = i % 2 === 1;
         switch (section.type) {
           case "intro":
@@ -205,28 +512,41 @@ export default function ProgramDetailTemplate({ data }: ProgramDetailTemplatePro
         }
       })}
 
-      {/* ── Testimonials ── */}
+      {/* ── Testimonials (large quote style) ── */}
       {data.testimonials.length > 0 && (
         <section className="section-padding" style={{ backgroundColor: "var(--canvas)" }}>
-          <div className="container">
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {data.testimonials.map((t, i) => (
+          <div className="container max-w-5xl">
+            <FadeIn>
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: "var(--ink)" }}>
+                {t("testimonials") || "学员评价"}
+              </h2>
+            </FadeIn>
+            <div className="grid md:grid-cols-2 gap-8">
+              {data.testimonials.map((testimonial, i) => (
                 <FadeIn key={i} index={i}>
-                  <div className="bg-white rounded-xl p-8 h-full border border-[var(--subtle-border)] relative">
-                    <Quote className="w-8 h-8 text-[var(--brand-accent)] opacity-30 absolute top-6 right-6" />
+                  <div className="bg-white rounded-2xl p-8 h-full border border-[var(--subtle-border)] relative shadow-sm hover:shadow-md transition-shadow">
+                    <Quote className="w-10 h-10 text-[var(--brand-accent)] opacity-20 absolute top-6 right-6" />
                     <p
-                      className="text-base leading-relaxed mb-6 italic"
+                      className="text-base md:text-lg leading-relaxed mb-8 italic relative z-10"
                       style={{ color: "var(--body-text)" }}
                     >
-                      &ldquo;{t.quote}&rdquo;
+                      &ldquo;{testimonial.quote}&rdquo;
                     </p>
-                    <div className="border-t border-[var(--subtle-border)] pt-4">
-                      <p className="font-semibold" style={{ color: "var(--ink)" }}>
-                        {t.name}
-                      </p>
-                      <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-                        {t.role}，{t.location}
-                      </p>
+                    <div className="border-t border-[var(--subtle-border)] pt-4 flex items-center gap-3">
+                      <div
+                        className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm"
+                        style={{ backgroundColor: ACCENT_COLORS[i % ACCENT_COLORS.length] }}
+                      >
+                        {testimonial.name.charAt(0)}
+                      </div>
+                      <div>
+                        <p className="font-semibold" style={{ color: "var(--ink)" }}>
+                          {testimonial.name}
+                        </p>
+                        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+                          {testimonial.role}，{testimonial.location}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </FadeIn>
@@ -237,15 +557,20 @@ export default function ProgramDetailTemplate({ data }: ProgramDetailTemplatePro
       )}
 
       {/* ── Final CTA ── */}
-      <section className="py-20 md:py-28" style={{ backgroundColor: "var(--brand-dark)" }}>
-        <div className="container text-center">
+      <section className="py-20 md:py-28 relative overflow-hidden" style={{ backgroundColor: "var(--brand-dark)" }}>
+        {/* Decorative elements */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-10 left-10 w-40 h-40 rounded-full border-2 border-white" />
+          <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full border border-white" />
+        </div>
+        <div className="container text-center relative z-10">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
               {data.finalCta.headline}
             </h2>
             <Link
               href={data.finalCta.buttonHref as never}
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-white font-semibold text-lg transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-white font-semibold text-lg transition-all hover:scale-[1.02] hover:shadow-lg"
               style={{ backgroundColor: "var(--brand-accent)" }}
             >
               {data.finalCta.buttonLabel}

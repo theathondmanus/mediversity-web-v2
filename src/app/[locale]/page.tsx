@@ -10,6 +10,7 @@ import {
 import { HeroCurve } from "@/components/ui/hero-curve";
 import TestimonialsCarousel from "@/components/home/TestimonialsCarousel";
 import FeaturedCourses from "@/components/home/FeaturedCourses";
+import CaseStudyHighlight from "@/components/home/CaseStudyHighlight";
 import {
   WaveDivider,
   DotPattern,
@@ -317,51 +318,14 @@ export default function HomePage() {
       {/* ═══ FEATURED COURSES — from registry ═══ */}
       <FeaturedCourses />
 
+      {/* Wave transition: white → white (visual breathing room) */}
+      <WaveDivider fromColor="#FFFFFF" toColor="#FFFFFF" />
+
+      {/* ═══ CASE STUDY HIGHLIGHT — data-driven story with metrics ═══ */}
+      <CaseStudyHighlight />
+
       {/* Wave transition: white → canvas */}
       <WaveDivider fromColor="#FFFFFF" toColor="#F5F3EF" />
-
-      {/* ═══ SUCCESS STORY — editorial zigzag ═══ */}
-      <section className="relative section-padding overflow-hidden" style={{ backgroundColor: "#F5F3EF" }}>
-        <CornerAccent position="top-right" color="#C4922A" size={90} />
-        <DotPattern opacity={0.025} />
-
-        <div className="container relative z-10">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            className="flex flex-col md:flex-row items-center gap-10 md:gap-16"
-          >
-            <motion.div variants={fadeInLeft} className="w-full md:w-1/2">
-              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg group">
-                <Image
-                  src="/images/home/programmes-observership.webp"
-                  alt="Clinical observership programme"
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#00438A]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              </div>
-            </motion.div>
-            <motion.div variants={fadeInRight} className="w-full md:w-1/2">
-              <p className="eyebrow">{t("story.eyebrow")}</p>
-              <h2 className="font-display text-2xl md:text-3xl font-semibold text-[#0E0C19] mb-4">
-                {t("story.title")}
-              </h2>
-              <p className="text-[#3C3A47] leading-relaxed mb-6">
-                {t("story.description")}
-              </p>
-              <Link
-                href="/insights"
-                className="inline-flex items-center gap-2 text-[#00438A] font-semibold hover:text-[#003066] transition-colors no-underline group/link"
-              >
-                {t("story.cta")} <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
-              </Link>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
 
       {/* ═══ TESTIMONIALS ═══ */}
       <TestimonialsCarousel />

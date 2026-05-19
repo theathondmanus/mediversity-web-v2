@@ -12,6 +12,8 @@
 export interface ValuePropItem {
   title: string;
   description: string;
+  /** Optional lucide icon name for visual variety */
+  icon?: string;
 }
 
 export interface TestimonialItem {
@@ -34,12 +36,25 @@ export interface ValuePropsSection {
   type: "value-props";
   title: string;
   items: ValuePropItem[];
+  /**
+   * Visual display mode for this section.
+   * - "grid": Default 2-4 column card grid (current behavior)
+   * - "list": Numbered vertical list with accent bar (good for objectives)
+   * - "timeline": Horizontal step-by-step flow (good for methods/process)
+   * - "accordion": Collapsible panels (good for syllabus/curriculum)
+   *
+   * If omitted, defaults to "grid" for backward compatibility.
+   */
+  display?: "grid" | "list" | "timeline" | "accordion";
 }
 
 export interface IntroSection {
   type: "intro";
   title: string;
   body: string; // plain text or simple HTML
+  /** Optional image URL for left-text-right-image layout */
+  image?: string;
+  imageAlt?: string;
 }
 
 export type ProgrammeSection =

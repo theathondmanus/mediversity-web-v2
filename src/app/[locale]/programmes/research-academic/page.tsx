@@ -48,7 +48,7 @@ export default function ResearchAcademicPage() {
       color="bg-purple-50 text-purple-700"
       subcategories={subcategories}
       heroImage="/images/hero/research.webp"
-      heroImageAlt="Research laboratory with microscopes and university campus at twilight"
+      heroImageAlt="Chinese PhD student and Western professor collaborating on research data in an academic office"
     />
   );
 }

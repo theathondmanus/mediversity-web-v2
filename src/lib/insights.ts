@@ -109,6 +109,7 @@ export function getAllInsightSummaries(locale: string): InsightSummary[] {
       try {
         const full = getInsight(slug, locale);
         if (!full) return null;
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const { body: _body, ...summary } = full;
         return summary;
       } catch {
