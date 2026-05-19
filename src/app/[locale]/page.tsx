@@ -41,10 +41,10 @@ const fadeInRight = {
 
 /* ═══ Data ═══ */
 const PILLARS = [
-  { icon: GraduationCap, key: "medicalEnglish", href: "/programmes/medical-english" },
-  { icon: Microscope, key: "research", href: "/programmes/research-academic" },
-  { icon: Stethoscope, key: "observership", href: "/programmes/observership" },
-  { icon: BookOpen, key: "humanities", href: "/programmes/humanities" },
+  { icon: GraduationCap, key: "medicalEnglish", href: "/programmes/medical-english", cover: "/images/hero/medical-english.webp" },
+  { icon: Microscope, key: "research", href: "/programmes/research-academic", cover: "/images/hero/research.webp" },
+  { icon: Stethoscope, key: "observership", href: "/programmes/observership", cover: "/images/hero/observership.webp" },
+  { icon: BookOpen, key: "humanities", href: "/programmes/humanities", cover: "/images/hero/humanities.webp" },
 ] as const;
 
 const TRUST_ORGS = ["NHS", "University of Cambridge", "GMC", "BMA", "King's College London"];
@@ -136,7 +136,7 @@ export default function HomePage() {
       </section>
 
       {/* ═══ STAT BANNER — data density layer ═══ */}
-      <section className="relative py-12 md:py-16 bg-white overflow-hidden">
+      <section className="relative py-8 md:py-10 bg-white overflow-hidden">
         <DotPattern opacity={0.03} />
         <div className="container relative z-10">
           <motion.div
@@ -151,11 +151,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Wave transition: white → white (subtle) */}
-      <WaveDivider fromColor="#FFFFFF" toColor="#FFFFFF" />
-
       {/* ═══ BUSINESS LINES — editorial asymmetric layout ═══ */}
-      <section className="relative section-padding bg-white overflow-hidden">
+      <section className="relative py-12 md:py-16 bg-white overflow-hidden">
         {/* Corner accents for visual framing */}
         <CornerAccent position="top-left" color="#00438A" size={100} />
         <CornerAccent position="bottom-right" color="#C4922A" size={80} />
@@ -257,7 +254,7 @@ export default function HomePage() {
       <WaveDivider fromColor="#FFFFFF" toColor="#F5F3EF" />
 
       {/* ═══ 4 PILLAR CARDS — on warm canvas with dot pattern ═══ */}
-      <section className="relative section-padding overflow-hidden" style={{ backgroundColor: "#F5F3EF" }}>
+      <section className="relative py-10 md:py-14 overflow-hidden" style={{ backgroundColor: "#F5F3EF" }}>
         <DotPattern opacity={0.03} />
         <FloatingShape className="top-10 left-[5%] hidden md:block" shape="circle" color="#C4922A" size={100} opacity={0.03} />
         <FloatingShape className="bottom-16 right-[8%] hidden md:block" shape="ring" color="#00438A" size={140} opacity={0.04} />
@@ -288,21 +285,31 @@ export default function HomePage() {
                   custom={idx}
                 >
                   <Link href={pillar.href as never} className="no-underline block group">
-                    <div className="bg-white rounded-xl p-6 border border-[#E3E5EC] shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 h-full flex flex-col relative overflow-hidden">
-                      {/* Subtle accent bar at top */}
-                      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#00438A] to-[#00438A]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      <div className="w-12 h-12 rounded-lg bg-[#00438A]/10 flex items-center justify-center mb-4 group-hover:bg-[#00438A]/20 transition-colors">
-                        <Icon className="w-6 h-6 text-[#00438A]" />
+                    <div className="bg-white rounded-xl border border-[#E3E5EC] shadow-sm hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 h-full flex flex-col relative overflow-hidden">
+                      {/* Cover image */}
+                      <div className="relative h-36 overflow-hidden">
+                        <img
+                          src={pillar.cover}
+                          alt={`${pillar.key} cover`}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                        <div className="absolute bottom-3 left-3 w-9 h-9 rounded-lg bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-sm">
+                          <Icon className="w-4.5 h-4.5 text-[#00438A]" />
+                        </div>
                       </div>
-                      <h3 className="font-semibold text-[#0E0C19] mb-2 group-hover:text-[#00438A] transition-colors">
-                        {t(`pillars.${pillar.key}.title`)}
-                      </h3>
-                      <p className="text-sm text-[#3C3A47] leading-relaxed mb-4 flex-1">
-                        {t(`pillars.${pillar.key}.desc`)}
-                      </p>
-                      <span className="text-xs font-medium text-[#00438A] flex items-center gap-1 group-hover:gap-2 transition-all">
-                        {t("pillars.explore")} <ArrowRight className="w-3 h-3" />
-                      </span>
+                      {/* Content */}
+                      <div className="p-5 flex flex-col flex-1">
+                        <h3 className="font-semibold text-[#0E0C19] mb-2 group-hover:text-[#00438A] transition-colors">
+                          {t(`pillars.${pillar.key}.title`)}
+                        </h3>
+                        <p className="text-sm text-[#3C3A47] leading-relaxed mb-4 flex-1">
+                          {t(`pillars.${pillar.key}.desc`)}
+                        </p>
+                        <span className="text-xs font-medium text-[#00438A] flex items-center gap-1 group-hover:gap-2 transition-all">
+                          {t("pillars.explore")} <ArrowRight className="w-3 h-3" />
+                        </span>
+                      </div>
                     </div>
                   </Link>
                 </motion.div>

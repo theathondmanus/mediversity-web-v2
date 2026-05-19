@@ -172,7 +172,7 @@ export default function Header() {
           {/* Language Switcher */}
           <button
             onClick={handleSwitchLocale}
-            className={`ml-2 px-3 py-1.5 text-xs font-medium rounded-md border transition-all duration-200 flex items-center gap-1.5 cursor-pointer ${
+            className={`ml-2 px-3 py-1.5 text-xs font-medium rounded-md border transition-all duration-200 flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${
               scrolled || !isHome
                 ? "border-[#E3E5EC] text-[#3C3A47] hover:bg-[#F0F2F6] bg-transparent"
                 : "border-white/30 text-white hover:bg-white/10 bg-transparent"
@@ -195,7 +195,7 @@ export default function Header() {
         <div className="flex items-center gap-2 lg:hidden">
           <button
             onClick={handleSwitchLocale}
-            className={`px-2.5 py-1.5 text-xs font-medium rounded-md border transition-all flex items-center gap-1 cursor-pointer ${
+            className={`px-2.5 py-1.5 text-xs font-medium rounded-md border transition-all flex items-center gap-1 cursor-pointer whitespace-nowrap ${
               scrolled || !isHome
                 ? "border-[#E3E5EC] text-[#3C3A47] bg-transparent"
                 : "border-white/30 text-white bg-transparent"
