@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "用专业解读疾病，用对话传递关怀",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/humanities.webp",
-    imageAlt: "医学人文与职业发展",
+    image: "/images/courses/medical-humanities-and-general-practice-literacy.webp",
+    imageAlt: "医学人文与全科医学素养课程",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "学习目标",
+      display: "list",
       items: [
         {
           title: "通过医学人文核心理念培养人文关怀",
@@ -61,6 +62,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "教学方法",
+      display: "timeline",
       items: [
         {
           title: "案例分析",
@@ -87,6 +89,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "课程内容",
+      display: "table",
       items: [
         {
           title: "1. 医学人文导论：医学不仅是科学，更是人文",

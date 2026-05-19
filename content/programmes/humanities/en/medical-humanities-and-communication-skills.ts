@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "Empathy-driven care — core skills for healthcare professionals",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/humanities.webp",
-    imageAlt: "Medical humanities and professional development",
+    image: "/images/courses/medical-humanities-and-communication-skills.webp",
+    imageAlt: "Medical Humanities & Communication Skills Course",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Learning Objectives",
+      display: "list",
       items: [
         {
           title: "培养人文价值观与以患者为中心的思维模式",
@@ -57,6 +58,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Teaching Methods",
+      display: "timeline",
       items: [
         {
           title: "高仿真案例教学",
@@ -79,6 +81,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Curriculum",
+      display: "table",
       items: [
         {
           title: "1. 医学人文与职业身份认同",

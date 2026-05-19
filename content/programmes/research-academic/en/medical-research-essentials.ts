@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "Research literacy programme for healthcare professionals",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
-    image: "/images/hero/research.webp",
-    imageAlt: "Medical research and academic development",
+    image: "/images/courses/medical-research-essentials.webp",
+    imageAlt: "Medical Research Essentials Course",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Learning Objectives",
+      display: "list",
       items: [
         {
           title: "医学研究全流程解析",
@@ -61,6 +62,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Teaching Methods",
+      display: "timeline",
       items: [
         {
           title: "国际师资团队",
@@ -87,6 +89,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "Curriculum",
+      display: "table",
       items: [
         {
           title: "1. 医学研究导论：从理论到实践",

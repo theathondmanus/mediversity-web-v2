@@ -18,8 +18,8 @@ const data: ProgrammeData = {
     lede: "提升共情照护：赋能医疗从业者的核心技能",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
-    image: "/images/hero/humanities.webp",
-    imageAlt: "医学人文与职业发展",
+    image: "/images/courses/medical-humanities-and-communication-skills.webp",
+    imageAlt: "医学人文与沟通技能课程",
   },
 
   sections: [
@@ -31,6 +31,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "学习目标",
+      display: "list",
       items: [
         {
           title: "培养人文价值观与以患者为中心的思维模式",
@@ -57,6 +58,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "教学方法",
+      display: "timeline",
       items: [
         {
           title: "高仿真案例教学",
@@ -79,6 +81,7 @@ const data: ProgrammeData = {
     {
       type: "value-props",
       title: "课程内容",
+      display: "table",
       items: [
         {
           title: "1. 医学人文与职业身份认同",
