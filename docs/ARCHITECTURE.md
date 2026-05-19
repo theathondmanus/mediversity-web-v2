@@ -18,6 +18,7 @@
 | Legacy 内容审计 | [`docs/legacy-content-audit.md`](./legacy-content-audit.md) | Moss | 看老站迁移内容时 |
 | Service 架构（双站规划）| [`docs/architecture/2026-05-11-service-architecture.md`](./architecture/2026-05-11-service-architecture.md) | Moss | 部署架构决策时 |
 | **部署 cheatsheet**（双站 + Gitee）| [`.deployment/README.md`](../.deployment/README.md) | Moss | 部署故障 / 改流水线时 |
+| **内容运营 SOP**（章逊接管 v1）| [`docs/CONTENT-OPS.md`](./CONTENT-OPS.md) | Moss | 章逊给我内容时 / 看流程 |
 
 本 ARCHITECTURE.md 重点写 **路由地图 + 数据流 + i18n 三模式 + 图片资产体系 + 组件职责索引 + 部署链路**——上面文档没覆盖的全局视角。
 
