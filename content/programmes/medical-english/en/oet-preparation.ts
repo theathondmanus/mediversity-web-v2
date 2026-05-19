@@ -15,6 +15,9 @@ const data: ProgrammeData = {
   order: 10,
   status: "published",
 
+  cover: "/images/courses/oet-preparation.webp",
+  coverAlt: "OET Preparation - students practicing in language lab",
+
   hero: {
     headline: "OET Preparation: Your Gateway to a Global Healthcare Career",
     lede: "Boost your medical English skills and help you achieve success in the OET exam.",
@@ -30,12 +33,15 @@ const data: ProgrammeData = {
       type: "intro",
       title: "What is OET?",
       body: "The Occupational English Test (OET) is an internationally recognised English language test for healthcare professionals. It evaluates your ability to communicate effectively in a healthcare environment, with tasks and scenarios designed to mirror real-world situations you will encounter in your healthcare career. Achieving high marks in the OET is often required to work or study in English-speaking countries like the UK, Australia, New Zealand, and Ireland.",
+      image: "/images/courses/oet-preparation.webp",
+      imageAlt: "OET Preparation classroom scene",
     },
 
-    /* ── Why Choose Us ── */
+    /* ── Why Choose Us (honeycomb grid) ── */
     {
       type: "value-props",
       title: "Why Choose Us for Your OET Preparation?",
+      display: "grid",
       items: [
         {
           title: "OET-Focused Curriculum",

@@ -15,6 +15,9 @@ const data: ProgrammeData = {
   order: 10,
   status: "published",
 
+  cover: "/images/courses/oet-preparation.webp",
+  coverAlt: "OET 备考课程 - 学生在语言实验室练习",
+
   hero: {
     headline: "OET 备考：通往全球医疗职业的大门",
     lede: "提升您的医学英语能力，助力成功通过 OET 考试。",
@@ -30,12 +33,15 @@ const data: ProgrammeData = {
       type: "intro",
       title: "什么是 OET？",
       body: "职业英语考试（OET）是面向医疗专业人士的国际认可英语语言测试。它评估您在医疗环境中有效沟通的能力，测试任务和场景旨在模拟您在医疗职业中将遇到的真实情境。在英国、澳大利亚、新西兰和爱尔兰等英语国家工作或学习，通常需要取得 OET 高分。",
+      image: "/images/courses/oet-preparation.webp",
+      imageAlt: "OET 备考课堂场景",
     },
 
-    /* ── 为什么选择我们 ── */
+    /* ── 为什么选择我们（蛇窝 grid） ── */
     {
       type: "value-props",
       title: "为什么选择我们进行 OET 备考？",
+      display: "grid",
       items: [
         {
           title: "OET 专项课程体系",

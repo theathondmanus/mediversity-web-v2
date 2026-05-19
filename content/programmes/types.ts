@@ -45,7 +45,7 @@ export interface ValuePropsSection {
    *
    * If omitted, defaults to "grid" for backward compatibility.
    */
-  display?: "grid" | "list" | "timeline" | "accordion";
+  display?: "grid" | "list" | "timeline" | "accordion" | "table";
 }
 
 export interface IntroSection {
@@ -87,6 +87,10 @@ export interface ProgrammeData {
   order: number;
   /** Only "published" courses are rendered */
   status: "published" | "draft";
+  /** Cover image for pillar/hub cards (distinct from hero) */
+  cover?: string;
+  /** Alt text for the cover image */
+  coverAlt?: string;
 
   /* ── Page sections ── */
   hero: {
@@ -119,4 +123,8 @@ export interface ProgrammeRegistryEntry {
   featured: boolean;
   order: number;
   status: "published" | "draft";
+  /** Cover image for pillar/hub cards */
+  cover?: string;
+  /** Alt text for the cover image */
+  coverAlt?: string;
 }
