@@ -60,34 +60,42 @@ export default function ContactPage() {
       {/* Content */}
       <section className="section-padding bg-white">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {/* Contact Info */}
-            <FadeIn index={0}>
-              <h2 className="font-display text-2xl font-bold text-[#0A1628] mb-6">
-                {t("info.title")}
-              </h2>
-              <div className="space-y-6">
-                {CONTACT_INFO.map((item) => {
-                  const Icon = item.icon;
-                  return (
-                    <div key={item.key} className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-lg bg-[#00438A]/10 flex items-center justify-center shrink-0">
-                        <Icon className="w-5 h-5 text-[#00438A]" />
+          <div className="grid md:grid-cols-5 gap-10 max-w-5xl mx-auto">
+            {/* Contact Info — wider left column with card background */}
+            <FadeIn index={0} className="md:col-span-2">
+              <div className="bg-[#F8F9FC] rounded-2xl p-8 h-full border border-[#E3E5EC]">
+                <h2 className="font-display text-2xl font-bold text-[#0A1628] mb-8">
+                  {t("info.title")}
+                </h2>
+                <div className="space-y-6">
+                  {CONTACT_INFO.map((item) => {
+                    const Icon = item.icon;
+                    return (
+                      <div key={item.key} className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-lg bg-[#00438A]/10 flex items-center justify-center shrink-0">
+                          <Icon className="w-5 h-5 text-[#00438A]" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-medium text-[#0A1628]">
+                            {t(`info.${item.key}`)}
+                          </p>
+                          <p className="text-sm text-[#3C3A47]">{item.value}</p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="text-sm font-medium text-[#0A1628]">
-                          {t(`info.${item.key}`)}
-                        </p>
-                        <p className="text-sm text-[#3C3A47]">{item.value}</p>
-                      </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
+                {/* Decorative divider + tagline */}
+                <div className="mt-8 pt-6 border-t border-[#E3E5EC]">
+                  <p className="text-sm text-[#00438A] font-medium">
+                    {t("info.tagline")}
+                  </p>
+                </div>
               </div>
             </FadeIn>
 
-            {/* Tally Form Embed */}
-            <FadeIn index={1}>
+            {/* Tally Form Embed — right column */}
+            <FadeIn index={1} className="md:col-span-3">
               <h2 className="font-display text-2xl font-bold text-[#0A1628] mb-6">
                 {t("form.title")}
               </h2>

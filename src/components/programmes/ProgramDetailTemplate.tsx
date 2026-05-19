@@ -226,44 +226,70 @@ function ValuePropsTimeline({ section, isAlt }: { section: ValuePropsSection; is
           </h2>
         </FadeIn>
 
-        {/* Desktop: horizontal timeline with scroll for many items */}
+        {/* Desktop: horizontal timeline */}
         <div className="hidden md:block relative">
-          <div className="overflow-x-auto pb-4 scrollbar-thin">
-            {/* Connecting line */}
-            <div className="absolute top-6 left-0 right-0 h-0.5 bg-gradient-to-r from-[var(--brand-primary)] via-[var(--brand-accent)] to-[var(--brand-primary)] z-0" />
-
-            <div
-              className="flex relative z-10"
-              style={{ minWidth: `${section.items.length * 160}px` }}
-            >
-              {section.items.map((item, i) => (
-                <FadeIn key={i} index={i}>
-                  <div className="relative pt-14 px-3 text-center flex-shrink-0" style={{ width: `${Math.max(100 / section.items.length, 14)}%`, minWidth: '140px' }}>
-                    {/* Node */}
-                    <div
-                      className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
-                      style={{ backgroundColor: i % 2 === 0 ? "var(--brand-primary)" : "var(--brand-accent)" }}
-                    >
-                      {i + 1}
+          {section.items.length <= 6 ? (
+            /* ≤6 nodes: centered grid, no scroll */
+            <div className="relative">
+              <div className="absolute top-6 left-0 right-0 h-0.5 bg-gradient-to-r from-[var(--brand-primary)] via-[var(--brand-accent)] to-[var(--brand-primary)]" />
+              <div className="grid" style={{ gridTemplateColumns: `repeat(${section.items.length}, 1fr)` }}>
+                {section.items.map((item, i) => (
+                  <FadeIn key={i} index={i}>
+                    <div className="relative pt-14 px-3 text-center">
+                      <div
+                        className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
+                        style={{ backgroundColor: i % 2 === 0 ? "var(--brand-primary)" : "var(--brand-accent)" }}
+                      >
+                        {i + 1}
+                      </div>
+                      <h3 className="font-semibold text-sm mb-2" style={{ color: "var(--ink)" }}>
+                        {item.title}
+                      </h3>
+                      {item.description && (
+                        <p className="text-xs leading-relaxed" style={{ color: "var(--body-text)" }}>
+                          {item.description}
+                        </p>
+                      )}
                     </div>
-                    <h3 className="font-semibold text-sm mb-2" style={{ color: "var(--ink)" }}>
-                      {item.title}
-                    </h3>
-                    {item.description && (
-                      <p className="text-xs leading-relaxed" style={{ color: "var(--body-text)" }}>
-                        {item.description}
-                      </p>
-                    )}
-                  </div>
-                </FadeIn>
-              ))}
+                  </FadeIn>
+                ))}
+              </div>
             </div>
-          </div>
-          {/* Scroll hint for many items */}
-          {section.items.length > 6 && (
-            <p className="text-xs text-center mt-2" style={{ color: "var(--text-muted)" }}>
-              ← 滑动查看更多 →
-            </p>
+          ) : (
+            /* >6 nodes: horizontal scroll */
+            <>
+              <div className="overflow-x-auto pb-4 scrollbar-thin">
+                <div className="absolute top-6 left-0 right-0 h-0.5 bg-gradient-to-r from-[var(--brand-primary)] via-[var(--brand-accent)] to-[var(--brand-primary)] z-0" />
+                <div
+                  className="flex relative z-10"
+                  style={{ minWidth: `${section.items.length * 160}px` }}
+                >
+                  {section.items.map((item, i) => (
+                    <FadeIn key={i} index={i}>
+                      <div className="relative pt-14 px-3 text-center flex-shrink-0" style={{ width: `${100 / section.items.length}%`, minWidth: '140px' }}>
+                        <div
+                          className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
+                          style={{ backgroundColor: i % 2 === 0 ? "var(--brand-primary)" : "var(--brand-accent)" }}
+                        >
+                          {i + 1}
+                        </div>
+                        <h3 className="font-semibold text-sm mb-2" style={{ color: "var(--ink)" }}>
+                          {item.title}
+                        </h3>
+                        {item.description && (
+                          <p className="text-xs leading-relaxed" style={{ color: "var(--body-text)" }}>
+                            {item.description}
+                          </p>
+                        )}
+                      </div>
+                    </FadeIn>
+                  ))}
+                </div>
+              </div>
+              <p className="text-xs text-center mt-2" style={{ color: "var(--text-muted)" }}>
+                ← 滑动查看更多 →
+              </p>
+            </>
           )}
         </div>
 
