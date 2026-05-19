@@ -11,6 +11,14 @@ import {
 import Image from "next/image";
 import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn } from "@/components/ui/fade-in";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import type {
   ProgrammeData,
   IntroSection,
@@ -218,34 +226,45 @@ function ValuePropsTimeline({ section, isAlt }: { section: ValuePropsSection; is
           </h2>
         </FadeIn>
 
-        {/* Desktop: horizontal timeline */}
+        {/* Desktop: horizontal timeline with scroll for many items */}
         <div className="hidden md:block relative">
-          {/* Connecting line */}
-          <div className="absolute top-6 left-0 right-0 h-0.5 bg-gradient-to-r from-[var(--brand-primary)] via-[var(--brand-accent)] to-[var(--brand-primary)]" />
+          <div className="overflow-x-auto pb-4 scrollbar-thin">
+            {/* Connecting line */}
+            <div className="absolute top-6 left-0 right-0 h-0.5 bg-gradient-to-r from-[var(--brand-primary)] via-[var(--brand-accent)] to-[var(--brand-primary)] z-0" />
 
-          <div className="grid" style={{ gridTemplateColumns: `repeat(${Math.min(section.items.length, 6)}, 1fr)` }}>
-            {section.items.map((item, i) => (
-              <FadeIn key={i} index={i}>
-                <div className="relative pt-14 px-3 text-center">
-                  {/* Node */}
-                  <div
-                    className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
-                    style={{ backgroundColor: i % 2 === 0 ? "var(--brand-primary)" : "var(--brand-accent)" }}
-                  >
-                    {i + 1}
+            <div
+              className="flex relative z-10"
+              style={{ minWidth: `${section.items.length * 160}px` }}
+            >
+              {section.items.map((item, i) => (
+                <FadeIn key={i} index={i}>
+                  <div className="relative pt-14 px-3 text-center flex-shrink-0" style={{ width: `${Math.max(100 / section.items.length, 14)}%`, minWidth: '140px' }}>
+                    {/* Node */}
+                    <div
+                      className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
+                      style={{ backgroundColor: i % 2 === 0 ? "var(--brand-primary)" : "var(--brand-accent)" }}
+                    >
+                      {i + 1}
+                    </div>
+                    <h3 className="font-semibold text-sm mb-2" style={{ color: "var(--ink)" }}>
+                      {item.title}
+                    </h3>
+                    {item.description && (
+                      <p className="text-xs leading-relaxed" style={{ color: "var(--body-text)" }}>
+                        {item.description}
+                      </p>
+                    )}
                   </div>
-                  <h3 className="font-semibold text-sm mb-2" style={{ color: "var(--ink)" }}>
-                    {item.title}
-                  </h3>
-                  {item.description && (
-                    <p className="text-xs leading-relaxed" style={{ color: "var(--body-text)" }}>
-                      {item.description}
-                    </p>
-                  )}
-                </div>
-              </FadeIn>
-            ))}
+                </FadeIn>
+              ))}
+            </div>
           </div>
+          {/* Scroll hint for many items */}
+          {section.items.length > 6 && (
+            <p className="text-xs text-center mt-2" style={{ color: "var(--text-muted)" }}>
+              ← 滑动查看更多 →
+            </p>
+          )}
         </div>
 
         {/* Mobile: vertical timeline */}
@@ -581,45 +600,56 @@ export default function ProgramDetailTemplate({ data }: ProgramDetailTemplatePro
         }
       })}
 
-      {/* ── Testimonials (large quote style) ── */}
+      {/* ── Testimonials (sliding carousel) ── */}
       {data.testimonials.length > 0 && (
         <section className="section-padding" style={{ backgroundColor: "var(--canvas)" }}>
-          <div className="container max-w-5xl">
+          <div className="container max-w-6xl">
             <FadeIn>
               <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: "var(--ink)" }}>
                 {t("testimonials") || "学员评价"}
               </h2>
             </FadeIn>
-            <div className="grid md:grid-cols-2 gap-8">
-              {data.testimonials.map((testimonial, i) => (
-                <FadeIn key={i} index={i}>
-                  <div className="bg-white rounded-2xl p-8 h-full border border-[var(--subtle-border)] relative shadow-sm hover:shadow-md transition-shadow">
-                    <Quote className="w-10 h-10 text-[var(--brand-accent)] opacity-20 absolute top-6 right-6" />
-                    <p
-                      className="text-base md:text-lg leading-relaxed mb-8 italic relative z-10"
-                      style={{ color: "var(--body-text)" }}
-                    >
-                      &ldquo;{testimonial.quote}&rdquo;
-                    </p>
-                    <div className="border-t border-[var(--subtle-border)] pt-4 flex items-center gap-3">
-                      <div
-                        className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm"
-                        style={{ backgroundColor: i % 2 === 0 ? "var(--brand-primary)" : "var(--brand-accent)" }}
-                      >
-                        {testimonial.name.charAt(0)}
-                      </div>
-                      <div>
-                        <p className="font-semibold" style={{ color: "var(--ink)" }}>
-                          {testimonial.name}
+            <div className="px-4 md:px-12">
+              <Carousel
+                opts={{ align: "start", loop: true }}
+                plugins={[
+                  Autoplay({ delay: 6000, stopOnInteraction: true, stopOnMouseEnter: true }),
+                ]}
+              >
+                <CarouselContent className="-ml-4">
+                  {data.testimonials.map((testimonial, i) => (
+                    <CarouselItem key={i} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                      <div className="bg-white rounded-2xl p-8 h-full border border-[var(--subtle-border)] relative shadow-sm hover:shadow-md transition-shadow">
+                        <Quote className="w-10 h-10 text-[var(--brand-accent)] opacity-20 absolute top-6 right-6" />
+                        <p
+                          className="text-base md:text-lg leading-relaxed mb-8 italic relative z-10"
+                          style={{ color: "var(--body-text)" }}
+                        >
+                          &ldquo;{testimonial.quote}&rdquo;
                         </p>
-                        <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-                          {testimonial.role}，{testimonial.location}
-                        </p>
+                        <div className="border-t border-[var(--subtle-border)] pt-4 flex items-center gap-3">
+                          <div
+                            className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm"
+                            style={{ backgroundColor: i % 2 === 0 ? "var(--brand-primary)" : "var(--brand-accent)" }}
+                          >
+                            {testimonial.name.charAt(0)}
+                          </div>
+                          <div>
+                            <p className="font-semibold" style={{ color: "var(--ink)" }}>
+                              {testimonial.name}
+                            </p>
+                            <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+                              {testimonial.role}，{testimonial.location}
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </FadeIn>
-              ))}
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="-left-4 md:-left-14 h-9 w-9 bg-white/90 backdrop-blur-sm shadow-md border-[#00438A]/20 hover:bg-[#00438A] hover:text-white transition-colors" />
+                <CarouselNext className="-right-4 md:-right-14 h-9 w-9 bg-white/90 backdrop-blur-sm shadow-md border-[#00438A]/20 hover:bg-[#00438A] hover:text-white transition-colors" />
+              </Carousel>
             </div>
           </div>
         </section>
