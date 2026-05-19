@@ -4,17 +4,17 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:  # 允许手动触发
+  workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 20  # 含大图 commit 可能慢，给足 buffer
     steps:
       - name: Checkout (full history)
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 必须拉完整历史否则 push 会被拒
+          fetch-depth: 0
           persist-credentials: false
 
       - name: Push to Gitee
@@ -30,8 +30,18 @@ jobs:
           fi
 
           GITEE_URL="https://${GITEE_USER}:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git"
-
           git remote add gitee "$GITEE_URL"
-          git push gitee main --force
 
-          echo "✅ Synced to Gitee: $(git rev-parse --short HEAD)"
+          # 先 fetch Gitee 看是否同步（避免 force push 重传整个历史）
+          git fetch gitee main || echo "Gitee main 不存在，首次推送"
+
+          # 用 fast-forward push（不要 --force）。如果非 ff 才报错
+          if git push gitee main; then
+            echo "✅ Fast-forward push 成功"
+          else
+            echo "⚠️ Fast-forward 失败，可能 Gitee 偏离 GitHub，尝试 --force-with-lease"
+            git push gitee main --force-with-lease
+            echo "✅ Force-with-lease push 成功"
+          fi
+
+          echo "Synced to Gitee: $(git rev-parse --short HEAD)"
