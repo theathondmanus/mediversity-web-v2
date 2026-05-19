@@ -234,8 +234,8 @@ export default function CaseShowcase({
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              <CarouselPrevious className="-left-4 md:-left-12 h-9 w-9 bg-white/90 backdrop-blur-sm shadow-md border-[#00438A]/20 hover:bg-[#00438A] hover:text-white transition-colors" />
+              <CarouselNext className="-right-4 md:-right-12 h-9 w-9 bg-white/90 backdrop-blur-sm shadow-md border-[#00438A]/20 hover:bg-[#00438A] hover:text-white transition-colors" />
             </Carousel>
           </div>
         </FadeIn>
