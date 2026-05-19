@@ -128,51 +128,51 @@ const data: ProgrammeData = {
       items: [
         {
           title: "基础知识",
-          description: "基础知识",
+          description: "健康与疾病 / 身体部位 1+2 / 身体功能",
         },
         {
           title: "医学与辅助医学人员与场所",
-          description: "医学与辅助医学人员与场所",
+          description: "医务人员 1+2 / 护士 / 辅助卫生专业人员 / 医院 / 初级医疗",
         },
         {
           title: "教育与培训",
-          description: "教育与培训",
+          description: "医学教育（英国医学教育 / 本科招生简章摘录 / 学生观点 / 基础培训项目 / 医学教育相关人员 / 医学资格证书）",
         },
         {
           title: "系统、疾病与症状（20 个子模块）",
-          description: "系统、疾病与症状（20 个子模块）",
+          description: "症状与体征 / 血液 / 骨骼 / 儿童期 / 内分泌系统 / 眼科 / 胃肠系统 / 妇科；心脏与循环 1+2 / 感染 / 精神疾病 / 神经系统 1+2 / 肿瘤学 / 妊娠与分娩；呼吸系统 / 皮肤 1+2 / 泌尿系统",
         },
         {
           title: "检查",
-          description: "检查",
+          description: "基本检查 / 实验室检查 / 内窥镜检查 / X 光与 CT / 核磁共振与超声波 / 心电图（ECG）",
         },
         {
           title: "治疗",
-          description: "治疗",
+          description: "药物治疗 / 外科治疗 / 疗法",
         },
         {
           title: "预防",
-          description: "预防",
+          description: "筛查与免疫接种",
         },
         {
           title: "流行病学",
-          description: "流行病学",
+          description: "流行病学（发生率 / 发病率与流行率 / 关联与因果）",
         },
         {
           title: "伦理学",
-          description: "伦理学",
+          description: "医学伦理（GMC 指南 / 生物伦理议题 / 协助自愿死亡）",
         },
         {
           title: "采集病史",
-          description: "采集病史",
+          description: "采集病史 1（完整病史 / 个人信息 / 疼痛讨论）；采集病史 2（药物史 / 家族史 / 社会与个人史）；采集病史 3（系统回顾 / 中枢神经系统询问 / 患者的想法、顾虑与期望 / 病史采集中的短语动词）",
         },
         {
           title: "检查（临床）",
-          description: "检查（临床）",
+          description: "体格检查 / 精神状态检查",
         },
         {
           title: "解释",
-          description: "解释",
+          description: "诊断和治疗方案的解释 / 治疗讨论",
         },
       ],
     },
