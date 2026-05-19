@@ -18,6 +18,7 @@ import {
   FloatingShape,
   CornerAccent,
 } from "@/components/ui/section-decorations";
+import { getPublishedByCategory } from "../../../../content/programmes/registry";
 
 /* ── Animation presets ── */
 const fadeInUp = {
@@ -46,9 +47,8 @@ const PILLARS = [
     iconColor: "text-[#00438A]",
     accentColor: "#00438A",
     key: "medicalEnglish",
+    category: "medical-english",
     href: "/programmes/medical-english",
-    activeCourses: 5,
-    futureCourses: 11,
   },
   {
     icon: Microscope,
@@ -56,9 +56,8 @@ const PILLARS = [
     iconColor: "text-purple-700",
     accentColor: "#7e22ce",
     key: "research",
+    category: "research-academic",
     href: "/programmes/research-academic",
-    activeCourses: 2,
-    futureCourses: 7,
   },
   {
     icon: Stethoscope,
@@ -66,9 +65,8 @@ const PILLARS = [
     iconColor: "text-emerald-700",
     accentColor: "#047857",
     key: "observership",
+    category: "observership",
     href: "/programmes/observership",
-    activeCourses: 3,
-    futureCourses: 6,
   },
   {
     icon: BookOpen,
@@ -76,9 +74,8 @@ const PILLARS = [
     iconColor: "text-amber-700",
     accentColor: "#b45309",
     key: "humanities",
+    category: "humanities",
     href: "/programmes/humanities",
-    activeCourses: 1,
-    futureCourses: 5,
   },
 ];
 
@@ -298,25 +295,22 @@ export default function ProgrammesHubPage() {
                               {t(`pillars.${pillar.key}.desc`)}
                             </p>
 
-                            {/* Stats row */}
+                            {/* Stats row · 只显示在授课程数, 没有在授时显示标签 */}
                             <div className="flex items-center gap-6 mb-5">
-                              <div>
-                                <span className="text-2xl font-bold text-[#00438A]">
-                                  {pillar.activeCourses}
+                              {getPublishedByCategory(pillar.category).length > 0 ? (
+                                <div>
+                                  <span className="text-2xl font-bold text-[#00438A]">
+                                    {getPublishedByCategory(pillar.category).length}
+                                  </span>
+                                  <span className="text-xs text-[#8A889A] ml-1.5">
+                                    {t("activeCourses")}
+                                  </span>
+                                </div>
+                              ) : (
+                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#C4922A]/10 text-[#C4922A] text-xs font-medium">
+                                  {t("openingSoon")}
                                 </span>
-                                <span className="text-xs text-[#8A889A] ml-1.5">
-                                  {t("activeCourses")}
-                                </span>
-                              </div>
-                              <div className="w-px h-6 bg-[#E3E5EC]" />
-                              <div>
-                                <span className="text-2xl font-bold text-[#C4922A]/60">
-                                  {pillar.futureCourses}
-                                </span>
-                                <span className="text-xs text-[#8A889A] ml-1.5">
-                                  {t("futureCoursesShort")}
-                                </span>
-                              </div>
+                              )}
                             </div>
 
                             {/* CTA */}
