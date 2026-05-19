@@ -86,11 +86,13 @@ export default function Header() {
       <div className="container flex items-center justify-between h-[72px] md:h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 no-underline shrink-0">
-          <img
-            src="/brand/logo-128.png"
-            alt="Mediversity Global"
-            className="h-9 md:h-10 w-auto"
-          />
+          <span className={`inline-flex items-center justify-center rounded-lg transition-all duration-300 ${scrolled || !isHome ? 'bg-transparent' : 'bg-white/90 backdrop-blur-sm shadow-sm'} p-1`}>
+            <img
+              src="/brand/logo-128.png"
+              alt="Mediversity Global"
+              className="h-10 md:h-12 w-auto"
+            />
+          </span>
           <span className={`font-display text-lg md:text-xl font-bold tracking-tight transition-colors duration-300 ${logoColor} hidden sm:inline`}>
             Mediversity<span className="font-light ml-1">Global</span>
           </span>
