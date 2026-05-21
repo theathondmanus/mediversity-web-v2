@@ -311,19 +311,207 @@
     },
     "observership": {
       "title": "Clinical Observership & International Exposure",
-      "description": "Connecting clinicians with the world's leading medical institutions to support international career growth. Built around three pillars — international clinical capability, research exchange and professional development — we offer an end-to-end international exchange pathway covering clinical observership, research training, short-term study, degree progression and doctoral programmes.",
-      "subcategories": {
-        "all": {
-          "title": "Core Programmes",
-          "desc": "Clinical observership, visiting scholar, short-term study, nursing progression and international doctorate"
+      "description": "Connecting clinicians with the world's leading medical institutions to support international career growth. Built around three pillars — international clinical capability, research exchange and professional development — we deliver an end-to-end international exchange pathway covering clinical observership, research training, short-term overseas study, degree progression and doctoral programmes. Drawing on partnerships across the UK, US, Japan, Singapore and Germany, we provide one-stop support — from programme application and pre-departure preparation through to overseas assistance and reintegration on return — for healthcare institutions and individual professionals.",
+      "coreValue": {
+        "title": "Our Core Value",
+        "items": [
+          {
+            "title": "Access to top global medical resources",
+            "desc": "Spanning the US, UK, Japan, Singapore and Germany, our partner institutions and hospitals include leading top-100 universities, top-tier international hospitals and research platforms — enabling precise specialty matching."
+          },
+          {
+            "title": "Integrated clinical × research × academic development",
+            "desc": "From clinical observership to research training, from degree progression to international doctoral programmes — we offer a full-cycle pathway for international career development in healthcare."
+          },
+          {
+            "title": "Highly customised service framework",
+            "desc": "Tailored to the needs of hospitals, departments and individuals — we provide end-to-end service covering programme matching, application planning, pre-departure preparation and overseas support."
+          },
+          {
+            "title": "Professional team support throughout",
+            "desc": "A one-stop service spanning visa processing, accommodation and overseas living support — ensuring the programme runs smoothly and the learning experience is well-supported."
+          },
+          {
+            "title": "Long-term collaboration within the international medical ecosystem",
+            "desc": "We focus on more than a single exchange — building long-term international collaboration networks and global medical exchange capability for our partner institutions."
+          }
+        ]
+      },
+      "projects": {
+        "eyebrow": "Five Core Programmes",
+        "title": "International Exchange Programmes",
+        "label": {
+          "duration": "Duration",
+          "audience": "Who it's for",
+          "content": "Programme Content",
+          "advantages": "Programme Advantages",
+          "services": "Services We Provide"
+        },
+        "items": {
+          "internationalClinicalObservership": {
+            "title": "International Clinical Observership Programme",
+            "subtitle": "Immersive exposure to leading international hospitals, broadening clinical perspective",
+            "duration": "12 weeks of immersive overseas clinical observership",
+            "audience": [
+              "Senior clinicians",
+              "Key department staff",
+              "Healthcare teams seeking international exchange"
+            ],
+            "content": [
+              "Outpatient and surgical observership",
+              "Ward rounds with mentors",
+              "Departmental meetings and academic exchange",
+              "Precision matching to clinical subspecialties",
+              "One-to-one mentor supervision"
+            ],
+            "advantages": [
+              "Access to top healthcare institutions in the US, UK, Japan and Singapore",
+              "Precision matching to clinical subspecialties",
+              "End-to-end support from both domestic and overseas teams",
+              "Seamless integration with medical English training",
+              "International mentorship-based learning model"
+            ],
+            "services": [
+              "Programme application and matching",
+              "Interview preparation and visa support",
+              "Overseas accommodation and insurance arrangements",
+              "Pre-departure guidance and on-site support",
+              "End-to-end programme coordination"
+            ]
+          },
+          "seniorVisitingScholar": {
+            "title": "Senior Visiting Scholar Programme",
+            "subtitle": "Deep engagement with international research platforms, building global academic competitiveness",
+            "duration": "6–12 months of overseas research training",
+            "audience": [
+              "Discipline leaders",
+              "Research-focused healthcare professionals",
+              "Medical school faculty",
+              "Professionals seeking publication and research advancement"
+            ],
+            "content": [
+              "Participation in mentor-led research projects",
+              "Collaboration on academic publications",
+              "Training in international research methodology",
+              "Overseas laboratory and research platform experience",
+              "Selected programmes include parallel clinical observership"
+            ],
+            "advantages": [
+              "Partner institutions include top-100 universities globally",
+              "Most programmes do not require IELTS / TOEFL scores",
+              "Overseas placement and lifestyle support included",
+              "Long-term international research collaboration channels",
+              "Experienced interview and visa support"
+            ],
+            "services": [
+              "Mentor and institution matching",
+              "Application material refinement",
+              "Interview and visa support",
+              "Overseas accommodation and placement support",
+              "Full-cycle programme management"
+            ]
+          },
+          "shortTermOverseasStudy": {
+            "title": "Short-term Overseas Study Programme",
+            "subtitle": "Focused themes, efficient access to international expertise",
+            "duration": "5–10 day international study visits",
+            "audience": [
+              "Hospital leadership teams",
+              "Department heads",
+              "Senior healthcare teams",
+              "Specialist development cohorts"
+            ],
+            "content": [
+              "Hospital management",
+              "Nursing management",
+              "Oncology",
+              "Neurology / neurosurgery",
+              "Gastroenterology",
+              "Paediatric surgery and other specialties"
+            ],
+            "advantages": [
+              "On-site visits to top international hospitals",
+              "Subject-specific teaching by leading overseas experts",
+              "Coverage across both clinical and management perspectives",
+              "Efficient and flexible — well-suited to team-based exchange",
+              "Overseas study certificate on completion"
+            ],
+            "services": [
+              "Study itinerary planning",
+              "Overseas hospital liaison",
+              "Immigration and visa support",
+              "International transport, accommodation and insurance",
+              "On-site interpretation and accompaniment support"
+            ]
+          },
+          "nursingDegreeProgression": {
+            "title": "Nursing Degree Progression Programme",
+            "subtitle": "Access global nursing education resources for career advancement",
+            "duration": "Top-up bachelor: 1 year / Master's: 1–2 years",
+            "audience": [
+              "Practising nurses",
+              "Nursing students",
+              "Nursing faculty",
+              "Healthcare institution nursing teams"
+            ],
+            "content": [
+              "International nursing bachelor / master's courses",
+              "Joint training with overseas partners",
+              "International nursing practice frameworks",
+              "Degree recognition and career development support"
+            ],
+            "advantages": [
+              "Strong international recognition of partner institutions",
+              "Degree recognition by China's Ministry of Education",
+              "Selected programmes do not require mandatory language scores",
+              "Designed to fit the schedules of working professionals",
+              "Broad overseas career and further-study pathways"
+            ],
+            "services": [
+              "Institution and programme matching",
+              "Application material support",
+              "Academic planning support",
+              "Visa and overseas arrival services",
+              "End-to-end admissions management"
+            ]
+          },
+          "internationalMedicalDoctorate": {
+            "title": "International Medical Doctorate Programme",
+            "subtitle": "Connecting with top European medical schools, developing international research talent",
+            "duration": "3–4 years of doctoral training",
+            "audience": [
+              "Healthcare professionals",
+              "Medical researchers",
+              "Medical students",
+              "Professionals with long-term academic career goals"
+            ],
+            "content": [
+              "International medical doctorate training",
+              "Overseas research platform experience",
+              "Supervisor-led research projects",
+              "International academic exchange and collaboration",
+              "Long-cycle research capability building"
+            ],
+            "advantages": [
+              "Partnerships with top European medical schools",
+              "Internationally recognised doctorate",
+              "In-depth research resource support",
+              "International supervisory team",
+              "Builds a sustainable global academic network"
+            ],
+            "services": [
+              "Doctoral programme consultation and assessment",
+              "Supervisor and research direction matching",
+              "Application material and interview support",
+              "Visa and overseas placement support",
+              "Long-cycle academic progress tracking"
+            ]
+          }
         }
       },
-      "courses": {
-        "internationalClinicalObservership": "International Clinical Observership Programme",
-        "seniorVisitingScholar": "Senior Visiting Scholar Programme",
-        "shortTermOverseasStudy": "Short-term Overseas Study Programme",
-        "nursingDegreeProgression": "Nursing Degree Progression Programme",
-        "internationalMedicalDoctorate": "International Medical Doctorate Programme"
+      "bottomCta": {
+        "title": "Start your international medical career journey",
+        "desc": "Let the world's leading medical resources become the next step in your career. Whether for individual career planning, departmental team exchange or institutional international collaboration, we tailor the most suitable international exchange pathway to your specialty and goals."
       }
     },
     "humanities": {
