@@ -53,6 +53,26 @@ const loaders: Record<string, LocaleLoaders> = {
     "zh-CN": () => import("./humanities/zh-CN/medical-humanities-and-communication-skills"),
     en: () => import("./humanities/en/medical-humanities-and-communication-skills"),
   },
+  "observership/international-clinical-observership": {
+    "zh-CN": () => import("./observership/zh-CN/international-clinical-observership"),
+    en: () => import("./observership/en/international-clinical-observership"),
+  },
+  "observership/senior-visiting-scholar": {
+    "zh-CN": () => import("./observership/zh-CN/senior-visiting-scholar"),
+    en: () => import("./observership/en/senior-visiting-scholar"),
+  },
+  "observership/short-term-overseas-study": {
+    "zh-CN": () => import("./observership/zh-CN/short-term-overseas-study"),
+    en: () => import("./observership/en/short-term-overseas-study"),
+  },
+  "observership/nursing-degree-progression": {
+    "zh-CN": () => import("./observership/zh-CN/nursing-degree-progression"),
+    en: () => import("./observership/en/nursing-degree-progression"),
+  },
+  "observership/international-medical-doctorate": {
+    "zh-CN": () => import("./observership/zh-CN/international-medical-doctorate"),
+    en: () => import("./observership/en/international-medical-doctorate"),
+  },
 };
 
 /* ── Registry entries (lightweight, no full content) ── */
@@ -165,6 +185,61 @@ export const registry: ProgrammeRegistryEntry[] = [
     status: "published",
     cover: "/images/courses/medical-humanities-and-communication-skills.webp",
     coverAlt: "医学人文与沟通技能 - 医生与患者沟通练习",
+  },
+  {
+    slug: "international-clinical-observership",
+    category: "observership",
+    subcategory: "all",
+    title: "国际临床观摩项目",
+    shortDescription: "沉浸国际顶尖医院，提升临床实践视野",
+    featured: true,
+    order: 10,
+    status: "published",
+    cover: "/images/courses/international-clinical-observership.webp",
+  },
+  {
+    slug: "senior-visiting-scholar",
+    category: "observership",
+    subcategory: "all",
+    title: "高级访问学者项目",
+    shortDescription: "深度参与国际科研平台，打造国际学术竞争力",
+    featured: true,
+    order: 20,
+    status: "published",
+    cover: "/images/courses/senior-visiting-scholar.webp",
+  },
+  {
+    slug: "short-term-overseas-study",
+    category: "observership",
+    subcategory: "all",
+    title: "短期赴外研修项目",
+    shortDescription: "聚焦专项主题，高效获取国际先进经验",
+    featured: false,
+    order: 30,
+    status: "published",
+    cover: "/images/courses/short-term-overseas-study.webp",
+  },
+  {
+    slug: "nursing-degree-progression",
+    category: "observership",
+    subcategory: "all",
+    title: "护理学历提升项目",
+    shortDescription: "对接全球护理教育资源，助力职业发展升级",
+    featured: false,
+    order: 40,
+    status: "published",
+    cover: "/images/courses/nursing-degree-progression.webp",
+  },
+  {
+    slug: "international-medical-doctorate",
+    category: "observership",
+    subcategory: "all",
+    title: "国际医学博士项目",
+    shortDescription: "链接欧洲顶尖医学院，培养国际科研人才",
+    featured: false,
+    order: 50,
+    status: "published",
+    cover: "/images/courses/international-medical-doctorate.webp",
   },
 ];
 

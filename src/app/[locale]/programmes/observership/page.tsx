@@ -1,40 +1,50 @@
 "use client";
 
-import { Stethoscope, Eye, Layers, GraduationCap } from "lucide-react";
+import { Stethoscope, Compass } from "lucide-react";
 import PillarLandingPage, { type SubCategory } from "@/components/programmes/PillarLandingPage";
 
 const subcategories: SubCategory[] = [
   {
-    id: "clinical-observer",
-    icon: Eye,
-    titleKey: "clinicalObserver",
-    descKey: "clinicalObserverDesc",
+    id: "all",
+    icon: Compass,
+    titleKey: "all",
+    descKey: "allDesc",
     courses: [
-      { titleKey: "shortTermObservership", status: "future" },
-      { titleKey: "specialtyBasedObservership", status: "future" },
-      { titleKey: "hospitalAttachment", status: "future" },
-    ],
-  },
-  {
-    id: "advanced-clinical",
-    icon: Layers,
-    titleKey: "advancedClinical",
-    descKey: "advancedClinicalDesc",
-    courses: [
-      { titleKey: "advancedClinicalObserver", status: "future" },
-      { titleKey: "consultantShadowing", status: "future" },
-      { titleKey: "departmentImmersion", status: "future" },
-    ],
-  },
-  {
-    id: "visiting-scholar",
-    icon: GraduationCap,
-    titleKey: "visitingScholar",
-    descKey: "visitingScholarDesc",
-    courses: [
-      { titleKey: "visitingScholarProgramme", status: "future" },
-      { titleKey: "researchAttachment", status: "future" },
-      { titleKey: "internationalAcademicExchange", status: "future" },
+      {
+        titleKey: "internationalClinicalObservership",
+        status: "active",
+        slug: "international-clinical-observership",
+        cover: "/images/courses/international-clinical-observership.webp",
+        descriptionKey: "international-clinical-observership",
+      },
+      {
+        titleKey: "seniorVisitingScholar",
+        status: "active",
+        slug: "senior-visiting-scholar",
+        cover: "/images/courses/senior-visiting-scholar.webp",
+        descriptionKey: "senior-visiting-scholar",
+      },
+      {
+        titleKey: "shortTermOverseasStudy",
+        status: "active",
+        slug: "short-term-overseas-study",
+        cover: "/images/courses/short-term-overseas-study.webp",
+        descriptionKey: "short-term-overseas-study",
+      },
+      {
+        titleKey: "nursingDegreeProgression",
+        status: "active",
+        slug: "nursing-degree-progression",
+        cover: "/images/courses/nursing-degree-progression.webp",
+        descriptionKey: "nursing-degree-progression",
+      },
+      {
+        titleKey: "internationalMedicalDoctorate",
+        status: "active",
+        slug: "international-medical-doctorate",
+        cover: "/images/courses/international-medical-doctorate.webp",
+        descriptionKey: "international-medical-doctorate",
+      },
     ],
   },
 ];

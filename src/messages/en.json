@@ -311,31 +311,19 @@
     },
     "observership": {
       "title": "Clinical Observership & International Exposure",
-      "description": "Clinical observership at top UK hospitals, visiting scholar and academic exchange programmes, providing global clinical perspectives and international collaboration opportunities.",
+      "description": "Connecting clinicians with the world's leading medical institutions to support international career growth. Built around three pillars — international clinical capability, research exchange and professional development — we offer an end-to-end international exchange pathway covering clinical observership, research training, short-term study, degree progression and doctoral programmes.",
       "subcategories": {
-        "clinical-observer": {
-          "title": "Clinical Observer Programmes",
-          "desc": "Short-term and specialty-based clinical observership"
-        },
-        "advanced-clinical": {
-          "title": "Advanced Clinical Exposure",
-          "desc": "In-depth consultant shadowing and department immersion"
-        },
-        "visiting-scholar": {
-          "title": "Academic & Visiting Scholar Pathways",
-          "desc": "Academic visits and international exchange"
+        "all": {
+          "title": "Core Programmes",
+          "desc": "Clinical observership, visiting scholar, short-term study, nursing progression and international doctorate"
         }
       },
       "courses": {
-        "shortTermObservership": "Short-term Observership",
-        "specialtyBasedObservership": "Specialty-based Observership",
-        "hospitalAttachment": "Hospital Attachment",
-        "advancedClinicalObserver": "Advanced Clinical Observer Programme",
-        "consultantShadowing": "Consultant Shadowing",
-        "departmentImmersion": "Department Immersion",
-        "visitingScholarProgramme": "Visiting Scholar Programme",
-        "researchAttachment": "Research Attachment",
-        "internationalAcademicExchange": "International Academic Exchange"
+        "internationalClinicalObservership": "International Clinical Observership Programme",
+        "seniorVisitingScholar": "Senior Visiting Scholar Programme",
+        "shortTermOverseasStudy": "Short-term Overseas Study Programme",
+        "nursingDegreeProgression": "Nursing Degree Progression Programme",
+        "internationalMedicalDoctorate": "International Medical Doctorate Programme"
       }
     },
     "humanities": {
@@ -520,7 +508,12 @@
     "medical-research-essentials": "A 6-week systematic introduction to medical research methodology and evidence-based medicine, building clinical research thinking and literature analysis skills",
     "medical-writing-publication-bootcamp": "A 12-hour intensive on SCI paper writing and international publication skills — covering the full pipeline from topic selection to submission",
     "medical-humanities-and-general-practice-literacy": "10 sessions developing medical humanities literacy and general practice competence, integrating ethical reasoning with clinical practice",
-    "medical-humanities-and-communication-skills": "6 sessions building patient-doctor communication and humanistic care practice, fostering empathy and narrative medicine thinking"
+    "medical-humanities-and-communication-skills": "6 sessions building patient-doctor communication and humanistic care practice, fostering empathy and narrative medicine thinking",
+    "international-clinical-observership": "12-week immersive observership at top hospitals in the US, UK, Japan and Singapore",
+    "senior-visiting-scholar": "6-12 months overseas research training, with mentor-led projects and joint publications",
+    "short-term-overseas-study": "5-10 day international study visits to top hospitals with subject-specific expert sessions",
+    "nursing-degree-progression": "International nursing bachelor and master programmes, jointly delivered with overseas partners",
+    "international-medical-doctorate": "3-4 year doctoral training in partnership with leading European medical schools"
   },
   "mednav": {
     "openingSoonBadge": "Coming soon"
