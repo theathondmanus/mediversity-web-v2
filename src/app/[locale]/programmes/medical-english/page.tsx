@@ -10,7 +10,7 @@ const subcategories: SubCategory[] = [
     titleKey: "foundations",
     descKey: "foundationsDesc",
     courses: [
-      { titleKey: "preparatoryMedicalEnglish", status: "active", slug: "preparatory-medical-english", cover: "/images/courses/preparatory-medical-english.webp", description: "12 课时基础英语课程，专为医疗从业者设计" },
+      { titleKey: "preparatoryMedicalEnglish", status: "active", slug: "preparatory-medical-english", cover: "/images/courses/preparatory-medical-english.webp", descriptionKey: "preparatory-medical-english" },
       { titleKey: "clinicalCommunicationFoundations", status: "future" },
       { titleKey: "generalEnglishHealthcare", status: "future" },
     ],
@@ -21,7 +21,7 @@ const subcategories: SubCategory[] = [
     titleKey: "oet",
     descKey: "oetDesc",
     courses: [
-      { titleKey: "oetPreparation", status: "active", slug: "oet-preparation", cover: "/images/courses/oet-preparation.webp", description: "提升您的医学英语能力，助力成功通过 OET 考试" },
+      { titleKey: "oetPreparation", status: "active", slug: "oet-preparation", cover: "/images/courses/oet-preparation.webp", descriptionKey: "oet-preparation" },
       { titleKey: "oetIntensiveBootcamp", status: "future" },
       { titleKey: "platCommunication", status: "future" },
       { titleKey: "healthcareInterview", status: "future" },
@@ -34,8 +34,8 @@ const subcategories: SubCategory[] = [
     descKey: "clinicalDesc",
     courses: [
       { titleKey: "workplaceMedicalEnglish", status: "future" },
-      { titleKey: "medicalEnglishDoctors", status: "active", slug: "medical-english-for-doctors", cover: "/images/courses/medical-english-for-doctors.webp", description: "医疗专业人员语言沟通能力提升课程" },
-      { titleKey: "medicalEnglishNurses", status: "active", slug: "medical-english-for-nurses", cover: "/images/courses/medical-english-for-nurses.webp", description: "护士专属医学英语沟通能力提升课程" },
+      { titleKey: "medicalEnglishDoctors", status: "active", slug: "medical-english-for-doctors", cover: "/images/courses/medical-english-for-doctors.webp", descriptionKey: "medical-english-for-doctors" },
+      { titleKey: "medicalEnglishNurses", status: "active", slug: "medical-english-for-nurses", cover: "/images/courses/medical-english-for-nurses.webp", descriptionKey: "medical-english-for-nurses" },
       { titleKey: "clinicalConsultationEnglish", status: "future" },
       { titleKey: "wardHandoverCommunication", status: "future" },
     ],
@@ -46,7 +46,7 @@ const subcategories: SubCategory[] = [
     titleKey: "globalMobility",
     descKey: "globalMobilityDesc",
     courses: [
-      { titleKey: "preDepartureMedicalEnglish", status: "active", slug: "pre-departure-medical-english", cover: "/images/courses/pre-departure-medical-english.webp", description: "12 周强化语言项目，专为即将海外临床实习的医疗专业人士打造" },
+      { titleKey: "preDepartureMedicalEnglish", status: "active", slug: "pre-departure-medical-english", cover: "/images/courses/pre-departure-medical-english.webp", descriptionKey: "pre-departure-medical-english" },
       { titleKey: "ukHealthcareOrientation", status: "future" },
       { titleKey: "culturalCommunication", status: "future" },
       { titleKey: "internationalWorkplaceReadiness", status: "future" },

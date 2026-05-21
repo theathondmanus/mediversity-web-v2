@@ -496,5 +496,16 @@
     "servicesEyebrow": "服务",
     "aboutEyebrow": "关于我们",
     "insightsEyebrow": "洞察"
+  },
+  "courseDescriptions": {
+    "preparatory-medical-english": "12 课时基础英语课程，专为医疗从业者设计",
+    "oet-preparation": "提升您的医学英语能力，助力成功通过 OET 考试",
+    "medical-english-for-doctors": "医疗专业人员语言沟通能力提升课程",
+    "medical-english-for-nurses": "护士专属医学英语沟通能力提升课程",
+    "pre-departure-medical-english": "12 周强化语言项目，专为即将海外临床实习的医疗专业人士打造",
+    "medical-research-essentials": "6 周系统学习医学研究方法与循证医学，培养临床研究思维与文献分析能力",
+    "medical-writing-publication-bootcamp": "12 小时集中训练 SCI 论文写作与国际发表技巧，从选题到投稿全流程覆盖",
+    "medical-humanities-and-general-practice-literacy": "10 节课系统培养医学人文素养与全科执业能力，融合伦理思辨与临床实践",
+    "medical-humanities-and-communication-skills": "6 节课提升医患沟通能力与人文关怀实践，培养共情与叙事医学思维"
   }
 }

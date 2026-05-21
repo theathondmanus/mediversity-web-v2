@@ -496,5 +496,16 @@
     "servicesEyebrow": "SERVICES",
     "aboutEyebrow": "ABOUT",
     "insightsEyebrow": "INSIGHTS"
+  },
+  "courseDescriptions": {
+    "preparatory-medical-english": "12-lesson foundation English programme designed for healthcare professionals",
+    "oet-preparation": "Strengthen your medical English to confidently pass the OET examination",
+    "medical-english-for-doctors": "Professional English communication training for clinicians",
+    "medical-english-for-nurses": "Medical English communication training tailored for nurses",
+    "pre-departure-medical-english": "12-week intensive language programme for healthcare professionals preparing for overseas clinical placements",
+    "medical-research-essentials": "A 6-week systematic introduction to medical research methodology and evidence-based medicine, building clinical research thinking and literature analysis skills",
+    "medical-writing-publication-bootcamp": "A 12-hour intensive on SCI paper writing and international publication skills — covering the full pipeline from topic selection to submission",
+    "medical-humanities-and-general-practice-literacy": "10 sessions developing medical humanities literacy and general practice competence, integrating ethical reasoning with clinical practice",
+    "medical-humanities-and-communication-skills": "6 sessions building patient-doctor communication and humanistic care practice, fostering empathy and narrative medicine thinking"
   }
 }

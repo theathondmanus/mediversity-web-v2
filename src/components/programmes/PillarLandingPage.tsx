@@ -24,6 +24,8 @@ export interface CourseItem {
   coverAlt?: string;
   /** Short description for the card */
   description?: string;
+  /** i18n key for short description (under courseDescriptions namespace) */
+  descriptionKey?: string;
 }
 
 export interface SubCategory {
@@ -78,6 +80,7 @@ export default function PillarLandingPage({
 }: PillarLandingPageProps) {
   const t = useTranslations(`programmes.${pillarKey}`);
   const tCommon = useTranslations("common");
+  const tDesc = useTranslations("courseDescriptions");
 
   const activeCourses = subcategories.flatMap((sub) =>
     sub.courses.filter((c) => c.status === "active"),
@@ -225,9 +228,9 @@ export default function PillarLandingPage({
                             <h3 className="font-semibold text-[#0A1628] mb-2 leading-snug text-lg">
                               {t(`courses.${course.titleKey}`)}
                             </h3>
-                            {course.description && (
+                            {(course.descriptionKey || course.description) && (
                               <p className="text-sm text-[#3C3A47] leading-relaxed mb-4 line-clamp-2">
-                                {course.description}
+                                {course.descriptionKey ? tDesc(course.descriptionKey) : course.description}
                               </p>
                             )}
                             <div className="mt-auto pt-3">
