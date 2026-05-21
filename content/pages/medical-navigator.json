@@ -370,56 +370,140 @@
       },
       {
         "type": {
-          "zh-CN": "海外急症转诊",
-          "en": "Overseas Emergency Referral"
-        },
-        "narrative": {
-          "zh-CN": "张女士旅居英国期间突发腹痛，当地 GP 建议等待数周排查。我们介入后快速判断情况紧急，协调上海仁济医院国际部，48 小时内完成回国手术安排。从判断到落地，全程陪伴。",
-          "en": "Ms Zhang experienced sudden abdominal pain while living in the UK. The local GP suggested waiting weeks for investigation. After our assessment, we determined the urgency, coordinated with Shanghai Renji Hospital International, and arranged return surgery within 48 hours."
-        },
-        "quote": {
-          "zh-CN": "如果不是他们帮我判断了紧急程度，我可能还在等 GP 的排期。",
-          "en": "Without their urgency assessment, I might still be waiting for the GP appointment."
-        },
-        "identity": {
-          "zh-CN": "张女士 · 旅英华人",
-          "en": "Ms Zhang · Chinese resident in the UK"
-        }
-      },
-      {
-        "type": {
           "zh-CN": "来华定制体检",
-          "en": "Customised Health Check-Up in China"
+          "en": "Customised Health Check in China"
         },
-        "narrative": {
-          "zh-CN": "李先生长期在海外工作，希望利用回国假期做一次全面体检。我们根据他的家族病史和职业特点，定制了包含心血管、消化道和肿瘤标志物的深度筛查方案，对接瑞金医院国际医疗平台，三天完成全部检查。",
-          "en": "Mr Li, working overseas long-term, wanted a comprehensive check-up during his home visit. Based on his family history and occupation, we designed a deep screening plan covering cardiovascular, gastrointestinal and tumour markers, coordinated with Ruijin Hospital International, completing all tests in three days."
-        },
-        "quote": {
-          "zh-CN": "不是随便做个套餐，而是真的根据我的情况来设计的。",
-          "en": "It wasn't a generic package — it was truly designed around my situation."
+        "location": {
+          "zh-CN": "澳大利亚 → 中国",
+          "en": "Australia → China"
         },
         "identity": {
-          "zh-CN": "李先生 · 海外华人企业家",
-          "en": "Mr Li · Overseas Chinese entrepreneur"
+          "zh-CN": "澳大利亚华人商务人士 · 高端健康管理",
+          "en": "Australia-based business professional · Premium health management"
+        },
+        "narrative": {
+          "zh-CN": "一位长期居住于澳大利亚的华人商务人士，由于长期跨境工作与频繁差旅，希望在短暂回国期间完成一次系统化健康评估与重点专项筛查。由于回国时间有限，且对国内医院特需体检流程、专科资源分布及后续健康管理衔接方式并不熟悉，客户希望整个医疗安排能够更加高效、有序。我们基于其商务行程紧凑、健康管理目标明确的特点，围绕「精准评估、高效衔接、长期连续性」进行了整体医疗路径规划。",
+          "en": "An Australia-based Chinese business professional, with frequent international travel commitments, sought a systematic health assessment and targeted screening during a brief return visit to China. With limited time and unfamiliarity with VIP outpatient processes, specialist resource distribution and ongoing health management coordination, the client needed a more efficient and structured medical arrangement. Based on the client's tight business schedule and clear health management objectives, we designed a complete care pathway centred on 'precision assessment, efficient coordination, and long-term continuity'."
+        },
+        "quote": {
+          "zh-CN": "真正重要的，不只是完成一次体检，而是在有限时间里获得清晰、高效且可持续衔接的健康管理支持。",
+          "en": "What truly matters is not just completing a check-up, but receiving clear, efficient and sustainable health management support within limited time."
+        },
+        "milestones": [
+          {
+            "date": {
+              "zh-CN": "第 1 阶段 · 需求沟通与健康评估",
+              "en": "Stage 1 · Needs Discussion & Health Assessment"
+            },
+            "event": {
+              "zh-CN": "回国前线上沟通了解健康关注重点、既往检查、家族病史与时间安排，结合年龄结构与生活方式进行初步健康风险梳理；提前规划体检方向与重点专项，避免重复检查与时间浪费。",
+              "en": "Pre-arrival online consultation covering health priorities, prior assessments, family history and schedule; preliminary risk review aligned with the client's lifestyle and age profile, with examination focus pre-planned to avoid redundancy."
+            }
+          },
+          {
+            "date": {
+              "zh-CN": "第 2 阶段 · 体检路径设计与医疗协调",
+              "en": "Stage 2 · Pathway Design & Medical Coordination"
+            },
+            "event": {
+              "zh-CN": "对接国内三甲医院特需医疗资源，提前协调相关专科与检查安排；围绕客户时间窗口优化整体流程：特需体检绿色通道、专科评估方向、检查时间整合、陪诊与现场流程支持。",
+              "en": "Coordinated VIP outpatient services at top-tier tertiary hospitals; pre-arranged specialist consultations and screenings, with the entire flow optimised around the client's time window — VIP fast-track, specialist direction, integrated test scheduling, and on-site escort support."
+            }
+          },
+          {
+            "date": {
+              "zh-CN": "第 3 阶段 · 高效体检与专项评估",
+              "en": "Stage 3 · Efficient Check-up & Specialist Review"
+            },
+            "event": {
+              "zh-CN": "客户在半天内完成整套个性化体检与专项筛查，并就两项亚健康问题获得进一步干预与健康管理建议；过程中持续协助医疗沟通与流程协调。",
+              "en": "The client completed the full personalised check-up and targeted screening within half a day, alongside follow-up intervention guidance for two sub-health concerns; medical communication and coordination remained continuously supported."
+            }
+          },
+          {
+            "date": {
+              "zh-CN": "第 4 阶段 · 跨境健康管理与持续支持",
+              "en": "Stage 4 · Cross-border Health Management & Ongoing Support"
+            },
+            "event": {
+              "zh-CN": "返澳后持续提供：中英双语体检报告整理、临床专家在线健康解读、后续健康管理建议沟通、中澳两地医疗资源衔接支持，依托双向医疗导航网络建立长期可持续的健康管理体系。",
+              "en": "Post-return support included bilingual report preparation, online clinical interpretation, ongoing health management consultations, and continued China-Australia care coordination — built on our bilateral medical navigation network for long-term sustainability."
+            }
+          }
+        ],
+        "image": "/images/cases/australia-customised-checkup.webp",
+        "imageAlt": {
+          "zh-CN": "高端体检中心环境",
+          "en": "Premium health check-up centre environment"
         }
       },
       {
         "type": {
-          "zh-CN": "中医康养方案",
-          "en": "TCM Wellness Programme"
+          "zh-CN": "外籍儿童来华重疾辅助",
+          "en": "Inbound Cross-border Support for Paediatric Critical Care"
         },
-        "narrative": {
-          "zh-CN": "王女士术后长期疲劳，西医检查未见异常。我们建议她尝试中西医结合康复路径，对接广慈纪念医院中医科，制定了为期两周的针灸推拿加药膳调理方案。术后三个月，精力明显恢复。",
-          "en": "Ms Wang suffered persistent post-operative fatigue with normal Western medical results. We recommended an integrative recovery pathway, coordinating with Guangci Memorial Hospital's TCM department for a two-week acupuncture, massage and medicinal diet programme. Three months later, her energy had noticeably recovered."
-        },
-        "quote": {
-          "zh-CN": "他们没有一上来就推荐最贵的方案，而是先帮我想清楚我到底需要什么。",
-          "en": "They didn't push the most expensive option — they first helped me figure out what I actually needed."
+        "location": {
+          "zh-CN": "海外 → 中国",
+          "en": "Overseas → China"
         },
         "identity": {
-          "zh-CN": "王女士 · 术后康复患者",
-          "en": "Ms Wang · Post-operative recovery patient"
+          "zh-CN": "外籍患儿家庭 · 亲体肝移植跨境支持",
+          "en": "Overseas family · Cross-border living-donor liver transplant support"
+        },
+        "narrative": {
+          "zh-CN": "一位外籍家庭的孩子因病情需要接受亲体肝移植手术。家属在综合评估后决定来华接受治疗，但在正式进入医疗流程前面临大量复杂且时间敏感的跨境手续与协调问题——跨国文件认证、亲属关系证明、医疗审批及流程衔接等多个环节叠加，家庭需要在极短时间内完成大量准备，同时兼顾工作安排与孩子病情进展。在高压与高度不确定性的医疗环境中，家庭希望获得更加专业、清晰且持续性的跨境支持。",
+          "en": "An overseas family's child required a living-donor liver transplant. After careful evaluation, the family chose to pursue treatment in China but faced a complex, time-critical cross-border process — international document certification, family-relationship verification, medical approvals, and care-pathway coordination all converging within a tight window. Under the pressure of a critical condition and significant uncertainty, the family sought professional, clear and continuous cross-border support."
+        },
+        "quote": {
+          "zh-CN": "在重大疾病面前，真正减轻压力的，不只是医疗资源本身，而是有人帮助我们把复杂流程变得清晰、有序且可执行。",
+          "en": "Facing a critical illness, what truly eases the burden is not just access to medical resources, but having someone make a complex process clear, structured, and actionable."
+        },
+        "milestones": [
+          {
+            "date": {
+              "zh-CN": "第 1 阶段 · 紧急需求响应与初步评估",
+              "en": "Stage 1 · Urgent Response & Initial Assessment"
+            },
+            "event": {
+              "zh-CN": "第一时间了解患儿病情进展、计划治疗方向及主要困难；结合时间敏感性与跨境流程复杂度，协助家庭梳理整体治疗路径、关键时间节点、所需法律及医疗材料、各阶段流程优先级。",
+              "en": "Immediate review of the child's condition, intended treatment direction and key challenges; given the time sensitivity and cross-border complexity, helped the family map out the overall pathway, critical milestones, required legal and medical documentation, and stage-by-stage priorities."
+            }
+          },
+          {
+            "date": {
+              "zh-CN": "第 2 阶段 · 跨境文件与流程协调",
+              "en": "Stage 2 · Cross-border Documentation & Process Coordination"
+            },
+            "event": {
+              "zh-CN": "协助家庭准备在华治疗相关手续：跨国公证与认证材料协调、亲属关系证明文件梳理、医疗流程资料准备支持、医院沟通与流程衔接协调。我们的角色不参与任何医疗决策，而是在合法合规框架下提供结构化流程支持与跨境协调。",
+              "en": "Supported preparation of all in-China treatment formalities — international notarisation and certification, family-relationship documentation, medical documentation support, and hospital communication and coordination. Our role did not involve clinical decision-making but provided structured process support and cross-border coordination within a fully compliant framework."
+            }
+          },
+          {
+            "date": {
+              "zh-CN": "第 3 阶段 · 来华治疗与住院支持",
+              "en": "Stage 3 · In-China Treatment & Inpatient Support"
+            },
+            "event": {
+              "zh-CN": "家庭抵达中国后，继续协助院内外流程衔接：医疗沟通协调、就诊与住院流程支持、跨语言信息协助、家属陪同阶段协调，帮助家庭在高度紧张的治疗阶段减少信息差与流程复杂度带来的额外压力。",
+              "en": "After the family's arrival in China, continued to support the in-hospital and inter-facility pathway: medical communication, admission and inpatient logistics, cross-language information support, and family accompaniment coordination — reducing the additional burden of information gaps and procedural complexity during a highly stressful phase."
+            }
+          },
+          {
+            "date": {
+              "zh-CN": "第 4 阶段 · 术后恢复与持续跟进",
+              "en": "Stage 4 · Post-operative Recovery & Continued Follow-up"
+            },
+            "event": {
+              "zh-CN": "患儿顺利在国内三甲医院完成亲体肝移植手术，进入术后恢复阶段；后续继续协助阶段性沟通与支持，帮助家庭顺利衔接后续康复与长期随访安排。",
+              "en": "The child successfully underwent living-donor liver transplantation at a top-tier tertiary hospital and entered the post-operative recovery phase; ongoing communication and stage-based coordination continued to support the family through rehabilitation and long-term follow-up arrangements."
+            }
+          }
+        ],
+        "image": "/images/cases/paediatric-cross-border.webp",
+        "imageAlt": {
+          "zh-CN": "医院儿科住院走廊",
+          "en": "Hospital paediatric inpatient corridor"
         }
       }
     ]
@@ -432,15 +516,18 @@
     "logos": [
       {
         "name": "仁济医院国际部",
-        "nameEn": "Renji Hospital International"
+        "nameEn": "Renji Hospital International",
+        "logo": "/images/partners/renji-hospital.webp"
       },
       {
         "name": "瑞金医院国际医疗平台",
-        "nameEn": "Ruijin Hospital International"
+        "nameEn": "Ruijin Hospital International",
+        "logo": "/images/partners/ruijin-hospital.webp"
       },
       {
         "name": "广慈纪念医院",
-        "nameEn": "Guangci Memorial Hospital"
+        "nameEn": "Guangci Memorial Hospital",
+        "logo": "/images/partners/guangci-memorial-hospital.webp"
       }
     ]
   },
