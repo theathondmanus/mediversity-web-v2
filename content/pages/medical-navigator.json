@@ -528,31 +528,6 @@
         "name": "广慈纪念医院",
         "nameEn": "Guangci Memorial Hospital",
         "logo": "/images/partners/guangci-memorial-hospital.webp"
-      },
-      {
-        "name": "NHS",
-        "nameEn": "NHS",
-        "logo": "/images/partners/nhs.webp"
-      },
-      {
-        "name": "剑桥大学",
-        "nameEn": "University of Cambridge",
-        "logo": "/images/partners/university-of-cambridge.webp"
-      },
-      {
-        "name": "GMC",
-        "nameEn": "General Medical Council",
-        "logo": "/images/partners/gmc.webp"
-      },
-      {
-        "name": "BMA",
-        "nameEn": "British Medical Association",
-        "logo": "/images/partners/bma.webp"
-      },
-      {
-        "name": "伦敦国王学院",
-        "nameEn": "King's College London",
-        "logo": "/images/partners/kings-college-london.webp"
       }
     ]
   },
