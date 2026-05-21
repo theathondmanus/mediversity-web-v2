@@ -343,20 +343,20 @@ export default function MedicalNavigatorPage() {
             </h2>
           </FadeIn>
 
-          <div className="flex flex-wrap items-center justify-center gap-16 md:gap-24 max-w-6xl mx-auto">
+          <div className="grid grid-cols-3 gap-6 md:gap-12 max-w-5xl mx-auto items-center">
             {content.partners.logos.map((logo, idx) => (
               <FadeIn key={idx} index={idx}>
-                <div className="group flex flex-col items-center gap-5">
-                  <div className="h-36 w-80 relative grayscale group-hover:grayscale-0 transition-all duration-300 opacity-90 group-hover:opacity-100">
+                <div className="group flex flex-col items-center gap-4">
+                  <div className="h-24 md:h-28 w-full relative grayscale group-hover:grayscale-0 transition-all duration-300 opacity-90 group-hover:opacity-100">
                     <Image
                       src={logo.logo}
                       alt={locale === "zh-CN" ? logo.name : logo.nameEn}
                       fill
                       className="object-contain"
-                      sizes="320px"
+                      sizes="(max-width: 768px) 33vw, 280px"
                     />
                   </div>
-                  <span className="text-base text-[#3C3A47] group-hover:text-[#0A1628] transition-colors text-center max-w-[300px] font-medium">
+                  <span className="text-sm md:text-base text-[#3C3A47] group-hover:text-[#0A1628] transition-colors text-center font-medium">
                     {locale === "zh-CN" ? logo.name : logo.nameEn}
                   </span>
                 </div>
