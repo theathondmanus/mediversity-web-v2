@@ -10,8 +10,8 @@ const subcategories: SubCategory[] = [
     titleKey: "medicalHumanities",
     descKey: "medicalHumanitiesDesc",
     courses: [
-      { titleKey: "medicalHumanitiesGeneralPractice", status: "active", slug: "medical-humanities-and-general-practice-literacy", cover: "/images/courses/medical-humanities-and-general-practice-literacy.webp", coverAlt: "医学人文与全科素养", descriptionKey: "medical-humanities-and-general-practice-literacy" },
-      { titleKey: "medicalHumanitiesCommunicationSkills", status: "active", slug: "medical-humanities-and-communication-skills", cover: "/images/courses/medical-humanities-and-communication-skills.webp", coverAlt: "医学人文与沟通技能", descriptionKey: "medical-humanities-and-communication-skills" },
+      { titleKey: "medicalHumanitiesGeneralPractice", status: "active", slug: "medical-humanities-and-general-practice-literacy", cover: "/images/courses/medical-humanities-and-general-practice-literacy.webp", descriptionKey: "medical-humanities-and-general-practice-literacy" },
+      { titleKey: "medicalHumanitiesCommunicationSkills", status: "active", slug: "medical-humanities-and-communication-skills", cover: "/images/courses/medical-humanities-and-communication-skills.webp", descriptionKey: "medical-humanities-and-communication-skills" },
       { titleKey: "empathyPatientCommunication", status: "future" },
       { titleKey: "narrativeMedicine", status: "future" },
     ],

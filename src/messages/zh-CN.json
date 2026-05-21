@@ -231,7 +231,13 @@
       "title": "覆盖国际化发展全部核心需求",
       "desc": "每个板块均由中英两国资深教育专家联合设计，从基础能力到高阶实践层层递进。"
     },
-    "heroEyebrow": "培训项目"
+    "heroEyebrow": "培训项目",
+    "heroDesc": "从医学英语到临床观摩，从学术研究到职业发展，系统化的培训体系助力您的国际化成长。",
+    "pillarTitle": "培养国际化医疗专业能力",
+    "bottomCtaTitle": "不确定从哪里开始？",
+    "bottomCtaDesc": "我们的课程顾问可以根据您的职业背景和发展目标，为您推荐最适合的学习路径。",
+    "bookFreeConsult": "预约免费咨询",
+    "exploreMedNav": "了解医疗导航"
   },
   "programmes": {
     "medicalEnglish": {
@@ -478,7 +484,10 @@
     "pillarBottomCtaTitle": "找到适合您的课程了吗？",
     "pillarBottomCtaDesc": "立即预约免费咨询，我们的课程顾问将根据您的背景和目标，为您定制学习方案。",
     "pillarBottomCtaBook": "预约咨询",
-    "pillarBottomCtaBack": "返回全部项目"
+    "pillarBottomCtaBack": "返回全部项目",
+    "swipeToSeeMore": "← 滑动查看更多 →",
+    "comingSoon": "即将上线",
+    "serviceTimeline": "服务时间线"
   },
   "footer": {
     "ctaTitle": "准备好开始了吗？",
@@ -512,5 +521,14 @@
     "medical-writing-publication-bootcamp": "12 小时集中训练 SCI 论文写作与国际发表技巧，从选题到投稿全流程覆盖",
     "medical-humanities-and-general-practice-literacy": "10 节课系统培养医学人文素养与全科执业能力，融合伦理思辨与临床实践",
     "medical-humanities-and-communication-skills": "6 节课提升医患沟通能力与人文关怀实践，培养共情与叙事医学思维"
+  },
+  "mednav": {
+    "openingSoonBadge": "即将开通"
+  },
+  "courseCovers": {
+    "medical-humanities-and-general-practice-literacy": "医学人文与全科素养",
+    "medical-humanities-and-communication-skills": "医学人文与沟通技能",
+    "medical-research-essentials": "医学研究基础",
+    "medical-writing-publication-bootcamp": "医学写作与发表集训营"
   }
 }

@@ -231,7 +231,13 @@
       "title": "Covering All Core Needs for International Development",
       "desc": "Each pillar is jointly designed by senior education experts from China and the UK, progressing from foundational skills to advanced practice."
     },
-    "heroEyebrow": "PROGRAMMES"
+    "heroEyebrow": "PROGRAMMES",
+    "heroDesc": "From medical English to clinical observership, from academic research to career development — a systematic training framework to support your international growth.",
+    "pillarTitle": "Building Global Medical Competence",
+    "bottomCtaTitle": "Not sure where to start?",
+    "bottomCtaDesc": "Our programme advisors can recommend the right learning pathway based on your professional background and development goals.",
+    "bookFreeConsult": "Book a Free Consultation",
+    "exploreMedNav": "Explore Medical Navigation"
   },
   "programmes": {
     "medicalEnglish": {
@@ -471,14 +477,17 @@
     "futureCourses": "planned courses",
     "futureProgrammes": "Future Programmes",
     "viewDetails": "View details",
-    "testimonials": "Student Testimonials",
+    "testimonials": "Testimonials",
     "tableModule": "Module",
     "tableContent": "Content",
     "futureProgrammesNote": "The following programmes are in development. If you are interested in a specific course, please contact us for the latest updates.",
     "pillarBottomCtaTitle": "Found the right programme for you?",
     "pillarBottomCtaDesc": "Book a free consultation and our programme advisors will design a tailored learning plan based on your background and goals.",
     "pillarBottomCtaBook": "Book a Consultation",
-    "pillarBottomCtaBack": "Back to all Programmes"
+    "pillarBottomCtaBack": "Back to all Programmes",
+    "swipeToSeeMore": "← Swipe for more →",
+    "comingSoon": "Coming Soon",
+    "serviceTimeline": "Service Timeline"
   },
   "footer": {
     "ctaTitle": "Ready to Get Started?",
@@ -512,5 +521,14 @@
     "medical-writing-publication-bootcamp": "A 12-hour intensive on SCI paper writing and international publication skills — covering the full pipeline from topic selection to submission",
     "medical-humanities-and-general-practice-literacy": "10 sessions developing medical humanities literacy and general practice competence, integrating ethical reasoning with clinical practice",
     "medical-humanities-and-communication-skills": "6 sessions building patient-doctor communication and humanistic care practice, fostering empathy and narrative medicine thinking"
+  },
+  "mednav": {
+    "openingSoonBadge": "Coming soon"
+  },
+  "courseCovers": {
+    "medical-humanities-and-general-practice-literacy": "Medical Humanities and General Practice Literacy",
+    "medical-humanities-and-communication-skills": "Medical Humanities and Communication Skills",
+    "medical-research-essentials": "Medical Research Essentials",
+    "medical-writing-publication-bootcamp": "Medical Writing and Publication Bootcamp"
   }
 }
