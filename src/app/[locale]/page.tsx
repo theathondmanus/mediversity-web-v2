@@ -328,14 +328,28 @@ export default function HomePage() {
       {/* ═══ TESTIMONIALS ═══ */}
       <TestimonialsCarousel />
 
-      {/* ═══ TRUST BAR — with subtle background texture ═══ */}
+      {/* ═══ TRUST BAR — real partner logos ═══ */}
       <section className="relative py-12 border-t border-[#E3E5EC] overflow-hidden">
         <DotPattern opacity={0.02} />
         <div className="container relative z-10">
           <p className="text-center text-sm text-[#8A889A] mb-8">{t("trust.title")}</p>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14 opacity-60">
-            {[t("trust.orgs.0"), t("trust.orgs.1"), t("trust.orgs.2"), t("trust.orgs.3"), t("trust.orgs.4")].map((name) => (
-              <span key={name} className="text-sm font-medium text-[#3C3A47] tracking-wide">{name}</span>
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+            {[
+              { src: "/images/partners/nhs.webp", alt: "NHS" },
+              { src: "/images/partners/university-of-cambridge.webp", alt: "University of Cambridge" },
+              { src: "/images/partners/gmc.webp", alt: "GMC" },
+              { src: "/images/partners/bma.webp", alt: "BMA" },
+              { src: "/images/partners/kings-college-london.webp", alt: "King's College London" },
+            ].map((logo) => (
+              <div key={logo.alt} className="group relative h-10 w-24 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  fill
+                  className="object-contain"
+                  sizes="96px"
+                />
+              </div>
             ))}
           </div>
         </div>
