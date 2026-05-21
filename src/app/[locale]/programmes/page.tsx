@@ -96,7 +96,7 @@ export default function ProgrammesHubPage() {
             {t("subtitle")}
           </h1>
           <p className="text-white/70 text-lg md:text-xl leading-relaxed max-w-2xl">
-            从医学英语到临床观摩，从学术研究到职业发展，系统化的培训体系助力您的国际化成长。
+            {t("heroDesc")}
           </p>
         </motion.div>
       </HeroSection>
@@ -165,7 +165,7 @@ export default function ProgrammesHubPage() {
                 <div className="inline-flex items-center gap-3 bg-[#00438A]/5 border border-[#00438A]/15 rounded-full px-6 py-3">
                   <ArrowRight className="w-5 h-5 text-[#C4922A]" />
                   <span className="text-sm font-semibold text-[#00438A]">
-                    {locale === "zh-CN" ? "培养国际化医疗专业能力" : "Building Global Medical Competence"}
+                    {t("pillarTitle")}
                   </span>
                 </div>
               </motion.div>
@@ -211,7 +211,7 @@ export default function ProgrammesHubPage() {
                 </div>
                 <div className="ml-4 inline-flex items-center gap-2 bg-[#00438A]/5 border border-[#00438A]/15 rounded-full px-5 py-2.5">
                   <span className="text-sm font-semibold text-[#00438A]">
-                    {locale === "zh-CN" ? "培养国际化医疗专业能力" : "Building Global Medical Competence"}
+                    {t("pillarTitle")}
                   </span>
                 </div>
               </motion.div>
@@ -341,23 +341,23 @@ export default function ProgrammesHubPage() {
         <div className="container relative z-10">
           <motion.div {...fadeInUp} className="text-center max-w-2xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-[#0A1628] mb-4">
-              不确定从哪里开始？
+              {t("bottomCtaTitle")}
             </h2>
             <p className="text-[#3C3A47] leading-relaxed mb-8">
-              我们的课程顾问可以根据您的职业背景和发展目标，为您推荐最适合的学习路径。
+              {t("bottomCtaDesc")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#00438A] text-white rounded-lg font-medium hover:bg-[#003066] transition-colors no-underline"
               >
-                预约免费咨询
+                {t("bookFreeConsult")}
               </Link>
               <Link
                 href="/medical-navigator"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border-2 border-[#00438A] text-[#00438A] rounded-lg font-medium hover:bg-[#00438A]/5 transition-colors no-underline"
               >
-                了解医疗导航
+                {t("exploreMedNav")}
               </Link>
             </div>
           </motion.div>

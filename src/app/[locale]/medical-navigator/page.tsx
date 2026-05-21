@@ -1,7 +1,7 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import {
   ArrowRight,
@@ -68,6 +68,7 @@ const TOC_ITEMS = [
 
 export default function MedicalNavigatorPage() {
   const locale = useLocale() as Locale;
+  const tCommon = useTranslations("mednav");
   const [activeSection, setActiveSection] = useState("directions");
 
   useEffect(() => {
@@ -417,7 +418,7 @@ export default function MedicalNavigatorPage() {
                   <div>
                     <p className="text-xs text-[#8A889A]">WhatsApp</p>
                     <p className="text-sm text-[#8A889A] italic">
-                      {locale === "zh-CN" ? "即将开通" : "Coming soon"}
+                      {tCommon("openingSoonBadge")}
                     </p>
                     {/* TODO: Add WhatsApp number when provided by owner */}
                   </div>

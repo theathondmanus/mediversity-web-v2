@@ -242,7 +242,7 @@ export default function PillarLandingPage({
                               ) : (
                                 <span className="inline-flex items-center gap-1.5 text-xs text-[#8A889A]">
                                   <Clock className="w-3 h-3" />
-                                  即将上线
+                                  {tCommon("comingSoon")}
                                 </span>
                               )}
                             </div>

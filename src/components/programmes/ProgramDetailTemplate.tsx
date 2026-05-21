@@ -214,6 +214,7 @@ function ValuePropsList({ section, isAlt }: { section: ValuePropsSection; isAlt?
 
 /* ── Value Props: TIMELINE (horizontal step flow, brand colors only) ── */
 function ValuePropsTimeline({ section, isAlt }: { section: ValuePropsSection; isAlt?: boolean }) {
+  const t = useTranslations("common");
   return (
     <section
       className="section-padding overflow-hidden"
@@ -287,7 +288,7 @@ function ValuePropsTimeline({ section, isAlt }: { section: ValuePropsSection; is
                 </div>
               </div>
               <p className="text-xs text-center mt-2" style={{ color: "var(--text-muted)" }}>
-                ← 滑动查看更多 →
+                {t("swipeToSeeMore")}
               </p>
             </>
           )}
@@ -632,7 +633,7 @@ export default function ProgramDetailTemplate({ data }: ProgramDetailTemplatePro
           <div className="container max-w-6xl">
             <FadeIn>
               <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: "var(--ink)" }}>
-                {t("testimonials") || "学员评价"}
+                {t("testimonials")}
               </h2>
             </FadeIn>
             <div className="px-4 md:px-12">

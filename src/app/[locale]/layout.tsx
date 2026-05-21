@@ -10,7 +10,7 @@ import Footer from "@/components/layout/Footer";
 export const metadata: Metadata = {
   title: "Mediversity Global",
   description:
-    "国际医学教育与医疗服务 — Bridging UK-China Medical Education",
+    "International Medical Education and Healthcare Services — Bridging UK-China Medical Education",
 };
 
 type Props = {
