@@ -91,7 +91,7 @@ export default function ProgrammesHubPage() {
         imageAlt="Grand medical university library with anatomical models and modern technology"
       >
         <motion.div {...fadeInUp} className="max-w-3xl">
-          <p className="eyebrow !text-[#C4922A] mb-4">{t("title")}</p>
+          <p className="eyebrow !text-[#C4922A] mb-4">{t("heroEyebrow")}</p>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             {t("subtitle")}
           </h1>
@@ -242,12 +242,12 @@ export default function ProgrammesHubPage() {
         <div className="container relative z-10">
           {/* Section header */}
           <motion.div {...fadeInUp} className="text-center mb-14 max-w-2xl mx-auto">
-            <p className="eyebrow">四大培训板块</p>
+            <p className="eyebrow">{t("pillarsSection.eyebrow")}</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0A1628] mb-4">
-              覆盖国际化发展全部核心需求
+              {t("pillarsSection.title")}
             </h2>
             <p className="text-[#3C3A47] leading-relaxed">
-              每个板块均由中英两国资深教育专家联合设计，从基础能力到高阶实践层层递进。
+              {t("pillarsSection.desc")}
             </p>
           </motion.div>
 
