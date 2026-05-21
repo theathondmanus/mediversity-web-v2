@@ -333,21 +333,25 @@ export default function HomePage() {
         <DotPattern opacity={0.02} />
         <div className="container relative z-10">
           <p className="text-center text-sm text-[#8A889A] mb-8">{t("trust.title")}</p>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+          <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
             {[
-              { src: "/images/partners/nhs.webp", alt: "NHS" },
-              { src: "/images/partners/university-of-cambridge.webp", alt: "University of Cambridge" },
-              { src: "/images/partners/gmc.webp", alt: "GMC" },
-              { src: "/images/partners/bma.webp", alt: "BMA" },
-              { src: "/images/partners/kings-college-london.webp", alt: "King's College London" },
+              { src: "/images/partners/nhs.webp", alt: "NHS", w: 96 },
+              { src: "/images/partners/university-of-cambridge.webp", alt: "University of Cambridge", w: 64 },
+              { src: "/images/partners/gmc.webp", alt: "GMC", w: 96 },
+              { src: "/images/partners/bma.webp", alt: "BMA", w: 96 },
+              { src: "/images/partners/kings-college-london.webp", alt: "King's College London", w: 80 },
             ].map((logo) => (
-              <div key={logo.alt} className="group relative h-10 w-24 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
+              <div
+                key={logo.alt}
+                className="group relative h-16 flex items-center justify-center grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
+                style={{ width: logo.w }}
+              >
                 <Image
                   src={logo.src}
                   alt={logo.alt}
                   fill
                   className="object-contain"
-                  sizes="96px"
+                  sizes={`${logo.w}px`}
                 />
               </div>
             ))}
