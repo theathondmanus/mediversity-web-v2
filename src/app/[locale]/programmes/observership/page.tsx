@@ -3,6 +3,8 @@
 import { Stethoscope, Clock, Users, ArrowLeft, Globe2, Briefcase, BookOpen, GraduationCap, Microscope, Check } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import { useState } from "react";
 import { Link } from "@/i18n/navigation";
 import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn } from "@/components/ui/fade-in";
@@ -24,18 +26,44 @@ type ProjectKey =
 const PROJECTS: Array<{
   key: ProjectKey;
   icon: typeof Stethoscope;
+  cover: string;
   durationKey: string;
   audienceCount: number;
   contentCount: number;
   advantagesCount: number;
   servicesCount: number;
 }> = [
-  { key: "internationalClinicalObservership", icon: Stethoscope, durationKey: "duration1", audienceCount: 3, contentCount: 5, advantagesCount: 5, servicesCount: 5 },
-  { key: "seniorVisitingScholar",             icon: Microscope,  durationKey: "duration2", audienceCount: 4, contentCount: 5, advantagesCount: 5, servicesCount: 5 },
-  { key: "shortTermOverseasStudy",            icon: Globe2,      durationKey: "duration3", audienceCount: 4, contentCount: 6, advantagesCount: 5, servicesCount: 5 },
-  { key: "nursingDegreeProgression",          icon: GraduationCap,durationKey: "duration4", audienceCount: 4, contentCount: 4, advantagesCount: 5, servicesCount: 5 },
-  { key: "internationalMedicalDoctorate",     icon: BookOpen,    durationKey: "duration5", audienceCount: 4, contentCount: 5, advantagesCount: 5, servicesCount: 5 },
+  { key: "internationalClinicalObservership", icon: Stethoscope, cover: "/images/courses/international-clinical-observership.webp", durationKey: "duration1", audienceCount: 3, contentCount: 5, advantagesCount: 5, servicesCount: 5 },
+  { key: "seniorVisitingScholar",             icon: Microscope,  cover: "/images/courses/senior-visiting-scholar.webp",            durationKey: "duration2", audienceCount: 4, contentCount: 5, advantagesCount: 5, servicesCount: 5 },
+  { key: "shortTermOverseasStudy",            icon: Globe2,      cover: "/images/courses/short-term-overseas-study.webp",          durationKey: "duration3", audienceCount: 4, contentCount: 6, advantagesCount: 5, servicesCount: 5 },
+  { key: "nursingDegreeProgression",          icon: GraduationCap,cover:"/images/courses/nursing-degree-progression.webp",         durationKey: "duration4", audienceCount: 4, contentCount: 4, advantagesCount: 5, servicesCount: 5 },
+  { key: "internationalMedicalDoctorate",     icon: BookOpen,    cover: "/images/courses/international-medical-doctorate.webp",    durationKey: "duration5", audienceCount: 4, contentCount: 5, advantagesCount: 5, servicesCount: 5 },
 ];
+
+/* Thumbnail with graceful fallback: shows gradient + icon when image is missing */
+function ProjectThumb({ src, alt, Icon, num }: { src: string; alt: string; Icon: typeof Stethoscope; num: string }) {
+  const [errored, setErrored] = useState(false);
+  if (errored) {
+    return (
+      <div className="relative h-32 md:h-40 w-full md:w-64 shrink-0 rounded-xl overflow-hidden bg-gradient-to-br from-[#00438A] via-[#3550A0] to-[#C4922A] flex items-center justify-center">
+        <Icon className="w-12 h-12 text-white/40" />
+        <span className="absolute top-2 right-3 text-2xl font-bold text-white/30 leading-none">{num}</span>
+      </div>
+    );
+  }
+  return (
+    <div className="relative h-32 md:h-40 w-full md:w-64 shrink-0 rounded-xl overflow-hidden bg-[#0A1628]">
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, 256px"
+        onError={() => setErrored(true)}
+      />
+    </div>
+  );
+}
 
 export default function ObservershipPage() {
   const t = useTranslations("programmes.observership");
@@ -128,22 +156,30 @@ export default function ObservershipPage() {
                     </div>
 
                     <div className="p-6 md:p-8">
-                      {/* Meta row: duration + audience */}
-                      <div className="grid sm:grid-cols-2 gap-4 mb-6">
-                        <div className="flex items-start gap-3 text-sm">
-                          <Clock className="w-4 h-4 text-[#C4922A] mt-0.5 shrink-0" />
-                          <div>
-                            <p className="text-[#8A889A] text-xs uppercase tracking-wide mb-0.5">{t("projects.label.duration")}</p>
-                            <p className="text-[#0A1628] font-medium">{t(`projects.items.${p.key}.duration`)}</p>
+                      {/* Thumbnail + meta row */}
+                      <div className="flex flex-col md:flex-row gap-5 md:gap-6 mb-6">
+                        <ProjectThumb
+                          src={p.cover}
+                          alt={t(`projects.items.${p.key}.title`)}
+                          Icon={ProjectIcon}
+                          num={num}
+                        />
+                        <div className="flex-1 grid sm:grid-cols-2 gap-4 content-start">
+                          <div className="flex items-start gap-3 text-sm">
+                            <Clock className="w-4 h-4 text-[#C4922A] mt-0.5 shrink-0" />
+                            <div>
+                              <p className="text-[#8A889A] text-xs uppercase tracking-wide mb-0.5">{t("projects.label.duration")}</p>
+                              <p className="text-[#0A1628] font-medium">{t(`projects.items.${p.key}.duration`)}</p>
+                            </div>
                           </div>
-                        </div>
-                        <div className="flex items-start gap-3 text-sm">
-                          <Users className="w-4 h-4 text-[#C4922A] mt-0.5 shrink-0" />
-                          <div>
-                            <p className="text-[#8A889A] text-xs uppercase tracking-wide mb-0.5">{t("projects.label.audience")}</p>
-                            <p className="text-[#0A1628] font-medium">
-                              {Array.from({ length: p.audienceCount }, (_, i) => t(`projects.items.${p.key}.audience.${i}`)).join(" · ")}
-                            </p>
+                          <div className="flex items-start gap-3 text-sm">
+                            <Users className="w-4 h-4 text-[#C4922A] mt-0.5 shrink-0" />
+                            <div>
+                              <p className="text-[#8A889A] text-xs uppercase tracking-wide mb-0.5">{t("projects.label.audience")}</p>
+                              <p className="text-[#0A1628] font-medium">
+                                {Array.from({ length: p.audienceCount }, (_, i) => t(`projects.items.${p.key}.audience.${i}`)).join(" · ")}
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
