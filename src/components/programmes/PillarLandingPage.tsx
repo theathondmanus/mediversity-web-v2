@@ -315,23 +315,23 @@ export default function PillarLandingPage({
         <div className="container relative z-10">
           <motion.div {...fadeInUp} className="text-center max-w-2xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              找到适合您的课程了吗？
+              {tCommon("pillarBottomCtaTitle")}
             </h2>
             <p className="text-white/60 leading-relaxed mb-8">
-              立即预约免费咨询，我们的课程顾问将根据您的背景和目标，为您定制学习方案。
+              {tCommon("pillarBottomCtaDesc")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#C4922A] text-white rounded-lg font-medium hover:bg-[#A87822] transition-colors no-underline"
               >
-                预约咨询
+                {tCommon("pillarBottomCtaBook")}
               </Link>
               <Link
                 href="/programmes"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-white/20 text-white rounded-lg font-medium hover:bg-white/5 transition-colors no-underline"
               >
-                返回全部项目
+                {tCommon("pillarBottomCtaBack")}
               </Link>
             </div>
           </motion.div>

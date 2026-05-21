@@ -474,7 +474,11 @@
     "testimonials": "学员评价",
     "tableModule": "模块",
     "tableContent": "内容",
-    "futureProgrammesNote": "以下课程正在开发中，敬请期待。如您对特定课程感兴趣，欢迎联系我们了解最新进展。"
+    "futureProgrammesNote": "以下课程正在开发中，敬请期待。如您对特定课程感兴趣，欢迎联系我们了解最新进展。",
+    "pillarBottomCtaTitle": "找到适合您的课程了吗？",
+    "pillarBottomCtaDesc": "立即预约免费咨询，我们的课程顾问将根据您的背景和目标，为您定制学习方案。",
+    "pillarBottomCtaBook": "预约咨询",
+    "pillarBottomCtaBack": "返回全部项目"
   },
   "footer": {
     "ctaTitle": "准备好开始了吗？",
