@@ -311,31 +311,19 @@
     },
     "observership": {
       "title": "临床观摩与国际交流",
-      "description": "英国顶级医院临床观摩、访问学者与学术交流项目，提供全球临床视野与国际合作机会。",
+      "description": "以全球顶尖医疗资源为纽带，助力医护人才国际化成长。我们围绕\"国际临床能力提升、科研交流与职业发展\"三大核心方向，打造覆盖临床观摩、科研进修、国际研修、学历提升及博士培养的全链路国际交流体系。",
       "subcategories": {
-        "clinical-observer": {
-          "title": "临床观摩项目",
-          "desc": "短期与专科临床观摩"
-        },
-        "advanced-clinical": {
-          "title": "高级临床实践",
-          "desc": "深度临床跟随与科室沉浸"
-        },
-        "visiting-scholar": {
-          "title": "访问学者通道",
-          "desc": "学术访问与国际交流"
+        "all": {
+          "title": "核心项目",
+          "desc": "临床观摩、访问学者、短期研修、护理学历提升与国际医学博士"
         }
       },
       "courses": {
-        "shortTermObservership": "短期临床观摩",
-        "specialtyBasedObservership": "专科观摩",
-        "hospitalAttachment": "医院挂职",
-        "advancedClinicalObserver": "高级临床观摩",
-        "consultantShadowing": "顾问医师跟随",
-        "departmentImmersion": "科室沉浸",
-        "visitingScholarProgramme": "访问学者项目",
-        "researchAttachment": "科研挂职",
-        "internationalAcademicExchange": "国际学术交流"
+        "internationalClinicalObservership": "国际临床观摩项目",
+        "seniorVisitingScholar": "高级访问学者项目",
+        "shortTermOverseasStudy": "短期赴外研修项目",
+        "nursingDegreeProgression": "护理学历提升项目",
+        "internationalMedicalDoctorate": "国际医学博士项目"
       }
     },
     "humanities": {
@@ -520,7 +508,12 @@
     "medical-research-essentials": "6 周系统学习医学研究方法与循证医学，培养临床研究思维与文献分析能力",
     "medical-writing-publication-bootcamp": "12 小时集中训练 SCI 论文写作与国际发表技巧，从选题到投稿全流程覆盖",
     "medical-humanities-and-general-practice-literacy": "10 节课系统培养医学人文素养与全科执业能力，融合伦理思辨与临床实践",
-    "medical-humanities-and-communication-skills": "6 节课提升医患沟通能力与人文关怀实践，培养共情与叙事医学思维"
+    "medical-humanities-and-communication-skills": "6 节课提升医患沟通能力与人文关怀实践，培养共情与叙事医学思维",
+    "international-clinical-observership": "12 周沉浸式海外临床观摩，覆盖美、英、日、新等顶级医疗机构",
+    "senior-visiting-scholar": "6-12 个月海外科研进修，参与导师课题与论文合作",
+    "short-term-overseas-study": "5-10 天短期国际研修，国际顶级医院实地参访 + 海外专家专题授课",
+    "nursing-degree-progression": "国际护理本科与硕士课程，海外院校联合培养，教育部学历认证",
+    "international-medical-doctorate": "3-4 年国际医学博士培养，对接欧洲顶尖医学院"
   },
   "mednav": {
     "openingSoonBadge": "即将开通"
