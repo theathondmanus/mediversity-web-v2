@@ -474,7 +474,11 @@
     "testimonials": "Student Testimonials",
     "tableModule": "Module",
     "tableContent": "Content",
-    "futureProgrammesNote": "The following programmes are in development. If you are interested in a specific course, please contact us for the latest updates."
+    "futureProgrammesNote": "The following programmes are in development. If you are interested in a specific course, please contact us for the latest updates.",
+    "pillarBottomCtaTitle": "Found the right programme for you?",
+    "pillarBottomCtaDesc": "Book a free consultation and our programme advisors will design a tailored learning plan based on your background and goals.",
+    "pillarBottomCtaBook": "Book a Consultation",
+    "pillarBottomCtaBack": "Back to all Programmes"
   },
   "footer": {
     "ctaTitle": "Ready to Get Started?",
