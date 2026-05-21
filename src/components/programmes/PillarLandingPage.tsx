@@ -292,7 +292,7 @@ export default function PillarLandingPage({
                   {tCommon("futureProgrammes")}
                 </h3>
                 <p className="text-[#3C3A47] text-sm mb-6 max-w-xl">
-                  以下课程正在开发中，敬请期待。如您对特定课程感兴趣，欢迎联系我们了解最新进展。
+                  {tCommon("futureProgrammesNote")}
                 </p>
                 <div className="flex flex-wrap gap-2.5">
                   {futureCourses.map((course) => (
