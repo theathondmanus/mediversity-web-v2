@@ -26,7 +26,7 @@ const data: ProgrammeData = {
     {
       type: "intro",
       title: "Course Overview",
-      body: "本课程旨在为医学生和医疗从业者提供医学人文知识、全科医学思维及实用沟通技能。通过真实案例 研讨、高仿真情景模拟及跨学科协作训练，学员将系统掌握以患者为中心的诊疗思维模式，提升伦理 敏感度与沟通效能。课程聚焦全球医疗体系中的全科医学角色，结合国际前沿经验与中国基层医疗实 际需求，培养学员在复杂医疗场景下的临床推理能力、跨学科协作意识及职业韧性，助力其成为兼具 技术精湛与人文温度的复合型医疗人才。",
+      body: "This programme builds the medical humanities knowledge, general-practice clinical thinking and practical communication skills needed by medical students and healthcare professionals. Through real-world case discussions, high-fidelity scenario simulations and interdisciplinary collaborative training, participants develop a patient-centred approach to care, alongside greater ethical awareness and communication effectiveness. With a focus on the role of general practice within global healthcare systems, the programme integrates leading international experience with the realities of frontline care in China — building clinical reasoning, interdisciplinary collaboration and professional resilience for complex healthcare settings, supporting learners to become well-rounded clinicians combining technical excellence with humanistic care.",
     },
     {
       type: "value-props",
@@ -34,27 +34,27 @@ const data: ProgrammeData = {
       display: "list",
       items: [
         {
-          title: "通过医学人文核心理念培养人文关怀",
+          title: "Build humanistic care through the core principles of medical humanities",
           description: "",
         },
         {
-          title: "在临床决策中应用医学伦理",
+          title: "Apply medical ethics to clinical decision-making",
           description: "",
         },
         {
-          title: "提升医患沟通以增强信任与服务质量",
+          title: "Strengthen patient-doctor communication to build trust and improve quality of care",
           description: "",
         },
         {
-          title: "理解全科医学在医疗体系中的原则与作用",
+          title: "Understand the principles and role of general practice within healthcare systems",
           description: "",
         },
         {
-          title: "培养跨学科临床思维",
+          title: "Develop interdisciplinary clinical thinking",
           description: "",
         },
         {
-          title: "通过案例与实践强化临床推理与应变能力",
+          title: "Strengthen clinical reasoning and adaptability through cases and applied practice",
           description: "",
         },
       ],
@@ -65,23 +65,23 @@ const data: ProgrammeData = {
       display: "timeline",
       items: [
         {
-          title: "案例分析",
+          title: "Case analysis",
           description: "",
         },
         {
-          title: "情景模拟",
+          title: "Scenario simulation",
           description: "",
         },
         {
-          title: "跨学科阅读",
+          title: "Interdisciplinary reading",
           description: "",
         },
         {
-          title: "实践练习",
+          title: "Applied practice",
           description: "",
         },
         {
-          title: "小组讨论",
+          title: "Group discussion",
           description: "",
         },
       ],
@@ -92,44 +92,44 @@ const data: ProgrammeData = {
       display: "table",
       items: [
         {
-          title: "1. 医学人文导论：医学不仅是科学，更是人文",
-          description: "1. 医学人文导论：医学不仅是科学，更是人文",
+          title: "1. Introduction to medical humanities: medicine as both science and humanity",
+          description: "1. Introduction to medical humanities: medicine as both science and humanity",
         },
         {
-          title: "2. 医学伦理与临床决策：伦理挑战与价值判断",
-          description: "2. 医学伦理与临床决策：伦理挑战与价值判断",
+          title: "2. Medical ethics and clinical decision-making: ethical challenges and value judgement",
+          description: "2. Medical ethics and clinical decision-making: ethical challenges and value judgement",
         },
         {
-          title: "3. 医患沟通与同理心训练：建立信任与提升患者体验",
-          description: "3. 医患沟通与同理心训练：建立信任与提升患者体验",
+          title: "3. Patient-doctor communication and empathy: building trust and improving patient experience",
+          description: "3. Patient-doctor communication and empathy: building trust and improving patient experience",
         },
         {
-          title: "4. 全科医学的基础与全球视角：全科医生的核心能力",
-          description: "4. 全科医学的基础与全球视角：全科医生的核心能力",
+          title: "4. The foundations and global perspective of general practice: the core competencies of GPs",
+          description: "4. The foundations and global perspective of general practice: the core competencies of GPs",
         },
         {
-          title: "5. 跨学科视角下的医学：文学、哲学、历史与医学",
-          description: "5. 跨学科视角下的医学：文学、哲学、历史与医学",
+          title: "5. Medicine through interdisciplinary lenses: literature, philosophy, history and medicine",
+          description: "5. Medicine through interdisciplinary lenses: literature, philosophy, history and medicine",
         },
         {
-          title: "6. 医疗从业者的心理韧性：如何应对压力与职业倦怠？",
-          description: "6. 医疗从业者的心理韧性：如何应对压力与职业倦怠？",
+          title: "6. Psychological resilience for healthcare professionals: managing stress and burnout",
+          description: "6. Psychological resilience for healthcare professionals: managing stress and burnout",
         },
         {
-          title: "7. 全科医学临床实践：初步诊断与综合评估",
-          description: "7. 全科医学临床实践：初步诊断与综合评估",
+          title: "7. Clinical practice in general medicine: initial diagnosis and comprehensive assessment",
+          description: "7. Clinical practice in general medicine: initial diagnosis and comprehensive assessment",
         },
         {
-          title: "8. 特殊人群的医疗照护：提供个体化服务",
-          description: "8. 特殊人群的医疗照护：提供个体化服务",
+          title: "8. Care for special populations: delivering individualised services",
+          description: "8. Care for special populations: delivering individualised services",
         },
         {
-          title: "9. 全科医学见习：亲身体验基层医疗",
-          description: "9. 全科医学见习：亲身体验基层医疗",
+          title: "9. General practice observership: first-hand experience of primary care",
+          description: "9. General practice observership: first-hand experience of primary care",
         },
         {
-          title: "10. 总结与实践应用：案例研究与职业发展规划",
-          description: "10. 总结与实践应用：案例研究与职业发展规划",
+          title: "10. Synthesis and applied practice: case studies and career development planning",
+          description: "10. Synthesis and applied practice: case studies and career development planning",
         },
       ],
     },

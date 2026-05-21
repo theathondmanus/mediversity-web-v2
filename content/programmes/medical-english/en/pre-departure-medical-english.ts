@@ -26,7 +26,7 @@ const data: ProgrammeData = {
     {
       type: "intro",
       title: "Course Overview",
-      body: "课程旨在帮助学员掌握在国际医疗环境中所需的沟通技巧和文化敏感度，提升他们在不同医疗场景中 的自信表现。通过实际操作与理论结合，学员将学会在多文化背景下高效地与患者、同事及其他医疗 团队成员进行交流。",
+      body: "This programme equips learners with the communication skills and cultural sensitivity needed to perform confidently in international healthcare settings. Combining practice with theory, learners build the ability to interact effectively with patients, colleagues and other members of the clinical team across diverse cultural contexts.",
     },
     {
       type: "value-props",
@@ -34,16 +34,16 @@ const data: ProgrammeData = {
       display: "list",
       items: [
         {
-          title: "真实情境模拟",
-          description: "本课程将实际医疗场景引入课堂，确保学员可以身临其境地体验跨文化沟通的挑战和解决方案",
+          title: "Real-world clinical simulation",
+          description: "Brings authentic medical scenarios into the classroom so learners experience the challenges — and solutions — of cross-cultural communication first-hand",
         },
         {
-          title: "以患者为中心的沟通框架",
-          description: "学员将学习并应用剑桥-卡尔加里指南，优化对患者咨询服务，确保信息清晰传达并展现同理心",
+          title: "Patient-centred communication framework",
+          description: "Learners apply the Cambridge-Calgary Guide to structure patient consultations, ensuring clear information delivery with empathy",
         },
         {
-          title: "多元化学习体验",
-          description: "课程结合互动讨论、实践操作和自学任务，提供全方位的学习路径",
+          title: "A multi-modal learning experience",
+          description: "Interactive discussion, hands-on practice and independent study combine to deliver a well-rounded learning pathway",
         },
       ],
     },
@@ -53,44 +53,44 @@ const data: ProgrammeData = {
       display: "grid",
       items: [
         {
-          title: "教学策略可根据您的需求量身定制",
+          title: "Teaching strategies tailored to your needs",
           description: "",
         },
         {
-          title: "融合全球公认标准",
+          title: "Built on internationally recognised standards",
           description: "",
         },
         {
-          title: "互动学习与实时指导",
+          title: "Interactive learning with real-time guidance",
           description: "",
         },
         {
-          title: "实用且有效的沟通技能",
+          title: "Practical and effective communication skills",
           description: "",
         },
         {
-          title: "专注于职业发展",
+          title: "Focus on professional development",
           description: "",
         },
         {
-          title: "专业师资力量",
-          description: "由经验丰富的英语外教团队授课，确保学员获得高质量、针对性的语言指导",
+          title: "Experienced specialist teaching team",
+          description: "Delivered by an experienced team of international English tutors, ensuring high-quality, targeted language instruction",
         },
         {
-          title: "互动讨论与角色扮演",
-          description: "通过小组互动和模拟实际场景，学员将体验不同角色，并在模拟中提高沟通技巧",
+          title: "Interactive discussion and role-play",
+          description: "Through small-group activities and scenario-based simulations, learners take on different clinical roles and develop their communication skills",
         },
         {
-          title: "文化敏感度训练",
-          description: "专门设计的课程内容帮助学员理解和应对不同文化背景下的患者需求和行为反应",
+          title: "Cultural sensitivity training",
+          description: "Course content is purpose-built to help learners understand and respond to patient needs and behaviours across different cultural backgrounds",
         },
         {
-          title: "个性化反馈与指导",
-          description: "学员将在每个关键阶段获得专属的个性化反馈和建议，以不断提升其语言和沟通技巧",
+          title: "Personalised feedback and guidance",
+          description: "Learners receive individual feedback and recommendations at every key stage to continually strengthen their language and communication skills",
         },
         {
-          title: "在线资源支持",
-          description: "学员可随时访问丰富的在线学习资源，包括视频教程、医学案例和词汇练习，灵活安排学习进度",
+          title: "Online learning resources",
+          description: "Learners have on-demand access to a rich library of online materials — including video tutorials, clinical case studies and vocabulary practice — to support flexible learning",
         },
       ],
     },
@@ -100,52 +100,52 @@ const data: ProgrammeData = {
       display: "table",
       items: [
         {
-          title: "1. 在不同医疗场景下自我介绍",
-          description: "1. 在不同医疗场景下自我介绍",
+          title: "1. Introducing yourself across different clinical settings",
+          description: "1. Introducing yourself across different clinical settings",
         },
         {
-          title: "2. 医患关系建立",
-          description: "2. 医患关系建立",
+          title: "2. Building the doctor-patient relationship",
+          description: "2. Building the doctor-patient relationship",
         },
         {
-          title: "3. 理解患者的观点",
-          description: "3. 理解患者的观点",
+          title: "3. Understanding the patient's perspective",
+          description: "3. Understanding the patient's perspective",
         },
         {
-          title: "4. 提供沟通结构",
-          description: "4. 提供沟通结构",
+          title: "4. Structuring the consultation",
+          description: "4. Structuring the consultation",
         },
         {
-          title: "5. 信息传递",
-          description: "5. 信息传递",
+          title: "5. Delivering information",
+          description: "5. Delivering information",
         },
         {
-          title: "6. 信息汇总",
-          description: "6. 信息汇总",
+          title: "6. Summarising information",
+          description: "6. Summarising information",
         },
         {
-          title: "7. 场景 1：解释治疗方案",
-          description: "7. 场景 1：解释治疗方案",
+          title: "7. Scenario 1: Explaining a treatment plan",
+          description: "7. Scenario 1: Explaining a treatment plan",
         },
         {
-          title: "8. 场景 2：讨论诊断",
-          description: "8. 场景 2：讨论诊断",
+          title: "8. Scenario 2: Discussing a diagnosis",
+          description: "8. Scenario 2: Discussing a diagnosis",
         },
         {
-          title: "9. 场景 3：处理具有挑战性的行为",
-          description: "9. 场景 3：处理具有挑战性的行为",
+          title: "9. Scenario 3: Managing challenging behaviour",
+          description: "9. Scenario 3: Managing challenging behaviour",
         },
         {
-          title: "10. 场景 4：解释病情",
-          description: "10. 场景 4：解释病情",
+          title: "10. Scenario 4: Explaining a condition",
+          description: "10. Scenario 4: Explaining a condition",
         },
         {
-          title: "11. 场景 5：讨论手术",
-          description: "11. 场景 5：讨论手术",
+          title: "11. Scenario 5: Discussing surgery",
+          description: "11. Scenario 5: Discussing surgery",
         },
         {
-          title: "12. 场景 6：谈论疼痛",
-          description: "12. 场景 6：谈论疼痛",
+          title: "12. Scenario 6: Talking about pain",
+          description: "12. Scenario 6: Talking about pain",
         },
       ],
     },

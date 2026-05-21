@@ -26,7 +26,7 @@ const data: ProgrammeData = {
     {
       type: "intro",
       title: "Course Overview",
-      body: "医学写作与发表强化训练营，致力于系统化提升国际医学论文写作与发表能力。",
+      body: "An intensive bootcamp designed to systematically strengthen the skills required to write and publish medical research papers in international journals.",
     },
     {
       type: "value-props",
@@ -34,23 +34,23 @@ const data: ProgrammeData = {
       display: "list",
       items: [
         {
-          title: "系统掌握国际医学出版全流程（SCI/SSCI/Medline 标准），包括论文评审机制与行业规范",
+          title: "Gain a systematic understanding of the international medical publication process (SCI / SSCI / Medline standards), including peer-review mechanisms and disciplinary conventions",
           description: "",
         },
         {
-          title: "深入解析国际医学期刊文章的核心结构、写作惯例与文体特征，提升学术表达的精准度",
+          title: "Develop a deep understanding of the core structure, writing conventions and stylistic features of international medical journal articles, building precision in academic expression",
           description: "",
         },
         {
-          title: "强化医学研究写作中的学术英语能力，攻克语法、术语与句式难点",
+          title: "Strengthen academic English for medical research writing, addressing common challenges with grammar, terminology and sentence structure",
           description: "",
         },
         {
-          title: "掌握数据可视化呈现、逻辑链构建及科学叙事技巧，打造高影响力的医学论文",
+          title: "Master data visualisation, logical argumentation and scientific narrative techniques to produce high-impact medical papers",
           description: "",
         },
         {
-          title: "实战演练期刊筛选、稿件投递及审稿意见回复策略，全面提升发表成功率",
+          title: "Practise journal selection, manuscript submission and responding to reviewer comments — improving overall publication success",
           description: "",
         },
       ],
@@ -61,28 +61,28 @@ const data: ProgrammeData = {
       display: "grid",
       items: [
         {
-          title: "系统性写作进阶框架",
-          description: "从选题设计到论文发表的全程方法论指导",
+          title: "A systematic writing progression framework",
+          description: "End-to-end methodology guidance from topic selection through to publication",
         },
         {
-          title: "医学学术英语精修",
-          description: "破解\"中式英语\"陷阱，学习高频学术表达与精准术语应用",
+          title: "Refined academic medical English",
+          description: "Break out of \"Chinglish\" pitfalls and master high-frequency academic phrasing and precise terminology",
         },
         {
-          title: "期刊匹配精准导航",
-          description: "基于研究领域、影响力与审稿周期，瞄准合适期刊发表",
+          title: "Targeted journal matching",
+          description: "Identify the right journals based on research field, impact factor and review timelines",
         },
         {
-          title: "智能工具赋能写作",
-          description: "实战演练 AI 工具辅助写作，提升语法校对、文献管理与效率",
+          title: "AI tools to support your writing",
+          description: "Hands-on practice with AI-assisted writing, grammar checking, reference management and efficiency tools",
         },
         {
-          title: "真实案例深度剖析",
-          description: "对比分析高分论文与典型拒稿案例，提炼可复制的成功要素",
+          title: "In-depth case analysis",
+          description: "Compare published high-impact papers with common rejection cases to extract repeatable success factors",
         },
         {
-          title: "个性化专家反馈",
-          description: "针对学员初稿提供逐行批注与修改建议，加速论文优化进程",
+          title: "Personalised expert feedback",
+          description: "Line-by-line annotation and editing suggestions on participant drafts to accelerate revision",
         },
       ],
     },
@@ -92,28 +92,28 @@ const data: ProgrammeData = {
       display: "table",
       items: [
         {
-          title: "1. 中国医生国际发表困境解析",
-          description: "1. 中国医生国际发表困境解析",
+          title: "1. Common challenges faced by Chinese clinicians publishing internationally",
+          description: "1. Common challenges faced by Chinese clinicians publishing internationally",
         },
         {
-          title: "2. SCI 发表的核心逻辑与实战策略",
-          description: "2. SCI 发表的核心逻辑与实战策略",
+          title: "2. The core logic and practical strategies of SCI publication",
+          description: "2. The core logic and practical strategies of SCI publication",
         },
         {
-          title: "3. 医学论文解构与写作精要（IMRaD 框架）",
-          description: "3. 医学论文解构与写作精要（IMRaD 框架）",
+          title: "3. Deconstructing the medical paper: writing essentials and the IMRaD framework",
+          description: "3. Deconstructing the medical paper: writing essentials and the IMRaD framework",
         },
         {
-          title: "4. 学术英语写作体系精讲",
-          description: "4. 学术英语写作体系精讲",
+          title: "4. A structured walkthrough of academic English writing",
+          description: "4. A structured walkthrough of academic English writing",
         },
         {
-          title: "5. 投稿材料准备与审稿沟通实战",
-          description: "5. 投稿材料准备与审稿沟通实战",
+          title: "5. Submission package preparation and reviewer communication in practice",
+          description: "5. Submission package preparation and reviewer communication in practice",
         },
         {
-          title: "6. 案例解析与写作实战工作坊",
-          description: "6. 案例解析与写作实战工作坊",
+          title: "6. Case analysis and writing workshop",
+          description: "6. Case analysis and writing workshop",
         },
       ],
     },

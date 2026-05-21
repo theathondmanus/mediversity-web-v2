@@ -26,7 +26,7 @@ const data: ProgrammeData = {
     {
       type: "intro",
       title: "Course Overview",
-      body: "护士医学英语课程是一门专为护士设计的专业课程，旨在提升其在英语医疗环境中有效进行患者护理 和协作所需的沟通技巧和医学词汇。该课程围绕职业英语测试（OET）结构，为护士提供日常与患者、 同事及其他医疗专业人士互动所需的实用语言技能。课程精心策划，帮助护士增强专业能力，自信应 对医疗场景，提升职业表现。",
+      body: "Medical English for Nurses is a specialist programme designed to develop the communication skills and clinical vocabulary nurses need to deliver safe, collaborative patient care in English-speaking healthcare environments. Structured around the Occupational English Test (OET), it equips nurses with practical language for everyday interactions with patients, colleagues and other healthcare professionals — building professional confidence, clinical clarity, and stronger performance in international care settings.",
     },
     {
       type: "value-props",
@@ -34,23 +34,23 @@ const data: ProgrammeData = {
       display: "list",
       items: [
         {
-          title: "医学术语发展：全面掌握医学术语及其在临床中的应用",
+          title: "Develop medical terminology: comprehensive command of clinical vocabulary and its application in practice",
           description: "",
         },
         {
-          title: "提升临床沟通技能：通过职业英语测试（OET）材料提高护理场景中的听、说、读、写能力",
+          title: "Strengthen clinical communication: improve listening, speaking, reading and writing in nursing scenarios using OET-aligned materials",
           description: "",
         },
         {
-          title: "改善患者沟通：在患者评估、健康检查和紧急情况下促进有效沟通",
+          title: "Improve patient communication: support effective interaction during assessments, health checks and emergency situations",
           description: "",
         },
         {
-          title: "增强患者护理中的能力与同理心：培养准确且富有同理心的患者教育和治疗信息传达能力",
+          title: "Build capability and empathy in patient care: deliver accurate and empathetic patient education and treatment information",
           description: "",
         },
         {
-          title: "强化文档与报告能力：掌握医疗环境中所需的高级英语结构，以实现清晰的文档与报告",
+          title: "Enhance documentation and reporting: master the advanced English structures needed for clear clinical notes and handover",
           description: "",
         },
       ],
@@ -61,31 +61,31 @@ const data: ProgrammeData = {
       display: "timeline",
       items: [
         {
-          title: "互动与协作学习",
+          title: "Interactive and collaborative learning",
           description: "",
         },
         {
-          title: "角色扮演、模拟与案例分析",
+          title: "Role-play, simulation and case analysis",
           description: "",
         },
         {
-          title: "基于 OET 的结构化练习",
+          title: "Structured OET-based practice",
           description: "",
         },
         {
-          title: "小组讨论与互评",
+          title: "Group discussion and peer review",
           description: "",
         },
         {
-          title: "多媒体资料",
+          title: "Multimedia learning materials",
           description: "",
         },
         {
-          title: "社区支持",
+          title: "Learning community support",
           description: "",
         },
         {
-          title: "辅导与指导",
+          title: "Mentoring and guidance",
           description: "",
         },
       ],
@@ -96,27 +96,27 @@ const data: ProgrammeData = {
       display: "grid",
       items: [
         {
-          title: "全面且个性化的学习路径",
+          title: "Comprehensive and personalised learning pathway",
           description: "",
         },
         {
-          title: "国际认可标准的整合",
+          title: "Integration of internationally recognised standards",
           description: "",
         },
         {
-          title: "互动学习与支持性环境",
+          title: "Interactive learning in a supportive environment",
           description: "",
         },
         {
-          title: "文化敏感与有效沟通",
+          title: "Culturally sensitive, effective communication",
           description: "",
         },
         {
-          title: "实用、相关且专业导向",
+          title: "Practical, relevant and profession-oriented",
           description: "",
         },
         {
-          title: "持续进步跟踪",
+          title: "Ongoing progress tracking",
           description: "",
         },
       ],
@@ -127,52 +127,52 @@ const data: ProgrammeData = {
       display: "table",
       items: [
         {
-          title: "基础知识",
-          description: "基础知识",
+          title: "Foundations",
+          description: "Foundations",
         },
         {
-          title: "医学与辅助医学人员与场所",
-          description: "医学与辅助医学人员与场所",
+          title: "Medical and allied health professionals and settings",
+          description: "Medical and allied health professionals and settings",
         },
         {
-          title: "教育与培训",
-          description: "教育与培训",
+          title: "Education and training",
+          description: "Education and training",
         },
         {
-          title: "系统、疾病与症状（20 个子模块）",
-          description: "系统、疾病与症状（20 个子模块）",
+          title: "Systems, diseases and symptoms (20 sub-modules)",
+          description: "Systems, diseases and symptoms (20 sub-modules)",
         },
         {
-          title: "检查",
-          description: "检查",
+          title: "Investigations",
+          description: "Investigations",
         },
         {
-          title: "治疗",
-          description: "治疗",
+          title: "Treatment",
+          description: "Treatment",
         },
         {
-          title: "预防",
-          description: "预防",
+          title: "Prevention",
+          description: "Prevention",
         },
         {
-          title: "流行病学",
-          description: "流行病学",
+          title: "Epidemiology",
+          description: "Epidemiology",
         },
         {
-          title: "伦理学",
-          description: "伦理学",
+          title: "Ethics",
+          description: "Ethics",
         },
         {
-          title: "采集病史",
-          description: "采集病史",
+          title: "History taking",
+          description: "History taking",
         },
         {
-          title: "检查（临床）",
-          description: "检查（临床）",
+          title: "Examination (clinical)",
+          description: "Examination (clinical)",
         },
         {
-          title: "解释",
-          description: "解释",
+          title: "Explanation",
+          description: "Explanation",
         },
       ],
     },

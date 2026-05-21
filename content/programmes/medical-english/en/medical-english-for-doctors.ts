@@ -26,7 +26,7 @@ const data: ProgrammeData = {
     {
       type: "intro",
       title: "Course Overview",
-      body: "以职业英语考试（OET）为基础，课程重点关注真实医疗情境，培养医生自信沟通能力和跨文化意识， 助力提供优质医疗服务。参与者将学会与患者有效互动、与多学科团队协作、管理专业通信， 并对全球医学研究做出贡献。",
+      body: "Built on the framework of the Occupational English Test (OET), this programme focuses on real clinical scenarios to develop doctors' confident communication and cross-cultural awareness, supporting the delivery of high-quality care. Participants will learn to engage effectively with patients, collaborate within multidisciplinary teams, manage professional correspondence, and contribute to international medical research.",
     },
     {
       type: "value-props",
@@ -34,23 +34,23 @@ const data: ProgrammeData = {
       display: "list",
       items: [
         {
-          title: "掌握医学术语：熟练运用专业医学词汇，确保精准的医患沟通",
+          title: "Master medical terminology: confident use of specialist vocabulary for precise doctor-patient communication",
           description: "",
         },
         {
-          title: "提升临床互动：具备提问、描述、指导的能力，开展高效的医患交流",
+          title: "Strengthen clinical interaction: the ability to ask, describe and instruct for effective patient encounters",
           description: "",
         },
         {
-          title: "改善患者咨询：掌握访谈技巧，倾听患者需求，提供专业医疗建议",
+          title: "Improve patient consultations: interview skills that listen to patient needs and deliver professional medical advice",
           description: "",
         },
         {
-          title: "加强文档报告：准确撰写医学报告，规范记录患者信息",
+          title: "Enhance clinical documentation: produce accurate medical reports and well-structured patient records",
           description: "",
         },
         {
-          title: "连接全球医疗：参与国际研究合作，为医学发展贡献力量",
+          title: "Connect with global healthcare: participate in international research collaboration and contribute to medical advancement",
           description: "",
         },
       ],
@@ -61,31 +61,31 @@ const data: ProgrammeData = {
       display: "timeline",
       items: [
         {
-          title: "互动教学与合作学习",
+          title: "Interactive teaching and collaborative learning",
           description: "",
         },
         {
-          title: "角色扮演、模拟、案例分析",
+          title: "Role-play, simulation and case analysis",
           description: "",
         },
         {
-          title: "OET 考试导向练习",
+          title: "OET exam-oriented practice",
           description: "",
         },
         {
-          title: "小组讨论、同行反馈",
+          title: "Group discussion and peer feedback",
           description: "",
         },
         {
-          title: "多媒体辅助教学",
+          title: "Multimedia-assisted teaching",
           description: "",
         },
         {
-          title: "社区互动支持",
+          title: "Learning community support",
           description: "",
         },
         {
-          title: "导师指导",
+          title: "Individual mentor guidance",
           description: "",
         },
       ],
@@ -96,27 +96,27 @@ const data: ProgrammeData = {
       display: "grid",
       items: [
         {
-          title: "全面定制化学习路径",
+          title: "Fully customised learning pathway",
           description: "",
         },
         {
-          title: "融入国际标准",
+          title: "Aligned with international standards",
           description: "",
         },
         {
-          title: "互动支持式学习",
+          title: "Interactive and supportive learning",
           description: "",
         },
         {
-          title: "文化敏感沟通",
+          title: "Culturally sensitive communication",
           description: "",
         },
         {
-          title: "实用专业导向",
+          title: "Practical and profession-oriented",
           description: "",
         },
         {
-          title: "持续跟踪进步",
+          title: "Ongoing progress tracking",
           description: "",
         },
       ],
@@ -127,60 +127,60 @@ const data: ProgrammeData = {
       display: "table",
       items: [
         {
-          title: "基础知识",
-          description: "基础知识",
+          title: "Foundations",
+          description: "Foundations",
         },
         {
-          title: "医学与辅助医学人员与场所",
-          description: "医学与辅助医学人员与场所",
+          title: "Medical and allied health professionals and settings",
+          description: "Medical and allied health professionals and settings",
         },
         {
-          title: "教育与培训",
-          description: "教育与培训",
+          title: "Education and training",
+          description: "Education and training",
         },
         {
-          title: "系统、疾病与症状（20 个子模块）",
-          description: "系统、疾病与症状（20 个子模块）",
+          title: "Systems, diseases and symptoms (20 sub-modules)",
+          description: "Systems, diseases and symptoms (20 sub-modules)",
         },
         {
-          title: "检查",
-          description: "检查",
+          title: "Investigations",
+          description: "Investigations",
         },
         {
-          title: "治疗",
-          description: "治疗",
+          title: "Treatment",
+          description: "Treatment",
         },
         {
-          title: "预防",
-          description: "预防",
+          title: "Prevention",
+          description: "Prevention",
         },
         {
-          title: "流行病学",
-          description: "流行病学",
+          title: "Epidemiology",
+          description: "Epidemiology",
         },
         {
-          title: "伦理学",
-          description: "伦理学",
+          title: "Ethics",
+          description: "Ethics",
         },
         {
-          title: "研究",
-          description: "研究",
+          title: "Research",
+          description: "Research",
         },
         {
-          title: "采集病史",
-          description: "采集病史",
+          title: "History taking",
+          description: "History taking",
         },
         {
-          title: "检查（临床）",
-          description: "检查（临床）",
+          title: "Examination (clinical)",
+          description: "Examination (clinical)",
         },
         {
-          title: "解释",
-          description: "解释",
+          title: "Explanation",
+          description: "Explanation",
         },
         {
-          title: "展示",
-          description: "展示",
+          title: "Presentation",
+          description: "Presentation",
         },
       ],
     },
