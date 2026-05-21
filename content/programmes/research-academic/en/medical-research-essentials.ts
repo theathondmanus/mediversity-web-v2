@@ -26,7 +26,7 @@ const data: ProgrammeData = {
     {
       type: "intro",
       title: "Course Overview",
-      body: "本课程为医疗从业者量身定制，系统传授医学研究的核心方法论与实战技能，涵盖研究设计、伦理合规、 数据管理及国际化学术沟通。通过模块化学习，学员将掌握从选题设计到论文发表的完整科研链条， 为参与国际合作或独立研究项目奠定坚实基础。",
+      body: "Designed for healthcare professionals, this programme provides systematic training in the core methodology and practical skills of medical research — covering study design, ethics and compliance, data management, and international academic communication. Through modular learning, participants will gain a complete understanding of the research pathway, from topic selection through to publication, building a strong foundation for international collaboration or independent research projects.",
     },
     {
       type: "value-props",
@@ -34,28 +34,28 @@ const data: ProgrammeData = {
       display: "list",
       items: [
         {
-          title: "医学研究全流程解析",
-          description: "掌握基础研究、临床研究等类型特点，理解从立项到发表的完整阶段划分",
+          title: "End-to-end overview of medical research",
+          description: "Understand the characteristics of basic and clinical research, and the full pathway from study proposal to publication",
         },
         {
-          title: "研究问题构建与文献综述",
-          description: "精准定位研究空白，系统检索中英文权威论文数据库",
+          title: "Research question formulation and literature review",
+          description: "Identify research gaps with precision and conduct systematic searches across leading English- and Chinese-language journal databases",
         },
         {
-          title: "研究方法设计实战",
-          description: "根据研究目标选择随机对照试验（RCT）、队列研究等设计，规避常见方法学误区",
+          title: "Practical study design",
+          description: "Select appropriate designs — including randomised controlled trials (RCTs) and cohort studies — to match research objectives, while avoiding common methodological pitfalls",
         },
         {
-          title: "伦理与合规管理",
-          description: "熟悉知情同意书撰写、伦理委员会申报流程及数据隐私保护规范",
+          title: "Ethics and compliance",
+          description: "Become familiar with informed consent drafting, ethics committee submission processes, and data privacy protection standards",
         },
         {
-          title: "数据分析与结果解读",
-          description: "学习数据处理与分析基础操作，掌握图表制作与统计学意义阐释",
+          title: "Data analysis and interpretation",
+          description: "Learn foundational data processing and analysis, and master figure preparation and statistical significance interpretation",
         },
         {
-          title: "英文论文读写进阶",
-          description: "精研 IMRAD 结构，强化摘要写作与国际期刊常用表达",
+          title: "Advanced English academic reading and writing",
+          description: "Develop a strong command of the IMRAD structure, strengthen abstract writing, and master the standard language used in international journals",
         },
       ],
     },
@@ -65,24 +65,24 @@ const data: ProgrammeData = {
       display: "timeline",
       items: [
         {
-          title: "国际师资团队",
-          description: "由医学英语专家、研究方法论学者及 SCI 期刊审稿人联合授课",
+          title: "International teaching team",
+          description: "Co-delivered by medical English specialists, research methodology scholars and SCI journal reviewers",
         },
         {
-          title: "真实案例库",
-          description: "解析医学顶刊论文的写作逻辑和实际案例分析",
+          title: "Real-world case library",
+          description: "Analyse the writing logic and practical case studies behind papers published in leading medical journals",
         },
         {
-          title: "带教式训练",
-          description: "分步骤指导文献精读、数据描述与讨论部分撰写",
+          title: "Mentor-style training",
+          description: "Step-by-step guidance on close reading of literature, data description and writing the discussion section",
         },
         {
-          title: "语言强化包",
-          description: "提供医学高频词汇表、连接词库及常见语法错误避坑指南",
+          title: "Language reinforcement pack",
+          description: "Includes a high-frequency medical vocabulary list, connectives bank and a guide to common grammar pitfalls",
         },
         {
-          title: "结业考核",
-          description: "完成一份研究方案展示或论文摘要，获得专家认证证书",
+          title: "Final assessment",
+          description: "Present a research proposal or paper abstract to receive an expert-certified completion certificate",
         },
       ],
     },
@@ -92,28 +92,28 @@ const data: ProgrammeData = {
       display: "table",
       items: [
         {
-          title: "1. 医学研究导论：从理论到实践",
-          description: "1. 医学研究导论：从理论到实践",
+          title: "1. Introduction to medical research: from theory to practice",
+          description: "1. Introduction to medical research: from theory to practice",
         },
         {
-          title: "2. 研究问题构建与文献综述实战",
-          description: "2. 研究问题构建与文献综述实战",
+          title: "2. Research question formulation and literature review in practice",
+          description: "2. Research question formulation and literature review in practice",
         },
         {
-          title: "3. 研究设计与方法学精要",
-          description: "3. 研究设计与方法学精要",
+          title: "3. Study design and methodology essentials",
+          description: "3. Study design and methodology essentials",
         },
         {
-          title: "4. 伦理合规与科研管理",
-          description: "4. 伦理合规与科研管理",
+          title: "4. Ethics, compliance and research governance",
+          description: "4. Ethics, compliance and research governance",
         },
         {
-          title: "5. 数据收集 & 分析全教程",
-          description: "5. 数据收集 & 分析全教程",
+          title: "5. Data collection and analysis — full walkthrough",
+          description: "5. Data collection and analysis — full walkthrough",
         },
         {
-          title: "6. 国际期刊论文读写精修",
-          description: "6. 国际期刊论文读写精修",
+          title: "6. Reading and writing for international journals",
+          description: "6. Reading and writing for international journals",
         },
       ],
     },

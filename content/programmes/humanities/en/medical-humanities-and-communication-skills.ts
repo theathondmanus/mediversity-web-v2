@@ -26,7 +26,7 @@ const data: ProgrammeData = {
     {
       type: "intro",
       title: "Course Overview",
-      body: "本课程旨在帮助医疗从业者掌握核心沟通技巧与人文素养，提供以患者为中心的医疗服务。除专业知 识外，课程聚焦共情能力、医学伦理、患者心理、跨文化意识及医患关系管理。学员将通过沉浸式实 践活动，掌握更具温度、专业性与适应性的沟通技巧，从而在复杂临床场景中实现高效共情与精准决策。",
+      body: "This programme equips healthcare professionals with the core communication skills and humanistic literacy needed to deliver patient-centred care. Alongside clinical knowledge, it focuses on empathy, medical ethics, patient psychology, cross-cultural awareness and the management of the doctor-patient relationship. Through immersive practice, participants develop communication that is more empathetic, professional and adaptive — enabling effective empathy and precise decision-making within complex clinical scenarios.",
     },
     {
       type: "value-props",
@@ -34,23 +34,23 @@ const data: ProgrammeData = {
       display: "list",
       items: [
         {
-          title: "培养人文价值观与以患者为中心的思维模式",
+          title: "Develop humanistic values and a patient-centred mindset",
           description: "",
         },
         {
-          title: "通过高效医患沟通建立信任",
+          title: "Build trust through effective patient-doctor communication",
           description: "",
         },
         {
-          title: "运用跨文化技能服务多元患者群体",
+          title: "Apply cross-cultural skills to serve diverse patient populations",
           description: "",
         },
         {
-          title: "在临床实践中强化同理心与情商",
+          title: "Strengthen empathy and emotional intelligence in clinical practice",
           description: "",
         },
         {
-          title: "运用医学伦理进行共情与伦理决策",
+          title: "Apply medical ethics for empathetic and ethical decision-making",
           description: "",
         },
       ],
@@ -61,19 +61,19 @@ const data: ProgrammeData = {
       display: "timeline",
       items: [
         {
-          title: "高仿真案例教学",
+          title: "High-fidelity case-based teaching",
           description: "",
         },
         {
-          title: "角色扮演模拟训练",
+          title: "Role-play simulation training",
           description: "",
         },
         {
-          title: "互动式深度对话",
+          title: "Interactive in-depth dialogue",
           description: "",
         },
         {
-          title: "结构化实践任务",
+          title: "Structured practical tasks",
           description: "",
         },
       ],
@@ -84,28 +84,28 @@ const data: ProgrammeData = {
       display: "table",
       items: [
         {
-          title: "1. 医学人文与职业身份认同",
-          description: "1. 医学人文与职业身份认同",
+          title: "1. Medical humanities and professional identity",
+          description: "1. Medical humanities and professional identity",
         },
         {
-          title: "2. 医患沟通技巧",
-          description: "2. 医患沟通技巧",
+          title: "2. Patient-doctor communication skills",
+          description: "2. Patient-doctor communication skills",
         },
         {
-          title: "3. 患者心理与情绪支持",
-          description: "3. 患者心理与情绪支持",
+          title: "3. Patient psychology and emotional support",
+          description: "3. Patient psychology and emotional support",
         },
         {
-          title: "4. 医学伦理与共情照护",
-          description: "4. 医学伦理与共情照护",
+          title: "4. Medical ethics and empathetic care",
+          description: "4. Medical ethics and empathetic care",
         },
         {
-          title: "5. 跨文化沟通",
-          description: "5. 跨文化沟通",
+          title: "5. Cross-cultural communication",
+          description: "5. Cross-cultural communication",
         },
         {
-          title: "6. 医疗从业者的身心健康",
-          description: "6. 医疗从业者的身心健康",
+          title: "6. Wellbeing for healthcare professionals",
+          description: "6. Wellbeing for healthcare professionals",
         },
       ],
     },
