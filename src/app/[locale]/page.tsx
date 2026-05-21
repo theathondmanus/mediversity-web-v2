@@ -333,15 +333,17 @@ export default function HomePage() {
         <DotPattern opacity={0.02} />
         <div className="container relative z-10">
           <p className="text-center text-sm text-[#8A889A] mb-8">{t("trust.title")}</p>
-          <div className="flex flex-wrap items-center justify-center gap-16 md:gap-20">
+          <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
             {[
-              { src: "/images/partners/renji-hospital.webp", alt: "Renji Hospital", w: 200 },
-              { src: "/images/partners/ruijin-hospital.webp", alt: "Ruijin Hospital", w: 200 },
-              { src: "/images/partners/guangci-memorial-hospital.webp", alt: "Guangci Memorial Hospital", w: 180 },
+              { src: "/images/partners/nhs.webp", alt: "NHS", w: 96 },
+              { src: "/images/partners/university-of-cambridge.webp", alt: "University of Cambridge", w: 64 },
+              { src: "/images/partners/gmc.webp", alt: "GMC", w: 96 },
+              { src: "/images/partners/bma.webp", alt: "BMA", w: 96 },
+              { src: "/images/partners/kings-college-london.webp", alt: "King's College London", w: 80 },
             ].map((logo) => (
               <div
                 key={logo.alt}
-                className="group relative h-24 flex items-center justify-center grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300"
+                className="group relative h-16 flex items-center justify-center grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
                 style={{ width: logo.w }}
               >
                 <Image
