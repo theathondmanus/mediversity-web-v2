@@ -67,7 +67,7 @@ export default function AboutPage() {
         imageAlt="International conference room with panoramic city view"
       >
         <motion.div {...fadeInUp} className="max-w-3xl">
-          <p className="eyebrow !text-[#C4922A] mb-4">{t("title")}</p>
+          <p className="eyebrow !text-[#C4922A] mb-4">{t("heroEyebrow")}</p>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             {t("subtitle")}
           </h1>
@@ -84,7 +84,7 @@ export default function AboutPage() {
               <div className="flex items-center gap-4 mb-8">
                 <div className="w-12 h-1 bg-[#C4922A] rounded-full" />
                 <p className="text-sm font-medium text-[#C4922A] uppercase tracking-wider">
-                  Our Story
+                  {t("story.eyebrow")}
                 </p>
               </div>
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-[#0A1628] leading-tight">
@@ -182,7 +182,7 @@ export default function AboutPage() {
         <DotPattern opacity={0.015} />
         <div className="container relative z-10">
           <motion.div {...fadeInUp} className="text-center mb-14">
-            <p className="eyebrow">Core Values</p>
+            <p className="eyebrow">{t("values.eyebrow")}</p>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0A1628]">
               {t("values.title")}
             </h2>

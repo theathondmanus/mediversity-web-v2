@@ -5,8 +5,8 @@
   },
   "hero": {
     "eyebrow": {
-      "zh-CN": "Medical Navigator · 跨境医疗导航",
-      "en": "Medical Navigator · Cross-Border Healthcare Navigation"
+      "zh-CN": "服务",
+      "en": "SERVICES"
     },
     "title": {
       "zh-CN": "跨境医疗，从「想清楚」开始",
@@ -528,6 +528,31 @@
         "name": "广慈纪念医院",
         "nameEn": "Guangci Memorial Hospital",
         "logo": "/images/partners/guangci-memorial-hospital.webp"
+      },
+      {
+        "name": "NHS",
+        "nameEn": "NHS",
+        "logo": "/images/partners/nhs.webp"
+      },
+      {
+        "name": "剑桥大学",
+        "nameEn": "University of Cambridge",
+        "logo": "/images/partners/university-of-cambridge.webp"
+      },
+      {
+        "name": "GMC",
+        "nameEn": "General Medical Council",
+        "logo": "/images/partners/gmc.webp"
+      },
+      {
+        "name": "BMA",
+        "nameEn": "British Medical Association",
+        "logo": "/images/partners/bma.webp"
+      },
+      {
+        "name": "伦敦国王学院",
+        "nameEn": "King's College London",
+        "logo": "/images/partners/kings-college-london.webp"
       }
     ]
   },

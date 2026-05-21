@@ -14,8 +14,8 @@ import {
   MessageCircle,
   Compass,
   Plane,
-  Building2,
 } from "lucide-react";
+import Image from "next/image";
 import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
@@ -103,10 +103,10 @@ export default function MedicalNavigatorPage() {
           <p className="eyebrow !text-[#C4922A]/80 mb-3">
             {t2(content.hero.eyebrow, locale)}
           </p>
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 whitespace-nowrap">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             {t2(content.hero.title, locale)}
           </h1>
-          <p className="text-white/70 text-lg md:text-xl mb-10 leading-relaxed md:whitespace-nowrap">
+          <p className="text-white/70 text-lg md:text-xl mb-10 leading-relaxed max-w-2xl">
             {t2(content.hero.lede, locale)}
           </p>
           <div className="flex flex-wrap gap-4">
@@ -342,22 +342,26 @@ export default function MedicalNavigatorPage() {
             </h2>
           </FadeIn>
 
-          <div className="flex flex-wrap items-center justify-center gap-12 max-w-3xl mx-auto">
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 max-w-4xl mx-auto">
             {content.partners.logos.map((logo, idx) => (
               <FadeIn key={idx} index={idx}>
                 <div className="group flex flex-col items-center gap-3">
-                  {/* Placeholder logo block — grayscale, hover color */}
-                  <div className="w-20 h-20 rounded-xl bg-[#F5F3EF] flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-300">
-                    <Building2 className="w-8 h-8 text-[#8A889A] group-hover:text-[#00438A] transition-colors" />
+                  <div className="h-14 w-24 relative grayscale group-hover:grayscale-0 transition-all duration-300 opacity-70 group-hover:opacity-100">
+                    <Image
+                      src={logo.logo}
+                      alt={locale === "zh-CN" ? logo.name : logo.nameEn}
+                      fill
+                      className="object-contain"
+                      sizes="96px"
+                    />
                   </div>
-                  <span className="text-xs text-[#8A889A] group-hover:text-[#0A1628] transition-colors text-center">
+                  <span className="text-xs text-[#8A889A] group-hover:text-[#0A1628] transition-colors text-center max-w-[100px]">
                     {locale === "zh-CN" ? logo.name : logo.nameEn}
                   </span>
                 </div>
               </FadeIn>
             ))}
           </div>
-          {/* TODO: Replace Building2 icons with actual brand logos when provided by owner (brand-assets/) */}
         </div>
       </section>
 

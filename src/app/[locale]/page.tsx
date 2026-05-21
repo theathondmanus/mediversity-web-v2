@@ -47,21 +47,7 @@ const PILLARS = [
   { icon: BookOpen, key: "humanities", href: "/programmes/humanities", cover: "/images/hero/humanities.webp" },
 ] as const;
 
-const TRUST_ORGS = ["NHS", "University of Cambridge", "GMC", "BMA", "King's College London"];
 
-const STATS_ZH = [
-  { value: "10+", label: "年行业经验" },
-  { value: "1000+", label: "学员成功案例" },
-  { value: "50+", label: "合作医疗机构" },
-  { value: "95%", label: "学员满意度" },
-];
-
-const STATS_EN = [
-  { value: "10+", label: "Years of Experience" },
-  { value: "1000+", label: "Successful Students" },
-  { value: "50+", label: "Partner Institutions" },
-  { value: "95%", label: "Student Satisfaction" },
-];
 
 export default function HomePage() {
   const t = useTranslations("home");
@@ -103,7 +89,7 @@ export default function HomePage() {
             <motion.h1
               variants={fadeInUp}
               custom={1}
-              className="font-display text-[clamp(1.75rem,7vw,3.5rem)] font-bold text-white leading-[1.15] mb-6 whitespace-nowrap"
+              className="font-display text-[clamp(1.75rem,7vw,3.5rem)] font-bold text-white leading-[1.15] mb-6"
             >
               {t("hero.title")}
             </motion.h1>
@@ -145,7 +131,12 @@ export default function HomePage() {
             viewport={{ once: true, margin: "-50px" }}
           >
             <motion.div variants={fadeInUp} custom={0}>
-              <StatBanner stats={locale === "zh-CN" ? STATS_ZH : STATS_EN} />
+              <StatBanner stats={[
+                { value: t("stats.0.value"), label: t("stats.0.label") },
+                { value: t("stats.1.value"), label: t("stats.1.label") },
+                { value: t("stats.2.value"), label: t("stats.2.label") },
+                { value: t("stats.3.value"), label: t("stats.3.label") },
+              ]} />
             </motion.div>
           </motion.div>
         </div>
@@ -343,7 +334,7 @@ export default function HomePage() {
         <div className="container relative z-10">
           <p className="text-center text-sm text-[#8A889A] mb-8">{t("trust.title")}</p>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14 opacity-60">
-            {TRUST_ORGS.map((name) => (
+            {[t("trust.orgs.0"), t("trust.orgs.1"), t("trust.orgs.2"), t("trust.orgs.3"), t("trust.orgs.4")].map((name) => (
               <span key={name} className="text-sm font-medium text-[#3C3A47] tracking-wide">{name}</span>
             ))}
           </div>

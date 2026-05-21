@@ -22,6 +22,7 @@ export default async function InsightsPage({ params }: InsightsPageProps) {
         imageAlt="Scholarly reading room with medical journals and city twilight view"
       >
         <FadeIn>
+          <p className="eyebrow !text-[#C4922A] mb-4">{t("eyebrow")}</p>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             {t("title")}
           </h1>
