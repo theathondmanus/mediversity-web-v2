@@ -333,25 +333,24 @@ export default function HomePage() {
         <DotPattern opacity={0.02} />
         <div className="container relative z-10">
           <p className="text-center text-sm text-[#8A889A] mb-8">{t("trust.title")}</p>
-          <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
+          <div className="grid grid-cols-5 gap-6 md:gap-12 max-w-5xl mx-auto items-center">
             {[
-              { src: "/images/partners/nhs.webp", alt: "NHS", w: 96 },
-              { src: "/images/partners/university-of-cambridge.webp", alt: "University of Cambridge", w: 64 },
-              { src: "/images/partners/gmc.webp", alt: "GMC", w: 96 },
-              { src: "/images/partners/bma.webp", alt: "BMA", w: 96 },
-              { src: "/images/partners/kings-college-london.webp", alt: "King's College London", w: 80 },
+              { src: "/images/partners/nhs.webp", alt: "NHS" },
+              { src: "/images/partners/university-of-cambridge.webp", alt: "University of Cambridge" },
+              { src: "/images/partners/gmc.webp", alt: "GMC" },
+              { src: "/images/partners/bma.webp", alt: "BMA" },
+              { src: "/images/partners/kings-college-london.webp", alt: "King's College London" },
             ].map((logo) => (
               <div
                 key={logo.alt}
-                className="group relative h-16 flex items-center justify-center grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
-                style={{ width: logo.w }}
+                className="group relative h-20 md:h-24 w-full grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300"
               >
                 <Image
                   src={logo.src}
                   alt={logo.alt}
                   fill
                   className="object-contain"
-                  sizes={`${logo.w}px`}
+                  sizes="(max-width: 768px) 20vw, 200px"
                 />
               </div>
             ))}
