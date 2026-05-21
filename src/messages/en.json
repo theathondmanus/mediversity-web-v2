@@ -1,8 +1,8 @@
 {
   "nav": {
-    "programmes": "International Medical Education",
-    "medicalNavigator": "Cross-border Medical Navigation",
-    "insights": "Insights & Cases",
+    "programmes": "Programmes",
+    "medicalNavigator": "Medical Navigator",
+    "insights": "Insights",
     "about": "About",
     "contact": "Contact",
     "viewAllProgrammes": "View all programmes",
@@ -76,7 +76,82 @@
       "cta": "View More Stories"
     },
     "trust": {
-      "title": "Recognised by Leading Institutions"
+      "title": "Recognised by Leading Institutions",
+      "orgs": [
+        "NHS",
+        "University of Cambridge",
+        "GMC",
+        "BMA",
+        "King's College London"
+      ]
+    },
+    "stats": [
+      {
+        "value": "10+",
+        "label": "Years of Experience"
+      },
+      {
+        "value": "1000+",
+        "label": "Successful Students"
+      },
+      {
+        "value": "50+",
+        "label": "Partner Institutions"
+      },
+      {
+        "value": "95%",
+        "label": "Student Satisfaction"
+      }
+    ],
+    "featuredCourses": {
+      "eyebrow": "Featured Programmes",
+      "title": "Popular Programmes",
+      "courses": {
+        "oet-preparation": {
+          "title": "OET Preparation",
+          "desc": "Systematically improve medical English across all four skills with module-specific training designed to help healthcare professionals pass this international certification.",
+          "duration": "12 Weeks",
+          "level": "Upper-Intermediate",
+          "tags": [
+            "Exam Prep",
+            "Certification",
+            "Medical English"
+          ]
+        },
+        "medical-english-for-doctors": {
+          "title": "Medical English for Doctors",
+          "desc": "Professional English communication for clinicians covering history-taking, physical examination descriptions, and patient consultations in international settings.",
+          "duration": "8 Weeks",
+          "level": "Intermediate",
+          "tags": [
+            "Clinical",
+            "Consultation",
+            "Ward Rounds"
+          ]
+        },
+        "medical-english-for-nurses": {
+          "title": "Medical English for Nurses",
+          "desc": "Nursing-specific English communication covering handovers, patient education, and multidisciplinary team collaboration scenarios.",
+          "duration": "8 Weeks",
+          "level": "Intermediate",
+          "tags": [
+            "Nursing",
+            "Handover",
+            "Patient Education"
+          ]
+        },
+        "pre-departure-medical-english": {
+          "title": "Pre-departure Medical English",
+          "desc": "A 12-week intensive programme for healthcare professionals preparing for overseas clinical placements, covering both cultural adaptation and clinical scenarios.",
+          "duration": "12 Weeks",
+          "level": "Upper-Intermediate",
+          "tags": [
+            "Overseas",
+            "Cultural Prep",
+            "Intensive"
+          ]
+        }
+      }
     }
   },
   "testimonials": {
@@ -150,7 +225,13 @@
     },
     "humanities": {
       "courses": {}
-    }
+    },
+    "pillarsSection": {
+      "eyebrow": "Four Training Pillars",
+      "title": "Covering All Core Needs for International Development",
+      "desc": "Each pillar is jointly designed by senior education experts from China and the UK, progressing from foundational skills to advanced practice."
+    },
+    "heroEyebrow": "PROGRAMMES"
   },
   "programmes": {
     "medicalEnglish": {
@@ -285,7 +366,8 @@
     "empty": {
       "title": "Content Coming Soon",
       "desc": "We are preparing high-quality industry insight articles. Stay tuned."
-    }
+    },
+    "eyebrow": "INSIGHTS"
   },
   "about": {
     "title": "About Us",
@@ -294,7 +376,8 @@
       "title": "Who We Are",
       "paragraph1": "Mediversity Global is dedicated to connecting healthcare professionals, international medical education, and high-quality global healthcare resources. With two core divisions — International Medical Education and Cross-border Medical Navigation — we promote international medical exchange, professional development, and cross-border healthcare collaboration.",
       "paragraph2": "Through a practice-led medical education approach and a professionally structured global healthcare network, we support healthcare professionals and institutions in systematically enhancing their international medical communication skills, global clinical perspective, and cross-cultural collaboration capabilities, enabling sustained professional growth within global healthcare environments.",
-      "paragraph3": "At the same time, we provide end-to-end cross-border healthcare service support, spanning from medical decision-making to real-world care delivery. This includes connecting healthcare needs with appropriate global medical resources and ensuring effective execution across the full care pathway, while enabling more efficient, safer, and more reliable international healthcare connectivity and collaboration."
+      "paragraph3": "At the same time, we provide end-to-end cross-border healthcare service support, spanning from medical decision-making to real-world care delivery. This includes connecting healthcare needs with appropriate global medical resources and ensuring effective execution across the full care pathway, while enabling more efficient, safer, and more reliable international healthcare connectivity and collaboration.",
+      "eyebrow": "Our Story"
     },
     "whoWeServe": {
       "eyebrow": "Who We Serve",
@@ -345,8 +428,10 @@
       "empathy": {
         "title": "Empathy",
         "desc": "Student-centred approach with personalised support"
-      }
-    }
+      },
+      "eyebrow": "Core Values"
+    },
+    "heroEyebrow": "ABOUT"
   },
   "contact": {
     "title": "Contact Us",
@@ -405,5 +490,11 @@
     "accredited": "UK Medical Education Provider",
     "icp": "沪ICP备2025138775号-2",
     "copyright": "© 2026 Mediversity Global. All rights reserved."
+  },
+  "page": {
+    "programmesEyebrow": "PROGRAMMES",
+    "servicesEyebrow": "SERVICES",
+    "aboutEyebrow": "ABOUT",
+    "insightsEyebrow": "INSIGHTS"
   }
 }

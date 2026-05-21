@@ -76,7 +76,82 @@
       "cta": "查看更多案例"
     },
     "trust": {
-      "title": "合作与认可机构"
+      "title": "合作与认可机构",
+      "orgs": [
+        "NHS",
+        "University of Cambridge",
+        "GMC",
+        "BMA",
+        "King's College London"
+      ]
+    },
+    "stats": [
+      {
+        "value": "10+",
+        "label": "年行业经验"
+      },
+      {
+        "value": "1000+",
+        "label": "学员成功案例"
+      },
+      {
+        "value": "50+",
+        "label": "合作医疗机构"
+      },
+      {
+        "value": "95%",
+        "label": "学员满意度"
+      }
+    ],
+    "featuredCourses": {
+      "eyebrow": "精选课程",
+      "title": "热门推荐",
+      "courses": {
+        "oet-preparation": {
+          "title": "OET 备考课程",
+          "desc": "系统化提升医学英语听说读写能力，针对 OET 考试各模块进行专项训练，助力医疗专业人士顺利通过国际认证。",
+          "duration": "12 周",
+          "level": "中高级",
+          "tags": [
+            "考试备考",
+            "国际认证",
+            "医学英语"
+          ]
+        },
+        "medical-english-for-doctors": {
+          "title": "医生英语",
+          "desc": "面向临床医生的专业英语沟通课程，涵盖病史采集、查体描述、医患沟通等核心场景，提升国际诊疗能力。",
+          "duration": "8 周",
+          "level": "中级",
+          "tags": [
+            "临床沟通",
+            "医患对话",
+            "查房英语"
+          ]
+        },
+        "medical-english-for-nurses": {
+          "title": "护士英语",
+          "desc": "护理专业英语沟通能力提升课程，覆盖交接班、患者教育、多学科协作等护理核心场景。",
+          "duration": "8 周",
+          "level": "中级",
+          "tags": [
+            "护理沟通",
+            "交接班",
+            "患者教育"
+          ]
+        },
+        "pre-departure-medical-english": {
+          "title": "出国前医学英语",
+          "desc": "12 周强化语言项目，专为即将海外临床实习的医疗专业人士打造，涵盖文化适应与临床场景双重准备。",
+          "duration": "12 周",
+          "level": "中高级",
+          "tags": [
+            "海外实习",
+            "文化适应",
+            "强化训练"
+          ]
+        }
+      }
     }
   },
   "testimonials": {
@@ -150,7 +225,13 @@
     },
     "humanities": {
       "courses": {}
-    }
+    },
+    "pillarsSection": {
+      "eyebrow": "四大培训板块",
+      "title": "覆盖国际化发展全部核心需求",
+      "desc": "每个板块均由中英两国资深教育专家联合设计，从基础能力到高阶实践层层递进。"
+    },
+    "heroEyebrow": "培训项目"
   },
   "programmes": {
     "medicalEnglish": {
@@ -285,7 +366,8 @@
     "empty": {
       "title": "内容即将上线",
       "desc": "我们正在准备高质量的行业洞察文章，敬请期待。"
-    }
+    },
+    "eyebrow": "洞察"
   },
   "about": {
     "title": "关于我们",
@@ -294,7 +376,8 @@
       "title": "我们是谁",
       "paragraph1": "Mediversity Global 致力于连接医疗人才、国际医学教育与全球优质医疗资源，围绕国际医学教育与跨境医疗导航两大核心业务，推动国际医疗交流、专业发展与跨境医疗协作。",
       "paragraph2": "通过实践导向的国际医学教育体系与专业化的全球医疗资源网络连接，我们帮助医疗专业人士与医疗机构系统性提升国际医疗沟通能力、全球临床视野与跨文化协作能力，支持其在全球医疗环境中的长期成长与专业发展。",
-      "paragraph3": "同时，我们提供覆盖从医疗决策到执行落地的全流程跨境医疗服务支持，连接医疗需求、全球医疗资源与服务执行环节，并促进更加高效、安全与可靠的国际医疗协作与连接。"
+      "paragraph3": "同时，我们提供覆盖从医疗决策到执行落地的全流程跨境医疗服务支持，连接医疗需求、全球医疗资源与服务执行环节，并促进更加高效、安全与可靠的国际医疗协作与连接。",
+      "eyebrow": "我们的故事"
     },
     "whoWeServe": {
       "eyebrow": "服务对象",
@@ -345,8 +428,10 @@
       "empathy": {
         "title": "共情",
         "desc": "以学员需求为中心，提供个性化支持"
-      }
-    }
+      },
+      "eyebrow": "核心价值观"
+    },
+    "heroEyebrow": "关于我们"
   },
   "contact": {
     "title": "联系我们",
@@ -405,5 +490,11 @@
     "accredited": "上海千蓦信息咨询有限公司",
     "icp": "沪ICP备2025138775号-2",
     "copyright": "© 2026 Mediversity Global. All rights reserved."
+  },
+  "page": {
+    "programmesEyebrow": "培训项目",
+    "servicesEyebrow": "服务",
+    "aboutEyebrow": "关于我们",
+    "insightsEyebrow": "洞察"
   }
 }
