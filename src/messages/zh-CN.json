@@ -632,6 +632,15 @@
       "email": "邮箱",
       "message": "留言内容",
       "submit": "发送"
+    },
+    "worldClock": {
+      "title": "全球办公时间",
+      "china": "北京",
+      "uk": "伦敦",
+      "canada": "多伦多",
+      "australia": "悉尼",
+      "online": "工作时间中",
+      "hint": "绿色圆点表示该地区当前处于工作时间（9:00-18:00），我们通常在工作时间内 24 小时内回复。"
     }
   },
   "insightDetail": {

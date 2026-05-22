@@ -632,6 +632,15 @@
       "email": "Email",
       "message": "Message",
       "submit": "Send"
+    },
+    "worldClock": {
+      "title": "Office Hours Worldwide",
+      "china": "Beijing",
+      "uk": "London",
+      "canada": "Toronto",
+      "australia": "Sydney",
+      "online": "Currently in working hours",
+      "hint": "Green dot indicates the region is currently within working hours (9:00–18:00). We typically respond within 24 hours during business hours."
     }
   },
   "insightDetail": {
