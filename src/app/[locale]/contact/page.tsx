@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn } from "@/components/ui/fade-in";
+import { WorldClock } from "@/components/ui/world-clock";
 
 const CONTACT_INFO = [
   { icon: Phone, key: "phone", value: "+44 (0)7345 169 054" },
@@ -90,6 +91,11 @@ export default function ContactPage() {
                   <p className="text-sm text-[#00438A] font-medium">
                     {t("info.tagline")}
                   </p>
+                </div>
+
+                {/* World Clock */}
+                <div className="mt-6">
+                  <WorldClock />
                 </div>
               </div>
             </FadeIn>
