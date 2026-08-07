@@ -5,8 +5,8 @@ const data: ProgrammeData = {
   category: "medical-english",
   subcategory: "clinical",
   title: "Medical English for Nurses",
-  shortDescription: "An advanced, practice-oriented 50-lesson programme tailored for healthcare professionals",
-  metaDescription: "Medical English for Nurses - An advanced, practice-oriented 50-lesson programme tailored for healthcare professionals",
+  shortDescription: "An advanced, practice-oriented programme tailored for nursing professionals to enhance language and communication skills",
+  metaDescription: "Medical English for Nurses - An advanced, practice-oriented programme tailored for nursing professionals to enhance language and communication skills",
   duration: "50 lessons",
   audience: ["Nurses", "Nursing Professionals"],
   featured: true,
@@ -15,7 +15,7 @@ const data: ProgrammeData = {
 
   hero: {
     headline: "Medical English for Nurses",
-    lede: "An advanced, practice-oriented 50-lesson programme tailored for healthcare professionals",
+    lede: "An advanced, practice-oriented programme tailored for nursing professionals to enhance language and communication skills",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
     image: "/images/courses/medical-english-for-nurses.webp",

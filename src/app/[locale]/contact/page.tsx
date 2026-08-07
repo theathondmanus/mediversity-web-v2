@@ -2,16 +2,15 @@
 
 import { useEffect } from "react";
 import { useTranslations } from "next-intl";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { HeroSection } from "@/components/ui/hero-section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { WorldClock } from "@/components/ui/world-clock";
 
 const CONTACT_INFO = [
   { icon: Phone, key: "phone", value: "+44 (0)7345 169 054" },
-  { icon: Mail, key: "email", value: "info@mediversityglobal.com" },
+  { icon: Mail, key: "email", value: "enquiries@mediversityglobal.com" },
   { icon: MapPin, key: "address", value: "London, United Kingdom" },
-  { icon: Clock, key: "hours", value: "Mon-Fri 9:00-18:00 (GMT)" },
 ];
 
 /* ── Tally form embed (auto-resize iframe) ── */
