@@ -7,7 +7,7 @@ const data: ProgrammeData = {
   title: "Medical English for Doctors",
   shortDescription: "Language and Communication Skills Programme for Healthcare Professionals",
   metaDescription: "Medical English for Doctors - Language and Communication Skills Programme for Healthcare Professionals",
-  duration: "12 weeks",
+  duration: "60 lessons",
   audience: ["Doctors", "Medical Professionals"],
   featured: true,
   order: 20,
@@ -15,7 +15,7 @@ const data: ProgrammeData = {
 
   hero: {
     headline: "Medical English for Doctors",
-    lede: "Language and Communication Skills Programme for Healthcare Professionals",
+    lede: "A 60-lesson language and communication skills programme for healthcare professionals",
     ctaLabel: "Get Started Today",
     ctaHref: "/contact",
     image: "/images/hero/medical-english.webp",

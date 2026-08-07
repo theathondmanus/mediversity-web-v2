@@ -85,10 +85,14 @@ export default function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg}`}>
       <div className="container flex items-center justify-between h-[72px] md:h-20">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 no-underline shrink-0">
-          <span className={`font-display text-xl md:text-2xl font-bold tracking-tight transition-colors duration-300 ${logoColor}`}>
-            Mediversity<span className="font-light ml-1">Global</span>
-          </span>
+        <Link href="/" className="flex items-center no-underline shrink-0">
+          <img
+            src="/images/logo-mvg.png"
+            alt="Mediversity Global"
+            className={`h-12 md:h-14 w-auto object-contain transition-all duration-300 ${
+              scrolled || !isHome ? "brightness-100" : "brightness-0 invert"
+            }`}
+          />
         </Link>
 
         {/* Desktop Nav */}
