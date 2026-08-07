@@ -25,10 +25,12 @@ const fadeInUp = {
 
 /* Hero images for bookshelf covers */
 const COVER_IMAGES: Record<string, string> = {
-  "oet-preparation": "/images/hero/oet-preparation.webp",
-  "medical-english-for-doctors": "/images/hero/medical-english.webp",
-  "medical-english-for-nurses": "/images/hero/medical-english.webp",
-  "pre-departure-medical-english": "/images/hero/observership.webp",
+  "oet-preparation": "/images/home/featured-doctors.webp",
+  "medical-english-for-doctors": "/images/home/featured-doctors.webp",
+  "medical-english-for-nurses": "/images/home/featured-nurses.webp",
+  "pre-departure-medical-english": "/images/home/featured-scholar.webp",
+  "international-clinical-observership": "/images/home/featured-observership.webp",
+  "senior-visiting-scholar": "/images/home/featured-scholar.webp",
 };
 
 /* Spine colors for bookshelf effect */
