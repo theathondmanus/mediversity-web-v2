@@ -7,7 +7,7 @@ const data: ProgrammeData = {
   title: "医生英语",
   shortDescription: "医疗专业人员语言沟通能力提升课程",
   metaDescription: "医生英语 - 医疗专业人员语言沟通能力提升课程",
-  duration: "12 周",
+  duration: "60 节课",
   audience: ["医生", "医疗专业人士"],
   featured: true,
   order: 20,
@@ -15,7 +15,7 @@ const data: ProgrammeData = {
 
   hero: {
     headline: "医生英语",
-    lede: "医疗专业人员语言沟通能力提升课程",
+    lede: "60节课医疗专业人员语言沟通能力提升课程",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
     image: "/images/courses/medical-english-for-doctors.webp",

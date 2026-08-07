@@ -5,8 +5,8 @@ const data: ProgrammeData = {
   category: "medical-english",
   subcategory: "clinical",
   title: "护理英语课程",
-  shortDescription: "一个为医疗专业人员量身定制的高级实践导向 50 节课程，旨在提升其语言能力和沟通技巧",
-  metaDescription: "护理英语课程 - 一个为医疗专业人员量身定制的高级实践导向 50 节课程，旨在提升其语言能力和沟通技巧",
+  shortDescription: "一个为护理从业人员量身定制的高级实践导向课程，旨在提升其语言能力和沟通技巧",
+  metaDescription: "护理英语课程 - 一个为护理从业人员量身定制的高级实践导向课程，旨在提升其语言能力和沟通技巧",
   duration: "50 节课",
   audience: ["护士", "护理专业人士"],
   featured: true,
@@ -15,7 +15,7 @@ const data: ProgrammeData = {
 
   hero: {
     headline: "护理英语课程",
-    lede: "一个为医疗专业人员量身定制的高级实践导向 50 节课程，旨在提升其语言能力和沟通技巧",
+    lede: "一个为护理从业人员量身定制的高级实践导向课程，旨在提升其语言能力和沟通技巧",
     ctaLabel: "立即开始",
     ctaHref: "/contact",
     image: "/images/courses/medical-english-for-nurses.webp",
