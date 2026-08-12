@@ -596,22 +596,21 @@
     "values": {
       "title": "Core Values",
       "excellence": {
-        "title": "Excellence",
-        "desc": "Pursuing continuous improvement in teaching quality and service standards"
+        "title": "Excellence in Education",
+        "desc": "Committed to professionalism, rigour, and practice-led learning — integrating international educational principles with real clinical contexts to deliver high-quality, applicable, and sustainable learning and development support for healthcare professionals."
       },
-      "collaboration": {
-        "title": "Collaboration",
-        "desc": "Connecting medical education resources between China and the UK"
+      "global": {
+        "title": "Global Perspective",
+        "desc": "Grounded in global healthcare systems and professional development trends, we connect high-quality medical and educational resources across countries and regions — helping healthcare professionals and institutions expand their international horizons and access global opportunities."
       },
-      "international": {
-        "title": "International",
-        "desc": "Developing healthcare professionals with a global perspective"
+      "culture": {
+        "title": "Bridging Cultures",
+        "desc": "Respecting differences across cultures, languages, and healthcare systems — we reduce collaboration barriers through professional communication and cross-cultural understanding, enabling more efficient and seamless international connections between healthcare professionals, institutions, and patients."
       },
-      "empathy": {
-        "title": "Empathy",
-        "desc": "Student-centred approach with personalised support"
-      },
-      "eyebrow": "Core Values"
+      "patient": {
+        "title": "Patient-Centred Care",
+        "desc": "Always starting from the real needs and care experience of patients — we embed professionalism, safety, and compassion throughout every stage of service, providing patients and families with clear, reliable, and trustworthy connections to the right medical resources and support."
+      }
     },
     "heroEyebrow": "ABOUT"
   },
