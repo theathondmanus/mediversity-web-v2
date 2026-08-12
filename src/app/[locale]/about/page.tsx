@@ -162,44 +162,55 @@ const FACULTY = [
 ];
 
 /* ── Team Member Card ── */
-function TeamMemberCard({ member, locale }: { member: typeof LEADERSHIP[0]; locale: string }) {
+function TeamMemberCard({ member, locale, size = "md" }: { member: typeof LEADERSHIP[0]; locale: string; size?: "lg" | "md" }) {
   const [expanded, setExpanded] = useState(false);
   const bioText = member.bio[locale as keyof typeof member.bio] ?? member.bio["en"];
   const titleText = locale === "zh-CN" ? member.titleZh : member.titleEn;
+  const avatarSize = size === "lg" ? "w-28 h-28 md:w-32 md:h-32" : "w-24 h-24";
 
   return (
-    <Card className="h-full border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
-      <CardContent className="p-6 flex flex-col gap-4">
-        {/* Avatar */}
-        <div className="w-16 h-16 rounded-full overflow-hidden shrink-0">
+    <div className="flex flex-col items-center text-center group">
+      {/* Large circular avatar */}
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="cursor-pointer focus:outline-none"
+      >
+        <div className={`${avatarSize} rounded-full overflow-hidden ring-2 ring-transparent group-hover:ring-[#C4922A]/40 transition-all duration-300 shadow-md group-hover:shadow-lg`}>
           <img
             src={`/images/team/${member.id}.webp`}
             alt={member.name}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>
-        {/* Name & title */}
-        <div>
-          <h3 className="font-semibold text-[#0A1628] text-base leading-snug">{member.name}</h3>
-          <p className="text-xs text-[#00438A] mt-0.5 leading-relaxed">{titleText}</p>
-        </div>
-        {/* Expand/collapse bio */}
-        {expanded && (
-          <div className="text-sm text-[#3C3A47] leading-relaxed whitespace-pre-line">
-            {bioText}
-          </div>
-        )}
-        <button
-          onClick={() => setExpanded(!expanded)}
-          className="inline-flex items-center gap-1 text-xs font-medium text-[#00438A] hover:text-[#003066] transition-colors mt-auto cursor-pointer"
-        >
-          {expanded
-            ? (locale === "zh-CN" ? "收起" : "Close")
-            : (locale === "zh-CN" ? "了解更多" : "View Profile")}
-          {expanded ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
-        </button>
-      </CardContent>
-    </Card>
+      </button>
+      {/* Name & title */}
+      <h3 className="font-semibold text-[#0A1628] text-sm md:text-base leading-snug mt-4">
+        {member.name}
+      </h3>
+      <p className="text-xs text-[#00438A] mt-1 leading-relaxed max-w-[160px]">
+        {titleText}
+      </p>
+      {/* Expand/collapse trigger */}
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="inline-flex items-center gap-0.5 text-[11px] font-medium text-[#8A889A] hover:text-[#00438A] transition-colors mt-2 cursor-pointer"
+      >
+        {expanded
+          ? (locale === "zh-CN" ? "收起" : "Close")
+          : (locale === "zh-CN" ? "了解更多" : "View Profile")}
+        {expanded ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
+      </button>
+      {/* Expanded bio detail card */}
+      {expanded && (
+        <Card className="mt-4 border-0 shadow-lg w-full max-w-sm animate-in fade-in slide-in-from-top-2 duration-200">
+          <CardContent className="p-5 text-left">
+            <div className="text-sm text-[#3C3A47] leading-relaxed whitespace-pre-line">
+              {bioText}
+            </div>
+          </CardContent>
+        </Card>
+      )}
+    </div>
   );
 }
 
@@ -334,10 +345,10 @@ export default function AboutPage() {
                 {locale === "zh-CN" ? "Leadership & Core Team｜领导与核心团队" : "Leadership & Core Team"}
               </h3>
             </FadeIn>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+            <div className="flex flex-wrap justify-center gap-8 md:gap-12">
               {LEADERSHIP.map((member, idx) => (
                 <FadeIn key={member.id} index={idx}>
-                  <TeamMemberCard member={member} locale={locale} />
+                  <TeamMemberCard member={member} locale={locale} size="lg" />
                 </FadeIn>
               ))}
             </div>
@@ -350,7 +361,7 @@ export default function AboutPage() {
                 {locale === "zh-CN" ? "Advisory Board｜专家顾问团队" : "Advisory Board"}
               </h3>
             </FadeIn>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="flex flex-wrap justify-center gap-8 md:gap-12">
               {ADVISORY.map((member, idx) => (
                 <FadeIn key={member.id} index={idx}>
                   <TeamMemberCard member={member} locale={locale} />
@@ -366,7 +377,7 @@ export default function AboutPage() {
                 {locale === "zh-CN" ? "Senior Faculty｜高级教学团队" : "Senior Faculty"}
               </h3>
             </FadeIn>
-            <div className="grid sm:grid-cols-2 gap-5 max-w-2xl">
+            <div className="flex flex-wrap justify-center gap-8 md:gap-12">
               {FACULTY.map((member, idx) => (
                 <FadeIn key={member.id} index={idx}>
                   <TeamMemberCard member={member} locale={locale} />
