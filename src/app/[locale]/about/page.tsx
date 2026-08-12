@@ -162,11 +162,11 @@ const FACULTY = [
 ];
 
 /* ── Team Member Card ── */
-function TeamMemberCard({ member, locale, size = "md" }: { member: typeof LEADERSHIP[0]; locale: string; size?: "lg" | "md" }) {
+function TeamMemberCard({ member, locale }: { member: typeof LEADERSHIP[0]; locale: string }) {
   const [expanded, setExpanded] = useState(false);
   const bioText = member.bio[locale as keyof typeof member.bio] ?? member.bio["en"];
   const titleText = locale === "zh-CN" ? member.titleZh : member.titleEn;
-  const avatarSize = size === "lg" ? "w-28 h-28 md:w-32 md:h-32" : "w-24 h-24";
+  const avatarSize = "w-28 h-28 md:w-32 md:h-32";
 
   return (
     <div className="flex flex-col items-center text-center group">
@@ -348,7 +348,7 @@ export default function AboutPage() {
             <div className="flex flex-wrap justify-center gap-8 md:gap-12">
               {LEADERSHIP.map((member, idx) => (
                 <FadeIn key={member.id} index={idx}>
-                  <TeamMemberCard member={member} locale={locale} size="lg" />
+                  <TeamMemberCard member={member} locale={locale} />
                 </FadeIn>
               ))}
             </div>
