@@ -85,17 +85,14 @@ export default function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg}`}>
       <div className="container flex items-center justify-between h-[72px] md:h-20">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 no-underline shrink-0">
-          <span className={`inline-flex items-center justify-center rounded-lg transition-all duration-300 ${scrolled || !isHome ? 'bg-transparent' : 'bg-white/90 backdrop-blur-sm shadow-sm'} p-1`}>
-            <img
-              src="/brand/logo-128.png"
-              alt="Mediversity Global"
-              className="h-10 md:h-12 w-auto"
-            />
-          </span>
-          <span className={`font-display text-lg md:text-xl font-bold tracking-tight transition-colors duration-300 ${logoColor} hidden sm:inline`}>
-            Mediversity<span className="font-light ml-1">Global</span>
-          </span>
+        <Link href="/" className="flex items-center no-underline shrink-0">
+          <img
+            src="/images/logo-mvg.png"
+            alt="Mediversity Global"
+            className={`h-12 md:h-14 w-auto object-contain transition-all duration-300 ${
+              scrolled || !isHome ? "brightness-100" : "brightness-0 invert"
+            }`}
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -108,7 +105,7 @@ export default function Header() {
           >
             <Link
               href="/programmes"
-              className={`px-3 xl:px-4 py-2 text-xs xl:text-sm font-medium tracking-wide transition-colors duration-200 rounded-md no-underline flex items-center gap-1 whitespace-nowrap ${textColor} hover:bg-white/10`}
+              className={`px-3 xl:px-4 py-2 text-xs xl:text-sm font-medium tracking-wide transition-colors duration-200 rounded-md no-underline flex items-center gap-1 ${textColor} hover:bg-white/10`}
             >
               {t("nav.programmes")}
               <ChevronDown className={`w-3.5 h-3.5 transition-transform ${megaOpen ? "rotate-180" : ""}`} />
@@ -163,7 +160,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className={`px-3 xl:px-4 py-2 text-xs xl:text-sm font-medium tracking-wide transition-colors duration-200 rounded-md no-underline whitespace-nowrap ${textColor} hover:bg-white/10`}
+              className={`px-3 xl:px-4 py-2 text-xs xl:text-sm font-medium tracking-wide transition-colors duration-200 rounded-md no-underline ${textColor} hover:bg-white/10`}
             >
               {item.label}
             </Link>
@@ -172,7 +169,7 @@ export default function Header() {
           {/* Language Switcher */}
           <button
             onClick={handleSwitchLocale}
-            className={`ml-2 px-3 py-1.5 text-xs font-medium rounded-md border transition-all duration-200 flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${
+            className={`ml-2 px-3 py-1.5 text-xs font-medium rounded-md border transition-all duration-200 flex items-center gap-1.5 cursor-pointer ${
               scrolled || !isHome
                 ? "border-[#E3E5EC] text-[#3C3A47] hover:bg-[#F0F2F6] bg-transparent"
                 : "border-white/30 text-white hover:bg-white/10 bg-transparent"
@@ -195,7 +192,7 @@ export default function Header() {
         <div className="flex items-center gap-2 lg:hidden">
           <button
             onClick={handleSwitchLocale}
-            className={`px-2.5 py-1.5 text-xs font-medium rounded-md border transition-all flex items-center gap-1 cursor-pointer whitespace-nowrap ${
+            className={`px-2.5 py-1.5 text-xs font-medium rounded-md border transition-all flex items-center gap-1 cursor-pointer ${
               scrolled || !isHome
                 ? "border-[#E3E5EC] text-[#3C3A47] bg-transparent"
                 : "border-white/30 text-white bg-transparent"

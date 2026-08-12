@@ -1,8 +1,8 @@
 {
   "nav": {
-    "programmes": "Programmes",
-    "medicalNavigator": "Medical Navigator",
-    "insights": "Insights",
+    "programmes": "International Medical Education",
+    "medicalNavigator": "Cross-border Medical Navigation",
+    "insights": "Insights & Cases",
     "about": "About",
     "contact": "Contact",
     "viewAllProgrammes": "View all programmes",
@@ -76,82 +76,7 @@
       "cta": "View More Stories"
     },
     "trust": {
-      "title": "Recognised by Leading Institutions",
-      "orgs": [
-        "NHS",
-        "University of Cambridge",
-        "GMC",
-        "BMA",
-        "King's College London"
-      ]
-    },
-    "stats": [
-      {
-        "value": "10+",
-        "label": "Years of Experience"
-      },
-      {
-        "value": "1000+",
-        "label": "Successful Students"
-      },
-      {
-        "value": "50+",
-        "label": "Partner Institutions"
-      },
-      {
-        "value": "95%",
-        "label": "Student Satisfaction"
-      }
-    ],
-    "featuredCourses": {
-      "eyebrow": "Featured Programmes",
-      "title": "Popular Programmes",
-      "courses": {
-        "oet-preparation": {
-          "title": "OET Preparation",
-          "desc": "Systematically improve medical English across all four skills with module-specific training designed to help healthcare professionals pass this international certification.",
-          "duration": "12 Weeks",
-          "level": "Upper-Intermediate",
-          "tags": [
-            "Exam Prep",
-            "Certification",
-            "Medical English"
-          ]
-        },
-        "medical-english-for-doctors": {
-          "title": "Medical English for Doctors",
-          "desc": "Professional English communication for clinicians covering history-taking, physical examination descriptions, and patient consultations in international settings.",
-          "duration": "8 Weeks",
-          "level": "Intermediate",
-          "tags": [
-            "Clinical",
-            "Consultation",
-            "Ward Rounds"
-          ]
-        },
-        "medical-english-for-nurses": {
-          "title": "Medical English for Nurses",
-          "desc": "Nursing-specific English communication covering handovers, patient education, and multidisciplinary team collaboration scenarios.",
-          "duration": "8 Weeks",
-          "level": "Intermediate",
-          "tags": [
-            "Nursing",
-            "Handover",
-            "Patient Education"
-          ]
-        },
-        "pre-departure-medical-english": {
-          "title": "Pre-departure Medical English",
-          "desc": "A 12-week intensive programme for healthcare professionals preparing for overseas clinical placements, covering both cultural adaptation and clinical scenarios.",
-          "duration": "12 Weeks",
-          "level": "Upper-Intermediate",
-          "tags": [
-            "Overseas",
-            "Cultural Prep",
-            "Intensive"
-          ]
-        }
-      }
+      "title": "Recognised by Leading Institutions"
     }
   },
   "testimonials": {
@@ -175,7 +100,6 @@
     "title": "Programmes",
     "subtitle": "Four pillars covering all core needs for healthcare professionals' international development",
     "activeCourses": "active courses",
-    "openingSoon": "Opening Soon",
     "explore": "Explore",
     "pillars": {
       "medicalEnglish": {
@@ -225,19 +149,7 @@
     },
     "humanities": {
       "courses": {}
-    },
-    "pillarsSection": {
-      "eyebrow": "Four Training Pillars",
-      "title": "Covering All Core Needs for International Development",
-      "desc": "Each pillar is jointly designed by senior education experts from China and the UK, progressing from foundational skills to advanced practice."
-    },
-    "heroEyebrow": "PROGRAMMES",
-    "heroDesc": "From medical English to clinical observership, from academic research to career development — a systematic training framework to support your international growth.",
-    "pillarTitle": "Building Global Medical Competence",
-    "bottomCtaTitle": "Not sure where to start?",
-    "bottomCtaDesc": "Our programme advisors can recommend the right learning pathway based on your professional background and development goals.",
-    "bookFreeConsult": "Book a Free Consultation",
-    "exploreMedNav": "Explore Medical Navigation"
+    }
   },
   "programmes": {
     "medicalEnglish": {
@@ -311,207 +223,31 @@
     },
     "observership": {
       "title": "Clinical Observership & International Exposure",
-      "description": "Connecting clinicians with the world's leading medical institutions to support international career growth. Built around three pillars — international clinical capability, research exchange and professional development — we deliver an end-to-end international exchange pathway covering clinical observership, research training, short-term overseas study, degree progression and doctoral programmes. Drawing on partnerships across the UK, US, Japan, Singapore and Germany, we provide one-stop support — from programme application and pre-departure preparation through to overseas assistance and reintegration on return — for healthcare institutions and individual professionals.",
-      "coreValue": {
-        "title": "Our Core Value",
-        "items": [
-          {
-            "title": "Access to top global medical resources",
-            "desc": "Spanning the US, UK, Japan, Singapore and Germany, our partner institutions and hospitals include leading top-100 universities, top-tier international hospitals and research platforms — enabling precise specialty matching."
-          },
-          {
-            "title": "Integrated clinical × research × academic development",
-            "desc": "From clinical observership to research training, from degree progression to international doctoral programmes — we offer a full-cycle pathway for international career development in healthcare."
-          },
-          {
-            "title": "Highly customised service framework",
-            "desc": "Tailored to the needs of hospitals, departments and individuals — we provide end-to-end service covering programme matching, application planning, pre-departure preparation and overseas support."
-          },
-          {
-            "title": "Professional team support throughout",
-            "desc": "A one-stop service spanning visa processing, accommodation and overseas living support — ensuring the programme runs smoothly and the learning experience is well-supported."
-          },
-          {
-            "title": "Long-term collaboration within the international medical ecosystem",
-            "desc": "We focus on more than a single exchange — building long-term international collaboration networks and global medical exchange capability for our partner institutions."
-          }
-        ]
-      },
-      "projects": {
-        "eyebrow": "Five Core Programmes",
-        "title": "International Exchange Programmes",
-        "label": {
-          "duration": "Duration",
-          "audience": "Who it's for",
-          "content": "Programme Content",
-          "advantages": "Programme Advantages",
-          "services": "Services We Provide"
+      "description": "Clinical observership at top UK hospitals, visiting scholar and academic exchange programmes, providing global clinical perspectives and international collaboration opportunities.",
+      "subcategories": {
+        "clinical-observer": {
+          "title": "Clinical Observer Programmes",
+          "desc": "Short-term and specialty-based clinical observership"
         },
-        "items": {
-          "internationalClinicalObservership": {
-            "title": "International Clinical Observership Programme",
-            "subtitle": "Immersive exposure to leading international hospitals, broadening clinical perspective",
-            "duration": "12 weeks of immersive overseas clinical observership",
-            "audience": [
-              "Senior clinicians",
-              "Key department staff",
-              "Healthcare teams seeking international exchange"
-            ],
-            "content": [
-              "Outpatient and surgical observership",
-              "Ward rounds with mentors",
-              "Departmental meetings and academic exchange",
-              "Precision matching to clinical subspecialties",
-              "One-to-one mentor supervision"
-            ],
-            "advantages": [
-              "Access to top healthcare institutions in the US, UK, Japan and Singapore",
-              "Precision matching to clinical subspecialties",
-              "End-to-end support from both domestic and overseas teams",
-              "Seamless integration with medical English training",
-              "International mentorship-based learning model"
-            ],
-            "services": [
-              "Programme application and matching",
-              "Interview preparation and visa support",
-              "Overseas accommodation and insurance arrangements",
-              "Pre-departure guidance and on-site support",
-              "End-to-end programme coordination"
-            ]
-          },
-          "seniorVisitingScholar": {
-            "title": "Senior Visiting Scholar Programme",
-            "subtitle": "Deep engagement with international research platforms, building global academic competitiveness",
-            "duration": "6–12 months of overseas research training",
-            "audience": [
-              "Discipline leaders",
-              "Research-focused healthcare professionals",
-              "Medical school faculty",
-              "Professionals seeking publication and research advancement"
-            ],
-            "content": [
-              "Participation in mentor-led research projects",
-              "Collaboration on academic publications",
-              "Training in international research methodology",
-              "Overseas laboratory and research platform experience",
-              "Selected programmes include parallel clinical observership"
-            ],
-            "advantages": [
-              "Partner institutions include top-100 universities globally",
-              "Most programmes do not require IELTS / TOEFL scores",
-              "Overseas placement and lifestyle support included",
-              "Long-term international research collaboration channels",
-              "Experienced interview and visa support"
-            ],
-            "services": [
-              "Mentor and institution matching",
-              "Application material refinement",
-              "Interview and visa support",
-              "Overseas accommodation and placement support",
-              "Full-cycle programme management"
-            ]
-          },
-          "shortTermOverseasStudy": {
-            "title": "Short-term Overseas Study Programme",
-            "subtitle": "Focused themes, efficient access to international expertise",
-            "duration": "5–10 day international study visits",
-            "audience": [
-              "Hospital leadership teams",
-              "Department heads",
-              "Senior healthcare teams",
-              "Specialist development cohorts"
-            ],
-            "content": [
-              "Hospital management",
-              "Nursing management",
-              "Oncology",
-              "Neurology / neurosurgery",
-              "Gastroenterology",
-              "Paediatric surgery and other specialties"
-            ],
-            "advantages": [
-              "On-site visits to top international hospitals",
-              "Subject-specific teaching by leading overseas experts",
-              "Coverage across both clinical and management perspectives",
-              "Efficient and flexible — well-suited to team-based exchange",
-              "Overseas study certificate on completion"
-            ],
-            "services": [
-              "Study itinerary planning",
-              "Overseas hospital liaison",
-              "Immigration and visa support",
-              "International transport, accommodation and insurance",
-              "On-site interpretation and accompaniment support"
-            ]
-          },
-          "nursingDegreeProgression": {
-            "title": "Nursing Degree Progression Programme",
-            "subtitle": "Access global nursing education resources for career advancement",
-            "duration": "Top-up bachelor: 1 year / Master's: 1–2 years",
-            "audience": [
-              "Practising nurses",
-              "Nursing students",
-              "Nursing faculty",
-              "Healthcare institution nursing teams"
-            ],
-            "content": [
-              "International nursing bachelor / master's courses",
-              "Joint training with overseas partners",
-              "International nursing practice frameworks",
-              "Degree recognition and career development support"
-            ],
-            "advantages": [
-              "Strong international recognition of partner institutions",
-              "Degree recognition by China's Ministry of Education",
-              "Selected programmes do not require mandatory language scores",
-              "Designed to fit the schedules of working professionals",
-              "Broad overseas career and further-study pathways"
-            ],
-            "services": [
-              "Institution and programme matching",
-              "Application material support",
-              "Academic planning support",
-              "Visa and overseas arrival services",
-              "End-to-end admissions management"
-            ]
-          },
-          "internationalMedicalDoctorate": {
-            "title": "International Medical Doctorate Programme",
-            "subtitle": "Connecting with top European medical schools, developing international research talent",
-            "duration": "3–4 years of doctoral training",
-            "audience": [
-              "Healthcare professionals",
-              "Medical researchers",
-              "Medical students",
-              "Professionals with long-term academic career goals"
-            ],
-            "content": [
-              "International medical doctorate training",
-              "Overseas research platform experience",
-              "Supervisor-led research projects",
-              "International academic exchange and collaboration",
-              "Long-cycle research capability building"
-            ],
-            "advantages": [
-              "Partnerships with top European medical schools",
-              "Internationally recognised doctorate",
-              "In-depth research resource support",
-              "International supervisory team",
-              "Builds a sustainable global academic network"
-            ],
-            "services": [
-              "Doctoral programme consultation and assessment",
-              "Supervisor and research direction matching",
-              "Application material and interview support",
-              "Visa and overseas placement support",
-              "Long-cycle academic progress tracking"
-            ]
-          }
+        "advanced-clinical": {
+          "title": "Advanced Clinical Exposure",
+          "desc": "In-depth consultant shadowing and department immersion"
+        },
+        "visiting-scholar": {
+          "title": "Academic & Visiting Scholar Pathways",
+          "desc": "Academic visits and international exchange"
         }
       },
-      "bottomCta": {
-        "title": "Start your international medical career journey",
-        "desc": "Let the world's leading medical resources become the next step in your career. Whether for individual career planning, departmental team exchange or institutional international collaboration, we tailor the most suitable international exchange pathway to your specialty and goals."
+      "courses": {
+        "shortTermObservership": "Short-term Observership",
+        "specialtyBasedObservership": "Specialty-based Observership",
+        "hospitalAttachment": "Hospital Attachment",
+        "advancedClinicalObserver": "Advanced Clinical Observer Programme",
+        "consultantShadowing": "Consultant Shadowing",
+        "departmentImmersion": "Department Immersion",
+        "visitingScholarProgramme": "Visiting Scholar Programme",
+        "researchAttachment": "Research Attachment",
+        "internationalAcademicExchange": "International Academic Exchange"
       }
     },
     "humanities": {
@@ -548,8 +284,7 @@
     "empty": {
       "title": "Content Coming Soon",
       "desc": "We are preparing high-quality industry insight articles. Stay tuned."
-    },
-    "eyebrow": "INSIGHTS"
+    }
   },
   "about": {
     "title": "About Us",
@@ -558,8 +293,7 @@
       "title": "Who We Are",
       "paragraph1": "Mediversity Global is dedicated to connecting healthcare professionals, international medical education, and high-quality global healthcare resources. With two core divisions — International Medical Education and Cross-border Medical Navigation — we promote international medical exchange, professional development, and cross-border healthcare collaboration.",
       "paragraph2": "Through a practice-led medical education approach and a professionally structured global healthcare network, we support healthcare professionals and institutions in systematically enhancing their international medical communication skills, global clinical perspective, and cross-cultural collaboration capabilities, enabling sustained professional growth within global healthcare environments.",
-      "paragraph3": "At the same time, we provide end-to-end cross-border healthcare service support, spanning from medical decision-making to real-world care delivery. This includes connecting healthcare needs with appropriate global medical resources and ensuring effective execution across the full care pathway, while enabling more efficient, safer, and more reliable international healthcare connectivity and collaboration.",
-      "eyebrow": "Our Story"
+      "paragraph3": "At the same time, we provide end-to-end cross-border healthcare service support, spanning from medical decision-making to real-world care delivery. This includes connecting healthcare needs with appropriate global medical resources and ensuring effective execution across the full care pathway, while enabling more efficient, safer, and more reliable international healthcare connectivity and collaboration."
     },
     "whoWeServe": {
       "eyebrow": "Who We Serve",
@@ -611,8 +345,7 @@
         "title": "Patient-Centred Care",
         "desc": "Always starting from the real needs and care experience of patients — we embed professionalism, safety, and compassion throughout every stage of service, providing patients and families with clear, reliable, and trustworthy connections to the right medical resources and support."
       }
-    },
-    "heroEyebrow": "ABOUT"
+    }
   },
   "contact": {
     "title": "Contact Us",
@@ -621,9 +354,7 @@
       "title": "Contact Information",
       "phone": "Phone",
       "email": "Email",
-      "address": "Address",
-      "hours": "Working Hours",
-      "tagline": "We look forward to connecting with you"
+      "address": "Address"
     },
     "form": {
       "title": "Send a Message",
@@ -631,15 +362,6 @@
       "email": "Email",
       "message": "Message",
       "submit": "Send"
-    },
-    "worldClock": {
-      "title": "Office Hours Worldwide",
-      "china": "Beijing",
-      "uk": "London",
-      "canada": "Toronto",
-      "australia": "Sydney",
-      "online": "Currently in working hours",
-      "hint": "Green dot indicates the region is currently within working hours (9:00–18:00). We typically respond within 24 hours during business hours."
     }
   },
   "insightDetail": {
@@ -660,18 +382,7 @@
     "activeCourses": "active courses",
     "futureCourses": "planned courses",
     "futureProgrammes": "Future Programmes",
-    "viewDetails": "View details",
-    "testimonials": "Testimonials",
-    "tableModule": "Module",
-    "tableContent": "Content",
-    "futureProgrammesNote": "The following programmes are in development. If you are interested in a specific course, please contact us for the latest updates.",
-    "pillarBottomCtaTitle": "Found the right programme for you?",
-    "pillarBottomCtaDesc": "Book a free consultation and our programme advisors will design a tailored learning plan based on your background and goals.",
-    "pillarBottomCtaBook": "Book a Consultation",
-    "pillarBottomCtaBack": "Back to all Programmes",
-    "swipeToSeeMore": "← Swipe for more →",
-    "comingSoon": "Coming Soon",
-    "serviceTimeline": "Service Timeline"
+    "viewDetails": "View details"
   },
   "footer": {
     "ctaTitle": "Ready to Get Started?",
@@ -688,215 +399,5 @@
     "accredited": "UK Medical Education Provider",
     "icp": "沪ICP备2025138775号-2",
     "copyright": "© 2026 Mediversity Global. All rights reserved."
-  },
-  "page": {
-    "programmesEyebrow": "PROGRAMMES",
-    "servicesEyebrow": "SERVICES",
-    "aboutEyebrow": "ABOUT",
-    "insightsEyebrow": "INSIGHTS"
-  },
-  "courseDescriptions": {
-    "preparatory-medical-english": "12-lesson foundation English programme designed for healthcare professionals",
-    "oet-preparation": "Strengthen your medical English to confidently pass the OET examination",
-    "medical-english-for-doctors": "Professional English communication training for clinicians",
-    "medical-english-for-nurses": "Medical English communication training tailored for nurses",
-    "pre-departure-medical-english": "12-week intensive language programme for healthcare professionals preparing for overseas clinical placements",
-    "medical-research-essentials": "A 6-week systematic introduction to medical research methodology and evidence-based medicine, building clinical research thinking and literature analysis skills",
-    "medical-writing-publication-bootcamp": "A 12-hour intensive on SCI paper writing and international publication skills — covering the full pipeline from topic selection to submission",
-    "medical-humanities-and-general-practice-literacy": "10 sessions developing medical humanities literacy and general practice competence, integrating ethical reasoning with clinical practice",
-    "medical-humanities-and-communication-skills": "6 sessions building patient-doctor communication and humanistic care practice, fostering empathy and narrative medicine thinking",
-    "international-clinical-observership": "12-week immersive observership at top hospitals in the US, UK, Japan and Singapore",
-    "senior-visiting-scholar": "6-12 months overseas research training, with mentor-led projects and joint publications",
-    "short-term-overseas-study": "5-10 day international study visits to top hospitals with subject-specific expert sessions",
-    "nursing-degree-progression": "International nursing bachelor and master programmes, jointly delivered with overseas partners",
-    "international-medical-doctorate": "3-4 year doctoral training in partnership with leading European medical schools"
-  },
-  "mednav": {
-    "openingSoonBadge": "Coming soon"
-  },
-  "courseCovers": {
-    "medical-humanities-and-general-practice-literacy": "Medical Humanities and General Practice Literacy",
-    "medical-humanities-and-communication-skills": "Medical Humanities and Communication Skills",
-    "medical-research-essentials": "Medical Research Essentials",
-    "medical-writing-publication-bootcamp": "Medical Writing and Publication Bootcamp"
-  },
-  "privacy": {
-    "eyebrow": "PRIVACY POLICY",
-    "title": "Privacy Policy",
-    "intro": "Mediversity Global is committed to protecting your personal information and privacy. This policy explains how we collect, use, store and protect your information when you access and use our website, and the rights you have in relation to your information.",
-    "lastUpdatedLabel": "Last updated",
-    "lastUpdated": "21 May 2026",
-    "disclaimer": "This privacy policy is an interim template version. The final version will be the formal document authorised by our legal team. In case of any conflict, the formal version shall prevail.",
-    "contactLabel": "Privacy contact",
-    "sections": [
-      {
-        "heading": "Information We Collect",
-        "paragraphs": [
-          "We collect only the minimum information necessary to provide our services. This includes:",
-          "· Information you actively provide — name, email address, phone number, organisation, and the content of any enquiry you submit via our contact form or consultation request;",
-          "· Information collected automatically — access logs (IP address, access time, browser type, operating system, referring page) and cookie identifiers;",
-          "· Communication records — emails, messages and call records generated through your interaction with us."
-        ]
-      },
-      {
-        "heading": "How We Use Your Information",
-        "paragraphs": [
-          "We use your information for the following purposes:",
-          "· To respond to your enquiry and provide the services you have requested;",
-          "· To assess your needs and recommend appropriate medical education or healthcare navigation pathways;",
-          "· To improve website functionality and user experience;",
-          "· With your explicit consent, to send you service updates or industry insights;",
-          "· To comply with applicable laws, regulations and regulatory requirements.",
-          "We do not use your personal information for any other purpose not stated in this policy."
-        ]
-      },
-      {
-        "heading": "Cookies and Similar Technologies",
-        "paragraphs": [
-          "This website uses essential cookies to maintain basic functionality (such as language preferences and session state). We may also use analytics cookies to understand how users interact with our website, with all analytics data being anonymised.",
-          "You may refuse or delete cookies at any time through your browser settings. Please note that some features may not function properly as a result."
-        ]
-      },
-      {
-        "heading": "Sharing and Disclosure",
-        "paragraphs": [
-          "We do not sell your personal information. We may share your information with third parties only in the following circumstances:",
-          "· With your explicit authorisation, to provide necessary information to healthcare institutions, education partners or service contacts you have selected, in order to facilitate the service;",
-          "· With trusted service providers who assist in operating our website (such as cloud hosting, email services, analytics), limited to the minimum information necessary for them to perform the entrusted task;",
-          "· Where required by law, regulation, regulatory authority or legal process."
-        ]
-      },
-      {
-        "heading": "Cross-border Data Transfers",
-        "paragraphs": [
-          "Mediversity Global operates as a bi-directional service platform between China and overseas markets, and our services inherently involve cross-border data transfers. Our infrastructure is distributed between China (Tencent Cloud, Shanghai) and the UK (AWS, London), and your information may be transferred and stored between these locations.",
-          "We apply industry-standard transmission encryption (TLS) and access control to ensure data security during cross-border transfers."
-        ]
-      },
-      {
-        "heading": "Data Storage and Security",
-        "paragraphs": [
-          "We apply reasonable technical and organisational measures to protect your personal information, including but not limited to transmission encryption (HTTPS), access control and audit logging.",
-          "Enquiry information is typically retained for up to two years after service completion; automatically collected access logs are retained for six months. Where applicable laws require otherwise, those requirements apply."
-        ]
-      },
-      {
-        "heading": "Your Rights",
-        "paragraphs": [
-          "Subject to the applicable laws of your jurisdiction (including China's Personal Information Protection Law, UK GDPR and EU GDPR), you have the following rights in relation to your personal information:",
-          "· Right to access and obtain a copy of your personal information;",
-          "· Right to rectify inaccurate or incomplete information;",
-          "· Right to delete your personal information (where permitted by law);",
-          "· Right to withdraw previously given consent;",
-          "· Right to restrict or object to specific processing;",
-          "· Right to data portability (where technically feasible).",
-          "To exercise any of these rights, please contact us using the details at the bottom of this page."
-        ]
-      },
-      {
-        "heading": "Children's Information",
-        "paragraphs": [
-          "This website is not intended for children under the age of 14. If you are under 14, please do not submit any personal information through this website. If we become aware that we have inadvertently collected information from a child, we will delete it promptly."
-        ]
-      },
-      {
-        "heading": "Policy Updates",
-        "paragraphs": [
-          "We may update this privacy policy from time to time in response to changes in law, regulation or our business. Significant changes will be notified through a website announcement. Continued use of the website following such updates constitutes your acceptance of the updated policy."
-        ]
-      },
-      {
-        "heading": "Governing Law",
-        "paragraphs": [
-          "This privacy policy is governed by the laws of the People's Republic of China. For users from the UK and EU, we additionally comply with the relevant provisions of the UK GDPR and EU GDPR."
-        ]
-      }
-    ]
-  },
-  "terms": {
-    "eyebrow": "TERMS OF SERVICE",
-    "title": "Terms of Service",
-    "intro": "Welcome to Mediversity Global. These Terms of Service govern your use of our website and related services. By accessing or using this website, you confirm that you have read, understood and agreed to these Terms in full.",
-    "lastUpdatedLabel": "Last updated",
-    "lastUpdated": "21 May 2026",
-    "disclaimer": "These Terms of Service are an interim template version. The final version will be the formal document authorised by our legal team. In case of any conflict, the formal version shall prevail.",
-    "contactLabel": "Legal contact",
-    "sections": [
-      {
-        "heading": "Scope of Services",
-        "paragraphs": [
-          "Mediversity Global provides two categories of services:",
-          "· International medical education programmes — covering medical English, clinical observership, research and academic development, and medical humanities;",
-          "· Cross-border medical navigation — coordinating medical resources, consolidating information, and supporting processes for users navigating international healthcare.",
-          "Information provided on this website is for general reference only and does not constitute medical advice, diagnosis or treatment recommendations."
-        ]
-      },
-      {
-        "heading": "Important Notice Regarding Cross-border Medical Navigation",
-        "paragraphs": [
-          "Mediversity Global cross-border medical navigation is a coordination and liaison service. We do not participate in any specific medical decision, diagnosis or treatment.",
-          "All medical diagnoses, treatment decisions and clinical actions are made independently by the regulated healthcare institutions and licensed clinicians of your choice, who are directly responsible to you.",
-          "Resource recommendations, pathway suggestions and process support we provide are for your reference only. You are responsible for verifying relevant information and making independent healthcare decisions."
-        ]
-      },
-      {
-        "heading": "User Conduct",
-        "paragraphs": [
-          "When using this website, you agree to:",
-          "· Provide accurate, truthful and complete information;",
-          "· Not post any content through this website that is unlawful, false, misleading, harassing or infringes the rights of others;",
-          "· Not engage in any activity that may compromise the security or normal operation of this website, including but not limited to cyber attacks, malicious scraping, or automated bulk requests;",
-          "· Respect the intellectual property rights of Mediversity Global and third parties."
-        ]
-      },
-      {
-        "heading": "Intellectual Property",
-        "paragraphs": [
-          "All content presented on this website (including but not limited to text, images, video, course materials, brand identifiers, user interface design and code) is owned by Mediversity Global or its licensors and is protected by copyright, trademark and other applicable laws.",
-          "You may not copy, modify, distribute, resell or otherwise use any content from this website without prior written consent."
-        ]
-      },
-      {
-        "heading": "Training Service Terms",
-        "paragraphs": [
-          "Specific rules regarding programme registration, refunds, transfers and certificate issuance are set out in the relevant course registration page or service agreement.",
-          "We reserve the right to adjust course content, instructors and schedules where reasonably necessary for teaching purposes, with appropriate prior notice."
-        ]
-      },
-      {
-        "heading": "Disclaimers",
-        "paragraphs": [
-          "· This website and its services are provided on an \"as is\" and \"as available\" basis. We make no express or implied warranty of uninterrupted, error-free or continuous availability;",
-          "· We are not liable for any indirect loss, loss of profits or loss of opportunity arising from your use of this website or our services;",
-          "· We are not jointly liable for the content, conduct or quality of services provided by third-party websites or third-party providers (including healthcare institutions)."
-        ]
-      },
-      {
-        "heading": "Limitation of Liability",
-        "paragraphs": [
-          "To the fullest extent permitted by law, Mediversity Global's total aggregate liability arising out of these Terms or your use of this website shall not exceed the total service fees actually paid by you to Mediversity Global in the preceding twelve months."
-        ]
-      },
-      {
-        "heading": "Service Changes and Termination",
-        "paragraphs": [
-          "We reserve the right to change, suspend or terminate this website or any part of its services at any time. Where a paid service you are using would be materially affected, we will provide reasonable prior notice and handle the matter in accordance with the relevant agreement.",
-          "If you breach these Terms, we may immediately suspend or terminate your access to this website."
-        ]
-      },
-      {
-        "heading": "Governing Law and Dispute Resolution",
-        "paragraphs": [
-          "These Terms of Service are governed by, and shall be construed in accordance with, the laws of the People's Republic of China (excluding its conflict-of-laws rules).",
-          "Any dispute arising out of or in connection with these Terms shall first be resolved through good-faith consultation between the parties. Where consultation fails, the dispute shall be submitted to the competent People's Court of Shanghai for resolution. For cross-border disputes, the parties may agree to submit the matter to an international arbitration institution."
-        ]
-      },
-      {
-        "heading": "Updates to These Terms",
-        "paragraphs": [
-          "We may update these Terms from time to time in response to changes in our business, applicable law or regulation. Significant changes will be notified through a website announcement. Continued use of the website following such updates constitutes your acceptance of the updated Terms."
-        ]
-      }
-    ]
   }
 }
