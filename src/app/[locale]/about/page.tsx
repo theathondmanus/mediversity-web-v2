@@ -113,14 +113,14 @@ const ADVISORY = [
     },
   },
   {
-    id: "xuebin-dong",
-    name: "Dr. Xuebin Dong",
-    titleZh: "医疗顾问",
-    titleEn: "Medical Advisor",
+    id: "anna-zhao",
+    name: "Dr. Anna Zhao",
+    titleZh: "首席国际医疗顾问",
+    titleEn: "Chief International Healthcare Advisor",
     group: "advisory",
     bio: {
-      "zh-CN": "Dr. Xuebin Dong 是 Mediversity Global 医疗顾问，为教育项目、课程内容及医疗相关业务提供临床与学术指导，重点确保专业内容具备医学准确性、临床相关性及国际适用性。\n\nDr. Dong 是英国医学总会（GMC）注册医生及英国高等教育学会院士（FHEA），曾在 King's College London 和 University College London（UCL）从事研究与教学工作，专业经历涵盖肿瘤学、心血管医学及外科学等领域。",
-      en: "Dr. Xuebin Dong is Medical Advisor at Mediversity Global, providing clinical and academic guidance for educational programmes, curriculum content, and healthcare-related business — ensuring professional accuracy, clinical relevance, and international applicability.\n\nHe is a GMC-registered doctor and Fellow of the Higher Education Academy (FHEA), with research and teaching experience at King's College London and University College London (UCL), spanning oncology, cardiovascular medicine, and surgery.",
+      "zh-CN": "深耕国际医疗领域逾30年，其职业生涯贯穿公共、私立与公益三大领域。赵熙毕业于湘雅（湖南-耶鲁）医学院，在北京协和医院接受麻醉科住院医师培训，曾在中日友好医院执业，并作为访问学者在英国NHS公立医院获得General Medical Council临床行医执照。她同时拥有欧洲国际医疗管理MBA。\n\nSARS疫情期间，她工作在重症治疗临床一线后加入世界卫生组织驻华代表处，促进了临床与公共卫生应急之间的互动协同。此后，她先后在英国驻华大使馆及英中贸易协会负责医疗与生命科学行业合作，推动中英政府间医疗政策治理对话与机构间贸易伙伴关系的建立。\n\n赵熙医生在医疗公益领域亦展现了变革性的领导力。作为和睦家医疗企业基金会首任理事长兼法定代表人，她完成了基金会从零到一的建设，并领导了赋能患者组织的跨界合作。作为北京康盟慈善基金会首席医疗官，她主导的患者援助项目患者数字画像研究覆盖了180万名肿瘤、罕见病及慢病患者。同时，她担任清华大学苏世民书院职业发展导师，聚焦医疗与公益。\n\n在Mediversity Global，赵熙医生专注于国际患者导航、跨境医疗合作与战略性医学交流，将她多元化的医疗与公益实践转化为可持续的现实影响力。",
+      en: "Dr. Anna Zhao brings over 30 years of experience in international healthcare, spanning the public, private, and philanthropic sectors. A graduate of Xiangya (Hunan-Yale) Medical School, she completed her anaesthesiology residency at Peking Union Medical College Hospital, practised at China-Japan Friendship Hospital, and earned her GMC clinical registration as a visiting doctor within the UK NHS. She also holds an MBA in International Healthcare Management from Europe.\n\nDuring the SARS outbreak, Dr. Zhao worked on the ICU front line before joining the World Health Organization in China, where she helped bridge clinical practice and public health emergency response. She later led health and life sciences engagement at the British Embassy in Beijing and the China-Britain Business Council, driving bilateral health policy dialogue and institutional business partnerships.\n\nDr. Zhao has also demonstrated transformative leadership in health philanthropy. As the Executive Director and Legal Representative of the corporate foundation of United Family Healthcare, she built the organisation from the ground up and led cross-sector initiatives empowering Patient Groups. As Chief Medical Officer at the Beijing Health Alliance Charitable Foundation, she delivered a digital profiling research of Patient Assistance Program covering 1.8 million patients with cancer, rare diseases, and chronic conditions. She also serves as Career Mentor (Health and Philanthropy) at Schwarzman College, Tsinghua University.\n\nAt Mediversity Global, Dr. Zhao focuses on international patient navigation, cross-border healthcare partnerships, and strategic medical exchange — translating her diverse experience into sustainable, real-world impact.",
     },
   },
   {
