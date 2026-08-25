@@ -66,17 +66,6 @@ const LEADERSHIP = [
     },
   },
   {
-    id: "di-bao",
-    name: "Di Bao",
-    titleZh: "英国商务发展主管",
-    titleEn: "Head of Business Development, UK",
-    group: "leadership",
-    bio: {
-      "zh-CN": "Di Bao 负责 Mediversity Global 在英国及国际市场的商务发展与战略合作，重点推动医疗机构、教育机构及行业伙伴之间的合作关系，并支持国际培训项目与医疗合作项目的拓展。\n\n她拥有丰富的国际商务、媒体及医疗行业经验，曾任《欧洲时报》英国市场销售总监及皇家马斯登医院（The Royal Marsden）国际事务经理，并参与英国医疗机构、NHS 体系及数字健康相关合作，在国际医疗业务拓展与跨机构合作方面积累了广泛经验。\n\nDi 擅长将市场需求、医疗资源与教育服务转化为可落地的合作方案，在 Mediversity Global 重点推动英国及欧洲医疗资源网络建设，以及具有长期价值的国际合作伙伴关系。",
-      en: "Di Bao leads business development and strategic partnerships for Mediversity Global in the UK and international markets, with a focus on advancing collaboration between healthcare institutions, educational organisations, and industry partners.\n\nShe brings extensive experience in international business, media, and healthcare — having served as UK Sales Director at Nouvelles d'Europe and as International Affairs Manager at The Royal Marsden Hospital. Her background spans NHS collaborations, digital health partnerships, and cross-institutional business development.\n\nDi is skilled at translating market needs, healthcare resources, and educational services into actionable partnership frameworks, with a focus on building long-term value networks across the UK and Europe.",
-    },
-  },
-  {
     id: "krishna-chodipilli",
     name: "Krishna Chodipilli",
     titleZh: "技术与创新主管",
