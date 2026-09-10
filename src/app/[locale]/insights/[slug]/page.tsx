@@ -3,6 +3,8 @@ import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import { ArrowLeft, Calendar, Clock, User, Tag, ExternalLink } from "lucide-react";
 import { HeroSection } from "@/components/ui/hero-section";
+import { InstitutionalCaseStudyDetail } from "@/components/insights/InstitutionalCaseStudyDetail";
+import { getInstitutionalCaseStudy } from "@/data/institutional-case-studies";
 import { getInsight, getAllInsightPaths, getAllInsightSummaries } from "@/lib/insights";
 import { renderMarkdown } from "@/lib/markdown";
 
@@ -16,6 +18,18 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: InsightDetailPageProps) {
   const { locale, slug } = await params;
+  const caseStudy = getInstitutionalCaseStudy(slug, locale);
+  if (caseStudy) {
+    return {
+      title: `${caseStudy.headline} · Mediversity Case Study`,
+      description: caseStudy.summary,
+      openGraph: {
+        title: caseStudy.headline,
+        description: caseStudy.summary,
+        images: [caseStudy.heroImage],
+      },
+    };
+  }
   const article = getInsight(slug, locale);
   if (!article) return { title: "Insight" };
   return {
@@ -26,6 +40,11 @@ export async function generateMetadata({ params }: InsightDetailPageProps) {
 
 export default async function InsightDetailPage({ params }: InsightDetailPageProps) {
   const { locale, slug } = await params;
+  const caseStudy = getInstitutionalCaseStudy(slug, locale);
+  if (caseStudy) {
+    return <InstitutionalCaseStudyDetail caseStudy={caseStudy} locale={locale} />;
+  }
+
   const article = getInsight(slug, locale);
   const t = await getTranslations("insightDetail");
 

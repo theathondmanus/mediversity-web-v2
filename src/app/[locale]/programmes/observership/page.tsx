@@ -68,6 +68,7 @@ function ProjectThumb({ src, alt, Icon, num }: { src: string; alt: string; Icon:
 export default function ObservershipPage() {
   const t = useTranslations("programmes.observership");
   const tCommon = useTranslations("common");
+  const tPage = useTranslations("page");
 
   return (
     <>
@@ -86,7 +87,7 @@ export default function ObservershipPage() {
           <div className="w-14 h-14 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center">
             <Stethoscope className="w-7 h-7" />
           </div>
-          <p className="eyebrow !text-[#C4922A]">{tCommon("programmesEyebrow")}</p>
+          <p className="eyebrow !text-[#C4922A]">{tPage("programmesEyebrow")}</p>
         </div>
         <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5">
           {t("title")}
