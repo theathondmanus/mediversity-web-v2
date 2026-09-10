@@ -545,6 +545,7 @@
   "insights": {
     "title": "Insights",
     "subtitle": "Latest updates, industry analysis and learning resources in medical education",
+    "readMore": "Read More",
     "empty": {
       "title": "Content Coming Soon",
       "desc": "We are preparing high-quality industry insight articles. Stay tuned."

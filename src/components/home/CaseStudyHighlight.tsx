@@ -4,8 +4,22 @@ import { Link } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowRight, TrendingUp, Users, Clock, Award, MapPin } from "lucide-react";
+import {
+  ArrowRight,
+  TrendingUp,
+  Users,
+  Clock,
+  Award,
+  MapPin,
+  BookOpen,
+  Languages,
+  Layers3,
+  Network,
+  Stethoscope,
+} from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
+import { getHomeInstitutionalCases } from "@/data/home-institutional-cases";
+import type { CaseMetricIcon } from "@/data/institutional-case-studies";
 import {
   Carousel,
   CarouselContent,
@@ -29,6 +43,7 @@ interface CaseMetric {
 }
 
 interface CaseStudy {
+  id?: string;
   image: string;
   imageAlt: string;
   eyebrow: string;
@@ -42,6 +57,15 @@ interface CaseStudy {
   ctaLink: string;
   location?: string;
 }
+
+const INSTITUTIONAL_METRIC_ICONS = {
+  users: Users,
+  layers: Layers3,
+  workflow: Network,
+  "book-open": BookOpen,
+  languages: Languages,
+  stethoscope: Stethoscope,
+} satisfies Record<CaseMetricIcon, typeof TrendingUp>;
 
 const CASES: Record<string, CaseStudy[]> = {
   "zh-CN": [
@@ -130,7 +154,26 @@ const CASES: Record<string, CaseStudy[]> = {
 
 export default function CaseStudyHighlight() {
   const locale = useLocale() as "zh-CN" | "en";
-  const cases = CASES[locale] || CASES["zh-CN"];
+  const institutionalCases: CaseStudy[] = getHomeInstitutionalCases(locale).map(
+    (caseStudy) => ({
+      id: caseStudy.slug,
+      image: caseStudy.image,
+      imageAlt: caseStudy.imageAlt,
+      eyebrow: caseStudy.eyebrow,
+      title: caseStudy.title,
+      subtitle: caseStudy.subtitle,
+      description: caseStudy.description,
+      metrics: caseStudy.metrics.map((metric) => ({
+        ...metric,
+        icon: INSTITUTIONAL_METRIC_ICONS[metric.icon],
+      })),
+      quote: caseStudy.quote,
+      quoteAuthor: caseStudy.quoteAuthor,
+      cta: caseStudy.cta,
+      ctaLink: `/insights/${caseStudy.slug}`,
+    }),
+  );
+  const cases = [...institutionalCases, ...(CASES[locale] || CASES["zh-CN"])];
 
   return (
     <section className="relative py-20 md:py-28 overflow-hidden bg-white">
@@ -168,7 +211,7 @@ export default function CaseStudyHighlight() {
           >
             <CarouselContent className="-ml-4">
               {cases.map((caseItem, caseIdx) => (
-                <CarouselItem key={caseIdx} className="pl-4 basis-full">
+                <CarouselItem key={caseItem.id ?? caseIdx} className="pl-4 basis-full">
                   {/* Single large card */}
                   <div className="flex flex-col lg:flex-row items-stretch gap-8 lg:gap-12 bg-gradient-to-br from-[#F8F9FC] to-white rounded-2xl border border-[#E3E5EC]/60 shadow-lg overflow-hidden">
                     {/* Left: Image + quote overlay */}
@@ -225,7 +268,13 @@ export default function CaseStudyHighlight() {
                               <div className="w-8 h-8 rounded-lg bg-[#00438A]/8 flex items-center justify-center mx-auto mb-2">
                                 <Icon className="w-4 h-4 text-[#00438A]" />
                               </div>
-                              <p className="text-xl md:text-2xl font-bold text-[#00438A] mb-0.5">
+                              <p
+                                className={`font-bold text-[#00438A] mb-0.5 ${
+                                  metric.value.length > 5
+                                    ? "text-base md:text-lg"
+                                    : "text-xl md:text-2xl"
+                                }`}
+                              >
                                 {metric.value}
                               </p>
                               <p className="text-[11px] text-[#3C3A47] font-medium">{metric.label}</p>
