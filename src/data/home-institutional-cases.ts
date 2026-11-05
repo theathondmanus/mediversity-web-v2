@@ -26,6 +26,25 @@ export interface HomeInstitutionalCase {
 const HOME_CASES: Record<CaseStudyLocale, HomeInstitutionalCase[]> = {
   "zh-CN": [
     {
+      slug: "shenzhen-childrens-hospital-volunteer-training",
+      image: "/images/case-studies/shenzhen-childrens-hospital-hero.webp",
+      imageAlt: "深圳市儿童医院医疗卫生外语翻译志愿者专项培训现场",
+      eyebrow: "实名案例",
+      title: "从培训意向确定到正式授课，相隔三天",
+      subtitle: "深圳市儿童医院｜医疗卫生外语翻译志愿者专项培训",
+      description:
+        "面对紧凑的培训安排，Mediversity 围绕院内医生的专业背景和儿科就诊场景，设计了结合临床沟通、医疗口译与情境练习的专项课程。",
+      metrics: [
+        { icon: "workflow", value: "3 天", label: "意向确定至授课" },
+        { icon: "users", value: "22 人", label: "学员名单人数" },
+        { icon: "layers", value: "17 个", label: "涉及科室与部门" },
+        { icon: "book-open", value: "4 个", label: "课程环节" },
+      ],
+      quote: "围绕院方需求和儿科沟通场景，快速组织有针对性的课程内容。",
+      quoteAuthor: "设计重点",
+      cta: "阅读完整案例",
+    },
+    {
       slug: "shenzhen-international-medical-english",
       image: "/images/case-studies/shenzhen-medical-english-hero.webp",
       imageAlt: "深圳国际化医疗服务英语培训中的师生互动",
@@ -66,6 +85,28 @@ const HOME_CASES: Record<CaseStudyLocale, HomeInstitutionalCase[]> = {
     },
   ],
   en: [
+    {
+      slug: "shenzhen-childrens-hospital-volunteer-training",
+      image: "/images/case-studies/shenzhen-childrens-hospital-hero.webp",
+      imageAlt:
+        "Targeted training session for healthcare translation volunteers at Shenzhen Children's Hospital",
+      eyebrow: "Institutional Case Study",
+      title: "Three days from confirmation to delivery",
+      subtitle:
+        "Shenzhen Children's Hospital｜Training for medical translation volunteers",
+      description:
+        "Working to a tight schedule, Mediversity designed a focused course around the doctors' professional backgrounds and paediatric consultations. The course brought together clinical communication, medical interpreting and scenario-based practice.",
+      metrics: [
+        { icon: "workflow", value: "3 days", label: "Confirmation to session" },
+        { icon: "users", value: "22", label: "Participants" },
+        { icon: "layers", value: "17", label: "Departments & units" },
+        { icon: "book-open", value: "4", label: "Course components" },
+      ],
+      quote:
+        "Responding to the hospital's needs with course content built around paediatric communication.",
+      quoteAuthor: "Design focus",
+      cta: "Read Full Case Study",
+    },
     {
       slug: "shenzhen-international-medical-english",
       image: "/images/case-studies/shenzhen-medical-english-hero.webp",

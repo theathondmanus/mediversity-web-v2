@@ -163,6 +163,27 @@ export function InstitutionalCaseStudyDetail({
               </p>
             </div>
 
+            {caseStudy.solutionPoints && (
+              <div className="grid gap-4 md:grid-cols-2">
+                {caseStudy.solutionPoints.map((point, index) => (
+                  <article
+                    key={point.title}
+                    className="border border-[#E3E5EC] bg-white p-6 shadow-sm md:p-7"
+                  >
+                    <span className="mb-4 block font-display text-2xl font-bold text-[#C4922A]">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="mb-3 font-display text-xl font-bold text-[#0A1628]">
+                      {point.title}
+                    </h3>
+                    <p className="text-sm leading-7 text-[#3C3A47] md:text-base">
+                      {point.description}
+                    </p>
+                  </article>
+                ))}
+              </div>
+            )}
+
             {caseStudy.modules && (
               <div className="grid gap-7 lg:grid-cols-2">
                 {caseStudy.modules.map((module, index) => (
