@@ -37,6 +37,8 @@ export interface CaseStudyGalleryImage {
   src: string;
   alt: string;
   caption: string;
+  /** Image fitting: photos default to cover; slide/diagram images should use contain. */
+  fit?: "cover" | "contain";
 }
 
 export interface InstitutionalCaseStudy {
@@ -153,9 +155,10 @@ const CASE_STUDIES: Record<
       ],
       gallery: [
         {
-          src: "/images/case-studies/shenzhen-childrens-hospital-talk.webp",
-          alt: "深圳市儿童医院专项培训课堂讲解",
+          src: "/images/case-studies/shenzhen-childrens-hospital-journey.webp",
+          alt: "课程「今日学习路径」课件页面：接诊开场、医疗口译、跨文化沟通与综合演练",
           caption: "围绕院方活动目标与儿科沟通场景组织课程内容。",
+          fit: "contain",
         },
         {
           src: "/images/case-studies/shenzhen-childrens-hospital-audience.webp",
@@ -254,9 +257,10 @@ const CASE_STUDIES: Record<
       ],
       gallery: [
         {
-          src: "/images/case-studies/shenzhen-childrens-hospital-talk.webp",
-          alt: "Course delivery during the Shenzhen Children's Hospital training",
+          src: "/images/case-studies/shenzhen-childrens-hospital-journey.webp",
+          alt: "Course slide showing the day's learning journey: opening the consultation, accurate medical interpretation, cross-cultural communication and practice",
           caption: "Course content organised around the hospital's objectives and paediatric communication settings.",
+          fit: "contain",
         },
         {
           src: "/images/case-studies/shenzhen-childrens-hospital-audience.webp",
