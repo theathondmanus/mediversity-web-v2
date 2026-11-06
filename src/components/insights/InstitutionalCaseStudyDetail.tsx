@@ -291,23 +291,33 @@ export function InstitutionalCaseStudyDetail({
             </div>
 
             <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr]">
-              {caseStudy.gallery.map((image, index) => (
+              {caseStudy.gallery.map((image, index) => {
+                const isContained = image.fit === "contain";
+                return (
                 <figure
                   key={`${image.src}-${index}`}
-                  className={index === 0 ? "md:row-span-2" : ""}
+                  className={index === 0 && !isContained ? "md:row-span-2" : ""}
                 >
                   <div
-                    className={`relative overflow-hidden bg-[#DDE2EA] ${
-                      index === 0
-                        ? "aspect-[4/3] md:h-full md:min-h-[500px] md:aspect-auto"
-                        : "aspect-[3/2]"
+                    className={`relative overflow-hidden ${
+                      isContained ? "bg-white ring-1 ring-[#E5E1D8]" : "bg-[#DDE2EA]"
+                    } ${
+                      isContained
+                        ? "aspect-[16/9]"
+                        : index === 0
+                          ? "aspect-[4/3] md:h-full md:min-h-[500px] md:aspect-auto"
+                          : "aspect-[3/2]"
                     }`}
                   >
                     <Image
                       src={image.src}
                       alt={image.alt}
                       fill
-                      className="object-cover"
+                      className={
+                        isContained
+                          ? "object-contain p-3 md:p-4"
+                          : "object-cover"
+                      }
                       sizes={
                         index === 0
                           ? "(max-width: 768px) 100vw, 60vw"
@@ -319,7 +329,8 @@ export function InstitutionalCaseStudyDetail({
                     {image.caption}
                   </figcaption>
                 </figure>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
