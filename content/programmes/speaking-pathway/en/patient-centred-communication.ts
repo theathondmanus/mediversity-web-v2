@@ -9,7 +9,6 @@ const data: ProgrammeData = {
     "Communicate with clarity, empathy and confidence throughout the patient consultation.",
   metaDescription:
     "MVG Patient-Centred Clinical Communication — structured consultations, history-taking, symptom exploration, explaining clinical information and confirming patient understanding, informed by the Calgary–Cambridge framework.",
-  duration: "6 modules",
   audience: ["Doctors", "Nurses", "Healthcare professionals"],
   featured: false,
   order: 20,

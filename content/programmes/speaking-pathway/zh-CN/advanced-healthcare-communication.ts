@@ -9,7 +9,6 @@ const data: ProgrammeData = {
     "从常规医患沟通迈向复杂情境交流，提升专业表达与临床协作能力。",
   metaDescription:
     "MVG 进阶临床与团队沟通课程，训练困难对话、敏感话题沟通、SBAR 结构化临床交接班及多学科团队协作等复杂临床英语沟通能力。",
-  duration: "6 个模块",
   audience: ["医生", "护士", "医疗卫生专业人员"],
   featured: false,
   order: 30,

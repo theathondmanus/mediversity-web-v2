@@ -9,7 +9,6 @@ const data: ProgrammeData = {
     "Targeted communication training for specialist roles, international opportunities and professional growth.",
   metaDescription:
     "MVG Specialist & International Communication — OET Speaking Preparation, International Patient Care, Overseas Practice Readiness and Professional Presentation & Interview Skills.",
-  duration: "Varies by specialist option",
   audience: ["Doctors", "Nurses", "Healthcare professionals"],
   featured: false,
   order: 40,

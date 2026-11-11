@@ -9,7 +9,6 @@ const data: ProgrammeData = {
     "聚焦专业岗位与国际发展需求，提升特定医疗情境中的英语沟通能力。",
   metaDescription:
     "MVG 专项与国际医疗沟通课程，提供 OET 口语备考、国际患者服务与跨文化沟通、海外临床实践准备、医学专业演讲与面试沟通四个专项方向。",
-  duration: "按专项方向确定",
   audience: ["医生", "护士", "医疗卫生专业人员"],
   featured: false,
   order: 40,

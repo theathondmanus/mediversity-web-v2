@@ -9,7 +9,6 @@ const data: ProgrammeData = {
     "Navigate challenging conversations and collaborate effectively in complex clinical environments.",
   metaDescription:
     "MVG Advanced Healthcare Communication — difficult conversations, sensitive clinical information, SBAR structured handovers and multidisciplinary team communication.",
-  duration: "6 modules",
   audience: ["Doctors", "Nurses", "Healthcare professionals"],
   featured: false,
   order: 30,
