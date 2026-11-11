@@ -9,20 +9,20 @@ const data: ProgrammeData = {
     "Communicate with clarity, empathy and confidence throughout the patient consultation.",
   metaDescription:
     "MVG Patient-Centred Clinical Communication — structured consultations, history-taking, symptom exploration, explaining clinical information and confirming patient understanding, informed by the Calgary–Cambridge framework.",
-  duration: "6 modules",
   audience: ["Doctors", "Nurses", "Healthcare professionals"],
   featured: false,
   order: 20,
   status: "published",
+  cover: "/images/courses/speaking-pathway-patient-centred.webp",
+  coverAlt: "Hands and gestures during an attentive conversation between a clinician and a simulated patient",
 
   hero: {
     headline: "Patient-Centred Clinical Communication",
     lede: "Communicate with clarity, empathy and confidence throughout the patient consultation.",
     ctaLabel: "Enquire About This Course",
     ctaHref: "/contact",
-    // TODO(Manus): 待补 public/images/courses/speaking-pathway-patient-centred.webp
-    image: "",
-    imageAlt: "A doctor conducting a structured, patient-centred consultation",
+    image: "/images/courses/speaking-pathway-patient-centred.webp",
+    imageAlt: "Hands and gestures during an attentive conversation between a clinician and a simulated patient",
   },
 
   sections: [

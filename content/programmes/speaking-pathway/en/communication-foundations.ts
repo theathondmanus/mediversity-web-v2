@@ -14,16 +14,16 @@ const data: ProgrammeData = {
   featured: false,
   order: 10,
   status: "published",
+  cover: "/images/courses/speaking-pathway-foundations.webp",
+  coverAlt: "Healthcare professionals practising spoken English together in a clinical teaching room",
 
   hero: {
     headline: "Medical Communication Foundations",
     lede: "Build the confidence to start, maintain and complete everyday clinical conversations in English.",
     ctaLabel: "Enquire About This Course",
     ctaHref: "/contact",
-    // TODO(Manus): 待补 public/images/courses/speaking-pathway-foundations.webp
-    image: "",
-    imageAlt:
-      "Healthcare professionals practising an English patient consultation in a simulated ward",
+    image: "/images/courses/speaking-pathway-foundations.webp",
+    imageAlt: "Healthcare professionals practising spoken English together in a clinical teaching room",
   },
 
   sections: [

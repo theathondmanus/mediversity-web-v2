@@ -9,20 +9,20 @@ const data: ProgrammeData = {
     "从常规医患沟通迈向复杂情境交流，提升专业表达与临床协作能力。",
   metaDescription:
     "MVG 进阶临床与团队沟通课程，训练困难对话、敏感话题沟通、SBAR 结构化临床交接班及多学科团队协作等复杂临床英语沟通能力。",
-  duration: "6 个模块",
   audience: ["医生", "护士", "医疗卫生专业人员"],
   featured: false,
   order: 30,
   status: "published",
+  cover: "/images/courses/speaking-pathway-advanced.webp",
+  coverAlt: "医护团队在教学室练习临床案例讨论与沟通",
 
   hero: {
     headline: "进阶临床与团队沟通",
     lede: "从常规医患沟通迈向复杂情境交流，提升专业表达与临床协作能力。",
     ctaLabel: "咨询本课程",
     ctaHref: "/contact",
-    // TODO(Manus): 待补 public/images/courses/speaking-pathway-advanced.webp
-    image: "",
-    imageAlt: "多学科团队在病房进行结构化临床交接班",
+    image: "/images/courses/speaking-pathway-advanced.webp",
+    imageAlt: "医护团队在教学室练习临床案例讨论与沟通",
   },
 
   sections: [

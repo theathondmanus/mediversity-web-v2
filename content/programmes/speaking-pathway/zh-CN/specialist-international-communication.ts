@@ -9,20 +9,20 @@ const data: ProgrammeData = {
     "聚焦专业岗位与国际发展需求，提升特定医疗情境中的英语沟通能力。",
   metaDescription:
     "MVG 专项与国际医疗沟通课程，提供 OET 口语备考、国际患者服务与跨文化沟通、海外临床实践准备、医学专业演讲与面试沟通四个专项方向。",
-  duration: "按专项方向确定",
   audience: ["医生", "护士", "医疗卫生专业人员"],
   featured: false,
   order: 40,
   status: "published",
+  cover: "/images/courses/speaking-pathway-specialist.webp",
+  coverAlt: "医护人员练习国际医疗交流与专业汇报",
 
   hero: {
     headline: "专项与国际医疗沟通",
     lede: "聚焦专业岗位与国际发展需求，提升特定医疗情境中的英语沟通能力。",
     ctaLabel: "咨询专项培训方案",
     ctaHref: "/contact",
-    // TODO(Manus): 待补 public/images/courses/speaking-pathway-specialist.webp
-    image: "",
-    imageAlt: "医护人员在国际学术会议上进行专业汇报",
+    image: "/images/courses/speaking-pathway-specialist.webp",
+    imageAlt: "医护人员练习国际医疗交流与专业汇报",
   },
 
   sections: [

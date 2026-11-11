@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 import {
@@ -46,8 +47,7 @@ export default function PathwayOverview({ locale }: { locale: string }) {
     <>
       {/* ═══ Hero ═══ */}
       <HeroSection
-        // TODO(Manus): 体系主视觉，待补 public/images/hero/speaking-pathway.webp
-        image="/images/hero/medical-english.webp"
+        image="/images/hero/speaking-pathway.webp"
         imageAlt={
           isZh
             ? "医学英语口语与临床沟通课堂现场"
@@ -141,8 +141,19 @@ export default function PathwayOverview({ locale }: { locale: string }) {
                     href={`/programmes/medical-english/speaking-pathway/${course.slug}` as never}
                     className="no-underline block group h-full"
                   >
-                    <Card className="h-full border transition-all duration-300 hover:shadow-xl hover:border-[#00438A]/20 hover:-translate-y-1">
-                      <CardContent className="p-7 flex flex-col h-full">
+                    <Card className="h-full flex flex-col overflow-hidden border transition-all duration-300 hover:shadow-xl hover:border-[#00438A]/20 hover:-translate-y-1">
+                      {course.cover && (
+                        <div className="relative aspect-video shrink-0 overflow-hidden">
+                          <Image
+                            src={course.cover}
+                            alt={t.coverAlt}
+                            fill
+                            sizes="(min-width: 1024px) 500px, (min-width: 640px) 50vw, 100vw"
+                            className="object-cover transition-transform duration-300 motion-safe:group-hover:scale-[1.03]"
+                          />
+                        </div>
+                      )}
+                      <CardContent className="p-7 flex flex-col flex-1">
                         <div className="flex items-start gap-4 mb-4">
                           <span
                             className="inline-flex items-center justify-center w-11 h-11 rounded-xl text-white font-bold text-sm shrink-0"

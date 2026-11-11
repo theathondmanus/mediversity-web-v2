@@ -14,15 +14,16 @@ const data: ProgrammeData = {
   featured: false,
   order: 10,
   status: "published",
+  cover: "/images/courses/speaking-pathway-foundations.webp",
+  coverAlt: "医护人员在教学室进行成对英语沟通练习",
 
   hero: {
     headline: "医学英语基础沟通",
     lede: "从日常临床交流入手，建立敢于开口、清晰表达的沟通信心。",
     ctaLabel: "咨询本课程",
     ctaHref: "/contact",
-    // TODO(Manus): 课程主视觉，待补 public/images/courses/speaking-pathway-foundations.webp
-    image: "",
-    imageAlt: "医护人员在模拟病房进行英语医患对话练习",
+    image: "/images/courses/speaking-pathway-foundations.webp",
+    imageAlt: "医护人员在教学室进行成对英语沟通练习",
   },
 
   sections: [

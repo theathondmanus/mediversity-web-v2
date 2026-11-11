@@ -16,11 +16,10 @@ export interface PathwayCourseEntry {
   slug: string;
   /** 体系内排序，1–4 */
   order: number;
-  zh: { title: string; tagline: string };
-  en: { title: string; tagline: string };
-  /** TODO(Manus): 卡片 cover，待补 public/images/courses/speaking-pathway-*.webp */
+  zh: { title: string; tagline: string; coverAlt: string };
+  en: { title: string; tagline: string; coverAlt: string };
+  /** Local shared cover image; alternative text is locale-specific. */
   cover?: string;
-  coverAlt?: string;
 }
 
 export const pathwayCourses: PathwayCourseEntry[] = [
@@ -28,57 +27,65 @@ export const pathwayCourses: PathwayCourseEntry[] = [
     slug: "communication-foundations",
     order: 1,
     zh: {
+      coverAlt: "医护人员在教学室进行成对英语沟通练习",
       title: "医学英语基础沟通",
       tagline: "从日常临床交流入手，建立敢于开口、清晰表达的沟通信心。",
     },
     en: {
+      coverAlt: "Healthcare professionals practising spoken English together in a clinical teaching room",
       title: "Medical Communication Foundations",
       tagline:
         "Build the confidence to start, maintain and complete everyday clinical conversations in English.",
     },
-    coverAlt: "医护人员在模拟病房进行英语医患对话练习",
+    cover: "/images/courses/speaking-pathway-foundations.webp",
   },
   {
     slug: "patient-centred-communication",
     order: 2,
     zh: {
+      coverAlt: "医护人员与模拟患者平等交流的手部与桌面场景",
       title: "以患者为中心的临床沟通",
       tagline: "让临床问诊更有条理，让医患沟通更加清晰、有效且有温度。",
     },
     en: {
+      coverAlt: "Hands and gestures during an attentive conversation between a clinician and a simulated patient",
       title: "Patient-Centred Clinical Communication",
       tagline:
         "Communicate with clarity, empathy and confidence throughout the patient consultation.",
     },
-    coverAlt: "医生在诊室中以患者为中心开展结构化问诊",
+    cover: "/images/courses/speaking-pathway-patient-centred.webp",
   },
   {
     slug: "advanced-healthcare-communication",
     order: 3,
     zh: {
+      coverAlt: "医护团队在教学室练习临床案例讨论与沟通",
       title: "进阶临床与团队沟通",
       tagline: "从常规医患沟通迈向复杂情境交流，提升专业表达与临床协作能力。",
     },
     en: {
+      coverAlt: "Healthcare professionals rehearsing clinical case discussion and team communication",
       title: "Advanced Healthcare Communication",
       tagline:
         "Navigate challenging conversations and collaborate effectively in complex clinical environments.",
     },
-    coverAlt: "多学科团队在病房进行结构化临床交接班",
+    cover: "/images/courses/speaking-pathway-advanced.webp",
   },
   {
     slug: "specialist-international-communication",
     order: 4,
     zh: {
+      coverAlt: "医护人员练习国际医疗交流与专业汇报",
       title: "专项与国际医疗沟通",
       tagline: "聚焦专业岗位与国际发展需求，提升特定医疗情境中的英语沟通能力。",
     },
     en: {
+      coverAlt: "Healthcare professionals rehearsing a presentation for international medical communication",
       title: "Specialist & International Communication",
       tagline:
         "Targeted communication training for specialist roles, international opportunities and professional growth.",
     },
-    coverAlt: "医护人员在国际学术会议上进行专业汇报",
+    cover: "/images/courses/speaking-pathway-specialist.webp",
   },
 ];
 

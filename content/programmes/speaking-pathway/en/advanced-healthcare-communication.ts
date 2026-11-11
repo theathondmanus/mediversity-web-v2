@@ -9,20 +9,20 @@ const data: ProgrammeData = {
     "Navigate challenging conversations and collaborate effectively in complex clinical environments.",
   metaDescription:
     "MVG Advanced Healthcare Communication — difficult conversations, sensitive clinical information, SBAR structured handovers and multidisciplinary team communication.",
-  duration: "6 modules",
   audience: ["Doctors", "Nurses", "Healthcare professionals"],
   featured: false,
   order: 30,
   status: "published",
+  cover: "/images/courses/speaking-pathway-advanced.webp",
+  coverAlt: "Healthcare professionals rehearsing clinical case discussion and team communication",
 
   hero: {
     headline: "Advanced Healthcare Communication",
     lede: "Navigate challenging conversations and collaborate effectively in complex clinical environments.",
     ctaLabel: "Enquire About This Course",
     ctaHref: "/contact",
-    // TODO(Manus): 待补 public/images/courses/speaking-pathway-advanced.webp
-    image: "",
-    imageAlt: "Multidisciplinary team conducting a structured clinical handover on a ward",
+    image: "/images/courses/speaking-pathway-advanced.webp",
+    imageAlt: "Healthcare professionals rehearsing clinical case discussion and team communication",
   },
 
   sections: [

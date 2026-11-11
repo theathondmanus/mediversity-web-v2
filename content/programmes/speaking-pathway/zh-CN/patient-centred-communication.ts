@@ -9,20 +9,20 @@ const data: ProgrammeData = {
     "让临床问诊更有条理，让医患沟通更加清晰、有效且有温度。",
   metaDescription:
     "MVG 以患者为中心的临床沟通课程，围绕结构化问诊、病史采集、症状评估、医疗信息解释与理解确认，结合 Calgary–Cambridge 临床问诊框架开展英语沟通训练。",
-  duration: "6 个模块",
   audience: ["医生", "护士", "医疗卫生专业人员"],
   featured: false,
   order: 20,
   status: "published",
+  cover: "/images/courses/speaking-pathway-patient-centred.webp",
+  coverAlt: "医护人员与模拟患者平等交流的手部与桌面场景",
 
   hero: {
     headline: "以患者为中心的临床沟通",
     lede: "让临床问诊更有条理，让医患沟通更加清晰、有效且有温度。",
     ctaLabel: "咨询本课程",
     ctaHref: "/contact",
-    // TODO(Manus): 待补 public/images/courses/speaking-pathway-patient-centred.webp
-    image: "",
-    imageAlt: "医生在诊室中以患者为中心开展结构化问诊",
+    image: "/images/courses/speaking-pathway-patient-centred.webp",
+    imageAlt: "医护人员与模拟患者平等交流的手部与桌面场景",
   },
 
   sections: [
