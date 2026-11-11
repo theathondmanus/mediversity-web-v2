@@ -86,73 +86,89 @@ const CASE_STUDIES: Record<
       slug: "shenzhen-childrens-hospital-volunteer-training",
       category: "实名案例",
       clientName: "深圳市儿童医院",
-      projectName: "年底专项活动医疗卫生外语翻译志愿者专项培训",
-      headline: "从培训意向确定到正式授课，相隔三天",
+      projectName: "深圳市儿童医院｜医疗卫生外语翻译志愿者专项培训",
+      headline: "从需求到交付：两周完成深圳市儿童医院定制化专项培训",
       summary:
-        "2026 年 10 月，深圳市儿童医院开展医疗卫生外语翻译志愿者专项培训。Mediversity Global（MVG）结合院内医生的专业背景和儿科就诊场景，设计临床沟通与医疗口译课程，并于 10 月 30 日完成培训。培训意向于 10 月 27 日完全确定，与授课日期相隔三天。",
+        "2026 年 10 月，Mediversity Global（MVG）为深圳市儿童医院提供医疗卫生外语翻译志愿者专项培训。面对紧凑的项目周期及专业化的培训要求，MVG 在约两周内完成了从初步接洽、需求分析、课程定制、方案优化、师资协调与教学准备到正式授课的全过程。",
       heroImage: "/images/case-studies/shenzhen-childrens-hospital-hero.webp",
       heroAlt: "深圳市儿童医院医疗卫生外语翻译志愿者专项培训现场",
-      homeTitle: "从培训意向确定到正式授课，相隔三天",
+      homeTitle: "从需求到交付：两周完成定制化专项培训",
       homeDescription:
-        "面对紧凑的培训安排，Mediversity 围绕院内医生的专业背景和儿科就诊场景，设计了结合临床沟通、医疗口译与情境练习的专项课程。",
-      homeHighlight: "围绕院方需求和儿科沟通场景，快速组织有针对性的课程内容。",
-      homeHighlightLabel: "设计重点",
+        "面对紧凑的项目周期与专业化的培训要求，Mediversity 围绕儿科诊疗中的跨语言沟通需求，设计了融合医疗口译、临床沟通与跨文化交流的实践型课程。",
+      homeHighlight:
+        "围绕院方目标与儿科沟通场景，两周内完成需求分析、课程定制与师资协调，并按计划交付。",
+      homeHighlightLabel: "交付重点",
       metrics: [
-        { icon: "workflow", value: "3 天", label: "意向确定至授课" },
-        { icon: "users", value: "22 人", label: "学员名单人数" },
+        { icon: "workflow", value: "约 2 周", label: "从接洽到授课" },
         { icon: "layers", value: "17 个", label: "涉及科室与部门" },
-        { icon: "book-open", value: "4 个", label: "课程环节" },
+        { icon: "book-open", value: "4 个", label: "课程教学环节" },
+        { icon: "users", value: "2026.10", label: "项目时间" },
       ],
-      contextTitle: "为年底专项活动培训医疗外语翻译志愿者",
+      contextTitle: "从接洽到授课，约两周完成全流程",
       context: [
-        "为配合年底专项活动，深圳市儿童医院面向院内医生开展医疗卫生外语翻译志愿者专项培训。学员名单共 22 人，来自 17 个科室和部门。",
-        "培训需要结合儿科诊疗中的跨语言沟通任务，关注医生、患儿、家长及译员之间的信息传递。MVG 根据院方的培训目标和活动安排，组织课程设计与教学准备。",
+        "2026 年 10 月，Mediversity Global（MVG）为深圳市儿童医院提供医疗卫生外语翻译志愿者专项培训。面对紧凑的项目周期及专业化的培训要求，MVG 在约两周内完成了从初步接洽、需求分析、课程定制、方案优化、师资协调与教学准备到正式授课的全过程。",
+        "本次培训围绕儿科诊疗中的跨语言沟通需求，结合院方的培训目标、医生专业背景及实际应用场景，设计了融合医疗口译、临床沟通和跨文化交流的实践型课程。",
+        "项目按计划完成，并获得积极的客户反馈，体现了 MVG 在快速响应、灵活定制、专业师资协调和高效项目交付方面的综合能力。",
       ],
-      challengeTitle: "在紧凑时间内回应儿科沟通需求",
+      challengeTitle: "如何在有限时间内满足专业化培训需求？",
       challenge: [
-        "院方的活动安排明确，课程准备时间紧凑。培训需要贴合医生的专业背景与儿科就诊场景。",
-        "医疗信息的准确转述是课程重点。学员还需要练习如何向家长解释检查、回应患儿，以及了解家庭过往的就医经历。课程要把这些要求转化为课堂上的具体任务。",
+        "深圳市儿童医院希望通过专项培训，帮助院内医生更好地应对涉及不同语言和文化背景的医疗沟通场景。本次培训具有三个突出特点。",
+        "准备时间紧凑。从初步沟通到课程交付，仅有约两周时间，需要高效完成需求确认、课程开发、师资协调及授课准备。",
+        "培训需求具有专业针对性。儿科临床沟通不仅要求准确传递医学信息，还需兼顾患儿、家长和医务人员之间的互动，以及跨文化背景下的沟通方式。",
+        "学员背景多样。培训学员名单涉及 17 个科室及部门，需要在有限的授课时间内兼顾不同专业背景，并围绕共同的学习目标设计实用的教学活动。",
+        "项目的关键并非简单地在短时间内安排一场培训，而是如何快速理解医院的实际需求，将培训目标转化为专业、实用且能够按时交付的课程方案。",
       ],
-      solutionTitle: "将医疗口译与儿科临床沟通结合",
+      solutionTitle: "以客户需求为导向的灵活交付",
       solutionIntro:
-        "Mediversity 围绕接诊、信息传递和家庭沟通，组织了四个相互衔接的课程环节。",
+        "MVG 没有简单套用标准课程，而是围绕院方的培训目标、学员背景与实际应用场景，分四步推进课程设计与交付。",
       solutionPoints: [
         {
-          title: "接诊开场",
+          title: "快速响应，精准理解培训需求",
           description:
-            "练习介绍身份、确认患儿及陪同者信息、了解沟通语言，并直接与患儿交流。",
+            "MVG 迅速与院方建立沟通，了解项目背景、培训对象、时间安排及预期学习目标。通过需求梳理，团队明确了课程重点，并将医院的培训要求转化为具体的学习内容与教学任务。",
+        },
+        {
+          title: "灵活定制，打造贴近临床的课程方案",
+          description:
+            "以典型儿科诊疗场景为基础设计专项教学内容，涵盖接诊沟通、医学信息准确传递、跨文化交流以及综合情境演练，强调语言能力与临床应用场景的结合。课程方案在准备过程中根据院方反馈进一步调整。",
+        },
+        {
+          title: "协调经验丰富的师资，确保教学目标有效落实",
+          description:
+            "依托具有相关教学经验的师资资源，MVG 在有限时间内完成授课教师的协调与教学准备，将培训目标、学员特点、课程重点和预期学习成果转化为明确的教学要求。",
+        },
+        {
+          title: "高效组织交付，强化实践应用",
+          description:
+            "培训采用讲解示范、互动练习及模拟情境相结合的方式，将语言知识与实际临床沟通任务融入课堂。团队同时统筹课件、教学指引、临床案例及互动练习材料，为课程顺利交付提供支持。",
+        },
+      ],
+      methodTitle: "以真实临床场景为基础",
+      methodIntro: "课程围绕四个相互衔接的教学环节展开。",
+      methodSteps: [
+        {
+          title: "接诊与沟通开场",
+          description:
+            "介绍身份、确认信息、识别语言需求，并与患儿及家长建立有效沟通。",
         },
         {
           title: "准确的医疗口译",
           description:
-            "通过中英双向口译练习，关注时间、数量、否定和不确定程度，并在信息不清楚时请求停顿、重复或澄清。",
+            "关注医学信息的准确传递，练习关键表达、信息确认与澄清技巧。",
         },
         {
-          title: "跨文化沟通",
+          title: "跨文化医患沟通",
           description:
-            "结合家庭不同的就医经历，练习了解家长的主要疑问、解释本次就诊安排，并确认需要进一步核实的事项。",
+            "理解不同文化背景下的沟通差异，练习回应家长关切及解释医疗流程。",
         },
         {
           title: "综合情境演练",
           description:
-            "以模拟患儿就诊为背景，将接诊、问诊、检查说明和口译任务放在同一段沟通中练习。",
+            "通过模拟儿科就诊，将语言表达、临床沟通和口译技巧融入完整的实践任务。",
         },
       ],
-      methodTitle: "从需求确认到课堂交付",
-      methodIntro:
-        "课程于培训意向确定后启动。三天时间里，我们把准备重心放在需求确认、场景选择和教学资料上，让课程内容从一开始就贴着院方的活动安排。",
-      methodSteps: [
-        { title: "了解需求", description: "结合院方的活动目标、培训对象和时间安排，明确课程需要回应的医疗外语沟通任务。" },
-        { title: "确定场景", description: "围绕儿科接诊以及与患儿、家长沟通的情境，确定课程内容和练习重点。" },
-        { title: "准备课程", description: "准备课件、教案、学员手册和角色练习资料，支持课堂讲解与实践。" },
-        { title: "开展培训", description: "结合案例和角色练习，将临床表达、准确口译与跨文化沟通放进模拟就诊任务中。" },
-      ],
-      practiceTitle: "围绕一次模拟儿科就诊开展练习",
-      practice: [
-        "课程使用虚构患儿案例：一名五岁儿童因发热、咳嗽由母亲陪同就诊。学员分别承担医生、家长和译员等角色，围绕接诊、病史询问与检查说明开展沟通。",
-        "课程也通过具体表达训练口译准确性。例如，家长说“我没有注意到孩子呼吸困难”，如果转述为“查体呼吸正常”，信息来源就从家长观察变成了医生的检查结果。传译时需要保留原意，并在必要时澄清或纠正。",
-        "在检查说明环节，课程还关注如何向家长解释目的和过程，以及如何用患儿能够理解的语言回应其担忧。",
-      ],
+      practiceTitle: "",
+      practice: [],
       gallery: [
         {
           src: "/images/case-studies/shenzhen-childrens-hospital-journey.webp",
@@ -163,125 +179,144 @@ const CASE_STUDIES: Record<
         {
           src: "/images/case-studies/shenzhen-childrens-hospital-audience.webp",
           alt: "来自 17 个科室和部门的学员参加专项培训",
-          caption: "22 名学员来自 17 个科室和部门，按同一套沟通任务开展练习。",
+          caption: "来自 17 个科室和部门的学员，按同一套沟通任务开展练习。",
         },
       ],
-      outcomesTitle: "围绕院方需求完成专项培训",
+      outcomesTitle: "项目交付与反馈",
       outcomes: [
-        "培训于 2026 年 10 月 30 日完成。MVG 根据院内医生的培训需求，准备了课程方案及配套教学资料。",
-        "课程覆盖接诊开场、医疗口译、跨文化沟通和综合情境演练，学员在模拟就诊任务中完成了完整沟通链条的练习。",
-        "面对紧凑的时间安排，MVG 围绕具体临床任务组织课程内容与练习，完成了专项培训。",
+        "从初步需求对接到正式授课，MVG 在约两周内完成了项目的关键准备与交付工作。",
+        "在整个过程中，团队根据医院的培训目标和时间要求，灵活协调课程设计、教学资源及实施安排，并通过持续沟通推动方案完善。专项培训按计划顺利完成，项目获得了积极的客户反馈。",
+        "这一项目不仅体现了 MVG 的快速响应与组织协调能力，也展示了其在紧凑时间安排下，将专业教育资源与客户个性化需求有效结合的服务能力。",
       ],
-      conclusionTitle: "快速响应，也重视充分准备",
+      conclusionTitle: "灵活响应与专业交付并重",
       conclusion: [
-        "不同医疗机构的培训对象、专业背景和应用场景各有不同。课程设计需要先明确沟通任务，再选择相应的语言内容、案例和练习方式。",
-        "对于常规合作，Mediversity 建议尽早启动需求沟通，为课程设计、备课和课堂安排预留充足时间，以便更细致地调整内容，照顾课程效果与学员的学习体验。",
+        "医疗机构的培训需求往往具有明确的专业背景、应用场景和实施要求。优质的教育合作不仅依赖成熟的课程内容，更需要合作伙伴能够快速理解需求、灵活调整方案、协调专业资源，并确保培训顺利实施。",
+        "深圳市儿童医院项目体现了 MVG 的四项核心优势：快速响应，及时理解客户需求并高效推进项目准备与实施；灵活定制，围绕机构目标、学员背景及实际场景设计有针对性的课程；专业师资，依托经验丰富的教师资源快速完成教学准备及目标对齐；高效交付，将培训需求转化为实践导向的教学方案并在约定时间内完成交付。",
+        "MVG 致力于将专业医学教育能力与灵活高效的项目交付相结合，为医疗机构提供更具针对性、适应性和实践价值的培训服务。",
       ],
-      ctaTitle: "为医疗团队设计有针对性的培训",
+      ctaTitle: "为您的医疗团队定制培训方案",
       ctaDescription:
-        "Mediversity 根据机构的培训目标、学员背景和实际应用场景，设计医学英语、医疗口译与跨文化医疗沟通课程。",
+        "无论是短期专项培训、科室定制工作坊，还是系统化医学英语与临床沟通能力提升项目，Mediversity Global 均可根据机构目标、专业背景及实际应用需求提供灵活的教育支持。",
     },
     en: {
       slug: "shenzhen-childrens-hospital-volunteer-training",
       category: "Institutional Case Study",
       clientName: "Shenzhen Children's Hospital",
       projectName:
-        "Targeted training for healthcare translation volunteers supporting a year-end initiative",
-      headline: "Three days between confirming the training and delivering the session",
+        "Shenzhen Children's Hospital | Healthcare Translation Volunteer Training",
+      headline:
+        "From Brief to Delivery: Tailored Healthcare Training in Two Weeks",
       summary:
-        "In October 2026, Shenzhen Children's Hospital organised targeted training for healthcare translation volunteers. Mediversity Global (MVG) designed a course in clinical communication and medical interpreting for the hospital's doctors, using paediatric consultations as its setting. The intention to proceed was confirmed on 27 October, and the training took place three days later, on 30 October.",
+        "In October 2026, Mediversity Global (MVG) delivered a healthcare translation volunteer training programme for Shenzhen Children's Hospital. Working to a demanding schedule, MVG completed the full process — from initial engagement, needs analysis and curriculum development to proposal refinement, educator coordination, teaching preparation and delivery — in approximately two weeks.",
       heroImage: "/images/case-studies/shenzhen-childrens-hospital-hero.webp",
       heroAlt:
-        "Targeted training session for healthcare translation volunteers at Shenzhen Children's Hospital",
-      homeTitle: "Three days from confirmation to delivery",
+        "Healthcare translation volunteer training delivered at Shenzhen Children's Hospital",
+      homeTitle: "From brief to delivery in two weeks",
       homeDescription:
-        "Working to a tight schedule, Mediversity designed a focused course around the doctors' professional backgrounds and paediatric consultations. The course brought together clinical communication, medical interpreting and scenario-based practice.",
+        "Working to a demanding schedule and a specialist brief, Mediversity designed a practical programme combining medical interpreting, clinical communication and cross-cultural awareness around the communication demands of paediatric care.",
       homeHighlight:
-        "Responding to the hospital's needs with course content built around paediatric communication.",
-      homeHighlightLabel: "Design focus",
+        "Needs analysis, curriculum development and educator coordination completed within two weeks, with delivery on schedule.",
+      homeHighlightLabel: "Delivery focus",
       metrics: [
-        { icon: "workflow", value: "3 days", label: "Confirmation to session" },
-        { icon: "users", value: "22", label: "Participants" },
+        { icon: "workflow", value: "~2 weeks", label: "Engagement to delivery" },
         { icon: "layers", value: "17", label: "Departments & units" },
-        { icon: "book-open", value: "4", label: "Course components" },
+        { icon: "book-open", value: "4", label: "Learning components" },
+        { icon: "users", value: "Oct 2026", label: "Project date" },
       ],
-      contextTitle: "Training volunteers for a year-end initiative",
+      contextTitle: "The full process in approximately two weeks",
       context: [
-        "The hospital organised the training for its doctors in connection with a year-end initiative. The participant list contained 22 people from 17 hospital departments and units.",
-        "The course needed to address communication across languages in paediatric care, including how information passes between doctors, children, parents and interpreters. MVG planned the course and teaching materials around the hospital's objectives and event schedule.",
+        "In October 2026, Mediversity Global (MVG) delivered a healthcare translation volunteer training programme for Shenzhen Children's Hospital. Working to a demanding schedule, MVG completed the full preparation process — from initial engagement, needs analysis and curriculum development to proposal refinement, educator coordination, teaching preparation and delivery — in approximately two weeks.",
+        "The programme was designed around the communication challenges of paediatric healthcare, combining medical interpreting, clinical communication and cross-cultural awareness through practical, scenario-based teaching that reflected the hospital's objectives, the doctors' professional backgrounds and their day-to-day practice.",
+        "Delivered as planned and supported by positive client feedback, the project demonstrates MVG's ability to respond rapidly to institutional requirements while maintaining a tailored, professionally focused approach.",
       ],
-      challengeTitle: "Responding to paediatric communication needs on a tight schedule",
+      challengeTitle:
+        "Meeting a specialist training need within a limited timeframe",
       challenge: [
-        "The hospital had a clear event schedule and limited preparation time. The course needed to reflect the doctors' professional backgrounds and the setting in which they would communicate.",
-        "Accurate interpretation of medical information was a central concern. Participants also needed opportunities to practise explaining examinations to parents, responding to children and asking about a family's previous healthcare experiences. The course translated these needs into specific classroom tasks.",
+        "Shenzhen Children's Hospital wanted a focused programme to help its doctors manage medical communication involving different languages and cultural backgrounds. Three features defined the brief.",
+        "A tight preparation window. Approximately two weeks separated initial discussions from delivery, requiring needs confirmation, curriculum development, educator coordination and teaching preparation to be completed efficiently.",
+        "A specialist clinical focus. Paediatric communication requires accurate transfer of medical information while also attending to the interaction between children, parents and clinicians, including communication across cultural backgrounds.",
+        "A diverse participant group. The participant list spanned 17 departments and units, so the programme had to address different professional backgrounds within a limited teaching window while staying focused on shared learning objectives.",
+        "The task was not simply to arrange a session at short notice, but to understand the hospital's requirements quickly and translate its training objectives into a professional, practical programme that could be delivered on time.",
       ],
-      solutionTitle: "Combining medical interpreting with paediatric clinical communication",
+      solutionTitle: "Needs-led design and flexible delivery",
       solutionIntro:
-        "Mediversity organised the course around four connected components, spanning the consultation opening, information transfer and communication with families.",
+        "Rather than adopting a standard course unchanged, MVG worked through four steps built around the hospital's objectives, participant profiles and practical setting.",
       solutionPoints: [
         {
-          title: "Starting the consultation",
+          title: "Respond rapidly and understand the brief",
           description:
-            "Practise introductions, confirming the child's and accompanying adult's details, asking about language preferences and speaking directly to the child.",
+            "MVG engaged promptly with the hospital to establish the project background, participants, schedule and expected learning outcomes. This needs analysis clarified the course focus and translated the hospital's requirements into specific learning content and teaching tasks.",
+        },
+        {
+          title: "Design a curriculum grounded in clinical practice",
+          description:
+            "Teaching content was built around typical paediatric consultation scenarios, covering the consultation opening, accurate transfer of medical information, cross-cultural interaction and integrated simulation. The curriculum was refined in response to the hospital's feedback throughout preparation.",
+        },
+        {
+          title: "Coordinate experienced educators",
+          description:
+            "Drawing on experienced teaching resources, MVG coordinated educator availability and preparation within the timeframe, converting the hospital's objectives, participant profiles, course priorities and expected outcomes into clear teaching requirements.",
+        },
+        {
+          title: "Deliver efficiently with applied practice",
+          description:
+            "Delivery combined demonstrations, interactive practice and simulation, bringing language work directly into clinical communication tasks. The team also coordinated slides, teaching guidance, clinical cases and role-play materials to support delivery.",
+        },
+      ],
+      methodTitle: "Built around authentic clinical scenarios",
+      methodIntro: "The programme was organised into four connected learning components.",
+      methodSteps: [
+        {
+          title: "Consultation opening and communication",
+          description:
+            "Introducing professional roles, confirming information, identifying language needs and establishing effective communication with children and their families.",
         },
         {
           title: "Accurate medical interpreting",
           description:
-            "Practise interpreting between English and Mandarin, paying attention to time, quantities, negatives and uncertainty. Participants also practise asking for a pause, repetition or clarification when information is unclear.",
+            "Focusing on the accurate transfer of medical information, with practice in key expressions, confirmation and clarification techniques.",
         },
         {
-          title: "Cross-cultural communication",
+          title: "Cross-cultural clinical communication",
           description:
-            "Consider different family healthcare experiences, listen to parents' main questions, explain the arrangements for the current visit and identify what still needs to be checked.",
+            "Recognising differences in communication expectations across cultural backgrounds, responding to parental concerns and explaining clinical processes.",
         },
         {
-          title: "Integrated role-play",
+          title: "Integrated clinical simulation",
           description:
-            "Bring the tasks together in a simulated paediatric consultation, from the opening and history-taking to explaining an examination and interpreting between speakers.",
+            "Bringing language, clinical communication and interpreting skills together in a complete practical task through simulated paediatric consultations.",
         },
       ],
-      methodTitle: "From brief to classroom",
-      methodIntro:
-        "Course preparation began once the intention to proceed was confirmed. Across three days, the team concentrated on the brief, scenario selection and teaching materials so that the content followed the hospital's schedule from the outset.",
-      methodSteps: [
-        { title: "Understand the brief", description: "Identify the medical communication tasks the course needs to address, taking account of the hospital's objectives, participants and schedule." },
-        { title: "Define the scenarios", description: "Select course content and practice tasks around paediatric consultations and communication with children and parents." },
-        { title: "Prepare the course", description: "Prepare slides, teaching notes, a participant handbook and role-play materials for classroom use." },
-        { title: "Deliver the training", description: "Use cases and role-play to bring clinical expression, accurate interpreting and cross-cultural communication into a simulated consultation." },
-      ],
-      practiceTitle: "A simulated paediatric consultation",
-      practice: [
-        "The course uses a fictional case: a five-year-old child is brought to hospital by his mother with a fever and cough. Participants take on roles including doctor, parent and interpreter, and work through the consultation opening, history-taking and examination explanation.",
-        "The course also uses specific examples to practise interpreting accurately. If a parent's statement, \u201cI haven't noticed any breathing difficulty\u201d, is interpreted as \u201cBreathing was normal on examination\u201d, the source changes from a parent's observation to a clinical finding. Interpreters need to preserve the original meaning and clarify or correct their interpretation when necessary.",
-        "When explaining an examination, the course also considers how to describe its purpose and process to the parent, and how to respond to the child's concerns in language the child can understand.",
-      ],
+      practiceTitle: "",
+      practice: [],
       gallery: [
         {
           src: "/images/case-studies/shenzhen-childrens-hospital-journey.webp",
-          alt: "Course slide showing the day's learning journey: opening the consultation, accurate medical interpretation, cross-cultural communication and practice",
+          alt: "Course slide showing the day's learning journey: consultation opening, medical interpreting, cross-cultural communication and integrated simulation",
           caption: "Course content organised around the hospital's objectives and paediatric communication settings.",
           fit: "contain",
         },
         {
           src: "/images/case-studies/shenzhen-childrens-hospital-audience.webp",
           alt: "Participants from 17 departments and units attending the training",
-          caption: "22 participants from 17 departments and units practising the same communication tasks.",
+          caption: "Participants from 17 departments and units practising the same communication tasks.",
         },
       ],
-      outcomesTitle: "Training delivered around the hospital's needs",
+      outcomesTitle: "Delivery and client feedback",
       outcomes: [
-        "The training was completed on 30 October 2026. MVG prepared the course plan and teaching materials around the doctors' learning needs.",
-        "The course covered the consultation opening, medical interpreting, cross-cultural communication and integrated role-play, giving participants practice across the full communication chain in a simulated consultation.",
-        "Within a tight schedule, MVG organised the course content and exercises around specific clinical communication tasks and delivered the training.",
+        "From initial needs discussion to delivery, MVG completed the essential stages of the project within approximately two weeks.",
+        "Throughout the process, the team coordinated curriculum design, teaching resources and implementation arrangements around the hospital's objectives and timeline, refining the programme through ongoing communication. The training was delivered as planned and received positive client feedback.",
+        "The project illustrates both MVG's responsiveness and organisational capability, and its ability to combine specialist educational resources with a client's individual requirements under a demanding schedule.",
       ],
-      conclusionTitle: "A quick response and time to prepare",
+      conclusionTitle: "Responsiveness and professional delivery together",
       conclusion: [
-        "Training participants, professional backgrounds and workplace settings differ from one healthcare institution to another. Course design starts by identifying the communication tasks, then selecting the language, cases and activities needed to practise them.",
-        "For most projects, Mediversity recommends starting the discussion early and allowing sufficient time for course design, lesson preparation and classroom planning. This gives the team more room to refine the content and support both the quality of the training and the participants' learning experience.",
+        "Healthcare institutions bring clear professional contexts, application settings and delivery requirements to their training needs. Strong educational partnerships depend not only on mature course content, but on a partner able to understand requirements quickly, adapt the approach, coordinate specialist resources and ensure the training is delivered successfully.",
+        "The Shenzhen Children's Hospital project reflects four of MVG's core strengths: rapid response, understanding client needs promptly and progressing efficiently; flexible tailoring, designing focused courses around institutional objectives, participant backgrounds and real scenarios; experienced educators, drawing on established teaching resources to complete preparation and alignment quickly; and effective delivery, converting training requirements into practice-oriented teaching completed within the agreed timeframe.",
+        "MVG combines specialist medical education capability with flexible, efficient project delivery to provide healthcare institutions with training that is more targeted, adaptable and practically valuable.",
       ],
-      ctaTitle: "Design focused training for your medical team",
+      ctaTitle: "Tailored training for your healthcare team",
       ctaDescription:
-        "Mediversity designs courses in medical English, medical interpreting and cross-cultural healthcare communication around an organisation's training goals, participants and working contexts.",
+        "From short focused programmes and department-level workshops to structured medical English and clinical communication development, Mediversity Global designs education around institutional objectives, professional backgrounds and practical requirements.",
     },
   },
   "shenzhen-international-medical-english": {
