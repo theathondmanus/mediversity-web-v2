@@ -276,19 +276,21 @@ export function InstitutionalCaseStudyDetail({
       <section className="section-padding bg-[#F5F3EF]">
         <div className="container">
           <div className="mx-auto max-w-6xl">
-            <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end lg:gap-16">
-              <div>
-                <p className="eyebrow">{isZh ? "课堂实践" : "Applied Practice"}</p>
-                <h2 className="mb-5 font-display text-3xl font-bold text-[#0A1628] md:text-4xl">
-                  {caseStudy.practiceTitle}
-                </h2>
+            {caseStudy.practice.length > 0 && (
+              <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end lg:gap-16">
+                <div>
+                  <p className="eyebrow">{isZh ? "课堂实践" : "Applied Practice"}</p>
+                  <h2 className="mb-5 font-display text-3xl font-bold text-[#0A1628] md:text-4xl">
+                    {caseStudy.practiceTitle}
+                  </h2>
+                </div>
+                <div className="space-y-4 text-base leading-8 text-[#3C3A47]">
+                  {caseStudy.practice.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
               </div>
-              <div className="space-y-4 text-base leading-8 text-[#3C3A47]">
-                {caseStudy.practice.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-              </div>
-            </div>
+            )}
 
             <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr]">
               {caseStudy.gallery.map((image, index) => {
