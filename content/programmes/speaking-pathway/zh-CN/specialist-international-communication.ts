@@ -14,15 +14,16 @@ const data: ProgrammeData = {
   featured: false,
   order: 40,
   status: "published",
+  cover: "/images/courses/speaking-pathway-specialist.webp",
+  coverAlt: "医护人员练习国际医疗交流与专业汇报",
 
   hero: {
     headline: "专项与国际医疗沟通",
     lede: "聚焦专业岗位与国际发展需求，提升特定医疗情境中的英语沟通能力。",
     ctaLabel: "咨询专项培训方案",
     ctaHref: "/contact",
-    // TODO(Manus): 待补 public/images/courses/speaking-pathway-specialist.webp
-    image: "",
-    imageAlt: "医护人员在国际学术会议上进行专业汇报",
+    image: "/images/courses/speaking-pathway-specialist.webp",
+    imageAlt: "医护人员练习国际医疗交流与专业汇报",
   },
 
   sections: [

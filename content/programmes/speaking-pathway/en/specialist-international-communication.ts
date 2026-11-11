@@ -14,15 +14,16 @@ const data: ProgrammeData = {
   featured: false,
   order: 40,
   status: "published",
+  cover: "/images/courses/speaking-pathway-specialist.webp",
+  coverAlt: "Healthcare professionals rehearsing a presentation for international medical communication",
 
   hero: {
     headline: "Specialist & International Communication",
     lede: "Targeted communication training for specialist roles, international opportunities and professional growth.",
     ctaLabel: "Enquire About Specialist Training",
     ctaHref: "/contact",
-    // TODO(Manus): 待补 public/images/courses/speaking-pathway-specialist.webp
-    image: "",
-    imageAlt: "Healthcare professionals presenting at an international medical conference",
+    image: "/images/courses/speaking-pathway-specialist.webp",
+    imageAlt: "Healthcare professionals rehearsing a presentation for international medical communication",
   },
 
   sections: [

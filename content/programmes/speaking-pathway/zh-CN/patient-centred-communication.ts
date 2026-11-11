@@ -14,15 +14,16 @@ const data: ProgrammeData = {
   featured: false,
   order: 20,
   status: "published",
+  cover: "/images/courses/speaking-pathway-patient-centred.webp",
+  coverAlt: "医护人员与模拟患者平等交流的手部与桌面场景",
 
   hero: {
     headline: "以患者为中心的临床沟通",
     lede: "让临床问诊更有条理，让医患沟通更加清晰、有效且有温度。",
     ctaLabel: "咨询本课程",
     ctaHref: "/contact",
-    // TODO(Manus): 待补 public/images/courses/speaking-pathway-patient-centred.webp
-    image: "",
-    imageAlt: "医生在诊室中以患者为中心开展结构化问诊",
+    image: "/images/courses/speaking-pathway-patient-centred.webp",
+    imageAlt: "医护人员与模拟患者平等交流的手部与桌面场景",
   },
 
   sections: [
