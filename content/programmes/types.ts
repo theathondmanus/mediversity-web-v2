@@ -77,8 +77,12 @@ export interface ProgrammeData {
   shortDescription: string;
   /** SEO meta description */
   metaDescription: string;
-  /** e.g. "3-12 months" */
-  duration: string;
+  /**
+   * e.g. "3-12 months".
+   * Optional — omit when the duration has not yet been confirmed.
+   * The detail page hero badge is hidden when this is empty.
+   */
+  duration?: string;
   /** Target audience tags */
   audience: string[];
   /** Show on homepage featured section */
@@ -91,6 +95,11 @@ export interface ProgrammeData {
   cover?: string;
   /** Alt text for the cover image */
   coverAlt?: string;
+  /**
+   * Course brochure PDF, e.g. "/downloads/speaking-pathway-foundations-zh.pdf".
+   * Optional — the download button is hidden when this is empty.
+   */
+  brochure?: string;
 
   /* ── Page sections ── */
   hero: {
