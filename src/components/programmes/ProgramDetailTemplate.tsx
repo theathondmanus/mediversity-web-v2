@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import {
   ArrowLeft, ArrowRight, Clock, Users, CheckCircle, Quote,
-  ChevronDown, Target, Lightbulb, BookOpen, Zap, Star,
+  ChevronDown, Target, Lightbulb, BookOpen, Zap, Star, Download,
 } from "lucide-react";
 import Image from "next/image";
 import { HeroSection } from "@/components/ui/hero-section";
@@ -587,26 +587,44 @@ export default function ProgramDetailTemplate({ data }: ProgramDetailTemplatePro
             {data.hero.lede}
           </p>
 
-          {/* Meta badges */}
+          {/* Meta badges — duration is optional; hidden when not confirmed */}
           <div className="flex flex-wrap gap-4 mb-8">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm backdrop-blur-sm">
-              <Clock className="w-4 h-4" />
-              {data.duration}
-            </span>
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm backdrop-blur-sm">
-              <Users className="w-4 h-4" />
-              {data.audience.join(" · ")}
-            </span>
+            {data.duration && (
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm backdrop-blur-sm">
+                <Clock className="w-4 h-4" />
+                {data.duration}
+              </span>
+            )}
+            {data.audience.length > 0 && (
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white/90 text-sm backdrop-blur-sm">
+                <Users className="w-4 h-4" />
+                {data.audience.join(" · ")}
+              </span>
+            )}
           </div>
 
-          <Link
-            href={data.hero.ctaHref as never}
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-white font-semibold text-lg transition-all hover:scale-[1.02] hover:shadow-lg"
-            style={{ backgroundColor: "var(--brand-accent)" }}
-          >
-            {data.hero.ctaLabel}
-            <ArrowRight className="w-5 h-5" />
-          </Link>
+          <div className="flex flex-wrap items-center gap-4">
+            <Link
+              href={data.hero.ctaHref as never}
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-white font-semibold text-lg transition-all hover:scale-[1.02] hover:shadow-lg"
+              style={{ backgroundColor: "var(--brand-accent)" }}
+            >
+              {data.hero.ctaLabel}
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+
+            {/* Brochure download — only rendered when a PDF is configured */}
+            {data.brochure && (
+              <a
+                href={data.brochure}
+                download
+                className="inline-flex items-center gap-2 px-6 py-4 rounded-lg text-white font-medium transition-colors border border-white/30 hover:bg-white/10 no-underline"
+              >
+                <Download className="w-5 h-5" />
+                {t("downloadBrochure")}
+              </a>
+            )}
+          </div>
         </motion.div>
       </HeroSection>
 

@@ -14,8 +14,29 @@ const fadeInUp = {
   transition: { duration: 0.45 },
 };
 
-/* 5门课按文档要求的顺序 */
-const COURSES = [
+/* 医学英语下并列的课程体系（第二级）。
+ * Speaking Pathway 是独立课程体系，指向体系总览页而非单门课程详情页，
+ * 故用 href 覆盖默认的 /programmes/medical-english/{slug} 路由。 */
+type CourseCard = {
+  slug: string;
+  href?: string;
+  badge?: string;
+  zhTitle: string;
+  enTitle: string;
+  zhDesc: string;
+  enDesc: string;
+};
+
+const COURSES: CourseCard[] = [
+  {
+    slug: "speaking-pathway",
+    href: "/programmes/medical-english/speaking-pathway",
+    zhTitle: "医学英语口语与临床沟通能力提升课程体系",
+    enTitle: "Medical Speaking & Clinical Communication Pathway",
+    zhDesc: "四大课程方向，独立选课，系统进阶——从语言表达到临床沟通，从开口自信到专业胜任",
+    enDesc: "Four course stages, standalone enrolment, progressive pathway — from language confidence to clinical communication competence",
+    badge: "4 courses",
+  },
   {
     slug: "preparatory-medical-english",
     zhTitle: "医学英语预备课程",
@@ -103,7 +124,7 @@ export default function MedicalEnglishPage() {
             {COURSES.map((course, idx) => (
               <motion.div key={course.slug} {...fadeInUp} transition={{ duration: 0.45, delay: idx * 0.06 }}>
                 <Link
-                  href={`/programmes/medical-english/${course.slug}` as never}
+                  href={(course.href ?? `/programmes/medical-english/${course.slug}`) as never}
                   className="no-underline block group h-full"
                 >
                   <div className="h-full bg-white rounded-xl border-2 border-[#E3E5EC] hover:border-[#00438A]/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col gap-3 relative overflow-hidden">
