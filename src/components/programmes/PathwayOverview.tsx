@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import {
   ArrowRight,
   ArrowLeft,
+  Download,
   GraduationCap,
   Users,
   Layers,
@@ -367,6 +368,18 @@ export default function PathwayOverview({ locale }: { locale: string }) {
               >
                 {copy.finalCtaSecondary}
               </Link>
+
+              {/* Brochure download — only rendered when a PDF is configured */}
+              {copy.brochureHref && (
+                <a
+                  href={copy.brochureHref}
+                  download
+                  className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg font-medium border border-white/25 text-white hover:bg-white/10 transition-colors no-underline"
+                >
+                  <Download className="w-5 h-5" />
+                  {copy.finalCtaBrochure}
+                </a>
+              )}
             </div>
           </FadeIn>
         </div>

@@ -16,6 +16,7 @@ const data: ProgrammeData = {
   status: "published",
   cover: "/images/courses/speaking-pathway-foundations.webp",
   coverAlt: "Healthcare professionals practising spoken English together in a clinical teaching room",
+  brochure: "/downloads/speaking-pathway-foundations-en.pdf",
 
   hero: {
     headline: "Medical Communication Foundations",

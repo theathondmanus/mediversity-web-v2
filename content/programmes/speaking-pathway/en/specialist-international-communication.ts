@@ -15,6 +15,7 @@ const data: ProgrammeData = {
   status: "published",
   cover: "/images/courses/speaking-pathway-specialist.webp",
   coverAlt: "Healthcare professionals rehearsing a presentation for international medical communication",
+  brochure: "/downloads/speaking-pathway-specialist-en.pdf",
 
   hero: {
     headline: "Specialist & International Communication",

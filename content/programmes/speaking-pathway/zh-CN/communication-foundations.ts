@@ -16,6 +16,7 @@ const data: ProgrammeData = {
   status: "published",
   cover: "/images/courses/speaking-pathway-foundations.webp",
   coverAlt: "医护人员在教学室进行成对英语沟通练习",
+  brochure: "/downloads/speaking-pathway-foundations-zh.pdf",
 
   hero: {
     headline: "医学英语基础沟通",
