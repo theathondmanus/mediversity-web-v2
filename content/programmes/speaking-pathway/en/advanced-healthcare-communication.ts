@@ -15,6 +15,7 @@ const data: ProgrammeData = {
   status: "published",
   cover: "/images/courses/speaking-pathway-advanced.webp",
   coverAlt: "Healthcare professionals rehearsing clinical case discussion and team communication",
+  brochure: "/downloads/speaking-pathway-advanced-en.pdf",
 
   hero: {
     headline: "Advanced Healthcare Communication",

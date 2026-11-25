@@ -15,6 +15,7 @@ const data: ProgrammeData = {
   status: "published",
   cover: "/images/courses/speaking-pathway-patient-centred.webp",
   coverAlt: "Hands and gestures during an attentive conversation between a clinician and a simulated patient",
+  brochure: "/downloads/speaking-pathway-patient-centred-en.pdf",
 
   hero: {
     headline: "Patient-Centred Clinical Communication",

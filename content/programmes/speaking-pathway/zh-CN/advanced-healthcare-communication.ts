@@ -15,6 +15,7 @@ const data: ProgrammeData = {
   status: "published",
   cover: "/images/courses/speaking-pathway-advanced.webp",
   coverAlt: "医护团队在教学室练习临床案例讨论与沟通",
+  brochure: "/downloads/speaking-pathway-advanced-zh.pdf",
 
   hero: {
     headline: "进阶临床与团队沟通",

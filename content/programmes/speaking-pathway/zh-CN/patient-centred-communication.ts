@@ -15,6 +15,7 @@ const data: ProgrammeData = {
   status: "published",
   cover: "/images/courses/speaking-pathway-patient-centred.webp",
   coverAlt: "医护人员与模拟患者平等交流的手部与桌面场景",
+  brochure: "/downloads/speaking-pathway-patient-centred-zh.pdf",
 
   hero: {
     headline: "以患者为中心的临床沟通",

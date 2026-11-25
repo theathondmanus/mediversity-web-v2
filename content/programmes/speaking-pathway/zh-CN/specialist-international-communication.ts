@@ -15,6 +15,7 @@ const data: ProgrammeData = {
   status: "published",
   cover: "/images/courses/speaking-pathway-specialist.webp",
   coverAlt: "医护人员练习国际医疗交流与专业汇报",
+  brochure: "/downloads/speaking-pathway-specialist-zh.pdf",
 
   hero: {
     headline: "专项与国际医疗沟通",

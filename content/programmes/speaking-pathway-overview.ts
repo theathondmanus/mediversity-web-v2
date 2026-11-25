@@ -31,6 +31,9 @@ export interface PathwayOverviewCopy {
   finalBody: string;
   finalCtaPrimary: string;
   finalCtaSecondary: string;
+  /** Optional pathway brochure download. The button is hidden when the PDF is absent. */
+  finalCtaBrochure?: string;
+  brochureHref?: string;
   exploreCourse: string;
 }
 
@@ -124,6 +127,8 @@ const zh: PathwayOverviewCopy = {
     "选择适合的课程，提升真正用得上的沟通能力。无论您希望从基础开始建立英语交流信心，还是希望提升专业问诊、复杂临床沟通或国际医疗交流能力，MVG 都能为您提供灵活、务实的学习选择。",
   finalCtaPrimary: "浏览全部课程",
   finalCtaSecondary: "咨询完整课程体系",
+  finalCtaBrochure: "下载课程体系宣传册",
+  brochureHref: "/downloads/speaking-pathway-overview-zh.pdf",
   exploreCourse: "了解课程详情",
 };
 
@@ -217,6 +222,8 @@ const en: PathwayOverviewCopy = {
     "The right course. The right skills. Your professional goals. Whether you are beginning to develop clinical spoken English or preparing for more advanced communication challenges, MVG offers flexible learning opportunities.",
   finalCtaPrimary: "Explore Individual Courses",
   finalCtaSecondary: "Enquire About the Full Pathway",
+  finalCtaBrochure: "Download Pathway Brochure",
+  brochureHref: "/downloads/speaking-pathway-overview-en.pdf",
   exploreCourse: "Explore course",
 };
 
