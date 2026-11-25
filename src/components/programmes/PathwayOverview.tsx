@@ -73,14 +73,28 @@ export default function PathwayOverview({ locale }: { locale: string }) {
           <p className="text-[#C4922A] text-sm font-medium mb-8">
             {copy.heroTagline}
           </p>
-          <Link
-            href="#courses"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-white font-semibold transition-all hover:scale-[1.02] hover:shadow-lg no-underline"
-            style={{ backgroundColor: "var(--brand-accent)" }}
-          >
-            {copy.coursesTitle}
-            <ArrowRight className="w-5 h-5" />
-          </Link>
+          <div className="flex flex-wrap items-center gap-4">
+            <Link
+              href="#courses"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-white font-semibold transition-all hover:scale-[1.02] hover:shadow-lg no-underline"
+              style={{ backgroundColor: "var(--brand-accent)" }}
+            >
+              {copy.coursesTitle}
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+
+            {/* Hero brochure download — only rendered when a PDF is configured */}
+            {copy.brochureHref && (
+              <a
+                href={copy.brochureHref}
+                download
+                className="inline-flex items-center gap-2 px-6 py-4 rounded-lg text-white font-medium transition-colors border border-white/30 hover:bg-white/10 no-underline"
+              >
+                <Download className="w-5 h-5" />
+                {copy.finalCtaBrochure}
+              </a>
+            )}
+          </div>
         </FadeIn>
       </HeroSection>
 
